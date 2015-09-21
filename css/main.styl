@@ -1,0 +1,265 @@
+header-content-bg-base()
+  background-color #f4b504
+  background-image url(../img/buildbot.svg)
+  background-repeat no-repeat
+  background-attachment fixed
+  background-position center -50px
+  background-size 450px
+  display block
+  content ""
+  position absolute
+header-content-bg-360()
+  background-position center -50px
+  background-size 450px
+header-content-bg-600()
+  background-position center 70px
+  background-size 450px
+header-content-bg-800()
+  background-position center -100px
+  background-size 680px
+header-content-bg-1030()
+  background-position center 100px
+  background-size 1100px
+header-content-bg-1280()
+  background-position center 50px
+  background-size 1100px
+.bounds
+  max-width 1280px
+  position relative
+  margin 0 auto
+.text-bounds
+  @extend .bounds
+  max-width 600px
+header
+  background #27a1c5
+.header-bounds
+  @extend .bounds
+  width 320px
+  height 330px
+.header-title
+  color #FFF
+  background #1793B3
+  padding 20px
+.ipad-air2
+  width 348px
+  height 512px
+  position absolute
+  display none
+  &:before
+    width 298px
+    height 398px
+    left 28px
+    top 54px
+    header-content-bg-base()
+.galaxy-s6
+  width 368px
+  height 190px
+  position absolute
+  left 5px
+  top 5px
+  transform-origin 0 0
+  transform scale3d(.842391304,.842391304,1)
+  &:before
+    width 278px
+    height 154px
+    left 48px
+    top 14px
+    header-content-bg-base()
+  &:after
+    width 100%
+    height 100%
+    position absolute
+    top 0
+    left 0
+    content url(../img/galaxy-s6-shine.svg)
+.iphone-6
+  width 352px
+  height 178px
+  position absolute
+  left 3px
+  top 157px
+  transform-origin 0 0
+  transform scale3d(.842391304,.842391304,1)
+  &:before
+    width 258px
+    height 144px
+    left 50px
+    top 14px
+    header-content-bg-base()
+    background-position center -70px
+.nexus-9
+  width 570px
+  height 386px
+  position absolute
+  display none
+  &:before
+    width 446px
+    height 334px
+    left 66px
+    top 22px
+    header-content-bg-base()
+.fire-hdx
+  width 580px
+  height 398px
+  position absolute
+  display none
+  &:before
+    width 478px
+    height 298px
+    left 54px
+    top 48px
+    header-content-bg-base()
+.lumia-640xl
+  width 216px
+  height 400px
+  position absolute
+  display none
+  &:before
+    width 166px
+    height 312px
+    left 26px
+    top 40px
+    header-content-bg-base()
+.one-m9
+  width 372px
+  height 188px
+  position absolute
+  display none
+  &:before
+    width 276px
+    height 156px
+    left 46px
+    top 12px
+    header-content-bg-base()
+@media only screen and (min-width: 360px)
+  .header-bounds
+    max-width 360px
+    width 100%
+    height 380px
+  .galaxy-s6
+    transform none
+    left 0px
+    &:before
+      header-content-bg-360()
+  .iphone-6
+    top 186px
+    left 25px
+    transform none
+    &:before
+      header-content-bg-360()
+@media only screen and (min-width: 600px)
+  .header-bounds
+    max-width 600px
+    width 100%
+    height 532px
+  .galaxy-s6
+    display none
+  .iphone-6
+    display none
+  .ipad-air2
+    display block
+    left 230px
+    top 10px
+    &:before
+      header-content-bg-600()
+  .lumia-640xl
+    display block
+    left 20px
+    top 70px
+    &:before
+      header-content-bg-600()
+@media only screen and (min-width: 800px)
+  .header-bounds
+    max-width 800px
+    width 100%
+    height 440px
+  .ipad-air2
+    display none
+  .fire-hdx
+    display block
+    top 30px
+    left 218px
+    &:before
+      header-content-bg-800()
+  .lumia-640xl
+    top: 8px
+    left: 1px
+    &:before
+      header-content-bg-800()
+@media only screen and (min-width: 1030px)
+  .header-bounds
+    max-width 1030px
+    width 100%
+    height 840px
+  .ipad-air2
+    display block
+    left 20px
+    top 80px
+    &:before
+      header-content-bg-1030()
+  .fire-hdx
+    display block
+    left 375px
+    top 10px
+    &:before
+      header-content-bg-1030()
+  .nexus-9
+    display block
+    left 380px
+    top 420px
+    &:before
+      header-content-bg-1030()
+  .one-m9
+    display block
+    top 600px
+    left 0
+    &:before
+      header-content-bg-1030()
+  .lumia-640xl
+    display none
+@media only screen and (min-width: 1280px)
+  .header-bounds
+    max-width 1280px
+    height 1070px
+  .ipad-air2
+    display block
+    left 56px
+    top 226px
+    &:before
+      header-content-bg-1280()
+  .galaxy-s6
+    display block
+    left 325px
+    top 20px
+    &:before
+      header-content-bg-1280()
+  .iphone-6
+    display block
+    left 726px
+    top 75px
+    &:before
+      header-content-bg-1280()
+  .nexus-9
+    display block
+    left 458px
+    top 258px
+    &:before
+      header-content-bg-1280()
+  .fire-hdx
+    display block
+    left 420px
+    top 655px
+    &:before
+      header-content-bg-1280()
+  .lumia-640xl
+    display block
+    left 1038px
+    top 360px
+    &:before
+      header-content-bg-1280()
+  .one-m9
+    display block
+    left 15px
+    top 770px
+    &:before
+      header-content-bg-1280()
