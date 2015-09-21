@@ -1,8 +1,6 @@
-# HTML Prototype Starter
+# PhoneGap Day
 
-This is a starter project for building HTML/JS/CSS prototypes. I'm using my favorite stack, [Stylus](https://learnboost.github.io/stylus/), [Jade](http://jade-lang.com/), [CoffeeScript](http://coffeescript.org/), [Browsersync](http://www.browsersync.io/) and [NPM](https://www.npmjs.com) as a [build tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/).
-
-[Node](http://nodejs.org) is required.
+The marketing website for PhoneGap Day
 
 ## Install Dependencies
 
@@ -10,8 +8,14 @@ This is a starter project for building HTML/JS/CSS prototypes. I'm using my favo
 npm install
 ```
 
-## Run Build Script (with watch and Browsersync)
+## Run Dev Script (with watch and Browsersync)
 
 ```
 npm start
+```
+
+## Run Build
+
+```
+npm run build
 ```
