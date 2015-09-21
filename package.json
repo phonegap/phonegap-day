@@ -1,0 +1,25 @@
+{
+  "name": "HTML-Prototype-Starter",
+  "version": "1.0.0",
+  "scripts": {
+    "build:js": "coffee -c **/*.coffee",
+    "watch:js": "npm run build:js && watch -p '**/*.coffee' -c 'npm run build:js'",
+    "build:css": "stylus **/*.styl --print | postcss --use autoprefixer -o css/main.css",
+    "watch:css": "npm run build:css && watch -p '**/*.styl' -c 'npm run build:css'",
+    "build:html": "jade ./**",
+    "watch:html": "npm run build:html && watch -p '**/*.jade' -c 'npm run build:html'",
+    "browser-sync": "browser-sync start --files '**/*.js, **/*.html, **/*.css' --server ./",
+    "build:watch": "npm run watch:css & npm run watch:js & npm run watch:html & npm run browser-sync",
+    "build": "npm run build:js && npm run build:css && npm run build:html",
+    "start": "npm run build:watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "browser-sync": "^2.9.3",
+    "coffee-script": "^1.10.0",
+    "jade": "^1.11.0",
+    "postcss-cli": "^2.1.0",
+    "stylus": "^0.52.4",
+    "watch-cli": "^0.2.1"
+  }
+}
