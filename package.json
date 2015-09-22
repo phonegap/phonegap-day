@@ -4,11 +4,11 @@
   "scripts": {
     "build:js": "coffee --output _site/js -c **/*.coffee",
     "watch:js": "npm run build:js && watch -p '**/*.coffee' -c 'npm run build:js'",
-    "build:css": "stylus css/main.styl --print --compress | postcss --use autoprefixer -o _site/css/main.css",
+    "build:css": "stylus css/main.styl --print --compress --sourcemap-inline | postcss --use autoprefixer -o _site/css/main.css",
     "watch:css": "npm run build:css && watch -p '**/*.styl' -c 'npm run build:css'",
     "build:html": "jade ./** --out _site/",
     "watch:html": "npm run build:html && watch -p '**/*.jade' -c 'npm run build:html'",
-    "build:img": "cp -a img/. _site/img",
+    "build:img": "cp -a img/. _site/img && cp -a css/fonts/. _site/css/fonts",
     "watch:img": "npm run build:img && watch -p 'img/*' -c 'npm run build:img'",
     "browser-sync": "browser-sync start --files '_site/**/*.*' --server ./_site",
     "build:watch": "npm run watch:css & npm run watch:js & npm run watch:html & npm run watch:img & npm run browser-sync",
