@@ -23,6 +23,36 @@ header-content-bg-1280()
   background-size 1100px
 .main-header
   background #27a1c5
+
+.header-title
+  header-content-bg-base()
+  background-image url(../img/buildbot-line.svg)
+  position relative
+  background-color #1793B3
+  padding-top 50px
+  padding-bottom 40px
+  text-align center
+  .bounds
+    display inline-block
+    width auto
+  h1
+    font-family league_spartan
+    font-size 4rem
+    line-height 4.5rem
+    text-align left
+  h2
+    font-family league_spartan
+    font-size 1.5rem
+    line-height 3rem
+    text-align left
+  .description
+    font-size 1.3rem
+    margin 20px 0 40px
+    text-align left
+  button
+    position relative
+    margin 0 auto
+    font-size 1.2rem
 .header-bounds
   @extend .bounds
   width 320px
@@ -130,6 +160,12 @@ header-content-bg-1280()
     top 12px
     header-content-bg-base()
 @media only screen and (min-width: 360px)
+  .header-title
+    header-content-bg-base()
+    header-content-bg-360()
+    background-image url(../img/buildbot-line.svg)
+    position relative
+    background-color #1793B3
   .logo
     right 43px
     top 288px
@@ -156,23 +192,17 @@ header-content-bg-1280()
     background-image url(../img/buildbot-line.svg)
     position relative
     background-color #1793B3
-    padding-top 250px
-    padding-bottom 200px
+    padding-top 50px
+    padding-bottom 40px
     h1
-      font-family league_spartan
-      font-size 6rem
-      line-height 6rem
-      text-align left
+      font-size 4rem
+      line-height 4.5rem
     h2
-      font-family league_spartan
-      font-size 2rem
-      line-height 3rem
-      text-align left
-    .button--cta
-      position relative
-    .description
       font-size 1.5rem
-      margin 20px 0 60px
+      line-height 3rem
+    .description
+      font-size 1.3rem
+      margin 20px 0 40px
       text-align left
     button
       position relative
@@ -233,11 +263,12 @@ header-content-bg-1280()
       header-content-bg-800()
 @media only screen and (min-width: 1030px)
   .header-title
-    header-content-bg-base()
     header-content-bg-1030()
     background-image url(../img/buildbot-line.svg)
     position relative
     background-color #1793B3
+    padding-top 150px
+    padding-bottom 120px
   .logo
     width 360px
     right 136px
@@ -274,15 +305,16 @@ header-content-bg-1280()
     display none
 @media only screen and (min-width: 1280px)
   .header-title
-    header-content-bg-base()
     header-content-bg-1280()
     background-image url(../img/buildbot-line.svg)
-    position relative
     background-color #1793B3
     text-align center
-    .bounds
-      display inline-block
-      width auto
+    padding-top 250px
+    padding-bottom 200px
+    position relative
+    h1
+      font-size 6rem
+      line-height 6rem
   .header-bounds
     max-width 1280px
     height 1698px
