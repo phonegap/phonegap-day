@@ -7,8 +7,6 @@ header-content-bg-base()
   background-attachment fixed
   background-position center -50px
   background-size 450px
-  display block
-  content ""
   position absolute
 header-content-bg-360()
   background-position center -50px
@@ -23,7 +21,7 @@ header-content-bg-1030()
   background-position center 100px
   background-size 1100px
 header-content-bg-1280()
-  background-position center 20vh
+  background-position center 300px
   background-size 1100px
 .bounds
   max-width 1280px
@@ -54,7 +52,7 @@ header-content-bg-1280()
   height 512px
   position absolute
   display none
-  &:before
+  .content-mask
     width 298px
     height 398px
     left 28px
@@ -68,7 +66,7 @@ header-content-bg-1280()
   top 5px
   transform-origin 0 0
   transform scale3d(.842391304,.842391304,1)
-  &:before
+  .content-mask
     width 278px
     height 154px
     left 48px
@@ -89,7 +87,7 @@ header-content-bg-1280()
   top 157px
   transform-origin 0 0
   transform scale3d(.842391304,.842391304,1)
-  &:before
+  .content-mask
     width 258px
     height 144px
     left 50px
@@ -101,7 +99,7 @@ header-content-bg-1280()
   height 386px
   position absolute
   display none
-  &:before
+  .content-mask
     width 446px
     height 334px
     left 66px
@@ -112,7 +110,7 @@ header-content-bg-1280()
   height 398px
   position absolute
   display none
-  &:before
+  .content-mask
     width 478px
     height 298px
     left 54px
@@ -123,7 +121,7 @@ header-content-bg-1280()
   height 400px
   position absolute
   display none
-  &:before
+  .content-mask
     width 166px
     height 312px
     left 26px
@@ -134,7 +132,7 @@ header-content-bg-1280()
   height 188px
   position absolute
   display none
-  &:before
+  .content-mask
     width 276px
     height 156px
     left 46px
@@ -151,13 +149,13 @@ header-content-bg-1280()
   .galaxy-s6
     transform none
     left -10px
-    &:before
+    .content-mask
       header-content-bg-360()
   .iphone-6
     top 186px
     left 14px
     transform none
-    &:before
+    .content-mask
       header-content-bg-360()
 @media only screen and (min-width: 600px)
   .logo
@@ -177,13 +175,13 @@ header-content-bg-1280()
     display block
     left 230px
     top 10px
-    &:before
+    .content-mask
       header-content-bg-600()
   .lumia-640xl
     display block
     left 20px
     top 70px
-    &:before
+    .content-mask
       header-content-bg-600()
 @media only screen and (min-width: 800px)
   .logo
@@ -200,12 +198,12 @@ header-content-bg-1280()
     display block
     top 30px
     left 218px
-    &:before
+    .content-mask
       header-content-bg-800()
   .lumia-640xl
     top: 8px
     left: 1px
-    &:before
+    .content-mask
       header-content-bg-800()
 @media only screen and (min-width: 1030px)
   .logo
@@ -220,25 +218,25 @@ header-content-bg-1280()
     display block
     left 20px
     top 80px
-    &:before
+    .content-mask
       header-content-bg-1030()
   .fire-hdx
     display block
     left 375px
     top 10px
-    &:before
+    .content-mask
       header-content-bg-1030()
   .nexus-9
     display block
     left 380px
     top 420px
-    &:before
+    .content-mask
       header-content-bg-1030()
   .one-m9
     display block
     top 600px
     left 0
-    &:before
+    .content-mask
       header-content-bg-1030()
   .lumia-640xl
     display none
@@ -260,47 +258,47 @@ header-content-bg-1280()
     left 56px
     top 854px
     z-index 2
-    &:before
+    .content-mask
       header-content-bg-1280()
   .galaxy-s6
     display block
     left 325px
     top 648px
     z-index 2
-    &:before
+    .content-mask
       header-content-bg-1280()
   .iphone-6
     display block
     left 726px
     top 703px
     z-index 2
-    &:before
+    .content-mask
       header-content-bg-1280()
   .nexus-9
     display block
     left 458px
     top 886px
     z-index 2
-    &:before
+    .content-mask
       header-content-bg-1280()
   .fire-hdx
     display block
     left 420px
     top 1283px
     z-index 2
-    &:before
+    .content-mask
       header-content-bg-1280()
   .lumia-640xl
     display block
     left 1038px
     top 988px
     z-index 2
-    &:before
+    .content-mask
       header-content-bg-1280()
   .one-m9
     display block
     left 15px
     top 1398px
     z-index 2
-    &:before
+    .content-mask
       header-content-bg-1280()
