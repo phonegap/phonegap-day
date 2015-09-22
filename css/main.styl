@@ -38,6 +38,13 @@ header-content-bg-1280()
   @extend .bounds
   width 320px
   height 330px
+.logo
+  position absolute
+  width 120px
+  height 53px
+  overflow hidden
+  right 63px
+  top 235px
 .header-title
   color #FFF
   background #1793B3
@@ -134,6 +141,9 @@ header-content-bg-1280()
     top 12px
     header-content-bg-base()
 @media only screen and (min-width: 360px)
+  .logo
+    right 33px
+    top 288px
   .header-bounds
     max-width 360px
     width 100%
@@ -150,6 +160,11 @@ header-content-bg-1280()
     &:before
       header-content-bg-360()
 @media only screen and (min-width: 600px)
+  .logo
+    width 230px
+    height auto
+    right 52px
+    top 337px
   .header-bounds
     max-width 600px
     width 100%
@@ -171,6 +186,10 @@ header-content-bg-1280()
     &:before
       header-content-bg-600()
 @media only screen and (min-width: 800px)
+  .logo
+    width 300px
+    right 58px
+    top 249px
   .header-bounds
     max-width 800px
     width 100%
@@ -189,6 +208,10 @@ header-content-bg-1280()
     &:before
       header-content-bg-800()
 @media only screen and (min-width: 1030px)
+  .logo
+    width 360px
+    right 136px
+    top 65px
   .header-bounds
     max-width 1030px
     width 100%
@@ -222,53 +245,62 @@ header-content-bg-1280()
 @media only screen and (min-width: 1280px)
   .header-bounds
     max-width 1280px
-    height 1070px
+    height 1698px
   .logo
-    max-width 1280px
+    width 1280px
     margin 0 auto
-    position relative
+    position absolute
+    top 0
+    right auto
     padding 20px 20px 0
     box-sizing border-box
-    margin-bottom -58px
+    z-index 1
   .ipad-air2
     display block
     left 56px
-    top 226px
+    top 854px
+    z-index 2
     &:before
       header-content-bg-1280()
   .galaxy-s6
     display block
     left 325px
-    top 20px
+    top 648px
+    z-index 2
     &:before
       header-content-bg-1280()
   .iphone-6
     display block
     left 726px
-    top 75px
+    top 703px
+    z-index 2
     &:before
       header-content-bg-1280()
   .nexus-9
     display block
     left 458px
-    top 258px
+    top 886px
+    z-index 2
     &:before
       header-content-bg-1280()
   .fire-hdx
     display block
     left 420px
-    top 655px
+    top 1283px
+    z-index 2
     &:before
       header-content-bg-1280()
   .lumia-640xl
     display block
     left 1038px
-    top 360px
+    top 988px
+    z-index 2
     &:before
       header-content-bg-1280()
   .one-m9
     display block
     left 15px
-    top 770px
+    top 1398px
+    z-index 2
     &:before
       header-content-bg-1280()
