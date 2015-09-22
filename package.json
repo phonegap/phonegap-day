@@ -10,7 +10,7 @@
     "watch:html": "npm run build:html && watch -p '**/*.jade' -c 'npm run build:html'",
     "build:img": "cp -a img/. _site/img",
     "watch:img": "npm run build:img && watch -p 'img/*' -c 'npm run build:img'",
-    "browser-sync": "browser-sync start --files '_site/*' --server ./_site",
+    "browser-sync": "browser-sync start --files '_site/**/*.*' --server ./_site",
     "build:watch": "npm run watch:css & npm run watch:js & npm run watch:html & npm run watch:img & npm run browser-sync",
     "build": "npm run build:js && npm run build:css && npm run build:html",
     "start": "npm run build:watch",
