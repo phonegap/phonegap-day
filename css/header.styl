@@ -37,22 +37,43 @@ header-content-bg-1280()
     width auto
   h1
     font-family league_spartan
-    font-size 4rem
-    line-height 4.5rem
-    text-align left
-  h2
+    font-size 2rem
+    line-height 2rem
+  .subhead
     font-family league_spartan
-    font-size 1.5rem
+    font-size 1rem
     line-height 3rem
-    text-align left
+    position relative
   .description
-    font-size 1.3rem
+    font-size 1.2rem
     margin 20px 0 40px
-    text-align left
+    max-width 330px
   button
     position relative
     margin 0 auto
     font-size 1.2rem
+    text-transform none
+    font-weight bold
+  .pricing
+    margin 60px auto 40px
+    max-width 280px
+    h2
+      padding-bottom 8px
+      border-bottom 1px solid #FFF
+      font-size 1.2rem
+      font-weight 900
+      margin-bottom 10px
+    li
+      display flex
+      font-size 1rem
+      span
+        flex-shrink 0
+    .leader
+      flex-grow 1
+      border-bottom 2px dotted
+      margin 0 8px
+      position relative
+      top -8px
 .header-bounds
   @extend .bounds
   width 320px
@@ -196,18 +217,25 @@ header-content-bg-1280()
     padding-bottom 40px
     h1
       font-size 4rem
-      line-height 4.5rem
-    h2
-      font-size 1.5rem
-      line-height 3rem
-    .description
+      line-height 4rem
+    .subhead
       font-size 1.3rem
-      margin 20px 0 40px
-      text-align left
+      line-height 1.5rem
+      left -72px
+    .description
+      font-size 1.5rem
+      margin 20px auto 20px
+      max-width 400px
     button
       position relative
       margin 0 auto
       font-size 1.2rem
+    .pricing
+      max-width 335px
+      h2
+        font-size 1.5rem
+      li
+        font-size 1.25rem
   .logo
     width 230px
     height auto
@@ -269,6 +297,20 @@ header-content-bg-1280()
     background-color #1793B3
     padding-top 150px
     padding-bottom 120px
+    h1
+      font-size 6rem
+      line-height 5rem
+    .subhead
+      left -68px
+      font-size 1.5rem
+      line-height 2.5rem
+    .description
+      position relative
+      margin 20px auto 40px
+      max-width 400px
+      font-size 1.5rem
+  .pricing
+    margin 100px auto 40px
   .logo
     width 360px
     right 136px
@@ -309,12 +351,9 @@ header-content-bg-1280()
     background-image url(../img/buildbot-line.svg)
     background-color #1793B3
     text-align center
-    padding-top 250px
-    padding-bottom 200px
+    padding-top 150px
+    padding-bottom 150px
     position relative
-    h1
-      font-size 6rem
-      line-height 6rem
   .header-bounds
     max-width 1280px
     height 1698px
@@ -376,3 +415,4 @@ header-content-bg-1280()
     z-index 2
     .content-mask
       header-content-bg-1280()
+der-content-bg-1280()
