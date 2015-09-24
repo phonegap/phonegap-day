@@ -72,6 +72,7 @@ ul.about-columns
     align-items center
     div
       width 100%
+      z-index 1
     &::before
       content ''
       position absolute
@@ -79,7 +80,7 @@ ul.about-columns
       height 100%
       top 0
       left 0
-      z-index -2
+      z-index 0
     &::after
       content ''
       background rgba(0,0,0,.5)
@@ -88,7 +89,7 @@ ul.about-columns
       height 100%
       top 0
       left 0
-      z-index -1
+      z-index 0
     &:first-child::before
       background url('../img/sessions.jpg') center
       background-size cover
