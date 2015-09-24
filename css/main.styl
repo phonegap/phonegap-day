@@ -15,6 +15,15 @@ body
 .text-bounds
   @extend .bounds
   max-width 600px
+  box-sizing border-box
+  padding-left 10px
+  padding-right 10px
+
+a
+  color #27a1c5
+  text-decoration none
+  &:hover
+    text-decoration underline
 
 @import "header"
 
@@ -32,7 +41,7 @@ body
   &:hover
     text-decoration: none
     background: #f2a700
-#content
+.main-content
   section
     margin-bottom 40px
   h1
@@ -42,3 +51,63 @@ body
     margin 0 0 20px
   ul
     margin 0 0 20px 1.1rem
+
+ul.about-columns
+  display flex
+  flex-direction column
+  list-style none
+  margin 0 0 40px
+  li
+    margin 0
+    padding 0 30px
+    min-height 250px
+    text-align center
+    color white
+    font-size 2rem
+    line-height 2rem
+    position relative
+    width 100%
+    box-sizing border-box
+    display flex
+    align-items center
+    div
+      width 100%
+    &::before
+      content ''
+      position absolute
+      width 100%
+      height 100%
+      top 0
+      left 0
+      z-index -2
+    &::after
+      content ''
+      background rgba(0,0,0,.5)
+      position absolute
+      width 100%
+      height 100%
+      top 0
+      left 0
+      z-index -1
+    &:first-child::before
+      background url('../img/sessions.jpg') center
+      background-size cover
+    &:nth-child(2)::before
+      background url('../img/network.jpg') center
+      background-size cover
+    &:last-child::before
+      background url('../img/skiing.jpg') center
+      background-size cover
+@media only screen and (min-width: 700px)
+  ul.about-columns
+    flex-direction row
+.full
+  width 100%
+  height auto
+  display block
+.map
+  width 100%
+  height 300px
+  background url('../img/map.png') center
+  background-size cover
+  display block
