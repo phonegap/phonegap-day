@@ -2,11 +2,14 @@
   "name": "HTML-Prototype-Starter",
   "version": "1.0.0",
   "scripts": {
-    "build:js": "coffee --output _site/js -c **/*.coffee",
+    "build:js": "coffee -b --map --no-header --output _site/js -c js/*.coffee",
+    "build:js:production": "coffee -b -p --no-header js/*.coffee | uglifyjs --compress --output _site/js/main.js",
     "watch:js": "npm run build:js && watch -p '**/*.coffee' -c 'npm run build:js'",
     "build:css": "stylus css/main.styl --print --compress --sourcemap-inline | postcss --use autoprefixer -o _site/css/main.css",
+    "build:css:production": "stylus css/main.styl --print --compress | postcss --use autoprefixer -o _site/css/main.css",
     "watch:css": "npm run build:css && watch -p '**/*.styl' -c 'npm run build:css'",
-    "build:html": "jade ./** --out _site/",
+    "build:html": "jade ./** --out _site/ --pretty",
+    "build:html:production": "jade ./** --out _site/",
     "watch:html": "npm run build:html && watch -p '**/*.jade' -c 'npm run build:html'",
     "build:img": "cp -a img/. _site/img && cp -a css/fonts/. _site/css/fonts",
     "watch:img": "npm run build:img && watch -p 'img/*' -c 'npm run build:img'",
@@ -14,7 +17,8 @@
     "build:watch": "npm run watch:css & npm run watch:js & npm run watch:html & npm run watch:img & npm run browser-sync",
     "build": "npm run build:js && npm run build:css && npm run build:html",
     "start": "npm run build:watch",
-    "deploy": "git subtree push --prefix _site origin gh-pages"
+    "build:production": "npm run build:js:production && npm run build:css:production && npm run build:html:production",
+    "deploy": "build:production && git subtree push --prefix _site origin gh-pages"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
@@ -23,6 +27,7 @@
     "jade": "^1.11.0",
     "postcss-cli": "^2.1.0",
     "stylus": "^0.52.4",
+    "uglify-js": "^2.4.24",
     "watch-cli": "^0.2.1"
   }
 }
