@@ -18,7 +18,7 @@
     "build": "npm run build:js && npm run build:css && npm run build:html",
     "start": "npm run build:watch",
     "build:production": "npm run build:js:production && npm run build:css:production && npm run build:html:production",
-    "deploy": "build:production && git subtree push --prefix _site origin gh-pages"
+    "deploy": "npm run build:production && git subtree push --prefix _site origin gh-pages"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
