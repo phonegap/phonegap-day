@@ -1,7 +1,7 @@
 {
   "version": 3,
   "file": "main.js",
-  "sourceRoot": "../..",
+  "sourceRoot": "../../../eu2016",
   "sources": [
     "js/main.coffee"
   ],

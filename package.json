@@ -1,0 +1,30 @@
+{
+  "name": "HTML-Prototype-Starter",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "stylus ./css/main.styl --print --compress --sourcemap-inline | postcss --use autoprefixer -o ./_site/css/main.css",
+    "build:css:production": "stylus ./css/main.styl --print --compress | postcss --use autoprefixer -o ./_sitecss/main.css",
+    "watch:css": "npm run build:css && watch -p './css/*.styl' -c 'npm run build:css'",
+    "build:html": "jade ./*.jade --out ./_site --pretty",
+    "build:html:production": "jade ./*.jade --out ./_site",
+    "watch:html": "npm run build:html && watch -p './*.jade' -c 'npm run build:html'",
+    "build:img": "cp -a ./img/. ./_site/img",
+    "watch:img": "npm run build:img && watch -p 'img/*' -c 'npm run build:img'",
+    "browser-sync": "browser-sync start --files './_site/**/*.*' --server ./_site",
+    "build:watch": "npm run watch:css & npm run watch:html & npm run watch:img & npm run browser-sync",
+    "build": "npm run build:css && npm run build:html",
+    "start": "npm run build:watch",
+    "build:production": "npm run build:css:production && npm run build:html:production",
+    "deploy": "npm run build:production && git subtree push --prefix _site origin gh-pages"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "browser-sync": "^2.9.3",
+    "coffee-script": "^1.10.0",
+    "jade": "^1.11.0",
+    "postcss-cli": "^2.1.0",
+    "stylus": "^0.52.4",
+    "uglify-js": "^2.4.24",
+    "watch-cli": "^0.2.1"
+  }
+}
