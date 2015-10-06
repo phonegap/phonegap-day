@@ -1,6 +1,6 @@
 # PhoneGap Day
 
-The marketing website for PhoneGap Day
+The marketing website for PhoneGap Day built on DocPad
 
 ## Install Dependencies
 
@@ -8,14 +8,8 @@ The marketing website for PhoneGap Day
 npm install
 ```
 
-## Run Dev Script (with watch and Browsersync)
+## Run Dev Script
 
 ```
 npm start
-```
-
-## Run Build
-
-```
-npm run build
 ```
