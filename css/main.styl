@@ -3,17 +3,42 @@
 body
   margin 0
   height 100%
-  .contents
-    position relative
-    height 100%
+.contents
+  position relative
+  height 100%
+  width 100%
+  display flex
+  align-content stretch
+  align-items stretch
+  & > div
     width 100%
-    display flex
-    align-content stretch
-    align-items stretch
-    div
+    position relative
+    a
+      position absolute
       width 100%
+      height 100%
+      top 0
+      left 0
+.images
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  display flex
+  flex-direction row
+  align-content stretch
+  align-items stretch
+  overflow hidden
+.image
+  &:first-child
+    background url('/img/pgday-us.svg') no-repeat center
+    background-size contain
+  &:last-child
+    background url('/us2016/img/pgd_logo.svg') no-repeat center
 .us2016
   background #27A1C5
 .eu2016
-  background url('/eu2016/img/pgday-eu-bg.svg') no-repeat center
-  background-size cover
+  background url('/eu2016/img/pgday-eu-logo.svg') no-repeat center, url('/eu2016/img/pgday-eu-bg.svg') no-repeat center
+  background-size contain, cover
+  background-blend-mode multiply
