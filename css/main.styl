@@ -99,6 +99,25 @@ ul.about-columns
     &:last-child::before
       background url('../img/skiing.jpg') center
       background-size cover
+.speaker--photo
+  border-radius 75px
+.speaker-list
+  list-style none
+  margin 0
+  padding 0
+.speaker
+  display inline-block
+  max-width 50%
+  box-sizing border-box
+  text-align center
+  padding 20px 5px
+  margin-right -2px
+  &:nth-child(2n)
+    padding-left 10px
+  &:nth-child(2n-1)
+    padding-right 10px
+.speaker--bio
+  text-align left
 @media only screen and (min-width: 700px)
   ul.about-columns
     flex-direction row
