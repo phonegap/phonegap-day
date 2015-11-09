@@ -14,11 +14,10 @@ body
   margin 0 auto
 .text-bounds
   @extend .bounds
-  max-width 600px
+  max-width 900px
   box-sizing border-box
   padding-left 10px
   padding-right 10px
-
 a
   color #27a1c5
   text-decoration none
@@ -46,7 +45,7 @@ a
     margin-bottom 40px
   h1
     font-family league_spartan
-    font-size 3rem
+    font-size 2rem
     text-transform uppercase
     max-width 350px
     line-height 3.5rem
@@ -57,6 +56,7 @@ a
     font-weight bold
   p
     margin 0 0 20px
+    max-width 420px
   ul
     margin 0 0 20px 1.1rem
 .about
@@ -77,15 +77,18 @@ a
   width 100%
   box-sizing border-box
   padding 60px
+  overflow hidden
   img
     width 100%
     height auto
-  h1
-    max-width 420px
-    font-size 2.25rem
-    line-height 2.7rem
   p
     max-width 420px
+.about-heading
+  max-width 420px
+  font-size 2.25rem
+  line-height 2.7rem
+  font-family league_spartan
+  text-transform uppercase
 .about--skiing, .about--sessions, .about--networking
   position relative
   margin 0 auto
@@ -102,24 +105,53 @@ a
     list-style none
     margin 0
     padding 0
-    column-count 3
+    column-count 1
     column-gap 30px
 .speaker--photo
   border-radius 125px
+  width 125px
+  height 125px
 .speaker
   box-sizing border-box
   text-align center
   -webkit-column-break-inside avoid
   column-break-inside avoid
-  margin-bottom 50px
+  padding 0 20px
+  max-width 350px
+  position relative
+  margin 0 auto 50px
 .speaker--bio
   text-align left
 .speaker--name
-  font-size 1.2rem
+  font-size 1.5rem
   margin-bottom .8rem
-@media only screen and (min-width: 700px)
-  ul.about-columns
-    flex-direction row
+  text-align left
+.full
+  width 100%
+  height auto
+  display block
+.map
+  width 100%
+  height 300px
+  background url('../img/map.png') center
+  background-size cover
+  display block
+@media only screen and (min-width: 500px)
+  .speaker-section
+    .speaker-list
+      column-count 2
+  .speaker
+    padding 0
+  .main-content
+    h1
+      font-size 3rem
+  .speaker--photo
+    width 250px
+    height 250px
+@media only screen and (min-width: 950px)
+  .speaker-section
+    .speaker-list
+      column-count 3
   .about-details
     img
       margin-bottom 30px
@@ -129,7 +161,7 @@ a
         max-width 100%
   .about--sessions
     left -50px
-    h1
+    .about-heading
       position absolute
       left 348px
       top -5px
@@ -152,14 +184,3 @@ a
     .audience-image
       display block
       width 450px
-
-.full
-  width 100%
-  height auto
-  display block
-.map
-  width 100%
-  height 300px
-  background url('../img/map.png') center
-  background-size cover
-  display block
