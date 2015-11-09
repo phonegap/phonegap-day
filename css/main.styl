@@ -14,11 +14,10 @@ body
   margin 0 auto
 .text-bounds
   @extend .bounds
-  max-width 600px
+  max-width 900px
   box-sizing border-box
   padding-left 10px
   padding-right 10px
-
 a
   color #27a1c5
   text-decoration none
@@ -45,86 +44,88 @@ a
   section
     margin-bottom 40px
   h1
+    font-family league_spartan
     font-size 2rem
-    margin 20px 0
+    text-transform uppercase
+    max-width 350px
+    line-height 3.5rem
+    margin-bottom 30px
+  .sub
+    font-size 1.25rem
+    max-width 420px
+    font-weight bold
   p
     margin 0 0 20px
+    max-width 420px
   ul
     margin 0 0 20px 1.1rem
-
-ul.about-columns
-  display flex
-  flex-direction column
-  list-style none
-  margin 0 0 40px
-  li
-    margin 0
-    padding 0 30px
-    min-height 250px
-    text-align center
-    color white
-    font-size 2rem
-    line-height 2rem
-    position relative
+.about
+  .text-bounds
+    max-width 920px
+    padding-top 120px
+  p
+    max-width 430px
+    display inline-block
+    vertical-align top
+    font-size 1rem
+    line-height 1.8rem
+    &:first-of-type
+      margin-right 36px
+.about-details
+  background #033351
+  color white
+  width 100%
+  box-sizing border-box
+  padding 60px
+  overflow hidden
+  img
     width 100%
-    box-sizing border-box
-    display flex
-    align-items center
-    div
-      width 100%
-      z-index 1
-    &::before
-      content ''
-      position absolute
-      width 100%
-      height 100%
-      top 0
-      left 0
-      z-index 0
-    &::after
-      content ''
-      background rgba(0,0,0,.5)
-      position absolute
-      width 100%
-      height 100%
-      top 0
-      left 0
-      z-index 0
-    &:first-child::before
-      background url('../img/sessions.jpg') center
-      background-size cover
-    &:nth-child(2)::before
-      background url('../img/network.jpg') center
-      background-size cover
-    &:last-child::before
-      background url('../img/skiing.jpg') center
-      background-size cover
+    height auto
+  p
+    max-width 420px
+.about-heading
+  max-width 420px
+  font-size 2.25rem
+  line-height 2.7rem
+  font-family league_spartan
+  text-transform uppercase
+.about--skiing, .about--sessions, .about--networking
+  position relative
+  margin 0 auto
+  max-width 420px
+  margin-bottom 50px
+  &:last-child
+    margin-bottom 0
+.audience-image
+  display none
+.speaker-section
+  .text-bounds
+    max-width 900px
+  .speaker-list
+    list-style none
+    margin 0
+    padding 0
+    column-count 1
+    column-gap 30px
 .speaker--photo
-  border-radius 75px
-.speaker-list
-  list-style none
-  margin 0
-  padding 0
+  border-radius 125px
+  width 125px
+  height 125px
 .speaker
-  display inline-block
-  max-width 50%
   box-sizing border-box
   text-align center
-  padding 20px 5px
-  margin-right -2px
-  vertical-align top
-  &:nth-child(2n)
-    padding-left 10px
-  &:nth-child(2n-1)
-    padding-right 10px
+  -webkit-column-break-inside avoid
+  column-break-inside avoid
+  padding 0 20px
+  max-width 350px
+  position relative
+  margin 0 auto 50px
 .speaker--bio
   text-align left
 .speaker--name
-  font-size 1.2rem
+  font-size 1.5rem
   margin-bottom .8rem
-@media only screen and (min-width: 700px)
-  ul.about-columns
-    flex-direction row
+  text-align left
 .full
   width 100%
   height auto
@@ -135,3 +136,51 @@ ul.about-columns
   background url('../img/map.png') center
   background-size cover
   display block
+@media only screen and (min-width: 500px)
+  .speaker-section
+    .speaker-list
+      column-count 2
+  .speaker
+    padding 0
+  .main-content
+    h1
+      font-size 3rem
+  .speaker--photo
+    width 250px
+    height 250px
+@media only screen and (min-width: 950px)
+  .speaker-section
+    .speaker-list
+      column-count 3
+  .about-details
+    img
+      margin-bottom 30px
+    .text-bounds
+      max-width 920px
+      > div
+        max-width 100%
+  .about--sessions
+    left -50px
+    .about-heading
+      position absolute
+      left 348px
+      top -5px
+    p
+      position absolute
+      left 348px
+      top 110px
+    img
+      width 470px
+  .about--networking
+    left -30px
+    img
+      width 450px
+  .about--skiing
+    position absolute
+    top 270px
+    left 490px
+    img
+      width 460px
+    .audience-image
+      display block
+      width 450px
