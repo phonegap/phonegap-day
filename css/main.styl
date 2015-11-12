@@ -124,7 +124,11 @@ a
   padding 0 20px
   max-width 350px
   position relative
-  margin 0 auto 50px
+  margin 0 auto
+  &::after
+    content ' '
+    height 50px
+    display block
 .speaker--bio
   text-align left
 .speaker--name
