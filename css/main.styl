@@ -61,17 +61,21 @@ a
   ul
     margin 0 0 20px 1.1rem
 .about
+  h1
+    -webkit-column-span all
+    column-span all
   .text-bounds
     max-width 920px
     padding-top 120px
+    column-count 1
+    max-width 440px
   p
     max-width 430px
-    display inline-block
     vertical-align top
     font-size 1rem
     line-height 1.8rem
-    &:first-of-type
-      margin-right 36px
+    // &:first-of-type
+    //   margin-right 36px
 .about-details
   background #033351
   color white
@@ -127,6 +131,16 @@ a
   font-size 1.5rem
   margin-bottom .8rem
   text-align left
+.schedule-section
+  h1
+    -webkit-column-span all
+    column-span all
+  .text-bounds
+    column-count 1
+    column-gap 30px
+  li
+    -webkit-column-break-inside avoid
+    column-break-inside avoid
 .full
   width 100%
   height auto
@@ -137,6 +151,13 @@ a
   background url('../img/map.png') center
   background-size cover
   display block
+.columns
+  .text-bounds
+    column-count 1
+    column-gap 30px
+  section
+    -webkit-column-break-inside avoid
+    column-break-inside avoid
 @media only screen and (min-width: 500px)
   .speaker-section
     .speaker-list
@@ -153,6 +174,10 @@ a
   .speaker-section
     .speaker-list
       column-count 3
+  .about
+    .text-bounds
+      column-count 2
+      max-width 920px
   .about-details
     img
       margin-bottom 30px
@@ -187,3 +212,8 @@ a
     .audience-image
       display block
       width 450px
+  .schedule-section .text-bounds
+    column-count 2
+  .columns
+    .text-bounds
+      column-count 2
