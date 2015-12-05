@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta(charset = 'utf-8')
+    meta('http-equiv' = 'X-UA-Compatible', content = 'IE=edge,chrome=1')
+    meta(name="viewport" content="initial-scale = 1.0")
+    
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:site', content='@phonegap')
+    meta(name='twitter:creator', content='@garthdb')
+    meta(name='twitter:title', content='PhoneGap Day Early Bird Pricing')
+    meta(name='twitter:description', content="PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees.")
+    meta(name='twitter:image', content='http://pgday.phonegap.com/img/twitter-card.png')
+      
+    meta(name='description', content="PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees.")
+    meta(name='keywords', content='HTML,CSS,PhoneGap Day,JavaScript,conference,event')
+    meta(property='og:image', content='http://pgday.phonegap.com/img/ogimage.png')
+    
+    title PhoneGap Day 2016
+    script(src="//use.typekit.net/exp7awb.js")
+    script(type="text/javascript").
+      try{Typekit.load();}catch(e){}
+    style!=locals.css
+    //if lt IE 9
+      script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')
+  body!=locals.pageContent
