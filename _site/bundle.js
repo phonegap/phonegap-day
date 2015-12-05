@@ -26639,7 +26639,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                  _react2.default.createElement(
 	                    'a',
 	                    { href: 'http://www.telerik.com/' },
-	                    _react2.default.createElement('img', { src: 'img/Telerik_Logo.svg', width: 300 })
+	                    _react2.default.createElement('img', { src: '/img/Telerik_Logo.svg', width: 300 })
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -26648,7 +26648,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                  _react2.default.createElement(
 	                    'a',
 	                    { href: 'http://www.mobify.com/' },
-	                    _react2.default.createElement('img', { src: 'img/Mobify_Logo.svg', width: 280 })
+	                    _react2.default.createElement('img', { src: '/img/Mobify_Logo.svg', width: 280 })
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -26657,7 +26657,43 @@ return /******/ (function(modules) { // webpackBootstrap
 	                  _react2.default.createElement(
 	                    'a',
 	                    { href: 'http://www.ionicframework.com/' },
-	                    _react2.default.createElement('img', { src: 'img/Ionic_Logo.svg', width: 280 })
+	                    _react2.default.createElement('img', { src: '/img/Ionic_Logo.svg', width: 280 })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://www.rangle.io/' },
+	                    _react2.default.createElement('img', { src: '/img/Rangle.io_Logo.svg', width: 300 })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://www.onsen.io/' },
+	                    _react2.default.createElement('img', { src: '/img/OnsenUI_Logo.svg', width: 300 })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://monaca.io/' },
+	                    _react2.default.createElement('img', { src: '/img/Monaca_Logo.svg', width: 300 })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://www.visualstudio.com/' },
+	                    _react2.default.createElement('img', { src: '/img/VisualStudio_Logo.svg', width: 300 })
 	                  )
 	                )
 	              )

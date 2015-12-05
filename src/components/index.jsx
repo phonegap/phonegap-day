@@ -208,9 +208,13 @@ export default class Index extends React.Component {
               <section>
                 <h1>Sponsors</h1>
                 <p>Interested in sponsoring? Email Jen Gray at <a href="mailto:jgray@adobe.com">jgray@adobe.com</a>.</p>
-                <div><a href="http://www.telerik.com/"><img src="img/Telerik_Logo.svg" width={300} /></a></div>
-                <div><a href="http://www.mobify.com/"><img src="img/Mobify_Logo.svg" width={280} /></a></div>
-                <div><a href="http://www.ionicframework.com/"><img src="img/Ionic_Logo.svg" width={280} /></a></div>
+                <div><a href="http://www.telerik.com/"><img src="/img/Telerik_Logo.svg" width={300} /></a></div>
+                <div><a href="http://www.mobify.com/"><img src="/img/Mobify_Logo.svg" width={280} /></a></div>
+                <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} /></a></div>
+                <div><a href="http://www.rangle.io/"><img src="/img/Rangle.io_Logo.svg" width={300} /></a></div>
+                <div><a href="http://www.onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} /></a></div>
+                <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} /></a></div>
+                <div><a href="http://www.visualstudio.com/"><img src="/img/VisualStudio_Logo.svg" width={300} /></a></div>
               </section>
             </div>
           </section>
