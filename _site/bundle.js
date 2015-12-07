@@ -98,7 +98,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _main = __webpack_require__(236);
+	var _main = __webpack_require__(238);
 
 	var _main2 = _interopRequireDefault(_main);
 
@@ -25821,7 +25821,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _speakerPage = __webpack_require__(235);
+	var _speakerPage = __webpack_require__(236);
 
 	var _speakerPage2 = _interopRequireDefault(_speakerPage);
 
@@ -25918,6 +25918,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _speakerItem = __webpack_require__(234);
 
 	var _speakerItem2 = _interopRequireDefault(_speakerItem);
+
+	var _sessionListItem = __webpack_require__(235);
+
+	var _sessionListItem2 = _interopRequireDefault(_sessionListItem);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26242,263 +26246,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	              _react2.default.createElement(
 	                'ul',
 	                null,
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '8:30am-9:00am - Registration and breakfast'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '9:00am-9:15am – Michael Brooks “PhoneGap kick off”'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '9:15am-9:55am – Eric Alli “Mind the Gap: Supercharge your PhoneGap workflow”'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Developing a complex and sustainable PhoneGap app can present many challenges. As your app grows, a seamless development workflow is crucial. Can you efficiently deploy and test in different environments? What are your pain points when implementing new functionality? How can you organize all the facets of your app with minimal effort? Mind the gap focuses on some of the ways you can create a development workflow that automates these inefficiencies, boosts scalability and most of all, preserves developer sanity.'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '9:55am-10:15am – Martin Poschenrieder “Automated App Testing: A pain or cure?”'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'At testmunk we have been working with many popular apps by helping them ship better apps faster. We have automated testing for various Phonegap/Cordova apps (as well as others), allowing for quick detection of layout issues and crashes.'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'In this talk I\'d like to touch on some of the testing challenges developers/QAs come across due to today’s large device and OS fragmentation, and how automated testing can ease some of these issues. I will also show some examples of how developers can quickly set up their own automated tests and run them on a large set of devices'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '10:15am-10:35am – Shawn Jansepar and Loki Meyburg (Mobify) “Finding the sweet spot - blending the best of native and web”'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'Choose the best technology for the job. Too often projects begin as hybrid apps, but switch to native for performance reasons. But it’s almost never the case that all features of your app need to be fully native. Today, many apps such as Amazon, Basecamp, Yelp and more take a blended approach. We\'ll guide you through case studies of how we build high performance apps that blend the best of native and web and highlight lessons we\'ve learned along the way.'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '10:35am-10:45am – BREAK'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '10:45am-11:05 – Mike Hartington (Ionic) “Ionic: Version 2 and Beyond”'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    '“Ionic 1.0 has enabled many web developers to become mobile app developers. With the arrival of Angular 2 and its changes, and with ES6 being finalized, development has been improved yet again. How will that impact Ionic?'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'In this session, we’ll compare Ionic 1 and Ionic 2 and go over what we\'ve learned, what improvements we\'re making to Ionic, and how easy it will be to develop apps with Ionic 2.”'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '11:05am-11:30am – Dean Haddock “Story Corps case study”'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '11:30am-12:10pm – Alex Blom “PhoneGap Applications with Ember: Lessons learned”'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'The benefits of hybrid applications are obvious (less code, simpler code, iterate faster). Developers often make quick pace, boot their app and then hit a wall trying to make it \'feel native\'.'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'This talk will discuss lessons learned & optimization techniques from having built many apps with Ember & phonegap. While this talk uses Ember & Ember packages, the tools and techniques discussed generically apply to any Phonegap application.'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '12:10am-12:30pm – TBD (Masa Tanaka)'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '12:30pm-1:20pm – LUNCH'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '1:20pm-1:40pm – Ryan J. Salva (Microsoft Visual Studio)'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '1:40pm-2:20pm – Jed Watson'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '2:20pm-2:40pm – Ray Camden “When the heck is 4/8/2016?”'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'This talk will cover basic internationalization, globalization issues with Cordova apps. I\'ll talk about the Globalization plugin (and how to work around the async nature of the plugin), the Intl class, and other options. Also, I\'ll discuss why you should give a damn as a developer.'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '2:40pm-3:00pm – Rangle.io'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '3:00pm-3:30pm – Bruce Lefebvre “PhoneGap Enterprise and Adobe Experience Manager”'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '3:30pm-3:45pm – BREAK'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '3:45pm-4:15pm – Ryan Hanna “Build and Market Your App: Small Team Success”'
-	                  ),
-	                  _react2.default.createElement(
-	                    'p',
-	                    null,
-	                    'This talk will provide the tools and methodologies to help any solo developer or small team build and then market their app to ensure it has the best chance for success. We\'ll take a transparent look at the early beginnings of Sworkit to where it is now. From a single developer to a team of 10 employees, and from 10 downloads to 10 million. This talk will be a combination of the development and marketing lessons learned and implemented along the way.'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '4:15pm-4:55pm – TBD'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '4:55pm-5:15pm – Shazron Abdullah'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '5:15pm 5:35pm – TJ VanToll and Brian Rinaldi (Telerik)'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '5:35pm-6:00pm – Panel'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'li',
-	                  null,
-	                  _react2.default.createElement(
-	                    'h2',
-	                    null,
-	                    '6:00pm-8:00pm – Pub mixer and networking'
-	                  )
-	                )
+	                _data.sessions.map(function (session, index) {
+	                  return _react2.default.createElement(_sessionListItem2.default, { key: "session-" + index, session: session });
+	                })
 	              )
 	            )
 	          ),
@@ -26934,6 +26684,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	    title: "CEO, Asial Corporation",
 	    bio: "Masa is the CEO of Asial Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter."
 	  }, {
+	    id: 26,
+	    avatar: "/img/bio/tommywilliams.jpg",
+	    twitter: "therealdevgeeks",
+	    slug: "tommywilliams",
+	    name: "Tommy Williams",
+	    title: "Sr Computer Scientist, Adobe",
+	    bio: "Apache Cordova committer and developer advocate, creator of Encryptr, and Sr Computer Scientist on the PhoneGap team at Adobe."
+	  }, {
 	    id: 18,
 	    avatar: "/img/bio/tjvantoll.jpg",
 	    twitter: "tjvantoll",
@@ -26941,6 +26699,206 @@ return /******/ (function(modules) { // webpackBootstrap
 	    name: "TJ VanToll",
 	    title: "Senior Developer Advocate, Telerik",
 	    bio: "TJ VanToll is a front-end developer, author, and a senior developer advocate for Telerik. TJ has over a decade of web development experience, including a few years working on the jQuery team. Nowadays, he spends his time helping web developers build mobile apps through projects like Cordova and NativeScript. TJ is @tjvantoll on Twitter and tjvantoll on GitHub."
+	  }],
+	  sessions: [{
+	    time: "8:30am-9:00am",
+	    title: "Registration and breakfast"
+	  }, {
+	    time: "9:00am-9:15am",
+	    title: "PhoneGap kick off",
+	    speakerSlug: "mwbrooks"
+	  }, {
+	    time: "9:15am-9:50am",
+	    title: "Mind the Gap: Supercharge your PhoneGap workflow",
+	    speakerSlug: "ericalli",
+	    description: "Developing a complex and sustainable PhoneGap app can present many challenges. As your app grows, a seamless development workflow is crucial. Can you efficiently deploy and test in different environments? What are your pain points when implementing new functionality? How can you organize all the facets of your app with minimal effort? Mind the gap focuses on some of the ways you can create a development workflow that automates these inefficiencies, boosts scalability and most of all, preserves developer sanity."
+	  }, {
+	    time: "9:50am-10:10am",
+	    title: "Automated App Testing: A pain or cure?",
+	    speakerSlug: "martinposchenrieder",
+	    description: "At testmunk we have been working with many popular apps by helping them ship better apps faster. We have automated testing for various Phonegap/Cordova apps (as well as others), allowing for quick detection of layout issues and crashes. In this talk I'd like to touch on some of the testing challenges developers/QAs come across due to today’s large device and OS fragmentation, and how automated testing can ease some of these issues. I will also show some examples of how developers can quickly set up their own automated tests and run them on a large set of devices"
+	  }, {
+	    time: "10:10am-10:30am",
+	    title: "Finding the sweet spot - blending the best of native and web",
+	    speakerSlug: ["shawnjansepar", "lokimeyburg"],
+	    description: "Choose the best technology for the job. Too often projects begin as hybrid apps, but switch to native for performance reasons. But it’s almost never the case that all features of your app need to be fully native. Today, many apps such as Amazon, Basecamp, Yelp and more take a blended approach. We'll guide you through case studies of how we build high performance apps that blend the best of native and web and highlight lessons we've learned along the way."
+	  }, {
+	    time: "10:30am-10:40am",
+	    title: "BREAK"
+	  }, {
+	    time: "10:40am-11:00",
+	    title: "Ionic: Version 2 and Beyond",
+	    speakerSlug: "mikehartington",
+	    description: "Ionic 1.0 has enabled many web developers to become mobile app developers. With the arrival of Angular 2 and its changes, and with ES6 being finalized, development has been improved yet again. How will that impact Ionic? In this session, we’ll compare Ionic 1 and Ionic 2 and go over what we've learned, what improvements we're making to Ionic, and how easy it will be to develop apps with Ionic 2."
+	  }, {
+	    time: "11:00am-11:25am",
+	    title: "The Story of an App: How StoryCorps Built and Launched the StoryCorps.me Beta Platform and What We've Learned So Far",
+	    speakerSlug: "deanhaddock",
+	    description: "Dean Haddock shares the story of the StoryCorps app, from early prototypes to the TED Prize and beyond."
+	  }, {
+	    time: "11:25am-12:05pm",
+	    title: "PhoneGap Applications with Ember: Lessons learned",
+	    speakerSlug: "alexblom",
+	    description: "The benefits of hybrid applications are obvious (less code, simpler code, iterate faster). Developers often make quick pace, boot their app and then hit a wall trying to make it 'feel native'. This talk will discuss lessons learned & optimization techniques from having built many apps with Ember & phonegap. While this talk uses Ember & Ember packages, the tools and techniques discussed generically apply to any Phonegap application. "
+	  }, {
+	    time: "12:05pm-12:25pm",
+	    speakerSlug: "masahirotanaka",
+	    title: "Using Monaca Cloud to enhance Cordova development"
+	  }, {
+	    time: "12:25pm-1:15pm",
+	    title: "LUNCH"
+	  }, {
+	    time: "1:15pm-1:35pm",
+	    title: "Microsoft Visual Studio",
+	    speakerSlug: "ryanjsalva"
+	  }, {
+	    time: "1:35pm-2:15pm",
+	    title: "Jed Watson"
+	  }, {
+	    time: "2:15pm-2:35pm",
+	    title: "When the heck is 4/8/2016?",
+	    speakerSlug: "raymondcamden",
+	    description: "This talk will cover basic internationalization, globalization issues with Cordova apps. I'll talk about the Globalization plugin (and how to work around the async nature of the plugin), the Intl class, and other options. Also, I'll discuss why you should give a damn as a developer."
+	  }, {
+	    time: "2:35pm-2:55pm",
+	    title: "Rangle.io"
+	  }, {
+	    time: "2:55pm-3:25pm",
+	    title: "Making Enterprise Sh_t",
+	    speakerSlug: "brucelefebvre",
+	    description: "Does the idea of writing enterprise software conjure up images of bland user interfaces, XML-based configuration, and IE8 compatibility? The folks on Adobe’s Experience Manager Apps team have been working hard at avoiding these stereotypes, while building a platform for delivering and managing mobile apps for enterprise customers. This talk will provide a glimpse into the following: What are the perks of including a content management system in my app dev arsenal? Which tools are available for me to take full advantage of Adobe’s Marketing Cloud solutions? As a developer, what open source goodness can I try out today?"
+	  }, {
+	    time: "3:25pm-3:45pm",
+	    title: "Crosswalk"
+	  }, {
+	    time: "3:45pm-4:00pm",
+	    title: "BREAK"
+	  }, {
+	    time: "4:00pm-4:30pm",
+	    title: "Build and Market Your App: Small Team Success",
+	    speakerSlug: "ryanhanna",
+	    description: "This talk will provide the tools and methodologies to help any solo developer or small team build and then market their app to ensure it has the best chance for success. We'll take a transparent look at the early beginnings of Sworkit to where it is now. From a single developer to a team of 10 employees, and from 10 downloads to 10 million. This talk will be a combination of the development and marketing lessons learned and implemented along the way."
+	  }, {
+	    time: "4:30pm-5:10pm",
+	    title: "Generate for AEM and PhoneGap: Design Evolution 3.0 - D2W",
+	    speakerSlug: "reneelance",
+	    description: "Taking design to the digital environment has traditionally been time consuming, resource intensive and something designers and developers have been challenged with since the inception of designing for the web. So what if we had the ability to take design compositions from within Photoshop or Illustrator (or any other design tool if there really is any other) and directly turn them into and app, website or email marketing with a one button click? Something that seems too good to be true doesn’t it, well maybe not. This talk will show new Adobe innovation still in the labs, which look at streamlining workflows and rapid prototyping for App creation with Adobe AEM and PhoneGap."
+	  }, {
+	    time: "5:10pm-5:30pm",
+	    title: "Loading native code (plugins) dynamically for the enterprise",
+	    speakerSlug: "shazron",
+	    description: "Hot-code reload for html/css/js is so 2015, everyone can do it. You probably thought you couldn't hot-reload plugin native code, well you were wrong! I'll show you how (and maybe bake a cake)."
+	  }, {
+	    time: "5:30pm 5:50pm",
+	    title: "Session: Cordova Plugin Roundup",
+	    speakerSlug: "tjvantoll",
+	    description: "In last few years Cordova plugins have become the cornerstone of many high-quality Cordova and PhoneGap applications. In just the last year, we at Telerik have grown our curated Cordova plugins marketplace from small handful of plugins to now 65 and counting. In this talk you’ll learn about the latest greatest in the Cordova plugin world, including plugins for the Apple Watch, Mapbox maps, and a whole lot more."
+	  }, {
+	    time: "6:00pm-8:00pm",
+	    title: "Pub mixer"
+	  }],
+	  workshops: [{
+	    time: "8:30am - 9:00am",
+	    title: "Registration and breakfast"
+	  }, {
+	    time: "9:00am-10:30am",
+	    sessions: [{
+	      title: "PhoneGap Beginner",
+	      speakerSlug: "garthdb",
+	      description: "This workshop will provide an introduction to PhoneGap, the philosophy behind it, and how to get started quickly using a variety of different tools available. You will learn how to create a simple mobile app using the PhoneGap CLI, PhoneGap Desktop App, PhoneGap Developer App, and more. You'll then learn how to extend the app with plugins, manipulate it with hooks, and debug it with the various tools available. By the end of this beginner workshop, you will walk away with a solid understanding of what PhoneGap is all about and how to use it for your next project."
+	    }, {
+	      title: "Hands-on Bluetooth Low Energy",
+	      speakerSlug: "doncoleman",
+	      description: "You’ve heard a lot about Bluetooth low energy, but do you understand how it works? This workshop will give you a chance to get hands-on experience building a Bluetooth smart device and an iPhone or Android application to control it. We will cover Bluetooth LE concepts like services and characteristics while we are building the hardware and software. The peripheral will be built with Arduino-compatible hardware and a Nordic Bluetooth LE radio. We will use open source libraries and tools to define a custom Bluetooth LE service to control the hardware. No soldering will be required. The phone application will be written with Apache Cordova so it will run on iOS or Android. The phone will be control hardware via Bluetooth LE, and automatically receive notifications when something changes on the peripheral. Participants will be required to bring a laptop and are encouraged to bring a Bluetooth LE-capable iOS or Android phone. There will be a limited number of phones that people can borrow for the workshop. Familiarity with at least one programming language is helpful but not required. A list of required free software will be sent to attendees before the workshop."
+	    }, {
+	      title: "Privacy and security",
+	      speakerSlug: "tommywilliams",
+	      description: "There's some security and privacy."
+	    }]
+	  }, {
+	    time: "10:30am-10:45am",
+	    title: "Break"
+	  }, {
+	    time: "10:45am-12:00pm",
+	    sessions: [{
+	      title: "PhoneGap Intermediate",
+	      speakerSlug: "hollyschinsky",
+	      description: "Learn how to architect large, complex, and native-like PhoneGap apps using HTML, JavaScript, and CSS. We will investigate mobile challenges and find solutions for them as well as learn about Single Page Architecture, HTML templates, performance techniques, frameworks and more. We will also build a full-fledge working app you can take home for reference after the Workshop."
+	    }, {
+	      title: "Building an App with Ionic 2",
+	      speakerSlug: "mikehartington",
+	      description: "You've built Ionic apps before, but now that V2 is out, what can you expect? In this session, we'll look at an Ionic 1 app and go through the process of building its Ionic 2 equivalent."
+	    }, {
+	      title: "PhoneGap plugin development",
+	      speakerSlug: "purplecabbage",
+	      description: "Make plugins for PhoneGap and stuff."
+	    }]
+	  }, {
+	    time: "12:00pm-1:00pm",
+	    title: "Lunch"
+	  }, {
+	    time: "1:00pm-2:00pm",
+	    sessions: [{
+	      title: "Build the Amazon App",
+	      speakerSlug: "",
+	      description: "A workshop on quickly building a hybrid app with feature parity to Amazon's app with a mix of native and web interfaces (Mobify)"
+	    }, {
+	      title: "Cordova Plugins in Action",
+	      speakerSlug: "",
+	      description: ""
+	    }, {
+	      title: "Rangle.io",
+	      speakerSlug: "",
+	      description: ""
+	    }]
+	  }, {
+	    time: "2:00pm-3:30pm",
+	    sessions: [{
+	      title: "App submission",
+	      speakerSlug: "timkim",
+	      description: "Submitting an app."
+	    }, {
+	      title: "PhoneGap push notifications",
+	      speakerSlug: "simonmacdonald",
+	      description: ""
+	    }, {
+	      title: "Embedding PhoneGap natively: The Hybrid Sweet Spot",
+	      speakerSlug: "aniskadri",
+	      description: ""
+	    }]
+	  }, {
+	    time: "3:30pm-3:45pm",
+	    title: "Break"
+	  }, {
+	    time: "3:45pm-4:45pm",
+	    sessions: [{
+	      title: "Redhat",
+	      speakerSlug: "",
+	      description: ""
+	    }, {
+	      title: "Crosswalk",
+	      speakerSlug: "",
+	      description: ""
+	    }, {
+	      title: "Learning IoT Programming",
+	      speakerSlug: "",
+	      description: ""
+	    }]
+	  }, {
+	    time: "4:45pm-6:00pm",
+	    sessions: [{
+	      title: "Visual Studio",
+	      speakerSlug: "ryanjsalva",
+	      description: ""
+	    }, {
+	      title: "REPEAT Hands-on Bluetooth Low Energy",
+	      speakerSlug: "doncoleman",
+	      description: ""
+	    }, {
+	      title: "REPEAT PhoneGap Push Notifications",
+	      speakerSlug: "simonmacdonald",
+	      description: ""
+	    }]
 	  }],
 	  routes: (function (_routes) {
 	    function routes() {
@@ -26958,6 +26916,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return previousValue;
 	    }, ["/"]);
 	  }),
+	  findSessionBySpeakerSlug: function findSessionBySpeakerSlug(slug) {
+	    var sessions = [];
+	    for (var i = 0; i < this.sessions.length; i++) {
+	      if (this.sessions[i].speakerSlug == slug) {
+	        sessions.push(this.sessions[i]);
+	      }
+	    }
+	    return sessions;
+	  },
 	  findSpeakerBySlug: function findSpeakerBySlug(slug) {
 	    for (var i = 0; i < this.speakers.length; i++) {
 	      if (this.speakers[i].slug == slug) {
@@ -26994,16 +26961,16 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var SpeakerPage = (function (_React$Component) {
-	  _inherits(SpeakerPage, _React$Component);
+	var SpeakerItem = (function (_React$Component) {
+	  _inherits(SpeakerItem, _React$Component);
 
-	  function SpeakerPage() {
-	    _classCallCheck(this, SpeakerPage);
+	  function SpeakerItem() {
+	    _classCallCheck(this, SpeakerItem);
 
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(SpeakerPage).apply(this, arguments));
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(SpeakerItem).apply(this, arguments));
 	  }
 
-	  _createClass(SpeakerPage, [{
+	  _createClass(SpeakerItem, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -27036,13 +27003,87 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }]);
 
-	  return SpeakerPage;
+	  return SpeakerItem;
 	})(_react2.default.Component);
 
-	exports.default = SpeakerPage;
+	exports.default = SpeakerItem;
 
 /***/ },
 /* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(200);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SessionListItem = (function (_React$Component) {
+	  _inherits(SessionListItem, _React$Component);
+
+	  function SessionListItem() {
+	    _classCallCheck(this, SessionListItem);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(SessionListItem).apply(this, arguments));
+	  }
+
+	  _createClass(SessionListItem, [{
+	    key: 'render',
+	    value: function render() {
+	      var sessionListItem = undefined;
+	      if (typeof this.props.session.speakerSlug !== 'undefined') {
+	        sessionListItem = _react2.default.createElement(
+	          'div',
+	          null,
+	          this.props.session.time,
+	          ':',
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: "/speaker/" + this.props.session.speakerSlug },
+	            ' ',
+	            this.props.session.title
+	          )
+	        );
+	      } else {
+	        sessionListItem = _react2.default.createElement(
+	          'div',
+	          null,
+	          this.props.session.time,
+	          ': ',
+	          this.props.session.title
+	        );
+	      }
+	      return _react2.default.createElement(
+	        'li',
+	        null,
+	        sessionListItem
+	      );
+	    }
+	  }]);
+
+	  return SessionListItem;
+	})(_react2.default.Component);
+
+	exports.default = SessionListItem;
+
+/***/ },
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27062,6 +27103,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _data2 = _interopRequireDefault(_data);
 
 	var _reactRouter = __webpack_require__(200);
+
+	var _sessionItem = __webpack_require__(237);
+
+	var _sessionItem2 = _interopRequireDefault(_sessionItem);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27084,6 +27129,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'render',
 	    value: function render() {
 	      var speaker = _data2.default.findSpeakerBySlug(this.props.params.slug);
+	      var sessions = _data2.default.findSessionBySpeakerSlug(this.props.params.slug);
+	      var sessionSection = undefined;
+	      if (sessions.length > 0) {
+	        sessionSection = _react2.default.createElement(
+	          'div',
+	          { className: 'sessions' },
+	          _react2.default.createElement(
+	            'h2',
+	            { className: 'sessions--heading' },
+	            'Session'
+	          ),
+	          sessions.map(function (session) {
+	            return _react2.default.createElement(_sessionItem2.default, { key: session.time, session: session });
+	          })
+	        );
+	      }
 	      var twitter = undefined;
 	      if (speaker.twitter) {
 	        twitter = _react2.default.createElement(
@@ -27137,7 +27198,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	            { className: 'speaker--bio' },
 	            speaker.bio
 	          ),
-	          twitter
+	          twitter,
+	          sessionSection
 	        )
 	      );
 	    }
@@ -27149,10 +27211,75 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = SpeakerPage;
 
 /***/ },
-/* 236 */
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(200);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var SessionItem = (function (_React$Component) {
+	  _inherits(SessionItem, _React$Component);
+
+	  function SessionItem() {
+	    _classCallCheck(this, SessionItem);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(SessionItem).apply(this, arguments));
+	  }
+
+	  _createClass(SessionItem, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'session' },
+	        _react2.default.createElement(
+	          'h3',
+	          { className: 'session--title' },
+	          this.props.session.title
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'session--time' },
+	          this.props.session.time
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'session--description' },
+	          this.props.session.description
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SessionItem;
+	})(_react2.default.Component);
+
+	exports.default = SessionItem;
+
+/***/ },
+/* 238 */
 /***/ function(module, exports) {
 
-	module.exports = "html,\nbody,\ndiv,\nspan,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\nabbr,\naddress,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\nsamp,\nsmall,\nstrong,\nsub,\nsup,\nvar,\nb,\ni,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\nbody {\n  line-height: 1;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection {\n  display: block;\n}\nnav ul {\n  list-style: none;\n}\nblockquote,\nq {\n  quotes: none;\n}\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: '';\n  content: none;\n}\na {\n  margin: 0;\n  padding: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\nins {\n  background-color: #ff9;\n  color: #000;\n  text-decoration: none;\n}\nmark {\n  background-color: #ff9;\n  color: #000;\n  font-style: italic;\n  font-weight: bold;\n}\ndel {\n  text-decoration: line-through;\n}\nabbr[title],\ndfn[title] {\n  border-bottom: 1px dotted;\n  cursor: help;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #ccc;\n  margin: 1em 0;\n  padding: 0;\n}\ninput,\nselect {\n  vertical-align: middle;\n}\n@font-face {\n  font-family: 'league_spartan';\n  src: url(\"/fonts/leaguespartan-bold-webfont.eot\");\n  src: url(\"/fonts/leaguespartan-bold-webfont.eot?#iefix\") format('embedded-opentype'), url(\"/fonts/leaguespartan-bold-webfont.woff2\") format('woff2'), url(\"/fonts/leaguespartan-bold-webfont.woff\") format('woff'), url(\"/fonts/leaguespartan-bold-webfont.ttf\") format('truetype'), url(\"/fonts/leaguespartan-bold-webfont.svg#league_spartanregular\") format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n:root {\n  font-size: 16px;\n}\nbody {\n  font-family: 'adobe-clean', Helvetica, Arial, sans-serif;\n  color: #033351;\n  line-height: 1.75rem;\n  -webkit-font-smoothing: antialiased;\n}\n.bounds,\n.text-bounds,\n.header-bounds {\n  max-width: 1280px;\n  position: relative;\n  margin: 0 auto;\n}\n.text-bounds {\n  max-width: 900px;\n  box-sizing: border-box;\n  padding-left: 10px;\n  padding-right: 10px;\n}\na {\n  color: #27a1c5;\n  text-decoration: none;\n}\na:hover {\n  text-decoration: underline;\n}\n.main-header {\n  background: #27a1c5;\n}\n.header-title {\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-image: url(\"../img/buildbot-line.svg\");\n  position: relative;\n  background-color: #1793b3;\n  padding-top: 50px;\n  padding-bottom: 40px;\n  text-align: center;\n}\n.header-title .bounds {\n  display: inline-block;\n  width: auto;\n}\n.header-title h1 {\n  font-family: league_spartan;\n  font-size: 2rem;\n  line-height: 2rem;\n}\n.header-title .subhead {\n  font-family: league_spartan;\n  font-size: 1rem;\n  line-height: 3rem;\n  position: relative;\n}\n.header-title .description {\n  font-size: 1.2rem;\n  margin: 20px 0 40px;\n  max-width: 330px;\n}\n.header-title .button--cta {\n  position: relative;\n  margin: 0 auto;\n  font-size: 1.2rem;\n  text-transform: none;\n  font-weight: bold;\n}\n.header-title .pricing {\n  margin: 60px auto 40px;\n  max-width: 280px;\n}\n.header-title .pricing h2 {\n  padding-bottom: 8px;\n  border-bottom: 1px solid #fff;\n  font-size: 1.2rem;\n  font-weight: 900;\n  margin-bottom: 10px;\n}\n.header-title .pricing li {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  font-size: 1rem;\n}\n.header-title .pricing li span {\n  -webkit-flex-shrink: 0;\n      -ms-flex-negative: 0;\n          flex-shrink: 0;\n}\n.header-title .pricing .leader {\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  border-bottom: 2px dotted;\n  margin: 0 8px;\n  position: relative;\n  top: -8px;\n}\n.main-content,\n.speaker-page-content {\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-image: url(\"../img/buildbot-line-dark.svg\");\n  background-color: #fff;\n}\n.header-bounds {\n  width: 100%;\n  height: 330px;\n  overflow: hidden;\n}\n.logo {\n  position: absolute;\n  width: 120px;\n  height: 53px;\n  overflow: hidden;\n  right: 63px;\n  top: 235px;\n}\n.adobe-logo {\n  width: 52px;\n  position: absolute;\n  top: 0;\n  right: 20px;\n  z-index: 2;\n}\n.header-title {\n  color: #fff;\n  background: #1793b3;\n  padding: 20px;\n}\n.ipad-air2 {\n  width: 348px;\n  height: 512px;\n  position: absolute;\n  display: none;\n}\n.ipad-air2 .content-mask {\n  width: 298px;\n  height: 398px;\n  left: 28px;\n  top: 54px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.galaxy-s6 {\n  width: 368px;\n  height: 190px;\n  position: absolute;\n  left: 5px;\n  top: 5px;\n  -webkit-transform-origin: 0 0;\n          transform-origin: 0 0;\n  -webkit-transform: scale3d(0.842391304, 0.842391304, 1);\n          transform: scale3d(0.842391304, 0.842391304, 1);\n}\n.galaxy-s6 .content-mask {\n  width: 278px;\n  height: 154px;\n  left: 48px;\n  top: 14px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.galaxy-s6:after {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  content: url(\"../img/galaxy-s6-shine.svg\");\n}\n.iphone-6 {\n  width: 352px;\n  height: 178px;\n  position: absolute;\n  left: 3px;\n  top: 157px;\n  -webkit-transform-origin: 0 0;\n          transform-origin: 0 0;\n  -webkit-transform: scale3d(0.842391304, 0.842391304, 1);\n          transform: scale3d(0.842391304, 0.842391304, 1);\n}\n.iphone-6 .content-mask {\n  width: 258px;\n  height: 144px;\n  left: 50px;\n  top: 14px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-position: center -70px;\n}\n.nexus-9 {\n  width: 570px;\n  height: 386px;\n  position: absolute;\n  display: none;\n}\n.nexus-9 .content-mask {\n  width: 446px;\n  height: 334px;\n  left: 66px;\n  top: 22px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.fire-hdx {\n  width: 580px;\n  height: 398px;\n  position: absolute;\n  display: none;\n}\n.fire-hdx .content-mask {\n  width: 478px;\n  height: 298px;\n  left: 54px;\n  top: 48px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.lumia-640xl {\n  width: 216px;\n  height: 400px;\n  position: absolute;\n  display: none;\n}\n.lumia-640xl .content-mask {\n  width: 166px;\n  height: 312px;\n  left: 26px;\n  top: 40px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.one-m9 {\n  width: 372px;\n  height: 188px;\n  position: absolute;\n  display: none;\n}\n.one-m9 .content-mask {\n  width: 276px;\n  height: 156px;\n  left: 46px;\n  top: 12px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n@media only screen and (min-width: 360px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -50px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -50px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    right: 53px;\n    top: 288px;\n  }\n  .header-bounds {\n    max-width: 380px;\n    width: 100%;\n    height: 380px;\n  }\n  .galaxy-s6 {\n    -webkit-transform: none;\n            transform: none;\n    left: 0px;\n  }\n  .galaxy-s6 .content-mask {\n    background-position: center -50px;\n    background-size: 450px;\n  }\n  .iphone-6 {\n    top: 186px;\n    left: 24px;\n    -webkit-transform: none;\n            transform: none;\n  }\n  .iphone-6 .content-mask {\n    background-position: center -50px;\n    background-size: 450px;\n  }\n}\n@media only screen and (min-width: 600px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 70px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n    padding-top: 50px;\n    padding-bottom: 40px;\n  }\n  .header-title h1 {\n    font-size: 4rem;\n    line-height: 4rem;\n  }\n  .header-title .subhead {\n    font-size: 1.3rem;\n    line-height: 1.5rem;\n    left: -72px;\n  }\n  .header-title .description {\n    font-size: 1.5rem;\n    margin: 20px auto 20px;\n    max-width: 400px;\n  }\n  .header-title .button--cta {\n    position: relative;\n    margin: 0 auto;\n    font-size: 1.2rem;\n  }\n  .header-title .pricing {\n    max-width: 335px;\n  }\n  .header-title .pricing h2 {\n    font-size: 1.5rem;\n  }\n  .header-title .pricing li {\n    font-size: 1.25rem;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 70px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    width: 230px;\n    height: auto;\n    right: 52px;\n    top: 337px;\n  }\n  .header-bounds {\n    max-width: 600px;\n    width: 100%;\n    height: 532px;\n  }\n  .galaxy-s6 {\n    display: none;\n  }\n  .iphone-6 {\n    display: none;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 230px;\n    top: 10px;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 70px;\n    background-size: 450px;\n  }\n  .lumia-640xl {\n    display: block;\n    left: 20px;\n    top: 70px;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center 70px;\n    background-size: 450px;\n  }\n}\n@media only screen and (min-width: 800px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -100px;\n    background-size: 680px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -100px;\n    background-size: 680px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    width: 300px;\n    right: 58px;\n    top: 249px;\n  }\n  .header-bounds {\n    max-width: 800px;\n    width: 100%;\n    height: 440px;\n  }\n  .ipad-air2 {\n    display: none;\n  }\n  .fire-hdx {\n    display: block;\n    top: 30px;\n    left: 218px;\n  }\n  .fire-hdx .content-mask {\n    background-position: center -100px;\n    background-size: 680px;\n  }\n  .lumia-640xl {\n    top: 8px;\n    left: 1px;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center -100px;\n    background-size: 680px;\n  }\n}\n@media only screen and (min-width: 1030px) {\n  .header-title {\n    background-position: center 100px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n    padding-top: 150px;\n    padding-bottom: 120px;\n  }\n  .header-title h1 {\n    font-size: 6rem;\n    line-height: 5rem;\n  }\n  .header-title .subhead {\n    left: -68px;\n    font-size: 1.5rem;\n    line-height: 2.5rem;\n  }\n  .header-title .description {\n    position: relative;\n    margin: 20px auto 40px;\n    max-width: 400px;\n    font-size: 1.5rem;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 100px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .pricing {\n    margin: 100px auto 40px;\n  }\n  .logo {\n    width: 360px;\n    right: 136px;\n    top: 65px;\n  }\n  .header-bounds {\n    max-width: 1030px;\n    width: 100%;\n    height: 840px;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 20px;\n    top: 80px;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .fire-hdx {\n    display: block;\n    left: 375px;\n    top: 10px;\n  }\n  .fire-hdx .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .nexus-9 {\n    display: block;\n    left: 380px;\n    top: 420px;\n  }\n  .nexus-9 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .one-m9 {\n    display: block;\n    top: 600px;\n    left: 0;\n  }\n  .one-m9 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .lumia-640xl {\n    display: none;\n  }\n}\n@media only screen and (min-width: 1280px) {\n  .header-title {\n    background-position: center 300px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    background-color: #1793b3;\n    text-align: center;\n    padding-top: 150px;\n    padding-bottom: 150px;\n    position: relative;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 300px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .header-bounds {\n    max-width: 1280px;\n    height: 1698px;\n  }\n  .logo {\n    width: 1280px;\n    margin: 0 auto;\n    position: absolute;\n    top: 0;\n    right: auto;\n    padding: 20px 20px 0;\n    box-sizing: border-box;\n    z-index: 1;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 56px;\n    top: 854px;\n    z-index: 2;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .galaxy-s6 {\n    display: block;\n    left: 325px;\n    top: 648px;\n    z-index: 2;\n  }\n  .galaxy-s6 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .iphone-6 {\n    display: block;\n    left: 726px;\n    top: 703px;\n    z-index: 2;\n  }\n  .iphone-6 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .nexus-9 {\n    display: block;\n    left: 458px;\n    top: 886px;\n    z-index: 2;\n  }\n  .nexus-9 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .fire-hdx {\n    display: block;\n    left: 420px;\n    top: 1283px;\n    z-index: 2;\n  }\n  .fire-hdx .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .lumia-640xl {\n    display: block;\n    left: 1038px;\n    top: 988px;\n    z-index: 2;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .one-m9 {\n    display: block;\n    left: 15px;\n    top: 1398px;\n    z-index: 2;\n  }\n  .one-m9 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n}\n.button--cta {\n  border-radius: 4px;\n  background: #f4b504;\n  color: #fff;\n  text-transform: uppercase;\n  border: none;\n  font-size: 1.0625rem;\n  font-weight: normal;\n  padding: 8px 27px 10px;\n  text-decoration: none;\n  display: inline-block;\n}\n.button--cta:hover {\n  text-decoration: none;\n  background: #f2a700;\n}\n.main-content,\n.speaker-page-content {\n  width: 100%;\n}\n.main-content section,\n.speaker-page-content section {\n  margin-bottom: 40px;\n}\n.main-content h1,\n.speaker-page-content h1 {\n  font-family: league_spartan;\n  font-size: 2rem;\n  text-transform: uppercase;\n  max-width: 350px;\n  line-height: 3.5rem;\n  margin-bottom: 30px;\n}\n.main-content .sub,\n.speaker-page-content .sub {\n  font-size: 1.25rem;\n  max-width: 420px;\n  font-weight: bold;\n}\n.main-content p,\n.speaker-page-content p {\n  margin: 0 0 20px;\n  max-width: 420px;\n}\n.main-content ul,\n.speaker-page-content ul {\n  margin: 0 0 20px 1.1rem;\n}\n.about h1 {\n  -webkit-column-span: all;\n  -moz-column-span: all;\n       column-span: all;\n}\n.about .text-bounds {\n  max-width: 920px;\n  padding-top: 120px;\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  max-width: 440px;\n}\n.about p {\n  max-width: 430px;\n  vertical-align: top;\n  font-size: 1rem;\n  line-height: 1.8rem;\n}\n.about-details {\n  background: #033351;\n  color: #fff;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 60px 30px;\n  overflow: hidden;\n}\n.about-details img {\n  width: 100%;\n  height: auto;\n}\n.about-details p {\n  max-width: 420px;\n}\n.about-heading {\n  max-width: 420px;\n  font-size: 2rem;\n  line-height: 2.7rem;\n  font-family: league_spartan;\n  text-transform: uppercase;\n}\n.about--skiing,\n.about--sessions,\n.about--networking {\n  position: relative;\n  margin: 0 auto;\n  max-width: 420px;\n  margin-bottom: 50px;\n}\n.about--skiing:last-child,\n.about--sessions:last-child,\n.about--networking:last-child {\n  margin-bottom: 0;\n}\n.audience-image {\n  display: none;\n}\n.speaker-section .text-bounds {\n  max-width: 900px;\n}\n.speaker-section .speaker-list {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.speaker--photo {\n  border-radius: 125px;\n  width: 125px;\n  height: 125px;\n}\n.speaker {\n  box-sizing: border-box;\n  text-align: center;\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n  padding: 0 20px;\n  max-width: 350px;\n  position: relative;\n  margin: 0 auto;\n  text-align: center;\n}\n.speaker::after {\n  content: ' ';\n  height: 50px;\n  display: block;\n}\n.speaker--bio {\n  text-align: left;\n}\n.speaker--name {\n  font-size: 1.5rem;\n  margin-bottom: 0;\n  text-align: center;\n}\n.speaker--title {\n  font-size: 1rem;\n  font-weight: 200;\n  font-style: italic;\n}\n.speaker--title a {\n  color: #033351;\n}\n.schedule-section h1 {\n  -webkit-column-span: all;\n  -moz-column-span: all;\n       column-span: all;\n}\n.schedule-section .text-bounds {\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.schedule-section li {\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n}\n.full {\n  width: 100%;\n  height: auto;\n  display: block;\n}\n.map {\n  width: 100%;\n  height: 300px;\n  background: url(\"/img/map.png\") center;\n  background-size: cover;\n  display: block;\n}\n.columns .text-bounds {\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.columns section {\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n}\n.speaker-page-content {\n  height: 100%;\n}\n.speaker-page--header {\n  height: 120px;\n  background: #1793b3;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 15px 0;\n  text-align: center;\n}\n.speaker-page--header img {\n  height: 100%;\n}\n.speaker-page--header img:last-child {\n  opacity: 0.9;\n  margin-left: 20px;\n}\n@media only screen and (min-width: 400px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n}\n@media only screen and (min-width: 550px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n  .speaker {\n    padding: 0;\n  }\n  .main-content h1 {\n    font-size: 3rem;\n  }\n  .speaker--photo {\n    width: 250px;\n    height: 250px;\n  }\n}\n@media only screen and (min-width: 950px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 3;\n       -moz-column-count: 3;\n            column-count: 3;\n  }\n  .about .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n    max-width: 920px;\n  }\n  .about-details img {\n    margin-bottom: 30px;\n  }\n  .about-details .text-bounds {\n    max-width: 920px;\n  }\n  .about-details .text-bounds > div {\n    max-width: 100%;\n  }\n  .about-heading {\n    font-size: 2.25rem;\n  }\n  .about--sessions {\n    left: -50px;\n  }\n  .about--sessions .about-heading {\n    position: absolute;\n    left: 348px;\n    top: -5px;\n  }\n  .about--sessions p {\n    position: absolute;\n    left: 348px;\n    top: 110px;\n  }\n  .about--sessions img {\n    width: 470px;\n  }\n  .about--networking {\n    left: -30px;\n  }\n  .about--networking img {\n    width: 450px;\n  }\n  .about--skiing {\n    position: absolute;\n    top: 270px;\n    left: 490px;\n  }\n  .about--skiing img {\n    width: 460px;\n  }\n  .about--skiing .audience-image {\n    display: block;\n    width: 450px;\n  }\n  .schedule-section .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n  .columns .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n}\n"
+	module.exports = "html,\nbody,\ndiv,\nspan,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\nabbr,\naddress,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\nsamp,\nsmall,\nstrong,\nsub,\nsup,\nvar,\nb,\ni,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\nbody {\n  line-height: 1;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection {\n  display: block;\n}\nnav ul {\n  list-style: none;\n}\nblockquote,\nq {\n  quotes: none;\n}\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: '';\n  content: none;\n}\na {\n  margin: 0;\n  padding: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\nins {\n  background-color: #ff9;\n  color: #000;\n  text-decoration: none;\n}\nmark {\n  background-color: #ff9;\n  color: #000;\n  font-style: italic;\n  font-weight: bold;\n}\ndel {\n  text-decoration: line-through;\n}\nabbr[title],\ndfn[title] {\n  border-bottom: 1px dotted;\n  cursor: help;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #ccc;\n  margin: 1em 0;\n  padding: 0;\n}\ninput,\nselect {\n  vertical-align: middle;\n}\n@font-face {\n  font-family: 'league_spartan';\n  src: url(\"/fonts/leaguespartan-bold-webfont.eot\");\n  src: url(\"/fonts/leaguespartan-bold-webfont.eot?#iefix\") format('embedded-opentype'), url(\"/fonts/leaguespartan-bold-webfont.woff2\") format('woff2'), url(\"/fonts/leaguespartan-bold-webfont.woff\") format('woff'), url(\"/fonts/leaguespartan-bold-webfont.ttf\") format('truetype'), url(\"/fonts/leaguespartan-bold-webfont.svg#league_spartanregular\") format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n:root {\n  font-size: 16px;\n}\nbody {\n  font-family: 'adobe-clean', Helvetica, Arial, sans-serif;\n  color: #033351;\n  line-height: 1.75rem;\n  -webkit-font-smoothing: antialiased;\n}\n.bounds,\n.text-bounds,\n.header-bounds {\n  max-width: 1280px;\n  position: relative;\n  margin: 0 auto;\n}\n.text-bounds {\n  max-width: 900px;\n  box-sizing: border-box;\n  padding-left: 10px;\n  padding-right: 10px;\n}\na {\n  color: #27a1c5;\n  text-decoration: none;\n}\na:hover {\n  text-decoration: underline;\n}\n.main-header {\n  background: #27a1c5;\n}\n.header-title {\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-image: url(\"../img/buildbot-line.svg\");\n  position: relative;\n  background-color: #1793b3;\n  padding-top: 50px;\n  padding-bottom: 40px;\n  text-align: center;\n}\n.header-title .bounds {\n  display: inline-block;\n  width: auto;\n}\n.header-title h1 {\n  font-family: league_spartan;\n  font-size: 2rem;\n  line-height: 2rem;\n}\n.header-title .subhead {\n  font-family: league_spartan;\n  font-size: 1rem;\n  line-height: 3rem;\n  position: relative;\n}\n.header-title .description {\n  font-size: 1.2rem;\n  margin: 20px 0 40px;\n  max-width: 330px;\n}\n.header-title .button--cta {\n  position: relative;\n  margin: 0 auto;\n  font-size: 1.2rem;\n  text-transform: none;\n  font-weight: bold;\n}\n.header-title .pricing {\n  margin: 60px auto 40px;\n  max-width: 280px;\n}\n.header-title .pricing h2 {\n  padding-bottom: 8px;\n  border-bottom: 1px solid #fff;\n  font-size: 1.2rem;\n  font-weight: 900;\n  margin-bottom: 10px;\n}\n.header-title .pricing li {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  font-size: 1rem;\n}\n.header-title .pricing li span {\n  -webkit-flex-shrink: 0;\n      -ms-flex-negative: 0;\n          flex-shrink: 0;\n}\n.header-title .pricing .leader {\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  border-bottom: 2px dotted;\n  margin: 0 8px;\n  position: relative;\n  top: -8px;\n}\n.main-content,\n.speaker-page-content {\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-image: url(\"../img/buildbot-line-dark.svg\");\n  background-color: #fff;\n}\n.header-bounds {\n  width: 100%;\n  height: 330px;\n  overflow: hidden;\n}\n.logo {\n  position: absolute;\n  width: 120px;\n  height: 53px;\n  overflow: hidden;\n  right: 63px;\n  top: 235px;\n}\n.adobe-logo {\n  width: 52px;\n  position: absolute;\n  top: 0;\n  right: 20px;\n  z-index: 2;\n}\n.header-title {\n  color: #fff;\n  background: #1793b3;\n  padding: 20px;\n}\n.ipad-air2 {\n  width: 348px;\n  height: 512px;\n  position: absolute;\n  display: none;\n}\n.ipad-air2 .content-mask {\n  width: 298px;\n  height: 398px;\n  left: 28px;\n  top: 54px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.galaxy-s6 {\n  width: 368px;\n  height: 190px;\n  position: absolute;\n  left: 5px;\n  top: 5px;\n  -webkit-transform-origin: 0 0;\n          transform-origin: 0 0;\n  -webkit-transform: scale3d(0.842391304, 0.842391304, 1);\n          transform: scale3d(0.842391304, 0.842391304, 1);\n}\n.galaxy-s6 .content-mask {\n  width: 278px;\n  height: 154px;\n  left: 48px;\n  top: 14px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.galaxy-s6:after {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  content: url(\"../img/galaxy-s6-shine.svg\");\n}\n.iphone-6 {\n  width: 352px;\n  height: 178px;\n  position: absolute;\n  left: 3px;\n  top: 157px;\n  -webkit-transform-origin: 0 0;\n          transform-origin: 0 0;\n  -webkit-transform: scale3d(0.842391304, 0.842391304, 1);\n          transform: scale3d(0.842391304, 0.842391304, 1);\n}\n.iphone-6 .content-mask {\n  width: 258px;\n  height: 144px;\n  left: 50px;\n  top: 14px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-position: center -70px;\n}\n.nexus-9 {\n  width: 570px;\n  height: 386px;\n  position: absolute;\n  display: none;\n}\n.nexus-9 .content-mask {\n  width: 446px;\n  height: 334px;\n  left: 66px;\n  top: 22px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.fire-hdx {\n  width: 580px;\n  height: 398px;\n  position: absolute;\n  display: none;\n}\n.fire-hdx .content-mask {\n  width: 478px;\n  height: 298px;\n  left: 54px;\n  top: 48px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.lumia-640xl {\n  width: 216px;\n  height: 400px;\n  position: absolute;\n  display: none;\n}\n.lumia-640xl .content-mask {\n  width: 166px;\n  height: 312px;\n  left: 26px;\n  top: 40px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.one-m9 {\n  width: 372px;\n  height: 188px;\n  position: absolute;\n  display: none;\n}\n.one-m9 .content-mask {\n  width: 276px;\n  height: 156px;\n  left: 46px;\n  top: 12px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n@media only screen and (min-width: 360px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -50px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -50px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    right: 53px;\n    top: 288px;\n  }\n  .header-bounds {\n    max-width: 380px;\n    width: 100%;\n    height: 380px;\n  }\n  .galaxy-s6 {\n    -webkit-transform: none;\n            transform: none;\n    left: 0px;\n  }\n  .galaxy-s6 .content-mask {\n    background-position: center -50px;\n    background-size: 450px;\n  }\n  .iphone-6 {\n    top: 186px;\n    left: 24px;\n    -webkit-transform: none;\n            transform: none;\n  }\n  .iphone-6 .content-mask {\n    background-position: center -50px;\n    background-size: 450px;\n  }\n}\n@media only screen and (min-width: 600px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 70px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n    padding-top: 50px;\n    padding-bottom: 40px;\n  }\n  .header-title h1 {\n    font-size: 4rem;\n    line-height: 4rem;\n  }\n  .header-title .subhead {\n    font-size: 1.3rem;\n    line-height: 1.5rem;\n    left: -72px;\n  }\n  .header-title .description {\n    font-size: 1.5rem;\n    margin: 20px auto 20px;\n    max-width: 400px;\n  }\n  .header-title .button--cta {\n    position: relative;\n    margin: 0 auto;\n    font-size: 1.2rem;\n  }\n  .header-title .pricing {\n    max-width: 335px;\n  }\n  .header-title .pricing h2 {\n    font-size: 1.5rem;\n  }\n  .header-title .pricing li {\n    font-size: 1.25rem;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 70px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    width: 230px;\n    height: auto;\n    right: 52px;\n    top: 337px;\n  }\n  .header-bounds {\n    max-width: 600px;\n    width: 100%;\n    height: 532px;\n  }\n  .galaxy-s6 {\n    display: none;\n  }\n  .iphone-6 {\n    display: none;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 230px;\n    top: 10px;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 70px;\n    background-size: 450px;\n  }\n  .lumia-640xl {\n    display: block;\n    left: 20px;\n    top: 70px;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center 70px;\n    background-size: 450px;\n  }\n}\n@media only screen and (min-width: 800px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -100px;\n    background-size: 680px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -100px;\n    background-size: 680px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    width: 300px;\n    right: 58px;\n    top: 249px;\n  }\n  .header-bounds {\n    max-width: 800px;\n    width: 100%;\n    height: 440px;\n  }\n  .ipad-air2 {\n    display: none;\n  }\n  .fire-hdx {\n    display: block;\n    top: 30px;\n    left: 218px;\n  }\n  .fire-hdx .content-mask {\n    background-position: center -100px;\n    background-size: 680px;\n  }\n  .lumia-640xl {\n    top: 8px;\n    left: 1px;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center -100px;\n    background-size: 680px;\n  }\n}\n@media only screen and (min-width: 1030px) {\n  .header-title {\n    background-position: center 100px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n    padding-top: 150px;\n    padding-bottom: 120px;\n  }\n  .header-title h1 {\n    font-size: 6rem;\n    line-height: 5rem;\n  }\n  .header-title .subhead {\n    left: -68px;\n    font-size: 1.5rem;\n    line-height: 2.5rem;\n  }\n  .header-title .description {\n    position: relative;\n    margin: 20px auto 40px;\n    max-width: 400px;\n    font-size: 1.5rem;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 100px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .pricing {\n    margin: 100px auto 40px;\n  }\n  .logo {\n    width: 360px;\n    right: 136px;\n    top: 65px;\n  }\n  .header-bounds {\n    max-width: 1030px;\n    width: 100%;\n    height: 840px;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 20px;\n    top: 80px;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .fire-hdx {\n    display: block;\n    left: 375px;\n    top: 10px;\n  }\n  .fire-hdx .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .nexus-9 {\n    display: block;\n    left: 380px;\n    top: 420px;\n  }\n  .nexus-9 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .one-m9 {\n    display: block;\n    top: 600px;\n    left: 0;\n  }\n  .one-m9 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .lumia-640xl {\n    display: none;\n  }\n}\n@media only screen and (min-width: 1280px) {\n  .header-title {\n    background-position: center 300px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    background-color: #1793b3;\n    text-align: center;\n    padding-top: 150px;\n    padding-bottom: 150px;\n    position: relative;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 300px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .header-bounds {\n    max-width: 1280px;\n    height: 1698px;\n  }\n  .logo {\n    width: 1280px;\n    margin: 0 auto;\n    position: absolute;\n    top: 0;\n    right: auto;\n    padding: 20px 20px 0;\n    box-sizing: border-box;\n    z-index: 1;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 56px;\n    top: 854px;\n    z-index: 2;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .galaxy-s6 {\n    display: block;\n    left: 325px;\n    top: 648px;\n    z-index: 2;\n  }\n  .galaxy-s6 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .iphone-6 {\n    display: block;\n    left: 726px;\n    top: 703px;\n    z-index: 2;\n  }\n  .iphone-6 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .nexus-9 {\n    display: block;\n    left: 458px;\n    top: 886px;\n    z-index: 2;\n  }\n  .nexus-9 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .fire-hdx {\n    display: block;\n    left: 420px;\n    top: 1283px;\n    z-index: 2;\n  }\n  .fire-hdx .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .lumia-640xl {\n    display: block;\n    left: 1038px;\n    top: 988px;\n    z-index: 2;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .one-m9 {\n    display: block;\n    left: 15px;\n    top: 1398px;\n    z-index: 2;\n  }\n  .one-m9 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n}\n.button--cta {\n  border-radius: 4px;\n  background: #f4b504;\n  color: #fff;\n  text-transform: uppercase;\n  border: none;\n  font-size: 1.0625rem;\n  font-weight: normal;\n  padding: 8px 27px 10px;\n  text-decoration: none;\n  display: inline-block;\n}\n.button--cta:hover {\n  text-decoration: none;\n  background: #f2a700;\n}\n.main-content,\n.speaker-page-content {\n  width: 100%;\n}\n.main-content section,\n.speaker-page-content section {\n  margin-bottom: 40px;\n}\n.main-content h1,\n.speaker-page-content h1 {\n  font-family: league_spartan;\n  font-size: 2rem;\n  text-transform: uppercase;\n  max-width: 350px;\n  line-height: 3.5rem;\n  margin-bottom: 30px;\n}\n.main-content .sub,\n.speaker-page-content .sub {\n  font-size: 1.25rem;\n  max-width: 420px;\n  font-weight: bold;\n}\n.main-content p,\n.speaker-page-content p {\n  margin: 0 0 20px;\n  max-width: 420px;\n}\n.main-content ul,\n.speaker-page-content ul {\n  margin: 0 0 20px 1.1rem;\n}\n.about h1 {\n  -webkit-column-span: all;\n  -moz-column-span: all;\n       column-span: all;\n}\n.about .text-bounds {\n  max-width: 920px;\n  padding-top: 120px;\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  max-width: 440px;\n}\n.about p {\n  max-width: 430px;\n  vertical-align: top;\n  font-size: 1rem;\n  line-height: 1.8rem;\n}\n.about-details {\n  background: #033351;\n  color: #fff;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 60px 30px;\n  overflow: hidden;\n}\n.about-details img {\n  width: 100%;\n  height: auto;\n}\n.about-details p {\n  max-width: 420px;\n}\n.about-heading {\n  max-width: 420px;\n  font-size: 2rem;\n  line-height: 2.7rem;\n  font-family: league_spartan;\n  text-transform: uppercase;\n}\n.about--skiing,\n.about--sessions,\n.about--networking {\n  position: relative;\n  margin: 0 auto;\n  max-width: 420px;\n  margin-bottom: 50px;\n}\n.about--skiing:last-child,\n.about--sessions:last-child,\n.about--networking:last-child {\n  margin-bottom: 0;\n}\n.audience-image {\n  display: none;\n}\n.speaker-section .text-bounds {\n  max-width: 900px;\n}\n.speaker-section .speaker-list {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.speaker--photo {\n  border-radius: 125px;\n  width: 125px;\n  height: 125px;\n}\n.speaker {\n  box-sizing: border-box;\n  text-align: center;\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n  padding: 0 20px;\n  max-width: 350px;\n  position: relative;\n  margin: 0 auto;\n  text-align: center;\n}\n.speaker::after {\n  content: ' ';\n  height: 50px;\n  display: block;\n}\n.speaker--bio {\n  text-align: left;\n}\n.speaker--name {\n  font-size: 1.5rem;\n  margin-bottom: 0;\n  text-align: center;\n}\n.speaker--title {\n  font-size: 1rem;\n  font-weight: 200;\n  font-style: italic;\n}\n.speaker--title a {\n  color: #033351;\n}\n.schedule-section h1 {\n  -webkit-column-span: all;\n  -moz-column-span: all;\n       column-span: all;\n}\n.schedule-section .text-bounds {\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.schedule-section li {\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n}\n.full {\n  width: 100%;\n  height: auto;\n  display: block;\n}\n.map {\n  width: 100%;\n  height: 300px;\n  background: url(\"/img/map.png\") center;\n  background-size: cover;\n  display: block;\n}\n.columns .text-bounds {\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.columns section {\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n}\n.speaker-page-content {\n  height: 100%;\n}\n.speaker-page-content h1 {\n  line-height: 2.5rem;\n}\n.speaker-page-content .sessions--heading {\n  font-size: 2rem;\n  margin-bottom: 10px;\n}\n.speaker-page-content .session--title {\n  font-size: 1.2rem;\n  line-height: 1.2rem;\n  margin-bottom: 10px;\n}\n.speaker-page-content .sessions {\n  margin-top: 30px;\n}\n.speaker-page-content .session--description {\n  text-align: left;\n}\n.speaker-page--header {\n  height: 120px;\n  background: #1793b3;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 15px 0;\n  text-align: center;\n}\n.speaker-page--header img {\n  height: 100%;\n}\n.speaker-page--header img:last-child {\n  opacity: 0.9;\n  margin-left: 20px;\n}\n@media only screen and (min-width: 400px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n}\n@media only screen and (min-width: 550px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n  .speaker {\n    padding: 0;\n  }\n  .main-content h1 {\n    font-size: 3rem;\n  }\n  .speaker--photo {\n    width: 250px;\n    height: 250px;\n  }\n}\n@media only screen and (min-width: 950px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 3;\n       -moz-column-count: 3;\n            column-count: 3;\n  }\n  .about .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n    max-width: 920px;\n  }\n  .about-details img {\n    margin-bottom: 30px;\n  }\n  .about-details .text-bounds {\n    max-width: 920px;\n  }\n  .about-details .text-bounds > div {\n    max-width: 100%;\n  }\n  .about-heading {\n    font-size: 2.25rem;\n  }\n  .about--sessions {\n    left: -50px;\n  }\n  .about--sessions .about-heading {\n    position: absolute;\n    left: 348px;\n    top: -5px;\n  }\n  .about--sessions p {\n    position: absolute;\n    left: 348px;\n    top: 110px;\n  }\n  .about--sessions img {\n    width: 470px;\n  }\n  .about--networking {\n    left: -30px;\n  }\n  .about--networking img {\n    width: 450px;\n  }\n  .about--skiing {\n    position: absolute;\n    top: 270px;\n    left: 490px;\n  }\n  .about--skiing img {\n    width: 460px;\n  }\n  .about--skiing .audience-image {\n    display: block;\n    width: 450px;\n  }\n  .schedule-section .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n  .columns .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n}\n"
 
 /***/ }
 /******/ ])
