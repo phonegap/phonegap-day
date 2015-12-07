@@ -1,8 +1,9 @@
 import React from 'react'
-import { speakers } from '../../data'
+import { speakers, sessions } from '../../data'
 import { Link } from 'react-router'
 
 import SpeakerItem from './speaker-item.jsx'
+import SessionListItem from './session-list-item.jsx'
 
 //{speakers.map(speaker =>
 //<li><Link key={speaker.id} to={"/speaker/"+speaker.slug}>{speaker.name}</Link></li>
@@ -100,85 +101,9 @@ export default class Index extends React.Component {
             <div className="text-bounds">
               <h1>Schedule</h1>
               <ul>
-                <li>
-                  <h2>8:30am-9:00am - Registration and breakfast</h2>
-                </li>
-                <li>
-                  <h2>9:00am-9:15am – Michael Brooks “PhoneGap kick off”</h2>
-                </li>
-                <li>
-                  <h2>9:15am-9:55am – Eric Alli “Mind the Gap: Supercharge your PhoneGap workflow”</h2>
-                  <p>Developing a complex and sustainable PhoneGap app can present many challenges. As your app grows, a seamless development workflow is crucial. Can you efficiently deploy and test in different environments? What are your pain points when implementing new functionality? How can you organize all the facets of your app with minimal effort? Mind the gap focuses on some of the ways you can create a development workflow that automates these inefficiencies, boosts scalability and most of all, preserves developer sanity.</p>
-                </li>
-                <li>
-                  <h2>9:55am-10:15am – Martin Poschenrieder “Automated App Testing: A pain or cure?”</h2>
-                  <p>At testmunk we have been working with many popular apps by helping them ship better apps faster. We have automated testing for various Phonegap/Cordova apps (as well as others), allowing for quick detection of layout issues and crashes.</p>
-                  <p>In this talk I'd like to touch on some of the testing challenges developers/QAs come across due to today’s large device and OS fragmentation, and how automated testing can ease some of these issues. I will also show some examples of how developers can quickly set up their own automated tests and run them on a large set of devices</p>
-                </li>
-                <li>
-                  <h2>10:15am-10:35am – Shawn Jansepar and Loki Meyburg (Mobify) “Finding the sweet spot - blending the best of native and web”</h2>
-                  <p>Choose the best technology for the job. Too often projects begin as hybrid apps, but switch to native for performance reasons. But it’s almost never the case that all features of your app need to be fully native. Today, many apps such as Amazon, Basecamp, Yelp and more take a blended approach. We'll guide you through case studies of how we build high performance apps that blend the best of native and web and highlight lessons we've learned along the way.</p>
-                </li>
-                <li>
-                  <h2>10:35am-10:45am – BREAK</h2>
-                </li>
-                <li>
-                  <h2>10:45am-11:05 – Mike Hartington (Ionic) “Ionic: Version 2 and Beyond”</h2>
-                  <p>“Ionic 1.0 has enabled many web developers to become mobile app developers. With the arrival of Angular 2 and its changes, and with ES6 being finalized, development has been improved yet again. How will that impact Ionic?</p>
-                  <p>In this session, we’ll compare Ionic 1 and Ionic 2 and go over what we've learned, what improvements we're making to Ionic, and how easy it will be to develop apps with Ionic 2.”</p>
-                </li>
-                <li>
-                  <h2>11:05am-11:30am – Dean Haddock “Story Corps case study”</h2>
-                </li>
-                <li>
-                  <h2>11:30am-12:10pm – Alex Blom “PhoneGap Applications with Ember: Lessons learned”</h2>
-                  <p>The benefits of hybrid applications are obvious (less code, simpler code, iterate faster). Developers often make quick pace, boot their app and then hit a wall trying to make it 'feel native'.</p>
-                  <p>This talk will discuss lessons learned &amp; optimization techniques from having built many apps with Ember &amp; phonegap. While this talk uses Ember &amp; Ember packages, the tools and techniques discussed generically apply to any Phonegap application.</p>
-                </li>
-                <li>
-                  <h2>12:10am-12:30pm – TBD (Masa Tanaka)</h2>
-                </li>
-                <li>
-                  <h2>12:30pm-1:20pm – LUNCH</h2>
-                </li>
-                <li>
-                  <h2>1:20pm-1:40pm – Ryan J. Salva (Microsoft Visual Studio)</h2>
-                </li>
-                <li>
-                  <h2>1:40pm-2:20pm – Jed Watson</h2>
-                </li>
-                <li>
-                  <h2>2:20pm-2:40pm – Ray Camden “When the heck is 4/8/2016?”</h2>
-                  <p>This talk will cover basic internationalization, globalization issues with Cordova apps. I'll talk about the Globalization plugin (and how to work around the async nature of the plugin), the Intl class, and other options. Also, I'll discuss why you should give a damn as a developer.</p>
-                </li>
-                <li>
-                  <h2>2:40pm-3:00pm – Rangle.io</h2>
-                </li>
-                <li>
-                  <h2>3:00pm-3:30pm – Bruce Lefebvre “PhoneGap Enterprise and Adobe Experience Manager”</h2>
-                </li>
-                <li>
-                  <h2>3:30pm-3:45pm – BREAK</h2>
-                </li>
-                <li>
-                  <h2>3:45pm-4:15pm – Ryan Hanna “Build and Market Your App: Small Team Success”</h2>
-                  <p>This talk will provide the tools and methodologies to help any solo developer or small team build and then market their app to ensure it has the best chance for success. We'll take a transparent look at the early beginnings of Sworkit to where it is now. From a single developer to a team of 10 employees, and from 10 downloads to 10 million. This talk will be a combination of the development and marketing lessons learned and implemented along the way.</p>
-                </li>
-                <li>
-                  <h2>4:15pm-4:55pm – TBD</h2>
-                </li>
-                <li>
-                  <h2>4:55pm-5:15pm – Shazron Abdullah</h2>
-                </li>
-                <li>
-                  <h2>5:15pm 5:35pm – TJ VanToll and Brian Rinaldi (Telerik)</h2>
-                </li>
-                <li>
-                  <h2>5:35pm-6:00pm – Panel</h2>
-                </li>
-                <li>
-                  <h2>6:00pm-8:00pm – Pub mixer and networking</h2>
-                </li>
+                {sessions.map((session, index) =>
+                  <SessionListItem key={"session-" + index} session={session}/>
+                )}
               </ul>
             </div>
           </section>

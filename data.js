@@ -193,6 +193,14 @@ module.exports = {
       title: "CEO, Asial Corporation",
       bio: "Masa is the CEO of Asial Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter."
     },{
+      id: 26,
+      avatar: "/img/bio/tommywilliams.jpg",
+      twitter: "therealdevgeeks",
+      slug: "tommywilliams",
+      name: "Tommy Williams",
+      title: "Sr Computer Scientist, Adobe",
+      bio: "Apache Cordova committer and developer advocate, creator of Encryptr, and Sr Computer Scientist on the PhoneGap team at Adobe."
+    },{
       id: 18,
       avatar: "/img/bio/tjvantoll.jpg",
       twitter: "tjvantoll",
@@ -202,11 +210,279 @@ module.exports = {
       bio: "TJ VanToll is a front-end developer, author, and a senior developer advocate for Telerik. TJ has over a decade of web development experience, including a few years working on the jQuery team. Nowadays, he spends his time helping web developers build mobile apps through projects like Cordova and NativeScript. TJ is @tjvantoll on Twitter and tjvantoll on GitHub."
     }
   ],
+  sessions: [
+    {
+      time: "8:30am-9:00am",
+      title: "Registration and breakfast"
+    },
+    {
+      time: "9:00am-9:15am",
+      title: "PhoneGap kick off",
+      speakerSlug: "mwbrooks"
+    },
+    {
+      time: "9:15am-9:50am",
+      title: "Mind the Gap: Supercharge your PhoneGap workflow",
+      speakerSlug: "ericalli",
+      description: "Developing a complex and sustainable PhoneGap app can present many challenges. As your app grows, a seamless development workflow is crucial. Can you efficiently deploy and test in different environments? What are your pain points when implementing new functionality? How can you organize all the facets of your app with minimal effort? Mind the gap focuses on some of the ways you can create a development workflow that automates these inefficiencies, boosts scalability and most of all, preserves developer sanity."
+    },
+    {
+      time: "9:50am-10:10am",
+      title: "Automated App Testing: A pain or cure?",
+      speakerSlug: "martinposchenrieder",
+      description: "At testmunk we have been working with many popular apps by helping them ship better apps faster. We have automated testing for various Phonegap/Cordova apps (as well as others), allowing for quick detection of layout issues and crashes. In this talk I'd like to touch on some of the testing challenges developers/QAs come across due to today’s large device and OS fragmentation, and how automated testing can ease some of these issues. I will also show some examples of how developers can quickly set up their own automated tests and run them on a large set of devices"
+    },
+    {
+      time: "10:10am-10:30am",
+      title: "Finding the sweet spot - blending the best of native and web",
+      speakerSlug: ["shawnjansepar","lokimeyburg"],
+      description: "Choose the best technology for the job. Too often projects begin as hybrid apps, but switch to native for performance reasons. But it’s almost never the case that all features of your app need to be fully native. Today, many apps such as Amazon, Basecamp, Yelp and more take a blended approach. We'll guide you through case studies of how we build high performance apps that blend the best of native and web and highlight lessons we've learned along the way."
+    },
+    {
+      time: "10:30am-10:40am",
+      title: "BREAK"
+    },
+    {
+      time: "10:40am-11:00",
+      title: "Ionic: Version 2 and Beyond",
+      speakerSlug: "mikehartington",
+      description: "Ionic 1.0 has enabled many web developers to become mobile app developers. With the arrival of Angular 2 and its changes, and with ES6 being finalized, development has been improved yet again. How will that impact Ionic? In this session, we’ll compare Ionic 1 and Ionic 2 and go over what we've learned, what improvements we're making to Ionic, and how easy it will be to develop apps with Ionic 2."
+    },
+    {
+      time: "11:00am-11:25am",
+      title: "The Story of an App: How StoryCorps Built and Launched the StoryCorps.me Beta Platform and What We've Learned So Far",
+      speakerSlug: "deanhaddock",
+      description: "Dean Haddock shares the story of the StoryCorps app, from early prototypes to the TED Prize and beyond."
+    },
+    {
+      time: "11:25am-12:05pm",
+      title: "PhoneGap Applications with Ember: Lessons learned",
+      speakerSlug: "alexblom",
+      description: "The benefits of hybrid applications are obvious (less code, simpler code, iterate faster). Developers often make quick pace, boot their app and then hit a wall trying to make it 'feel native'. This talk will discuss lessons learned & optimization techniques from having built many apps with Ember & phonegap. While this talk uses Ember & Ember packages, the tools and techniques discussed generically apply to any Phonegap application. "
+    },
+    {
+      time: "12:05pm-12:25pm",
+      speakerSlug: "masahirotanaka",
+      title: "Using Monaca Cloud to enhance Cordova development"
+    },
+    {
+      time: "12:25pm-1:15pm",
+      title: "LUNCH"
+    },
+    {
+      time: "1:15pm-1:35pm",
+      title: "Microsoft Visual Studio",
+      speakerSlug: "ryanjsalva"
+    },
+    {
+      time: "1:35pm-2:15pm",
+      title: "Jed Watson"
+    },
+    {
+      time: "2:15pm-2:35pm",
+      title: "When the heck is 4/8/2016?",
+      speakerSlug: "raymondcamden",
+      description: "This talk will cover basic internationalization, globalization issues with Cordova apps. I'll talk about the Globalization plugin (and how to work around the async nature of the plugin), the Intl class, and other options. Also, I'll discuss why you should give a damn as a developer."
+    },
+    {
+      time: "2:35pm-2:55pm",
+      title: "Rangle.io"
+    },
+    {
+      time: "2:55pm-3:25pm",
+      title: "Making Enterprise Sh_t",
+      speakerSlug: "brucelefebvre",
+      description: "Does the idea of writing enterprise software conjure up images of bland user interfaces, XML-based configuration, and IE8 compatibility? The folks on Adobe’s Experience Manager Apps team have been working hard at avoiding these stereotypes, while building a platform for delivering and managing mobile apps for enterprise customers. This talk will provide a glimpse into the following: What are the perks of including a content management system in my app dev arsenal? Which tools are available for me to take full advantage of Adobe’s Marketing Cloud solutions? As a developer, what open source goodness can I try out today?"
+    },
+    {
+      time: "3:25pm-3:45pm",
+      title: "Crosswalk"
+    },
+    {
+      time: "3:45pm-4:00pm",
+      title: "BREAK"
+    },
+    {
+      time: "4:00pm-4:30pm",
+      title: "Build and Market Your App: Small Team Success",
+      speakerSlug: "ryanhanna",
+      description: "This talk will provide the tools and methodologies to help any solo developer or small team build and then market their app to ensure it has the best chance for success. We'll take a transparent look at the early beginnings of Sworkit to where it is now. From a single developer to a team of 10 employees, and from 10 downloads to 10 million. This talk will be a combination of the development and marketing lessons learned and implemented along the way."
+    },
+    {
+      time: "4:30pm-5:10pm",
+      title: "Generate for AEM and PhoneGap: Design Evolution 3.0 - D2W",
+      speakerSlug: "reneelance",
+      description: "Taking design to the digital environment has traditionally been time consuming, resource intensive and something designers and developers have been challenged with since the inception of designing for the web. So what if we had the ability to take design compositions from within Photoshop or Illustrator (or any other design tool if there really is any other) and directly turn them into and app, website or email marketing with a one button click? Something that seems too good to be true doesn’t it, well maybe not. This talk will show new Adobe innovation still in the labs, which look at streamlining workflows and rapid prototyping for App creation with Adobe AEM and PhoneGap."
+    },
+    {
+      time: "5:10pm-5:30pm",
+      title: "Loading native code (plugins) dynamically for the enterprise",
+      speakerSlug: "shazron",
+      description: "Hot-code reload for html/css/js is so 2015, everyone can do it. You probably thought you couldn't hot-reload plugin native code, well you were wrong! I'll show you how (and maybe bake a cake)."
+    },
+    {
+      time: "5:30pm 5:50pm",
+      title: "Session: Cordova Plugin Roundup",
+      speakerSlug: "tjvantoll",
+      description: "In last few years Cordova plugins have become the cornerstone of many high-quality Cordova and PhoneGap applications. In just the last year, we at Telerik have grown our curated Cordova plugins marketplace from small handful of plugins to now 65 and counting. In this talk you’ll learn about the latest greatest in the Cordova plugin world, including plugins for the Apple Watch, Mapbox maps, and a whole lot more."
+    },
+    {
+      time: "6:00pm-8:00pm",
+      title: "Pub mixer"
+    }
+  ],
+  workshops: [
+    {
+      time: "8:30am - 9:00am",
+      title: "Registration and breakfast"
+    },
+    {
+      time: "9:00am-10:30am",
+      sessions: [
+        {
+          title: "PhoneGap Beginner",
+          speakerSlug: "garthdb",
+          description: "This workshop will provide an introduction to PhoneGap, the philosophy behind it, and how to get started quickly using a variety of different tools available. You will learn how to create a simple mobile app using the PhoneGap CLI, PhoneGap Desktop App, PhoneGap Developer App, and more. You'll then learn how to extend the app with plugins, manipulate it with hooks, and debug it with the various tools available. By the end of this beginner workshop, you will walk away with a solid understanding of what PhoneGap is all about and how to use it for your next project."
+        },
+        {
+          title: "Hands-on Bluetooth Low Energy",
+          speakerSlug: "doncoleman",
+          description: "You’ve heard a lot about Bluetooth low energy, but do you understand how it works? This workshop will give you a chance to get hands-on experience building a Bluetooth smart device and an iPhone or Android application to control it. We will cover Bluetooth LE concepts like services and characteristics while we are building the hardware and software. The peripheral will be built with Arduino-compatible hardware and a Nordic Bluetooth LE radio. We will use open source libraries and tools to define a custom Bluetooth LE service to control the hardware. No soldering will be required. The phone application will be written with Apache Cordova so it will run on iOS or Android. The phone will be control hardware via Bluetooth LE, and automatically receive notifications when something changes on the peripheral. Participants will be required to bring a laptop and are encouraged to bring a Bluetooth LE-capable iOS or Android phone. There will be a limited number of phones that people can borrow for the workshop. Familiarity with at least one programming language is helpful but not required. A list of required free software will be sent to attendees before the workshop."
+        },
+        {
+          title: "Privacy and security",
+          speakerSlug: "tommywilliams",
+          description: "There's some security and privacy."
+        }
+      ]
+    },
+    {
+      time: "10:30am-10:45am",
+      title: "Break"
+    },
+    {
+      time: "10:45am-12:00pm",
+      sessions: [
+        {
+          title: "PhoneGap Intermediate",
+          speakerSlug: "hollyschinsky",
+          description: "Learn how to architect large, complex, and native-like PhoneGap apps using HTML, JavaScript, and CSS. We will investigate mobile challenges and find solutions for them as well as learn about Single Page Architecture, HTML templates, performance techniques, frameworks and more. We will also build a full-fledge working app you can take home for reference after the Workshop."
+        },
+        {
+          title: "Building an App with Ionic 2",
+          speakerSlug: "mikehartington",
+          description: "You've built Ionic apps before, but now that V2 is out, what can you expect? In this session, we'll look at an Ionic 1 app and go through the process of building its Ionic 2 equivalent."
+        },
+        {
+          title: "PhoneGap plugin development",
+          speakerSlug: "purplecabbage",
+          description: "Make plugins for PhoneGap and stuff."
+        }
+      ]
+    },
+    {
+      time: "12:00pm-1:00pm",
+      title: "Lunch"
+    },
+    {
+      time: "1:00pm-2:00pm",
+      sessions: [
+        {
+          title: "Build the Amazon App",
+          speakerSlug: "",
+          description: "A workshop on quickly building a hybrid app with feature parity to Amazon's app with a mix of native and web interfaces (Mobify)"
+        },
+        {
+          title: "Cordova Plugins in Action",
+          speakerSlug: "",
+          description: ""
+        },
+        {
+          title: "Rangle.io",
+          speakerSlug: "",
+          description: ""
+        }
+      ]
+    },
+    {
+      time: "2:00pm-3:30pm",
+      sessions: [
+        {
+          title: "App submission",
+          speakerSlug: "timkim",
+          description: "Submitting an app."
+        },
+        {
+          title: "PhoneGap push notifications",
+          speakerSlug: "simonmacdonald",
+          description: ""
+        },
+        {
+          title: "Embedding PhoneGap natively: The Hybrid Sweet Spot",
+          speakerSlug: "aniskadri",
+          description: ""
+        }
+      ]
+    },
+    {
+      time: "3:30pm-3:45pm",
+      title: "Break"
+    },
+    {
+      time: "3:45pm-4:45pm",
+      sessions: [
+        {
+          title: "Redhat",
+          speakerSlug: "",
+          description: ""
+        },
+        {
+          title: "Crosswalk",
+          speakerSlug: "",
+          description: ""
+        },
+        {
+          title: "Learning IoT Programming",
+          speakerSlug: "",
+          description: ""
+        }
+      ]
+    },
+    {
+      time: "4:45pm-6:00pm",
+      sessions: [
+        {
+          title: "Visual Studio",
+          speakerSlug: "ryanjsalva",
+          description: ""
+        },
+        {
+          title: "REPEAT Hands-on Bluetooth Low Energy",
+          speakerSlug: "doncoleman",
+          description: ""
+        },
+        {
+          title: "REPEAT PhoneGap Push Notifications",
+          speakerSlug: "simonmacdonald",
+          description: ""
+        }
+      ]
+    }
+  ],
   routes: function () {
     return routes = this.speakers.reduce(function (previousValue, currentValue, index){
       previousValue.push("/speaker/"+currentValue.slug);
       return previousValue;
     }, ["/"]);
+  },
+  findSessionBySpeakerSlug: function(slug) {
+    var sessions = []
+    for (var i = 0; i < this.sessions.length; i++) {
+      if(this.sessions[i].speakerSlug == slug) {
+        sessions.push(this.sessions[i]);
+      }
+    }
+    return sessions;
   },
   findSpeakerBySlug: function (slug) {
     for (var i = 0; i < this.speakers.length; i++) {
