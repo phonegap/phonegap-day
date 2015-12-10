@@ -40,9 +40,9 @@ export default class Us2016 extends React.Component {
             <div className="bounds">
               <h1>PhoneGap Day</h1>
               <h2 className="subhead">
-                <time dateTime="2016-01-29">Jan 29, 2016</time> • <span className="city">Lehi, UT</span>
+                <time dateTime="2016-01-29">Jan 28 & 29, 2016</time> • <span className="city">Lehi, UT</span>
               </h2>
-              <div className="description">A one day conference and workshops for PhoneGap, web, and mobile developers.</div>
+              <div className="description">A one day conference and one day of workshops for PhoneGap, web, and mobile developers.</div>
               <div className="pricing">
                 <h2>Conference Ticket Pricing</h2>
                 <ul>
