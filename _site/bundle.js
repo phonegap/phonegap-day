@@ -56,6 +56,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
@@ -119,7 +121,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var location = history.createLocation(locals.path);
 
 	  (0, _reactRouter.match)({ routes: _routes2.default, location: location }, function (error, redirectLocation, renderProps) {
-	    var reactHTML = (0, _server.renderToString)(_react2.default.createElement(_reactRouter.RoutingContext, renderProps));
+	    var reactHTML = (0, _server.renderToString)(_react2.default.createElement(_reactRouter.RoutingContext, _extends({}, renderProps, { history: history })));
 	    var html = (0, _page2.default)({ pageContent: reactHTML, css: _main2.default });
 	    callback(null, html);
 	  });
@@ -22797,8 +22799,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -22843,28 +22843,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var Router = (function (_Component) {
 	  _inherits(Router, _Component);
-
-	  _createClass(Router, null, [{
-	    key: 'propTypes',
-	    value: {
-	      history: object,
-	      children: _PropTypes.routes,
-	      routes: _PropTypes.routes, // alias for children
-	      RoutingContext: func.isRequired,
-	      createElement: func,
-	      onError: func,
-	      onUpdate: func,
-	      parseQueryString: func,
-	      stringifyQuery: func
-	    },
-	    enumerable: true
-	  }, {
-	    key: 'defaultProps',
-	    value: {
-	      RoutingContext: _RoutingContext2['default']
-	    },
-	    enumerable: true
-	  }]);
 
 	  function Router(props, context) {
 	    _classCallCheck(this, Router);
@@ -22921,6 +22899,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  Router.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
 	    process.env.NODE_ENV !== 'production' ? _warning2['default'](nextProps.history === this.props.history, 'You cannot change <Router history>; it will be ignored') : undefined;
+
+	    process.env.NODE_ENV !== 'production' ? _warning2['default']((nextProps.routes || nextProps.children) === (this.props.routes || this.props.children), 'You cannot change <Router routes>; it will be ignored') : undefined;
 	  };
 
 	  Router.prototype.componentWillUnmount = function componentWillUnmount() {
@@ -22959,6 +22939,22 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  return Router;
 	})(_react.Component);
+
+	Router.propTypes = {
+	  history: object,
+	  children: _PropTypes.routes,
+	  routes: _PropTypes.routes, // alias for children
+	  RoutingContext: func.isRequired,
+	  createElement: func,
+	  onError: func,
+	  onUpdate: func,
+	  parseQueryString: func,
+	  stringifyQuery: func
+	};
+
+	Router.defaultProps = {
+	  RoutingContext: _RoutingContext2['default']
+	};
 
 	exports['default'] = Router;
 	module.exports = exports['default'];
@@ -23159,7 +23155,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -23251,8 +23247,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	          var elements = {};
 
 	          for (var key in components) {
-	            if (components.hasOwnProperty(key)) elements[key] = _this.createElement(components[key], props);
-	          }return elements;
+	            if (components.hasOwnProperty(key)) {
+	              // Pass through the key as a prop to createElement to allow
+	              // custom createElement functions to know which named component
+	              // they're rendering, for e.g. matching up to fetched data.
+	              elements[key] = _this.createElement(components[key], _extends({
+	                key: key }, props));
+	            }
+	          }
+
+	          return elements;
 	        }
 
 	        return _this.createElement(components, props);
@@ -23264,34 +23268,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return element;
 	  };
 
-	  _createClass(RoutingContext, null, [{
-	    key: 'propTypes',
-	    value: {
-	      history: object.isRequired,
-	      createElement: func.isRequired,
-	      location: object.isRequired,
-	      routes: array.isRequired,
-	      params: object.isRequired,
-	      components: array.isRequired
-	    },
-	    enumerable: true
-	  }, {
-	    key: 'defaultProps',
-	    value: {
-	      createElement: _react2['default'].createElement
-	    },
-	    enumerable: true
-	  }, {
-	    key: 'childContextTypes',
-	    value: {
-	      history: object.isRequired,
-	      location: object.isRequired
-	    },
-	    enumerable: true
-	  }]);
-
 	  return RoutingContext;
 	})(_react.Component);
+
+	RoutingContext.propTypes = {
+	  history: object.isRequired,
+	  createElement: func.isRequired,
+	  location: object.isRequired,
+	  routes: array.isRequired,
+	  params: object.isRequired,
+	  components: array.isRequired
+	};
+
+	RoutingContext.defaultProps = {
+	  createElement: _react2['default'].createElement
+	};
+
+	RoutingContext.childContextTypes = {
+	  history: object.isRequired,
+	  location: object.isRequired
+	};
 
 	exports['default'] = RoutingContext;
 	module.exports = exports['default'];
@@ -24543,8 +24539,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -24676,37 +24670,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return _react2['default'].createElement('a', props);
 	  };
 
-	  _createClass(Link, null, [{
-	    key: 'contextTypes',
-	    value: {
-	      history: object
-	    },
-	    enumerable: true
-	  }, {
-	    key: 'propTypes',
-	    value: {
-	      to: string.isRequired,
-	      query: object,
-	      hash: string,
-	      state: object,
-	      activeStyle: object,
-	      activeClassName: string,
-	      onlyActiveOnIndex: bool.isRequired,
-	      onClick: func
-	    },
-	    enumerable: true
-	  }, {
-	    key: 'defaultProps',
-	    value: {
-	      onlyActiveOnIndex: false,
-	      className: '',
-	      style: {}
-	    },
-	    enumerable: true
-	  }]);
-
 	  return Link;
 	})(_react.Component);
+
+	Link.contextTypes = {
+	  history: object
+	};
+
+	Link.propTypes = {
+	  to: string.isRequired,
+	  query: object,
+	  hash: string,
+	  state: object,
+	  activeStyle: object,
+	  activeClassName: string,
+	  onlyActiveOnIndex: bool.isRequired,
+	  onClick: func
+	};
+
+	Link.defaultProps = {
+	  onlyActiveOnIndex: false,
+	  className: '',
+	  style: {}
+	};
 
 	exports['default'] = Link;
 	module.exports = exports['default'];
@@ -24766,8 +24752,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	exports.__esModule = true;
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
@@ -24809,35 +24793,31 @@ return /******/ (function(modules) { // webpackBootstrap
 	    _Component.apply(this, arguments);
 	  }
 
-	  IndexRedirect.createRouteFromReactElement = function createRouteFromReactElement(element, parentRoute) {
-	    /* istanbul ignore else: sanity check */
-	    if (parentRoute) {
-	      parentRoute.indexRoute = _Redirect2['default'].createRouteFromReactElement(element);
-	    } else {
-	      process.env.NODE_ENV !== 'production' ? _warning2['default'](false, 'An <IndexRedirect> does not make sense at the root of your route config') : undefined;
-	    }
-	  };
-
 	  /* istanbul ignore next: sanity check */
 
 	  IndexRedirect.prototype.render = function render() {
 	     true ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, '<IndexRedirect> elements are for router configuration only and should not be rendered') : _invariant2['default'](false) : undefined;
 	  };
 
-	  _createClass(IndexRedirect, null, [{
-	    key: 'propTypes',
-	    value: {
-	      to: string.isRequired,
-	      query: object,
-	      state: object,
-	      onEnter: _PropTypes.falsy,
-	      children: _PropTypes.falsy
-	    },
-	    enumerable: true
-	  }]);
-
 	  return IndexRedirect;
 	})(_react.Component);
+
+	IndexRedirect.propTypes = {
+	  to: string.isRequired,
+	  query: object,
+	  state: object,
+	  onEnter: _PropTypes.falsy,
+	  children: _PropTypes.falsy
+	};
+
+	IndexRedirect.createRouteFromReactElement = function (element, parentRoute) {
+	  /* istanbul ignore else: sanity check */
+	  if (parentRoute) {
+	    parentRoute.indexRoute = _Redirect2['default'].createRouteFromReactElement(element);
+	  } else {
+	    process.env.NODE_ENV !== 'production' ? _warning2['default'](false, 'An <IndexRedirect> does not make sense at the root of your route config') : undefined;
+	  }
+	};
 
 	exports['default'] = IndexRedirect;
 	module.exports = exports['default'];
@@ -24850,8 +24830,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
 	exports.__esModule = true;
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -24894,69 +24872,65 @@ return /******/ (function(modules) { // webpackBootstrap
 	    _Component.apply(this, arguments);
 	  }
 
-	  Redirect.createRouteFromReactElement = function createRouteFromReactElement(element) {
-	    var route = _RouteUtils.createRouteFromReactElement(element);
-
-	    if (route.from) route.path = route.from;
-
-	    route.onEnter = function (nextState, replaceState) {
-	      var location = nextState.location;
-	      var params = nextState.params;
-
-	      var pathname = undefined;
-	      if (route.to.charAt(0) === '/') {
-	        pathname = _PatternUtils.formatPattern(route.to, params);
-	      } else if (!route.to) {
-	        pathname = location.pathname;
-	      } else {
-	        var routeIndex = nextState.routes.indexOf(route);
-	        var parentPattern = Redirect.getRoutePattern(nextState.routes, routeIndex - 1);
-	        var pattern = parentPattern.replace(/\/*$/, '/') + route.to;
-	        pathname = _PatternUtils.formatPattern(pattern, params);
-	      }
-
-	      replaceState(route.state || location.state, pathname, route.query || location.query);
-	    };
-
-	    return route;
-	  };
-
-	  Redirect.getRoutePattern = function getRoutePattern(routes, routeIndex) {
-	    var parentPattern = '';
-
-	    for (var i = routeIndex; i >= 0; i--) {
-	      var route = routes[i];
-	      var pattern = route.path || '';
-	      parentPattern = pattern.replace(/\/*$/, '/') + parentPattern;
-
-	      if (pattern.indexOf('/') === 0) break;
-	    }
-
-	    return '/' + parentPattern;
-	  };
-
 	  /* istanbul ignore next: sanity check */
 
 	  Redirect.prototype.render = function render() {
 	     true ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, '<Redirect> elements are for router configuration only and should not be rendered') : _invariant2['default'](false) : undefined;
 	  };
 
-	  _createClass(Redirect, null, [{
-	    key: 'propTypes',
-	    value: {
-	      path: string,
-	      from: string, // Alias for path
-	      to: string.isRequired,
-	      query: object,
-	      state: object,
-	      onEnter: _PropTypes.falsy,
-	      children: _PropTypes.falsy
-	    },
-	    enumerable: true
-	  }]);
-
 	  return Redirect;
 	})(_react.Component);
+
+	Redirect.createRouteFromReactElement = function (element) {
+	  var route = _RouteUtils.createRouteFromReactElement(element);
+
+	  if (route.from) route.path = route.from;
+
+	  route.onEnter = function (nextState, replaceState) {
+	    var location = nextState.location;
+	    var params = nextState.params;
+
+	    var pathname = undefined;
+	    if (route.to.charAt(0) === '/') {
+	      pathname = _PatternUtils.formatPattern(route.to, params);
+	    } else if (!route.to) {
+	      pathname = location.pathname;
+	    } else {
+	      var routeIndex = nextState.routes.indexOf(route);
+	      var parentPattern = Redirect.getRoutePattern(nextState.routes, routeIndex - 1);
+	      var pattern = parentPattern.replace(/\/*$/, '/') + route.to;
+	      pathname = _PatternUtils.formatPattern(pattern, params);
+	    }
+
+	    replaceState(route.state || location.state, pathname, route.query || location.query);
+	  };
+
+	  return route;
+	};
+
+	Redirect.getRoutePattern = function (routes, routeIndex) {
+	  var parentPattern = '';
+
+	  for (var i = routeIndex; i >= 0; i--) {
+	    var route = routes[i];
+	    var pattern = route.path || '';
+	    parentPattern = pattern.replace(/\/*$/, '/') + parentPattern;
+
+	    if (pattern.indexOf('/') === 0) break;
+	  }
+
+	  return '/' + parentPattern;
+	};
+
+	Redirect.propTypes = {
+	  path: string,
+	  from: string, // Alias for path
+	  to: string.isRequired,
+	  query: object,
+	  state: object,
+	  onEnter: _PropTypes.falsy,
+	  children: _PropTypes.falsy
+	};
 
 	exports['default'] = Redirect;
 	module.exports = exports['default'];
@@ -24969,8 +24943,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
 	exports.__esModule = true;
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -25010,35 +24982,31 @@ return /******/ (function(modules) { // webpackBootstrap
 	    _Component.apply(this, arguments);
 	  }
 
-	  IndexRoute.createRouteFromReactElement = function createRouteFromReactElement(element, parentRoute) {
-	    /* istanbul ignore else: sanity check */
-	    if (parentRoute) {
-	      parentRoute.indexRoute = _RouteUtils.createRouteFromReactElement(element);
-	    } else {
-	      process.env.NODE_ENV !== 'production' ? _warning2['default'](false, 'An <IndexRoute> does not make sense at the root of your route config') : undefined;
-	    }
-	  };
-
 	  /* istanbul ignore next: sanity check */
 
 	  IndexRoute.prototype.render = function render() {
 	     true ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, '<IndexRoute> elements are for router configuration only and should not be rendered') : _invariant2['default'](false) : undefined;
 	  };
 
-	  _createClass(IndexRoute, null, [{
-	    key: 'propTypes',
-	    value: {
-	      path: _PropTypes.falsy,
-	      component: _PropTypes.component,
-	      components: _PropTypes.components,
-	      getComponent: func,
-	      getComponents: func
-	    },
-	    enumerable: true
-	  }]);
-
 	  return IndexRoute;
 	})(_react.Component);
+
+	IndexRoute.propTypes = {
+	  path: _PropTypes.falsy,
+	  component: _PropTypes.component,
+	  components: _PropTypes.components,
+	  getComponent: func,
+	  getComponents: func
+	};
+
+	IndexRoute.createRouteFromReactElement = function (element, parentRoute) {
+	  /* istanbul ignore else: sanity check */
+	  if (parentRoute) {
+	    parentRoute.indexRoute = _RouteUtils.createRouteFromReactElement(element);
+	  } else {
+	    process.env.NODE_ENV !== 'production' ? _warning2['default'](false, 'An <IndexRoute> does not make sense at the root of your route config') : undefined;
+	  }
+	};
 
 	exports['default'] = IndexRoute;
 	module.exports = exports['default'];
@@ -25051,8 +25019,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 
 	exports.__esModule = true;
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -25102,24 +25068,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	     true ? process.env.NODE_ENV !== 'production' ? _invariant2['default'](false, '<Route> elements are for router configuration only and should not be rendered') : _invariant2['default'](false) : undefined;
 	  };
 
-	  _createClass(Route, null, [{
-	    key: 'createRouteFromReactElement',
-	    value: _RouteUtils.createRouteFromReactElement,
-	    enumerable: true
-	  }, {
-	    key: 'propTypes',
-	    value: {
-	      path: string,
-	      component: _PropTypes.component,
-	      components: _PropTypes.components,
-	      getComponent: func,
-	      getComponents: func
-	    },
-	    enumerable: true
-	  }]);
-
 	  return Route;
 	})(_react.Component);
+
+	Route.createRouteFromReactElement = _RouteUtils.createRouteFromReactElement;
+
+	Route.propTypes = {
+	  path: string,
+	  component: _PropTypes.component,
+	  components: _PropTypes.components,
+	  getComponent: func,
+	  getComponents: func
+	};
 
 	exports['default'] = Route;
 	module.exports = exports['default'];
@@ -25821,7 +25781,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _speakerPage = __webpack_require__(236);
+	var _speakerPage = __webpack_require__(237);
 
 	var _speakerPage2 = _interopRequireDefault(_speakerPage);
 
@@ -25922,6 +25882,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _sessionListItem = __webpack_require__(235);
 
 	var _sessionListItem2 = _interopRequireDefault(_sessionListItem);
+
+	var _workshopsSection = __webpack_require__(236);
+
+	var _workshopsSection2 = _interopRequireDefault(_workshopsSection);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26225,11 +26189,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                null,
 	                'Workshops'
 	              ),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'We’re changing up workshops this year so you can choose your own adventure. We’ll have great content going all day where you can choose from three different workshop tracks depending on your interests and skill-level. We’ll have something for everyone whether you’re a PhoneGap beginner or a seasoned expert.'
-	              )
+	              _react2.default.createElement(_workshopsSection2.default, { workshops: _data.workshops })
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -26245,7 +26205,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              ),
 	              _react2.default.createElement(
 	                'ul',
-	                null,
+	                { className: 'session-list' },
 	                _data.sessions.map(function (session, index) {
 	                  return _react2.default.createElement(_sessionListItem2.default, { key: "session-" + index, session: session });
 	                })
@@ -26507,7 +26467,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "ericalli",
 	    name: "Eric Alli",
 	    title: "Web Designer, Developer, and Musician",
-	    bio: "Eric is a San Francico based designer &amp; engineer who enjoys building useful products for niche spaces and sharing his affinity for music and art."
+	    bio: "Eric is a San Francico based designer & engineer who enjoys building useful products for niche spaces and sharing his affinity for music and art."
 	  }, {
 	    id: 2,
 	    avatar: "/img/bio/alexblom.jpg",
@@ -26515,7 +26475,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "alexblom",
 	    name: "Alex Blom",
 	    title: "Partner, Isle of Code",
-	    bio: "Alex is a hacker who works with Ember, Ruby &amp; Go. He is a Partner at Isle of Code, a Toronto based agency focused on Ember, and using Ember in PhoneGap &amp; iBeacon contexts. Prior, Alex was building a browser extension based startup in Ember (morse).</div>"
+	    bio: "Alex is a hacker who works with Ember, Ruby & Go. He is a Partner at Isle of Code, a Toronto based agency focused on Ember, and using Ember in PhoneGap & iBeacon contexts. Prior, Alex was building a browser extension based startup in Ember (morse).</div>"
 	  }, {
 	    id: 22,
 	    avatar: "/img/bio/garthdb.jpg",
@@ -26531,7 +26491,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "michaelbrooks",
 	    name: "Michael Brooks",
 	    title: "Senior Software Barista, Adobe",
-	    bio: "Orphaned as a child, Michael Brooks was raised by his elderly Uncle Ben and Aunt May. Academically gifted, he displayed an uncanny affinity for Computer Science with speciality in signal processing and computer vision. While attending a developer meetup at the age of 26, Michael was bitten on the hand by a radioactive Nitobi employee, empowering him with the company’s proportional open source belief, community, and ability to ship products. Now disguised as mwbrooks and teamed with Adobe, Michael slings between vim, GitHub, Twitter, and IRC to protect the innocent, confront evil, and make PhoneGap &amp; Apache Cordova a safer framework for the future of application development."
+	    bio: "Orphaned as a child, Michael Brooks was raised by his elderly Uncle Ben and Aunt May. Academically gifted, he displayed an uncanny affinity for Computer Science with speciality in signal processing and computer vision. While attending a developer meetup at the age of 26, Michael was bitten on the hand by a radioactive Nitobi employee, empowering him with the company’s proportional open source belief, community, and ability to ship products. Now disguised as mwbrooks and teamed with Adobe, Michael slings between vim, GitHub, Twitter, and IRC to protect the innocent, confront evil, and make PhoneGap & Apache Cordova a safer framework for the future of application development."
 	  }, {
 	    id: 4,
 	    avatar: "/img/bio/raymondcamden.jpg",
@@ -26563,7 +26523,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "deanhaddock",
 	    name: "Dean Haddock",
 	    title: "Managing Director, StoryCorps",
-	    bio: "Dean Haddock is the Managing Director of Digital &amp; Technical Innovation for StoryCorps, the national oral history project--one of the largest collections of human voices ever assembled--and popular NPR/PBS broadcast. He and his team design and build apps, websites and other platforms to further StoryCorps' mission of recording and preserving the stories of everyday people across the US and around the world. Most recently Dean led StoryCorps' 2015 $1m TED Prize initiative to build a mobile app and platform that anyone can use to record and archive oral history interviews permanently at the Library of Congress. He is a Nieman Foundation Visiting Fellow, a Knight Foundation Prototype Fund awardee, a two-time Google Fellow to the Personal Democracy Forum and a civic hacktivist."
+	    bio: "Dean Haddock is the Managing Director of Digital & Technical Innovation for StoryCorps, the national oral history project--one of the largest collections of human voices ever assembled--and popular NPR/PBS broadcast. He and his team design and build apps, websites and other platforms to further StoryCorps' mission of recording and preserving the stories of everyday people across the US and around the world. Most recently Dean led StoryCorps' 2015 $1m TED Prize initiative to build a mobile app and platform that anyone can use to record and archive oral history interviews permanently at the Library of Congress. He is a Nieman Foundation Visiting Fellow, a Knight Foundation Prototype Fund awardee, a two-time Google Fellow to the Personal Democracy Forum and a civic hacktivist."
 	  }, {
 	    id: 7,
 	    avatar: "/img/bio/ryanhanna.jpg",
@@ -26619,7 +26579,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "brucelefebvre",
 	    name: "Bruce Lefebvre",
 	    title: "Computer Scientist, Adobe",
-	    bio: "Bruce is a programmer at Adobe focused on bringing Experience Manager and the open web together. As a member of the mobile R&amp;D team, he’s most recently been focused on the AEM + PhoneGap integration. When not at his desk he can usually be found outside on his bike.."
+	    bio: "Bruce is a programmer at Adobe focused on bringing Experience Manager and the open web together. As a member of the mobile R&D team, he’s most recently been focused on the AEM + PhoneGap integration. When not at his desk he can usually be found outside on his bike.."
 	  }, {
 	    id: 12,
 	    avatar: "/img/bio/simonmacdonald.jpg",
@@ -26804,7 +26764,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    time: "9:00am-10:30am",
 	    sessions: [{
 	      title: "PhoneGap Beginner",
-	      speakerSlug: "garthdb",
+	      speakerSlug: "GarthDB",
 	      description: "This workshop will provide an introduction to PhoneGap, the philosophy behind it, and how to get started quickly using a variety of different tools available. You will learn how to create a simple mobile app using the PhoneGap CLI, PhoneGap Desktop App, PhoneGap Developer App, and more. You'll then learn how to extend the app with plugins, manipulate it with hooks, and debug it with the various tools available. By the end of this beginner workshop, you will walk away with a solid understanding of what PhoneGap is all about and how to use it for your next project."
 	    }, {
 	      title: "Hands-on Bluetooth Low Energy",
@@ -26932,6 +26892,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    }
 	    return null;
+	  },
+	  findWorkshopBySpeakerSlug: function findWorkshopBySpeakerSlug(slug) {
+	    var sessions = [];
+	    // console.log(this.workshops)
+	    for (var i = 0; i < this.workshops.length; i++) {
+	      var time = this.workshops[i].time;
+	      var workshopTime = this.workshops[i];
+	      if (workshopTime.hasOwnProperty('sessions')) {
+	        for (var j = 0; j < workshopTime.sessions.length; j++) {
+	          if (workshopTime.sessions[j].speakerSlug == slug) {
+	            var session = workshopTime.sessions[j];
+	            session.time = time;
+	            sessions.push(session);
+	          }
+	        }
+	      }
+	    }
+	    return sessions;
 	  }
 	};
 
@@ -27098,15 +27076,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(200);
+
 	var _data = __webpack_require__(233);
 
 	var _data2 = _interopRequireDefault(_data);
-
-	var _reactRouter = __webpack_require__(200);
-
-	var _sessionItem = __webpack_require__(237);
-
-	var _sessionItem2 = _interopRequireDefault(_sessionItem);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27116,99 +27090,123 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var SpeakerPage = (function (_React$Component) {
-	  _inherits(SpeakerPage, _React$Component);
+	var Workshop = (function (_React$Component) {
+	  _inherits(Workshop, _React$Component);
 
-	  function SpeakerPage() {
-	    _classCallCheck(this, SpeakerPage);
+	  function Workshop() {
+	    _classCallCheck(this, Workshop);
 
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(SpeakerPage).apply(this, arguments));
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Workshop).apply(this, arguments));
 	  }
 
-	  _createClass(SpeakerPage, [{
+	  _createClass(Workshop, [{
 	    key: 'render',
 	    value: function render() {
-	      var speaker = _data2.default.findSpeakerBySlug(this.props.params.slug);
-	      var sessions = _data2.default.findSessionBySpeakerSlug(this.props.params.slug);
-	      var sessionSection = undefined;
-	      if (sessions.length > 0) {
-	        sessionSection = _react2.default.createElement(
-	          'div',
-	          { className: 'sessions' },
+	      var speakerData = _data2.default.findSpeakerBySlug(this.props.workshop.speakerSlug);
+	      var speaker = undefined;
+	      if (speakerData) {
+	        speaker = _react2.default.createElement(
+	          'span',
+	          { className: 'workshop--speaker' },
+	          ' ',
 	          _react2.default.createElement(
-	            'h2',
-	            { className: 'sessions--heading' },
-	            'Session'
-	          ),
-	          sessions.map(function (session) {
-	            return _react2.default.createElement(_sessionItem2.default, { key: session.time, session: session });
-	          })
-	        );
-	      }
-	      var twitter = undefined;
-	      if (speaker.twitter) {
-	        twitter = _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'a',
-	            { href: "https://twitter.com/" + speaker.twitter },
-	            '@',
-	            speaker.twitter
+	            _reactRouter.Link,
+	            { to: "/speaker/" + this.props.workshop.speakerSlug },
+	            speakerData.name
 	          )
 	        );
 	      }
 	      return _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          'span',
+	          { className: 'workshop--title' },
+	          this.props.workshop.title
+	        ),
+	        speaker
+	      );
+	    }
+	  }]);
+
+	  return Workshop;
+	})(_react2.default.Component);
+
+	var WorkshopGroup = (function (_React$Component2) {
+	  _inherits(WorkshopGroup, _React$Component2);
+
+	  function WorkshopGroup() {
+	    _classCallCheck(this, WorkshopGroup);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(WorkshopGroup).apply(this, arguments));
+	  }
+
+	  _createClass(WorkshopGroup, [{
+	    key: 'render',
+	    value: function render() {
+	      var workshopGroup = undefined;
+	      if (this.props.workshop.hasOwnProperty('sessions')) {
+	        workshopGroup = this.props.workshop.sessions.map(function (session, index) {
+	          return _react2.default.createElement(Workshop, { workshop: session, key: "workshop-" + index });
+	        });
+	      } else {
+	        workshopGroup = _react2.default.createElement(
+	          'li',
+	          null,
+	          this.props.workshop.title
+	        );
+	      }
+
+	      return _react2.default.createElement(
 	        'div',
-	        { id: 'content', className: 'speaker-page-content' },
+	        { className: 'workshop--group' },
 	        _react2.default.createElement(
 	          'header',
-	          { className: 'speaker-page--header' },
+	          null,
 	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: '/' },
-	            _react2.default.createElement('img', { src: '/img/pgd_logo.svg' })
+	            'h2',
+	            { className: 'workshop--time' },
+	            this.props.workshop.time
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'text-bounds speaker' },
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: '/' },
-	            '< Home'
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement('img', { className: 'speaker--photo', src: speaker.avatar, alt: speaker.name })
-	          ),
-	          _react2.default.createElement(
-	            'h1',
-	            { className: 'speaker--name' },
-	            speaker.name
-	          ),
-	          _react2.default.createElement(
-	            'h2',
-	            { className: 'speaker--title' },
-	            speaker.title
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'speaker--bio' },
-	            speaker.bio
-	          ),
-	          twitter,
-	          sessionSection
+	          'ul',
+	          null,
+	          workshopGroup
 	        )
 	      );
 	    }
 	  }]);
 
-	  return SpeakerPage;
+	  return WorkshopGroup;
 	})(_react2.default.Component);
 
-	exports.default = SpeakerPage;
+	var WorkshopsSection = (function (_React$Component3) {
+	  _inherits(WorkshopsSection, _React$Component3);
+
+	  function WorkshopsSection() {
+	    _classCallCheck(this, WorkshopsSection);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(WorkshopsSection).apply(this, arguments));
+	  }
+
+	  _createClass(WorkshopsSection, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'workshops' },
+	        this.props.workshops.map(function (workshop, index) {
+	          return _react2.default.createElement(WorkshopGroup, { workshop: workshop, key: "workshop-group-" + index });
+	        })
+	      );
+	    }
+	  }]);
+
+	  return WorkshopsSection;
+	})(_react2.default.Component);
+
+	exports.default = WorkshopsSection;
 
 /***/ },
 /* 237 */
@@ -27225,6 +27223,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _data = __webpack_require__(233);
+
+	var _data2 = _interopRequireDefault(_data);
 
 	var _reactRouter = __webpack_require__(200);
 
@@ -27273,13 +27275,146 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return SessionItem;
 	})(_react2.default.Component);
 
-	exports.default = SessionItem;
+	var WorkshopDetails = (function (_React$Component2) {
+	  _inherits(WorkshopDetails, _React$Component2);
+
+	  function WorkshopDetails() {
+	    _classCallCheck(this, WorkshopDetails);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(WorkshopDetails).apply(this, arguments));
+	  }
+
+	  _createClass(WorkshopDetails, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'workshops' },
+	        _react2.default.createElement(
+	          'h2',
+	          { className: 'sessions--heading' },
+	          this.props.workshops.length > 1 ? 'Workshops' : 'Workshop'
+	        ),
+	        this.props.workshops.map(function (workshop) {
+	          return _react2.default.createElement(SessionItem, { key: workshop.time, session: workshop });
+	        })
+	      );
+	    }
+	  }]);
+
+	  return WorkshopDetails;
+	})(_react2.default.Component);
+
+	var SpeakerPage = (function (_React$Component3) {
+	  _inherits(SpeakerPage, _React$Component3);
+
+	  function SpeakerPage() {
+	    _classCallCheck(this, SpeakerPage);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(SpeakerPage).apply(this, arguments));
+	  }
+
+	  _createClass(SpeakerPage, [{
+	    key: 'handleClick',
+	    value: function handleClick() {
+	      this.props.history.goBack();
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var speaker = _data2.default.findSpeakerBySlug(this.props.params.slug);
+	      var sessions = _data2.default.findSessionBySpeakerSlug(this.props.params.slug);
+	      var sessionSection = undefined;
+	      if (sessions.length > 0) {
+	        sessionSection = _react2.default.createElement(
+	          'div',
+	          { className: 'sessions' },
+	          _react2.default.createElement(
+	            'h2',
+	            { className: 'sessions--heading' },
+	            'Session'
+	          ),
+	          sessions.map(function (session) {
+	            return _react2.default.createElement(SessionItem, { key: session.time, session: session });
+	          })
+	        );
+	      }
+	      var twitter = undefined;
+	      if (speaker.twitter) {
+	        twitter = _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { href: "https://twitter.com/" + speaker.twitter },
+	            '@',
+	            speaker.twitter
+	          )
+	        );
+	      }
+	      var workshops = _data2.default.findWorkshopBySpeakerSlug(this.props.params.slug);
+	      var workshopSection = undefined;
+	      if (workshops.length > 0) {
+	        workshopSection = _react2.default.createElement(WorkshopDetails, { workshops: workshops });
+	      }
+	      return _react2.default.createElement(
+	        'div',
+	        { id: 'content', className: 'speaker-page-content' },
+	        _react2.default.createElement(
+	          'header',
+	          { className: 'speaker-page--header' },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '/', onClick: this.handleClick.bind(this) },
+	            _react2.default.createElement('img', { src: '/img/pgd_logo.svg' })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'text-bounds speaker' },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '/' },
+	            '< Home'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement('img', { className: 'speaker--photo', src: speaker.avatar, alt: speaker.name })
+	          ),
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'speaker--name' },
+	            speaker.name
+	          ),
+	          _react2.default.createElement(
+	            'h2',
+	            { className: 'speaker--title' },
+	            speaker.title
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'speaker--bio' },
+	            speaker.bio
+	          ),
+	          twitter,
+	          sessionSection,
+	          workshopSection
+	        )
+	      );
+	    }
+	  }]);
+
+	  return SpeakerPage;
+	})(_react2.default.Component);
+
+	exports.default = SpeakerPage;
 
 /***/ },
 /* 238 */
 /***/ function(module, exports) {
 
-	module.exports = "html,\nbody,\ndiv,\nspan,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\nabbr,\naddress,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\nsamp,\nsmall,\nstrong,\nsub,\nsup,\nvar,\nb,\ni,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\nbody {\n  line-height: 1;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection {\n  display: block;\n}\nnav ul {\n  list-style: none;\n}\nblockquote,\nq {\n  quotes: none;\n}\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: '';\n  content: none;\n}\na {\n  margin: 0;\n  padding: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\nins {\n  background-color: #ff9;\n  color: #000;\n  text-decoration: none;\n}\nmark {\n  background-color: #ff9;\n  color: #000;\n  font-style: italic;\n  font-weight: bold;\n}\ndel {\n  text-decoration: line-through;\n}\nabbr[title],\ndfn[title] {\n  border-bottom: 1px dotted;\n  cursor: help;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #ccc;\n  margin: 1em 0;\n  padding: 0;\n}\ninput,\nselect {\n  vertical-align: middle;\n}\n@font-face {\n  font-family: 'league_spartan';\n  src: url(\"/fonts/leaguespartan-bold-webfont.eot\");\n  src: url(\"/fonts/leaguespartan-bold-webfont.eot?#iefix\") format('embedded-opentype'), url(\"/fonts/leaguespartan-bold-webfont.woff2\") format('woff2'), url(\"/fonts/leaguespartan-bold-webfont.woff\") format('woff'), url(\"/fonts/leaguespartan-bold-webfont.ttf\") format('truetype'), url(\"/fonts/leaguespartan-bold-webfont.svg#league_spartanregular\") format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n:root {\n  font-size: 16px;\n}\nbody {\n  font-family: 'adobe-clean', Helvetica, Arial, sans-serif;\n  color: #033351;\n  line-height: 1.75rem;\n  -webkit-font-smoothing: antialiased;\n}\n.bounds,\n.text-bounds,\n.header-bounds {\n  max-width: 1280px;\n  position: relative;\n  margin: 0 auto;\n}\n.text-bounds {\n  max-width: 900px;\n  box-sizing: border-box;\n  padding-left: 10px;\n  padding-right: 10px;\n}\na {\n  color: #27a1c5;\n  text-decoration: none;\n}\na:hover {\n  text-decoration: underline;\n}\n.main-header {\n  background: #27a1c5;\n}\n.header-title {\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-image: url(\"../img/buildbot-line.svg\");\n  position: relative;\n  background-color: #1793b3;\n  padding-top: 50px;\n  padding-bottom: 40px;\n  text-align: center;\n}\n.header-title .bounds {\n  display: inline-block;\n  width: auto;\n}\n.header-title h1 {\n  font-family: league_spartan;\n  font-size: 2rem;\n  line-height: 2rem;\n}\n.header-title .subhead {\n  font-family: league_spartan;\n  font-size: 1rem;\n  line-height: 3rem;\n  position: relative;\n}\n.header-title .description {\n  font-size: 1.2rem;\n  margin: 20px 0 40px;\n  max-width: 330px;\n}\n.header-title .button--cta {\n  position: relative;\n  margin: 0 auto;\n  font-size: 1.2rem;\n  text-transform: none;\n  font-weight: bold;\n}\n.header-title .pricing {\n  margin: 60px auto 40px;\n  max-width: 280px;\n}\n.header-title .pricing h2 {\n  padding-bottom: 8px;\n  border-bottom: 1px solid #fff;\n  font-size: 1.2rem;\n  font-weight: 900;\n  margin-bottom: 10px;\n}\n.header-title .pricing li {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  font-size: 1rem;\n}\n.header-title .pricing li span {\n  -webkit-flex-shrink: 0;\n      -ms-flex-negative: 0;\n          flex-shrink: 0;\n}\n.header-title .pricing .leader {\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  border-bottom: 2px dotted;\n  margin: 0 8px;\n  position: relative;\n  top: -8px;\n}\n.main-content,\n.speaker-page-content {\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-image: url(\"../img/buildbot-line-dark.svg\");\n  background-color: #fff;\n}\n.header-bounds {\n  width: 100%;\n  height: 330px;\n  overflow: hidden;\n}\n.logo {\n  position: absolute;\n  width: 120px;\n  height: 53px;\n  overflow: hidden;\n  right: 63px;\n  top: 235px;\n}\n.adobe-logo {\n  width: 52px;\n  position: absolute;\n  top: 0;\n  right: 20px;\n  z-index: 2;\n}\n.header-title {\n  color: #fff;\n  background: #1793b3;\n  padding: 20px;\n}\n.ipad-air2 {\n  width: 348px;\n  height: 512px;\n  position: absolute;\n  display: none;\n}\n.ipad-air2 .content-mask {\n  width: 298px;\n  height: 398px;\n  left: 28px;\n  top: 54px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.galaxy-s6 {\n  width: 368px;\n  height: 190px;\n  position: absolute;\n  left: 5px;\n  top: 5px;\n  -webkit-transform-origin: 0 0;\n          transform-origin: 0 0;\n  -webkit-transform: scale3d(0.842391304, 0.842391304, 1);\n          transform: scale3d(0.842391304, 0.842391304, 1);\n}\n.galaxy-s6 .content-mask {\n  width: 278px;\n  height: 154px;\n  left: 48px;\n  top: 14px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.galaxy-s6:after {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  content: url(\"../img/galaxy-s6-shine.svg\");\n}\n.iphone-6 {\n  width: 352px;\n  height: 178px;\n  position: absolute;\n  left: 3px;\n  top: 157px;\n  -webkit-transform-origin: 0 0;\n          transform-origin: 0 0;\n  -webkit-transform: scale3d(0.842391304, 0.842391304, 1);\n          transform: scale3d(0.842391304, 0.842391304, 1);\n}\n.iphone-6 .content-mask {\n  width: 258px;\n  height: 144px;\n  left: 50px;\n  top: 14px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-position: center -70px;\n}\n.nexus-9 {\n  width: 570px;\n  height: 386px;\n  position: absolute;\n  display: none;\n}\n.nexus-9 .content-mask {\n  width: 446px;\n  height: 334px;\n  left: 66px;\n  top: 22px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.fire-hdx {\n  width: 580px;\n  height: 398px;\n  position: absolute;\n  display: none;\n}\n.fire-hdx .content-mask {\n  width: 478px;\n  height: 298px;\n  left: 54px;\n  top: 48px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.lumia-640xl {\n  width: 216px;\n  height: 400px;\n  position: absolute;\n  display: none;\n}\n.lumia-640xl .content-mask {\n  width: 166px;\n  height: 312px;\n  left: 26px;\n  top: 40px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.one-m9 {\n  width: 372px;\n  height: 188px;\n  position: absolute;\n  display: none;\n}\n.one-m9 .content-mask {\n  width: 276px;\n  height: 156px;\n  left: 46px;\n  top: 12px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n@media only screen and (min-width: 360px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -50px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -50px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    right: 53px;\n    top: 288px;\n  }\n  .header-bounds {\n    max-width: 380px;\n    width: 100%;\n    height: 380px;\n  }\n  .galaxy-s6 {\n    -webkit-transform: none;\n            transform: none;\n    left: 0px;\n  }\n  .galaxy-s6 .content-mask {\n    background-position: center -50px;\n    background-size: 450px;\n  }\n  .iphone-6 {\n    top: 186px;\n    left: 24px;\n    -webkit-transform: none;\n            transform: none;\n  }\n  .iphone-6 .content-mask {\n    background-position: center -50px;\n    background-size: 450px;\n  }\n}\n@media only screen and (min-width: 600px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 70px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n    padding-top: 50px;\n    padding-bottom: 40px;\n  }\n  .header-title h1 {\n    font-size: 4rem;\n    line-height: 4rem;\n  }\n  .header-title .subhead {\n    font-size: 1.3rem;\n    line-height: 1.5rem;\n    left: -72px;\n  }\n  .header-title .description {\n    font-size: 1.5rem;\n    margin: 20px auto 20px;\n    max-width: 400px;\n  }\n  .header-title .button--cta {\n    position: relative;\n    margin: 0 auto;\n    font-size: 1.2rem;\n  }\n  .header-title .pricing {\n    max-width: 335px;\n  }\n  .header-title .pricing h2 {\n    font-size: 1.5rem;\n  }\n  .header-title .pricing li {\n    font-size: 1.25rem;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 70px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    width: 230px;\n    height: auto;\n    right: 52px;\n    top: 337px;\n  }\n  .header-bounds {\n    max-width: 600px;\n    width: 100%;\n    height: 532px;\n  }\n  .galaxy-s6 {\n    display: none;\n  }\n  .iphone-6 {\n    display: none;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 230px;\n    top: 10px;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 70px;\n    background-size: 450px;\n  }\n  .lumia-640xl {\n    display: block;\n    left: 20px;\n    top: 70px;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center 70px;\n    background-size: 450px;\n  }\n}\n@media only screen and (min-width: 800px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -100px;\n    background-size: 680px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -100px;\n    background-size: 680px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    width: 300px;\n    right: 58px;\n    top: 249px;\n  }\n  .header-bounds {\n    max-width: 800px;\n    width: 100%;\n    height: 440px;\n  }\n  .ipad-air2 {\n    display: none;\n  }\n  .fire-hdx {\n    display: block;\n    top: 30px;\n    left: 218px;\n  }\n  .fire-hdx .content-mask {\n    background-position: center -100px;\n    background-size: 680px;\n  }\n  .lumia-640xl {\n    top: 8px;\n    left: 1px;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center -100px;\n    background-size: 680px;\n  }\n}\n@media only screen and (min-width: 1030px) {\n  .header-title {\n    background-position: center 100px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n    padding-top: 150px;\n    padding-bottom: 120px;\n  }\n  .header-title h1 {\n    font-size: 6rem;\n    line-height: 5rem;\n  }\n  .header-title .subhead {\n    left: -68px;\n    font-size: 1.5rem;\n    line-height: 2.5rem;\n  }\n  .header-title .description {\n    position: relative;\n    margin: 20px auto 40px;\n    max-width: 400px;\n    font-size: 1.5rem;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 100px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .pricing {\n    margin: 100px auto 40px;\n  }\n  .logo {\n    width: 360px;\n    right: 136px;\n    top: 65px;\n  }\n  .header-bounds {\n    max-width: 1030px;\n    width: 100%;\n    height: 840px;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 20px;\n    top: 80px;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .fire-hdx {\n    display: block;\n    left: 375px;\n    top: 10px;\n  }\n  .fire-hdx .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .nexus-9 {\n    display: block;\n    left: 380px;\n    top: 420px;\n  }\n  .nexus-9 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .one-m9 {\n    display: block;\n    top: 600px;\n    left: 0;\n  }\n  .one-m9 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .lumia-640xl {\n    display: none;\n  }\n}\n@media only screen and (min-width: 1280px) {\n  .header-title {\n    background-position: center 300px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    background-color: #1793b3;\n    text-align: center;\n    padding-top: 150px;\n    padding-bottom: 150px;\n    position: relative;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 300px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .header-bounds {\n    max-width: 1280px;\n    height: 1698px;\n  }\n  .logo {\n    width: 1280px;\n    margin: 0 auto;\n    position: absolute;\n    top: 0;\n    right: auto;\n    padding: 20px 20px 0;\n    box-sizing: border-box;\n    z-index: 1;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 56px;\n    top: 854px;\n    z-index: 2;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .galaxy-s6 {\n    display: block;\n    left: 325px;\n    top: 648px;\n    z-index: 2;\n  }\n  .galaxy-s6 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .iphone-6 {\n    display: block;\n    left: 726px;\n    top: 703px;\n    z-index: 2;\n  }\n  .iphone-6 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .nexus-9 {\n    display: block;\n    left: 458px;\n    top: 886px;\n    z-index: 2;\n  }\n  .nexus-9 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .fire-hdx {\n    display: block;\n    left: 420px;\n    top: 1283px;\n    z-index: 2;\n  }\n  .fire-hdx .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .lumia-640xl {\n    display: block;\n    left: 1038px;\n    top: 988px;\n    z-index: 2;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .one-m9 {\n    display: block;\n    left: 15px;\n    top: 1398px;\n    z-index: 2;\n  }\n  .one-m9 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n}\n.button--cta {\n  border-radius: 4px;\n  background: #f4b504;\n  color: #fff;\n  text-transform: uppercase;\n  border: none;\n  font-size: 1.0625rem;\n  font-weight: normal;\n  padding: 8px 27px 10px;\n  text-decoration: none;\n  display: inline-block;\n}\n.button--cta:hover {\n  text-decoration: none;\n  background: #f2a700;\n}\n.main-content,\n.speaker-page-content {\n  width: 100%;\n}\n.main-content section,\n.speaker-page-content section {\n  margin-bottom: 40px;\n}\n.main-content h1,\n.speaker-page-content h1 {\n  font-family: league_spartan;\n  font-size: 2rem;\n  text-transform: uppercase;\n  max-width: 350px;\n  line-height: 3.5rem;\n  margin-bottom: 30px;\n}\n.main-content .sub,\n.speaker-page-content .sub {\n  font-size: 1.25rem;\n  max-width: 420px;\n  font-weight: bold;\n}\n.main-content p,\n.speaker-page-content p {\n  margin: 0 0 20px;\n  max-width: 420px;\n}\n.main-content ul,\n.speaker-page-content ul {\n  margin: 0 0 20px 1.1rem;\n}\n.about h1 {\n  -webkit-column-span: all;\n  -moz-column-span: all;\n       column-span: all;\n}\n.about .text-bounds {\n  max-width: 920px;\n  padding-top: 120px;\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  max-width: 440px;\n}\n.about p {\n  max-width: 430px;\n  vertical-align: top;\n  font-size: 1rem;\n  line-height: 1.8rem;\n}\n.about-details {\n  background: #033351;\n  color: #fff;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 60px 30px;\n  overflow: hidden;\n}\n.about-details img {\n  width: 100%;\n  height: auto;\n}\n.about-details p {\n  max-width: 420px;\n}\n.about-heading {\n  max-width: 420px;\n  font-size: 2rem;\n  line-height: 2.7rem;\n  font-family: league_spartan;\n  text-transform: uppercase;\n}\n.about--skiing,\n.about--sessions,\n.about--networking {\n  position: relative;\n  margin: 0 auto;\n  max-width: 420px;\n  margin-bottom: 50px;\n}\n.about--skiing:last-child,\n.about--sessions:last-child,\n.about--networking:last-child {\n  margin-bottom: 0;\n}\n.audience-image {\n  display: none;\n}\n.speaker-section .text-bounds {\n  max-width: 900px;\n}\n.speaker-section .speaker-list {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.speaker--photo {\n  border-radius: 125px;\n  width: 125px;\n  height: 125px;\n}\n.speaker {\n  box-sizing: border-box;\n  text-align: center;\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n  padding: 0 20px;\n  max-width: 350px;\n  position: relative;\n  margin: 0 auto;\n  text-align: center;\n}\n.speaker::after {\n  content: ' ';\n  height: 50px;\n  display: block;\n}\n.speaker--bio {\n  text-align: left;\n}\n.speaker--name {\n  font-size: 1.5rem;\n  margin-bottom: 0;\n  text-align: center;\n}\n.speaker--title {\n  font-size: 1rem;\n  font-weight: 200;\n  font-style: italic;\n}\n.speaker--title a {\n  color: #033351;\n}\n.schedule-section h1 {\n  -webkit-column-span: all;\n  -moz-column-span: all;\n       column-span: all;\n}\n.schedule-section .text-bounds {\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.schedule-section li {\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n}\n.full {\n  width: 100%;\n  height: auto;\n  display: block;\n}\n.map {\n  width: 100%;\n  height: 300px;\n  background: url(\"/img/map.png\") center;\n  background-size: cover;\n  display: block;\n}\n.columns .text-bounds {\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.columns section {\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n}\n.speaker-page-content {\n  height: 100%;\n}\n.speaker-page-content h1 {\n  line-height: 2.5rem;\n}\n.speaker-page-content .sessions--heading {\n  font-size: 2rem;\n  margin-bottom: 10px;\n}\n.speaker-page-content .session--title {\n  font-size: 1.2rem;\n  line-height: 1.2rem;\n  margin-bottom: 10px;\n}\n.speaker-page-content .sessions {\n  margin-top: 30px;\n}\n.speaker-page-content .session--description {\n  text-align: left;\n}\n.speaker-page--header {\n  height: 120px;\n  background: #1793b3;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 15px 0;\n  text-align: center;\n}\n.speaker-page--header img {\n  height: 100%;\n}\n.speaker-page--header img:last-child {\n  opacity: 0.9;\n  margin-left: 20px;\n}\n@media only screen and (min-width: 400px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n}\n@media only screen and (min-width: 550px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n  .speaker {\n    padding: 0;\n  }\n  .main-content h1 {\n    font-size: 3rem;\n  }\n  .speaker--photo {\n    width: 250px;\n    height: 250px;\n  }\n}\n@media only screen and (min-width: 950px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 3;\n       -moz-column-count: 3;\n            column-count: 3;\n  }\n  .about .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n    max-width: 920px;\n  }\n  .about-details img {\n    margin-bottom: 30px;\n  }\n  .about-details .text-bounds {\n    max-width: 920px;\n  }\n  .about-details .text-bounds > div {\n    max-width: 100%;\n  }\n  .about-heading {\n    font-size: 2.25rem;\n  }\n  .about--sessions {\n    left: -50px;\n  }\n  .about--sessions .about-heading {\n    position: absolute;\n    left: 348px;\n    top: -5px;\n  }\n  .about--sessions p {\n    position: absolute;\n    left: 348px;\n    top: 110px;\n  }\n  .about--sessions img {\n    width: 470px;\n  }\n  .about--networking {\n    left: -30px;\n  }\n  .about--networking img {\n    width: 450px;\n  }\n  .about--skiing {\n    position: absolute;\n    top: 270px;\n    left: 490px;\n  }\n  .about--skiing img {\n    width: 460px;\n  }\n  .about--skiing .audience-image {\n    display: block;\n    width: 450px;\n  }\n  .schedule-section .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n  .columns .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n}\n"
+	module.exports = "html,\nbody,\ndiv,\nspan,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\nabbr,\naddress,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\nsamp,\nsmall,\nstrong,\nsub,\nsup,\nvar,\nb,\ni,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\nbody {\n  line-height: 1;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection {\n  display: block;\n}\nnav ul {\n  list-style: none;\n}\nblockquote,\nq {\n  quotes: none;\n}\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: '';\n  content: none;\n}\na {\n  margin: 0;\n  padding: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\nins {\n  background-color: #ff9;\n  color: #000;\n  text-decoration: none;\n}\nmark {\n  background-color: #ff9;\n  color: #000;\n  font-style: italic;\n  font-weight: bold;\n}\ndel {\n  text-decoration: line-through;\n}\nabbr[title],\ndfn[title] {\n  border-bottom: 1px dotted;\n  cursor: help;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #ccc;\n  margin: 1em 0;\n  padding: 0;\n}\ninput,\nselect {\n  vertical-align: middle;\n}\n@font-face {\n  font-family: 'league_spartan';\n  src: url(\"/fonts/leaguespartan-bold-webfont.eot\");\n  src: url(\"/fonts/leaguespartan-bold-webfont.eot?#iefix\") format('embedded-opentype'), url(\"/fonts/leaguespartan-bold-webfont.woff2\") format('woff2'), url(\"/fonts/leaguespartan-bold-webfont.woff\") format('woff'), url(\"/fonts/leaguespartan-bold-webfont.ttf\") format('truetype'), url(\"/fonts/leaguespartan-bold-webfont.svg#league_spartanregular\") format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n:root {\n  font-size: 16px;\n}\nbody {\n  font-family: 'adobe-clean', Helvetica, Arial, sans-serif;\n  color: #033351;\n  line-height: 1.75rem;\n  -webkit-font-smoothing: antialiased;\n}\n.bounds,\n.text-bounds,\n.header-bounds {\n  max-width: 1280px;\n  position: relative;\n  margin: 0 auto;\n}\n.text-bounds {\n  max-width: 900px;\n  box-sizing: border-box;\n  padding-left: 10px;\n  padding-right: 10px;\n}\na {\n  color: #27a1c5;\n  text-decoration: none;\n}\na:hover {\n  text-decoration: underline;\n}\n.main-header {\n  background: #27a1c5;\n}\n.header-title {\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-image: url(\"../img/buildbot-line.svg\");\n  position: relative;\n  background-color: #1793b3;\n  padding-top: 50px;\n  padding-bottom: 40px;\n  text-align: center;\n}\n.header-title .bounds {\n  display: inline-block;\n  width: auto;\n}\n.header-title h1 {\n  font-family: league_spartan;\n  font-size: 2rem;\n  line-height: 2rem;\n}\n.header-title .subhead {\n  font-family: league_spartan;\n  font-size: 1rem;\n  line-height: 3rem;\n  position: relative;\n}\n.header-title .description {\n  font-size: 1.2rem;\n  margin: 20px 0 40px;\n  max-width: 330px;\n}\n.header-title .button--cta {\n  position: relative;\n  margin: 0 auto;\n  font-size: 1.2rem;\n  text-transform: none;\n  font-weight: bold;\n}\n.header-title .pricing {\n  margin: 60px auto 40px;\n  max-width: 280px;\n}\n.header-title .pricing h2 {\n  padding-bottom: 8px;\n  border-bottom: 1px solid #fff;\n  font-size: 1.2rem;\n  font-weight: 900;\n  margin-bottom: 10px;\n}\n.header-title .pricing li {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  font-size: 1rem;\n}\n.header-title .pricing li span {\n  -webkit-flex-shrink: 0;\n      -ms-flex-negative: 0;\n          flex-shrink: 0;\n}\n.header-title .pricing .leader {\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  border-bottom: 2px dotted;\n  margin: 0 8px;\n  position: relative;\n  top: -8px;\n}\n.main-content,\n.speaker-page-content {\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-image: url(\"../img/buildbot-line-dark.svg\");\n  background-color: #fff;\n}\n.header-bounds {\n  width: 100%;\n  height: 330px;\n  overflow: hidden;\n}\n.logo {\n  position: absolute;\n  width: 120px;\n  height: 53px;\n  overflow: hidden;\n  right: 63px;\n  top: 235px;\n}\n.adobe-logo {\n  width: 52px;\n  position: absolute;\n  top: 0;\n  right: 20px;\n  z-index: 2;\n}\n.header-title {\n  color: #fff;\n  background: #1793b3;\n  padding: 20px;\n}\n.ipad-air2 {\n  width: 348px;\n  height: 512px;\n  position: absolute;\n  display: none;\n}\n.ipad-air2 .content-mask {\n  width: 298px;\n  height: 398px;\n  left: 28px;\n  top: 54px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.galaxy-s6 {\n  width: 368px;\n  height: 190px;\n  position: absolute;\n  left: 5px;\n  top: 5px;\n  -webkit-transform-origin: 0 0;\n          transform-origin: 0 0;\n  -webkit-transform: scale3d(0.842391304, 0.842391304, 1);\n          transform: scale3d(0.842391304, 0.842391304, 1);\n}\n.galaxy-s6 .content-mask {\n  width: 278px;\n  height: 154px;\n  left: 48px;\n  top: 14px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.galaxy-s6:after {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  content: url(\"../img/galaxy-s6-shine.svg\");\n}\n.iphone-6 {\n  width: 352px;\n  height: 178px;\n  position: absolute;\n  left: 3px;\n  top: 157px;\n  -webkit-transform-origin: 0 0;\n          transform-origin: 0 0;\n  -webkit-transform: scale3d(0.842391304, 0.842391304, 1);\n          transform: scale3d(0.842391304, 0.842391304, 1);\n}\n.iphone-6 .content-mask {\n  width: 258px;\n  height: 144px;\n  left: 50px;\n  top: 14px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-position: center -70px;\n}\n.nexus-9 {\n  width: 570px;\n  height: 386px;\n  position: absolute;\n  display: none;\n}\n.nexus-9 .content-mask {\n  width: 446px;\n  height: 334px;\n  left: 66px;\n  top: 22px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.fire-hdx {\n  width: 580px;\n  height: 398px;\n  position: absolute;\n  display: none;\n}\n.fire-hdx .content-mask {\n  width: 478px;\n  height: 298px;\n  left: 54px;\n  top: 48px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.lumia-640xl {\n  width: 216px;\n  height: 400px;\n  position: absolute;\n  display: none;\n}\n.lumia-640xl .content-mask {\n  width: 166px;\n  height: 312px;\n  left: 26px;\n  top: 40px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.one-m9 {\n  width: 372px;\n  height: 188px;\n  position: absolute;\n  display: none;\n}\n.one-m9 .content-mask {\n  width: 276px;\n  height: 156px;\n  left: 46px;\n  top: 12px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n@media only screen and (min-width: 360px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -50px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -50px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    right: 53px;\n    top: 288px;\n  }\n  .header-bounds {\n    max-width: 380px;\n    width: 100%;\n    height: 380px;\n  }\n  .galaxy-s6 {\n    -webkit-transform: none;\n            transform: none;\n    left: 0px;\n  }\n  .galaxy-s6 .content-mask {\n    background-position: center -50px;\n    background-size: 450px;\n  }\n  .iphone-6 {\n    top: 186px;\n    left: 24px;\n    -webkit-transform: none;\n            transform: none;\n  }\n  .iphone-6 .content-mask {\n    background-position: center -50px;\n    background-size: 450px;\n  }\n}\n@media only screen and (min-width: 600px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 70px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n    padding-top: 50px;\n    padding-bottom: 40px;\n  }\n  .header-title h1 {\n    font-size: 4rem;\n    line-height: 4rem;\n  }\n  .header-title .subhead {\n    font-size: 1.3rem;\n    line-height: 1.5rem;\n    left: -72px;\n  }\n  .header-title .description {\n    font-size: 1.5rem;\n    margin: 20px auto 20px;\n    max-width: 400px;\n  }\n  .header-title .button--cta {\n    position: relative;\n    margin: 0 auto;\n    font-size: 1.2rem;\n  }\n  .header-title .pricing {\n    max-width: 335px;\n  }\n  .header-title .pricing h2 {\n    font-size: 1.5rem;\n  }\n  .header-title .pricing li {\n    font-size: 1.25rem;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 70px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    width: 230px;\n    height: auto;\n    right: 52px;\n    top: 337px;\n  }\n  .header-bounds {\n    max-width: 600px;\n    width: 100%;\n    height: 532px;\n  }\n  .galaxy-s6 {\n    display: none;\n  }\n  .iphone-6 {\n    display: none;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 230px;\n    top: 10px;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 70px;\n    background-size: 450px;\n  }\n  .lumia-640xl {\n    display: block;\n    left: 20px;\n    top: 70px;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center 70px;\n    background-size: 450px;\n  }\n}\n@media only screen and (min-width: 800px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -100px;\n    background-size: 680px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -100px;\n    background-size: 680px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    width: 300px;\n    right: 58px;\n    top: 249px;\n  }\n  .header-bounds {\n    max-width: 800px;\n    width: 100%;\n    height: 440px;\n  }\n  .ipad-air2 {\n    display: none;\n  }\n  .fire-hdx {\n    display: block;\n    top: 30px;\n    left: 218px;\n  }\n  .fire-hdx .content-mask {\n    background-position: center -100px;\n    background-size: 680px;\n  }\n  .lumia-640xl {\n    top: 8px;\n    left: 1px;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center -100px;\n    background-size: 680px;\n  }\n}\n@media only screen and (min-width: 1030px) {\n  .header-title {\n    background-position: center 100px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n    padding-top: 150px;\n    padding-bottom: 120px;\n  }\n  .header-title h1 {\n    font-size: 6rem;\n    line-height: 5rem;\n  }\n  .header-title .subhead {\n    left: -68px;\n    font-size: 1.5rem;\n    line-height: 2.5rem;\n  }\n  .header-title .description {\n    position: relative;\n    margin: 20px auto 40px;\n    max-width: 400px;\n    font-size: 1.5rem;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 100px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .pricing {\n    margin: 100px auto 40px;\n  }\n  .logo {\n    width: 360px;\n    right: 136px;\n    top: 65px;\n  }\n  .header-bounds {\n    max-width: 1030px;\n    width: 100%;\n    height: 840px;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 20px;\n    top: 80px;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .fire-hdx {\n    display: block;\n    left: 375px;\n    top: 10px;\n  }\n  .fire-hdx .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .nexus-9 {\n    display: block;\n    left: 380px;\n    top: 420px;\n  }\n  .nexus-9 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .one-m9 {\n    display: block;\n    top: 600px;\n    left: 0;\n  }\n  .one-m9 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .lumia-640xl {\n    display: none;\n  }\n}\n@media only screen and (min-width: 1280px) {\n  .header-title {\n    background-position: center 300px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    background-color: #1793b3;\n    text-align: center;\n    padding-top: 150px;\n    padding-bottom: 150px;\n    position: relative;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 300px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .header-bounds {\n    max-width: 1280px;\n    height: 1698px;\n  }\n  .logo {\n    width: 1280px;\n    margin: 0 auto;\n    position: absolute;\n    top: 0;\n    right: auto;\n    padding: 20px 20px 0;\n    box-sizing: border-box;\n    z-index: 1;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 56px;\n    top: 854px;\n    z-index: 2;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .galaxy-s6 {\n    display: block;\n    left: 325px;\n    top: 648px;\n    z-index: 2;\n  }\n  .galaxy-s6 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .iphone-6 {\n    display: block;\n    left: 726px;\n    top: 703px;\n    z-index: 2;\n  }\n  .iphone-6 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .nexus-9 {\n    display: block;\n    left: 458px;\n    top: 886px;\n    z-index: 2;\n  }\n  .nexus-9 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .fire-hdx {\n    display: block;\n    left: 420px;\n    top: 1283px;\n    z-index: 2;\n  }\n  .fire-hdx .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .lumia-640xl {\n    display: block;\n    left: 1038px;\n    top: 988px;\n    z-index: 2;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .one-m9 {\n    display: block;\n    left: 15px;\n    top: 1398px;\n    z-index: 2;\n  }\n  .one-m9 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n}\n.button--cta {\n  border-radius: 4px;\n  background: #f4b504;\n  color: #fff;\n  text-transform: uppercase;\n  border: none;\n  font-size: 1.0625rem;\n  font-weight: normal;\n  padding: 8px 27px 10px;\n  text-decoration: none;\n  display: inline-block;\n}\n.button--cta:hover {\n  text-decoration: none;\n  background: #f2a700;\n}\n.main-content,\n.speaker-page-content {\n  width: 100%;\n}\n.main-content section,\n.speaker-page-content section {\n  margin-bottom: 40px;\n}\n.main-content h1,\n.speaker-page-content h1 {\n  font-family: league_spartan;\n  font-size: 2rem;\n  text-transform: uppercase;\n  max-width: 350px;\n  line-height: 3.5rem;\n  margin-bottom: 30px;\n}\n.main-content .sub,\n.speaker-page-content .sub {\n  font-size: 1.25rem;\n  max-width: 420px;\n  font-weight: bold;\n}\n.main-content p,\n.speaker-page-content p {\n  margin: 0 0 20px;\n  max-width: 420px;\n}\n.about h1 {\n  -webkit-column-span: all;\n  -moz-column-span: all;\n       column-span: all;\n}\n.about .text-bounds {\n  max-width: 920px;\n  padding-top: 120px;\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  max-width: 440px;\n}\n.about p {\n  max-width: 430px;\n  vertical-align: top;\n  font-size: 1rem;\n  line-height: 1.8rem;\n}\n.about-details {\n  background: #033351;\n  color: #fff;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 60px 30px;\n  overflow: hidden;\n}\n.about-details img {\n  width: 100%;\n  height: auto;\n}\n.about-details p {\n  max-width: 420px;\n}\n.about-heading {\n  max-width: 420px;\n  font-size: 2rem;\n  line-height: 2.7rem;\n  font-family: league_spartan;\n  text-transform: uppercase;\n}\n.about--skiing,\n.about--sessions,\n.about--networking {\n  position: relative;\n  margin: 0 auto;\n  max-width: 420px;\n  margin-bottom: 50px;\n}\n.about--skiing:last-child,\n.about--sessions:last-child,\n.about--networking:last-child {\n  margin-bottom: 0;\n}\n.audience-image {\n  display: none;\n}\n.speaker-section .text-bounds {\n  max-width: 900px;\n}\n.speaker-section .speaker-list {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.speaker--photo {\n  border-radius: 125px;\n  width: 125px;\n  height: 125px;\n}\n.speaker {\n  box-sizing: border-box;\n  text-align: center;\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n  padding: 0 20px;\n  max-width: 350px;\n  position: relative;\n  margin: 0 auto;\n  text-align: center;\n}\n.speaker::after {\n  content: ' ';\n  height: 50px;\n  display: block;\n}\n.speaker--bio {\n  text-align: left;\n}\n.speaker--name {\n  font-size: 1.5rem;\n  margin-bottom: 0;\n  text-align: center;\n}\n.speaker--title {\n  font-size: 1rem;\n  font-weight: 200;\n  font-style: italic;\n  line-height: 1.1rem;\n}\n.speaker--title a {\n  color: #033351;\n}\n.schedule-section h1 {\n  -webkit-column-span: all;\n  -moz-column-span: all;\n       column-span: all;\n}\n.schedule-section .text-bounds {\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.schedule-section li {\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n}\n.full {\n  width: 100%;\n  height: auto;\n  display: block;\n}\n.map {\n  width: 100%;\n  height: 300px;\n  background: url(\"/img/map.png\") center;\n  background-size: cover;\n  display: block;\n}\n.columns .text-bounds {\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.columns section {\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n}\n.speaker-page-content {\n  height: 100%;\n}\n.speaker-page-content h1 {\n  line-height: 2.5rem;\n}\n.sessions--heading {\n  font-size: 2rem;\n  margin-bottom: 10px;\n}\n.session--title {\n  font-size: 1.2rem;\n  line-height: 1.2rem;\n  margin-bottom: 10px;\n}\n.sessions {\n  margin-top: 30px;\n}\n.session--description {\n  text-align: left;\n}\n.session-list {\n  list-style: none;\n  margin: 0;\n}\n.speaker-page--header {\n  height: 120px;\n  background: #1793b3;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 15px 0;\n  text-align: center;\n}\n.speaker-page--header img {\n  height: 100%;\n}\n.speaker-page--header img:last-child {\n  opacity: 0.9;\n  margin-left: 20px;\n}\n@media only screen and (min-width: 400px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n}\n@media only screen and (min-width: 550px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n  .speaker {\n    padding: 0;\n  }\n  .main-content h1 {\n    font-size: 3rem;\n  }\n  .speaker--photo {\n    width: 250px;\n    height: 250px;\n  }\n}\n@media only screen and (min-width: 950px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 3;\n       -moz-column-count: 3;\n            column-count: 3;\n  }\n  .about .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n    max-width: 920px;\n  }\n  .about-details img {\n    margin-bottom: 30px;\n  }\n  .about-details .text-bounds {\n    max-width: 920px;\n  }\n  .about-details .text-bounds > div {\n    max-width: 100%;\n  }\n  .about-heading {\n    font-size: 2.25rem;\n  }\n  .about--sessions {\n    left: -50px;\n  }\n  .about--sessions .about-heading {\n    position: absolute;\n    left: 348px;\n    top: -5px;\n  }\n  .about--sessions p {\n    position: absolute;\n    left: 348px;\n    top: 110px;\n  }\n  .about--sessions img {\n    width: 470px;\n  }\n  .about--networking {\n    left: -30px;\n  }\n  .about--networking img {\n    width: 450px;\n  }\n  .about--skiing {\n    position: absolute;\n    top: 270px;\n    left: 490px;\n  }\n  .about--skiing img {\n    width: 460px;\n  }\n  .about--skiing .audience-image {\n    display: block;\n    width: 450px;\n  }\n  .schedule-section .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n  .columns .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n}\n"
 
 /***/ }
 /******/ ])
