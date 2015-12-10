@@ -58,7 +58,7 @@ export default (locals, callback) => {
         content:'http://pgday.phonegap.com/img/ogimage.png'
       }
     ]
-  } else if(locationArray.length > 1 && locationArray[0] == 'us2016'){
+  } else if(locationArray.length > 0 && locationArray[0] == 'us2016'){
     meta = [
       {
         name: 'twitter:card',
