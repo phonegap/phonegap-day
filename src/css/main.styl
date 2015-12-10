@@ -209,12 +209,15 @@ a
 .workshop--list
   list-style none
   display flex
+  flex-direction column
   border 1px solid rgba(3,51,81,0.2)
   li
     width 100%
     padding 2px 5px
+    box-sizing border-box
     &:nth-child(n+2)
-      border-left 1px solid rgba(3,51,81,0.2)
+      border-left 0
+      border-top 1px solid rgba(3,51,81,0.2)
 .workshop--speaker, workshop--title
   display block
 .workshop--title
@@ -236,6 +239,10 @@ a
   .speaker--photo
     width 250px
     height 250px
+  .workshop--list
+    flex-direction row
+    li:nth-child(n+2)
+      border-left 1px solid rgba(3,51,81,0.2)
 @media only screen and (min-width: 950px)
   .speaker-section
     .speaker-list
