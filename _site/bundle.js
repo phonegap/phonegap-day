@@ -27035,7 +27035,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'render',
 	    value: function render() {
 	      var sessionListItem = undefined;
+	      var speakerSlug = this.props.session.speakerSlug;
 	      if (typeof this.props.session.speakerSlug !== 'undefined') {
+	        if (Array.isArray(speakerSlug)) {
+	          speakerSlug = speakerSlug[0];
+	        }
 	        sessionListItem = _react2.default.createElement(
 	          'div',
 	          null,
@@ -27043,7 +27047,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          ':',
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: "/speaker/" + this.props.session.speakerSlug },
+	            { to: "/speaker/" + speakerSlug },
 	            ' ',
 	            this.props.session.title
 	          )
