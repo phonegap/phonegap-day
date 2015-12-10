@@ -25790,7 +25790,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = _react2.default.createElement(
 	  _reactRouter.Route,
 	  { path: '/', component: _root2.default },
-	  _react2.default.createElement(_reactRouter.IndexRoute, { component: _index2.default }),
+	  _react2.default.createElement(_reactRouter.IndexRoute, { component: _index2.default, onLeave: function onLeave() {
+	      window.fromHome = true;
+	    } }),
 	  _react2.default.createElement(_reactRouter.Route, { path: '/speaker/:slug', component: _speakerPage2.default })
 	);
 
@@ -27341,8 +27343,18 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	  _createClass(SpeakerPage, [{
 	    key: 'handleClick',
-	    value: function handleClick() {
-	      this.props.history.goBack();
+	    value: function handleClick(e) {
+	      if (window.fromHome) {
+	        window.fromHome = false;
+	        this.props.history.goBack();
+	        e.preventDefault();
+	        e.stopPropagation();
+	      }
+	    }
+	  }, {
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      this.fromHome = window.fromHome;
 	    }
 	  }, {
 	    key: 'render',
@@ -27399,8 +27411,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	          { className: 'text-bounds speaker' },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/' },
-	            '< Home'
+	            { to: '/', onClick: this.handleClick.bind(this) },
+	            '< ',
+	            this.fromHome ? "Back" : "Home"
 	          ),
 	          _react2.default.createElement(
 	            'div',
