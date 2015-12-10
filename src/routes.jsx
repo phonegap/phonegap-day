@@ -8,7 +8,7 @@ import SpeakerPage from './components/speaker-page.jsx'
 
 export default (
   <Route path="/" component={Root}>
-    <IndexRoute component={Index} />
+    <IndexRoute component={Index} onLeave={() => {window.fromHome = true}}/>
     <Route path="/speaker/:slug" component={SpeakerPage} />
   </Route>
 )

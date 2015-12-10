@@ -31,8 +31,16 @@ class WorkshopDetails extends React.Component {
 }
 
 export default class SpeakerPage extends React.Component {
-  handleClick() {
-    this.props.history.goBack()
+  handleClick(e) {
+    if(window.fromHome){
+      window.fromHome = false
+      this.props.history.goBack()
+      e.preventDefault()
+      e.stopPropagation()
+    }
+  }
+  componentDidMount(){
+    this.fromHome = window.fromHome
   }
   render() {
     let speaker = data.findSpeakerBySlug(this.props.params.slug)
@@ -63,7 +71,7 @@ export default class SpeakerPage extends React.Component {
           </Link>
         </header>
         <div className="text-bounds speaker">
-          <Link to="/">&lt; Home</Link>
+          <Link to="/" onClick={this.handleClick.bind(this)}>&lt; {this.fromHome ? "Back" : "Home"}</Link>
           <div><img className="speaker--photo" src={speaker.avatar} alt={speaker.name} /></div>
           <h1 className="speaker--name">{speaker.name}</h1>
           <h2 className="speaker--title">{speaker.title}</h2>
