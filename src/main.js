@@ -9,7 +9,7 @@ import CircularJSON from 'circular-json'
 import template from './page.jade'
 import routes from './routes.jsx'
 import Root from './components/root.jsx'
-import Index from './components/index.jsx'
+import Index from './components/us2016.jsx'
 import css from '!raw!postcss-loader!stylus!./css/main.styl'
 
 // Client render

@@ -2,15 +2,11 @@ import React from 'react'
 import { speakers, sessions, workshops } from '../../data'
 import { Link } from 'react-router'
 
-import SpeakerItem from './speaker-item.jsx'
-import SessionListItem from './session-list-item.jsx'
 import WorkshopsSection from './workshops-section.jsx'
+import SpeakersSection from './speakers-section.jsx'
+import SessionsSection from './sessions-section.jsx'
 
-//{speakers.map(speaker =>
-//<li><Link key={speaker.id} to={"/speaker/"+speaker.slug}>{speaker.name}</Link></li>
-//)}
-
-export default class Index extends React.Component {
+export default class Us2016 extends React.Component {
   render() {
     return (
       <div>
@@ -82,32 +78,9 @@ export default class Index extends React.Component {
               </div>
             </div>
           </section>
-          <section className="speaker-section">
-            <div className="text-bounds">
-              <h1>Speakers</h1>
-              <ul className="speaker-list">
-                {speakers.map(speaker =>
-                  <SpeakerItem key={speaker.id} speaker={speaker} />
-                )}
-              </ul>
-            </div>
-          </section>
-          <section>
-            <div className="text-bounds">
-              <h1>Workshops</h1>
-              <WorkshopsSection workshops={workshops}/>
-            </div>
-          </section>
-          <section className="schedule-section">
-            <div className="text-bounds">
-              <h1>Schedule</h1>
-              <ul className="session-list">
-                {sessions.map((session, index) =>
-                  <SessionListItem key={"session-" + index} session={session}/>
-                )}
-              </ul>
-            </div>
-          </section>
+          <SpeakersSection speakers={speakers} heading={"Speakers"}/>
+          <WorkshopsSection workshops={workshops} heading={"Workshops"}/>
+          <SessionsSection sessions={sessions} heading={"Schedule"}/>
           <section className="columns">
             <div className="text-bounds">
               <section>

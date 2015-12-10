@@ -10,7 +10,7 @@ class Workshop extends React.Component {
       speaker = (
         <span>
           <span className="workshop--title">
-            <Link to={"/speaker/"+this.props.workshop.speakerSlug}>{this.props.workshop.title}</Link>
+            <Link to={"/us2016/speaker/"+this.props.workshop.speakerSlug}>{this.props.workshop.title}</Link>
           </span>
           <span className="workshop--speaker">{speakerData.name}</span>
         </span>
@@ -55,11 +55,16 @@ class WorkshopGroup extends React.Component {
 export default class WorkshopsSection extends React.Component {
   render(){
     return (
-      <div className="workshops">
-        {this.props.workshops.map((workshop, index) =>
-          <WorkshopGroup workshop={workshop} key={"workshop-group-"+index}/>
-        )}
-      </div>
+      <section>
+        <div className="text-bounds">
+          <h1>{this.props.heading}</h1>
+          <div className="workshops">
+            {this.props.workshops.map((workshop, index) =>
+              <WorkshopGroup workshop={workshop} key={"workshop-group-"+index}/>
+            )}
+          </div>
+        </div>
+      </section>
     )
   }
 }

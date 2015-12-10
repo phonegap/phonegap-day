@@ -471,7 +471,7 @@ module.exports = {
   ],
   routes: function () {
     return routes = this.speakers.reduce(function (previousValue, currentValue, index){
-      previousValue.push("/speaker/"+currentValue.slug);
+      previousValue.push("/us2016/speaker/"+currentValue.slug);
       return previousValue;
     }, ["/"]);
   },
