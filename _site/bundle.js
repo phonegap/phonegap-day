@@ -141,7 +141,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      content: "PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016 and at Het Compagnietheater in Amsterdam on May 19 & 20, 2016."
 	    }, {
 	      name: 'twitter:image',
-	      content: 'http://pgday.phonegap.com/img/twitter-card2016.png'
+	      content: 'http://pgday.phonegap.com/img/twitter-card2016sm.png'
 	    }, {
 	      name: 'description',
 	      content: "PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016 and at Het Compagnietheater in Amsterdam on May 19 & 20, 2016."
@@ -170,7 +170,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      content: "PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees."
 	    }, {
 	      name: 'twitter:image',
-	      content: 'http://pgday.phonegap.com/img/twitter-card-us2016.png'
+	      content: 'http://pgday.phonegap.com/img/twitter-card-us2016sm.png'
 	    }, {
 	      name: 'description',
 	      content: "PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees."
@@ -199,7 +199,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      content: "PhoneGap Day EU will be held at Het Compagnietheater in Amsterdam on May 19 & 20, 2016. It will include 10+ keynotes and 15+ workshops."
 	    }, {
 	      name: 'twitter:image',
-	      content: 'http://pgday.phonegap.com/img/twitter-card-eu2016.png'
+	      content: 'http://pgday.phonegap.com/img/twitter-card-eu2016sm.png'
 	    }, {
 	      name: 'description',
 	      content: "PhoneGap Day EU will be held at Het Compagnietheater in Amsterdam on May 19 & 20, 2016. It will include 10+ keynotes and 15+ workshops."
