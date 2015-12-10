@@ -119,10 +119,103 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = function (locals, callback) {
 	  var history = (0, _history.createMemoryHistory)();
 	  var location = history.createLocation(locals.path);
+	  var locationArray = location.pathname.split('/').filter(function (n) {
+	    return n !== '';
+	  });
+	  var meta = [];
+	  if (locationArray.length == 0) {
+	    meta = [{
+	      name: 'twitter:card',
+	      content: 'summary_large_image'
+	    }, {
+	      name: 'twitter:site',
+	      content: '@phonegap'
+	    }, {
+	      name: 'twitter:creator',
+	      content: '@garthdb'
+	    }, {
+	      name: 'twitter:title',
+	      content: 'PhoneGap Days 2016 EU & US'
+	    }, {
+	      name: 'twitter:description',
+	      content: "PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016 and at Het Compagnietheater in Amsterdam on May 19 & 20, 2016."
+	    }, {
+	      name: 'twitter:image',
+	      content: 'http://pgday.phonegap.com/img/twitter-card.png'
+	    }, {
+	      name: 'description',
+	      content: "PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016 and at Het Compagnietheater in Amsterdam on May 19 & 20, 2016."
+	    }, {
+	      name: 'keywords',
+	      content: 'HTML,CSS,PhoneGap Day,JavaScript,conference,event'
+	    }, {
+	      property: 'og:image',
+	      content: 'http://pgday.phonegap.com/img/ogimage.png'
+	    }];
+	  } else if (locationArray.length > 1 && locationArray[0] == 'us2016') {
+	    meta = [{
+	      name: 'twitter:card',
+	      content: 'summary_large_image'
+	    }, {
+	      name: 'twitter:site',
+	      content: '@phonegap'
+	    }, {
+	      name: 'twitter:creator',
+	      content: '@garthdb'
+	    }, {
+	      name: 'twitter:title',
+	      content: 'PhoneGap Day US'
+	    }, {
+	      name: 'twitter:description',
+	      content: "PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees."
+	    }, {
+	      name: 'twitter:image',
+	      content: 'http://pgday.phonegap.com/img/twitter-card-us2016.png'
+	    }, {
+	      name: 'description',
+	      content: "PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees."
+	    }, {
+	      name: 'keywords',
+	      content: 'HTML,CSS,PhoneGap Day,JavaScript,conference,event'
+	    }, {
+	      property: 'og:image',
+	      content: 'http://pgday.phonegap.com/img/ogimage.png'
+	    }];
+	    console.log(meta);
+	  } else if (locationArray.length > 1 && locationArray[0] == 'eu2016') {
+	    meta = [{
+	      name: 'twitter:card',
+	      content: 'summary_large_image'
+	    }, {
+	      name: 'twitter:site',
+	      content: '@phonegap'
+	    }, {
+	      name: 'twitter:creator',
+	      content: '@garthdb'
+	    }, {
+	      name: 'twitter:title',
+	      content: 'PhoneGap Day EU'
+	    }, {
+	      name: 'twitter:description',
+	      content: "PhoneGap Day EU will be held at Het Compagnietheater in Amsterdam on May 19 & 20, 2016. It will include 10+ keynotes and 15+ workshops."
+	    }, {
+	      name: 'twitter:image',
+	      content: 'http://pgday.phonegap.com/img/twitter-card-eu2016.png'
+	    }, {
+	      name: 'description',
+	      content: "PhoneGap Day EU will be held at Het Compagnietheater in Amsterdam on May 19 & 20, 2016. It will include 10+ keynotes and 15+ workshops."
+	    }, {
+	      name: 'keywords',
+	      content: 'HTML,CSS,PhoneGap Day,JavaScript,conference,event,europe'
+	    }, {
+	      property: 'og:image',
+	      content: 'http://pgday.phonegap.com/img/ogimage.png'
+	    }];
+	  }
 
 	  (0, _reactRouter.match)({ routes: _routes2.default, location: location }, function (error, redirectLocation, renderProps) {
 	    var reactHTML = (0, _server.renderToString)(_react2.default.createElement(_reactRouter.RoutingContext, _extends({}, renderProps, { history: history })));
-	    var html = (0, _page2.default)({ pageContent: reactHTML, css: _main2.default });
+	    var html = (0, _page2.default)({ pageContent: reactHTML, css: _main2.default, meta: meta });
 	    callback(null, html);
 	  });
 	};
@@ -25496,7 +25589,37 @@ return /******/ (function(modules) { // webpackBootstrap
 	var jade_mixins = {};
 	var jade_interp;
 	var self = locals || {};
-	buf.push("<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\"><meta name=\"viewport\" content=\"initial-scale = 1.0\"><meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:site\" content=\"@phonegap\"><meta name=\"twitter:creator\" content=\"@garthdb\"><meta name=\"twitter:title\" content=\"PhoneGap Day Early Bird Pricing\"><meta name=\"twitter:description\" content=\"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees.\"><meta name=\"twitter:image\" content=\"http://pgday.phonegap.com/img/twitter-card.png\"><meta name=\"description\" content=\"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees.\"><meta name=\"keywords\" content=\"HTML,CSS,PhoneGap Day,JavaScript,conference,event\"><meta property=\"og:image\" content=\"http://pgday.phonegap.com/img/ogimage.png\"><title>PhoneGap Day 2016</title><script src=\"//use.typekit.net/exp7awb.js\"></script><script type=\"text/javascript\">try{Typekit.load();}catch(e){}</script><style>" + (null == (jade_interp = locals.css) ? "" : jade_interp) + "</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--></head><body>" + (null == (jade_interp = locals.pageContent) ? "" : jade_interp) + "</body></html>");;return buf.join("");
+	buf.push("<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\"><meta name=\"viewport\" content=\"initial-scale = 1.0\">");
+	if ((locals.hasOwnProperty('meta') && locals.meta.length != 0))
+	{
+	// iterate locals.meta
+	;(function(){
+	  var $$obj = locals.meta;
+	  if ('number' == typeof $$obj.length) {
+
+	    for (var $index = 0, $$l = $$obj.length; $index < $$l; $index++) {
+	      var meta = $$obj[$index];
+
+	buf.push("<meta" + (jade.attr("name", meta.name, true, true)) + (jade.attr("content", meta.content, true, true)) + ">");
+	    }
+
+	  } else {
+	    var $$l = 0;
+	    for (var $index in $$obj) {
+	      $$l++;      var meta = $$obj[$index];
+
+	buf.push("<meta" + (jade.attr("name", meta.name, true, true)) + (jade.attr("content", meta.content, true, true)) + ">");
+	    }
+
+	  }
+	}).call(this);
+
+	}
+	else
+	{
+	buf.push("<meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:site\" content=\"@phonegap\"><meta name=\"twitter:creator\" content=\"@garthdb\"><meta name=\"twitter:title\" content=\"PhoneGap Day Early Bird Pricing\"><meta name=\"twitter:description\" content=\"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees.\"><meta name=\"twitter:image\" content=\"http://pgday.phonegap.com/img/twitter-card.png\"><meta name=\"description\" content=\"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees.\"><meta name=\"keywords\" content=\"HTML,CSS,PhoneGap Day,JavaScript,conference,event\"><meta property=\"og:image\" content=\"http://pgday.phonegap.com/img/ogimage.png\">");
+	}
+	buf.push("<title>PhoneGap Day 2016</title><script src=\"//use.typekit.net/exp7awb.js\"></script><script type=\"text/javascript\">try{Typekit.load();}catch(e){}</script><style>" + (null == (jade_interp = locals.css) ? "" : jade_interp) + "</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--></head><body>" + (null == (jade_interp = locals.pageContent) ? "" : jade_interp) + "</body></html>");;return buf.join("");
 	}
 
 /***/ },
