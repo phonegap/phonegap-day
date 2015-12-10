@@ -27439,7 +27439,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                _react2.default.createElement(
 	                  'time',
 	                  { dateTime: '2016-01-29' },
-	                  'May 19, 2016'
+	                  'May 19 & 20, 2016'
 	                ),
 	                ' • ',
 	                _react2.default.createElement(
@@ -27451,7 +27451,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'description' },
-	                'A one day conference and workshops for PhoneGap, web, and mobile developers.'
+	                'A one day conference and one day of workshops for PhoneGap, web, and mobile developers.'
 	              ),
 	              _react2.default.createElement(
 	                'div',
@@ -27459,13 +27459,47 @@ return /******/ (function(modules) { // webpackBootstrap
 	                _react2.default.createElement(
 	                  'h2',
 	                  null,
-	                  'Conference Ticket Pricing'
+	                  'Early Bird Ticket Pricing'
 	                ),
 	                _react2.default.createElement(
-	                  'p',
+	                  'ul',
 	                  null,
-	                  'Early bird pricing coming soon.'
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'span',
+	                      null,
+	                      'Conference'
+	                    ),
+	                    _react2.default.createElement('span', { className: 'leader' }),
+	                    _react2.default.createElement(
+	                      'span',
+	                      null,
+	                      '€120 + VAT'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'span',
+	                      null,
+	                      'Workshops'
+	                    ),
+	                    _react2.default.createElement('span', { className: 'leader' }),
+	                    _react2.default.createElement(
+	                      'span',
+	                      null,
+	                      '€100 + VAT'
+	                    )
+	                  )
 	                )
+	              ),
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://phonegapdayeu.paydro.net/', className: 'button--cta' },
+	                'Get Early Bird Tickets'
 	              )
 	            )
 	          )
@@ -27506,7 +27540,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                'Need help justifying your trip? Download our “',
 	                _react2.default.createElement(
 	                  'a',
-	                  { href: 'justify-your-trip-to-phonegapday.docx' },
+	                  { href: '/justify-your-trip-to-phonegapday-eu.docx' },
 	                  'Letter to your Boss'
 	                ),
 	                '” document.'
@@ -27536,6 +27570,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	                  'p',
 	                  null,
 	                  'We’re changing up workshops this year so you can choose your own adventure. We’ll have great content going all day where you can choose from different workshop tracks depending on your interests and skill-level. We’ll have something for everyone whether you’re a PhoneGap beginner or a seasoned expert.'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'The workshops will be held at a different venue than the conference. The workshops will be held at ',
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'https://dezwijger.nl/over-ons/about-us/' },
+	                    'Pakhuis de Zwijger'
+	                  )
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -27577,7 +27621,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                _react2.default.createElement(
 	                  'p',
 	                  null,
-	                  'Coming soon.'
+	                  'Will be announced closer to the event!'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -27603,6 +27647,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	          ),
 	          _react2.default.createElement(
 	            'section',
+	            null,
+	            _react2.default.createElement('img', { src: '/img/compagnie-theater.jpg', className: 'full' })
+	          ),
+	          _react2.default.createElement(
+	            'section',
 	            { className: 'columns' },
 	            _react2.default.createElement(
 	              'div',
@@ -27625,6 +27674,42 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    'jgray@adobe.com'
 	                  ),
 	                  '.'
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://www.rangle.io/' },
+	                    _react2.default.createElement('img', { src: '/img/Rangle.io_Logo.svg', width: 300 })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://monaca.io/' },
+	                    _react2.default.createElement('img', { src: '/img/Monaca_Logo.svg', width: 300 })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://www.onsen.io/' },
+	                    _react2.default.createElement('img', { src: '/img/OnsenUI_Logo.svg', width: 300 })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'https://crosswalk-project.org/' },
+	                    _react2.default.createElement('img', { src: '/img/Crosswalk_Project_Logo.png', width: 300 })
+	                  )
 	                )
 	              ),
 	              _react2.default.createElement(
