@@ -5,15 +5,25 @@ import data from '../../data'
 class Workshop extends React.Component {
   render(){
     let speakerData = data.findSpeakerBySlug(this.props.workshop.speakerSlug)
-    let speaker
-    if(speakerData){
-      speaker = <span className="workshop--speaker">&nbsp;
-          <Link to={"/speaker/"+this.props.workshop.speakerSlug}>{speakerData.name}</Link>
+    let speaker = <h2>test</h2>
+    if(speakerData) {
+      speaker = (
+        <span>
+          <span className="workshop--title">
+            <Link to={"/speaker/"+this.props.workshop.speakerSlug}>{this.props.workshop.title}</Link>
+          </span>
+          <span className="workshop--speaker">{speakerData.name}</span>
         </span>
+      )
+    } else {
+      speaker = (
+        <span>
+          <span className="workshop--title">{this.props.workshop.title}</span>
+        </span>
+      )
     }
     return (
       <li>
-        <span className="workshop--title">{this.props.workshop.title}</span>
         {speaker}
       </li>
     )
@@ -34,7 +44,7 @@ class WorkshopGroup extends React.Component {
     return (
       <div className="workshop--group">
         <header><h2 className="workshop--time">{this.props.workshop.time}</h2></header>
-        <ul>
+        <ul className="workshop--list">
           {workshopGroup}
         </ul>
       </div>

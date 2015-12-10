@@ -478,8 +478,16 @@ module.exports = {
   findSessionBySpeakerSlug: function(slug) {
     var sessions = []
     for (var i = 0; i < this.sessions.length; i++) {
-      if(this.sessions[i].speakerSlug == slug) {
-        sessions.push(this.sessions[i]);
+      if(Array.isArray(this.sessions[i].speakerSlug)){
+        for (var j = 0; j < this.sessions[i].speakerSlug.length; j++) {
+          if(this.sessions[i].speakerSlug[j] == slug) {
+            sessions.push(this.sessions[i]);
+          }
+        }
+      } else {
+        if(this.sessions[i].speakerSlug == slug) {
+          sessions.push(this.sessions[i]);
+        }
       }
     }
     return sessions;
