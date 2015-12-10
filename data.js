@@ -366,7 +366,7 @@ module.exports = {
         {
           title: "PhoneGap Intermediate",
           speakerSlug: "hollyschinsky",
-          description: "Learn how to architect large, complex, and native-like PhoneGap apps using HTML, JavaScript, and CSS. We will investigate mobile challenges and find solutions for them as well as learn about Single Page Architecture, HTML templates, performance techniques, frameworks and more. We will also build a full-fledge working app you can take home for reference after the Workshop."
+          description: "In this workshop we'll walk through creating an app from start to finish. Throughout the process we'll gain an understanding of:\n - Common mobile app development paradigms (navigation, view stacks) \n - Popular mobile framework options \n - Mobile UI design patterns (flat vs. material design) \n - Performance tips \n - App configuration (preferences, permissions, icons/splashscreens) \n And more!"
         },
         {
           title: "Building an App with Ionic 2",
@@ -374,9 +374,9 @@ module.exports = {
           description: "You've built Ionic apps before, but now that V2 is out, what can you expect? In this session, we'll look at an Ionic 1 app and go through the process of building its Ionic 2 equivalent."
         },
         {
-          title: "PhoneGap plugin development",
+          title: "Plugins are Everything, and Everything is a Plugin!",
           speakerSlug: "purplecabbage",
-          description: "Make plugins for PhoneGap and stuff."
+          description: "Jesse has been writing PhoneGap plugins since before there were plugins.  In this deep dive workshop Jesse will cover all the requirements of making great plugins, from conception to testing to publishing. He will also share some secrets from his bag'o'tricks and demonstrate some interesting uses for plugins you may not have thought of. Come ready to build!"
         }
       ]
     },
