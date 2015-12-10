@@ -12,29 +12,29 @@ export default class Us2016 extends React.Component {
       <div>
         <header className="main-header">
           <div className="header-bounds">
-            <div className="ipad-air2"><img src="img/ipad-air2.svg" />
+            <div className="ipad-air2"><img src="/img/ipad-air2.svg" />
               <div className="content-mask" />
             </div>
-            <div className="galaxy-s6"><img src="img/galaxy-s6.svg" />
+            <div className="galaxy-s6"><img src="/img/galaxy-s6.svg" />
               <div className="content-mask" />
             </div>
-            <div className="iphone-6"><img src="img/iphone-6.svg" />
+            <div className="iphone-6"><img src="/img/iphone-6.svg" />
               <div className="content-mask" />
             </div>
-            <div className="nexus-9"><img src="img/nexus-9.svg" />
+            <div className="nexus-9"><img src="/img/nexus-9.svg" />
               <div className="content-mask" />
             </div>
-            <div className="fire-hdx"><img src="img/fire-hdx-8.9.svg" />
+            <div className="fire-hdx"><img src="/img/fire-hdx-8.9.svg" />
               <div className="content-mask" />
             </div>
-            <div className="lumia-640xl"><img src="img/lumia-640xl.svg" />
+            <div className="lumia-640xl"><img src="/img/lumia-640xl.svg" />
               <div className="content-mask" />
             </div>
-            <div className="one-m9"><img src="img/one-m9.svg" />
+            <div className="one-m9"><img src="/img/one-m9.svg" />
               <div className="content-mask" />
             </div>
-            <div className="logo"><img src="img/pgd_logo.svg" /></div>
-            <div className="adobe-logo"><a href="http://adobe.com"><img src="img/adobe-logo.svg" /></a></div>
+            <div className="logo"><img src="/img/pgd_logo.svg" /></div>
+            <div className="adobe-logo"><a href="http://adobe.com"><img src="/img/adobe-logo.svg" /></a></div>
           </div>
           <div className="header-title">
             <div className="bounds">
@@ -94,7 +94,7 @@ export default class Us2016 extends React.Component {
               </section>
             </div>
           </section>
-          <section><img src="img/lehi-office.jpg" className="full" /><a href="https://goo.gl/maps/4f5admiUNPn" className="map" /></section>
+          <section><img src="/img/lehi-office.jpg" className="full" /><a href="https://goo.gl/maps/4f5admiUNPn" className="map" /></section>
           <section className="columns">
             <div className="text-bounds">
               <section>

@@ -473,7 +473,7 @@ module.exports = {
     return routes = this.speakers.reduce(function (previousValue, currentValue, index){
       previousValue.push("/us2016/speaker/"+currentValue.slug);
       return previousValue;
-    }, ["/"]);
+    }, ["/","/us2016/","/eu2016/"]);
   },
   findSessionBySpeakerSlug: function(slug) {
     var sessions = []
