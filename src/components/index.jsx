@@ -1,9 +1,10 @@
 import React from 'react'
-import { speakers, sessions } from '../../data'
+import { speakers, sessions, workshops } from '../../data'
 import { Link } from 'react-router'
 
 import SpeakerItem from './speaker-item.jsx'
 import SessionListItem from './session-list-item.jsx'
+import WorkshopsSection from './workshops-section.jsx'
 
 //{speakers.map(speaker =>
 //<li><Link key={speaker.id} to={"/speaker/"+speaker.slug}>{speaker.name}</Link></li>
@@ -94,13 +95,13 @@ export default class Index extends React.Component {
           <section>
             <div className="text-bounds">
               <h1>Workshops</h1>
-              <p>We’re changing up workshops this year so you can choose your own adventure. We’ll have great content going all day where you can choose from three different workshop tracks depending on your interests and skill-level. We’ll have something for everyone whether you’re a PhoneGap beginner or a seasoned expert.</p>
+              <WorkshopsSection workshops={workshops}/>
             </div>
           </section>
           <section className="schedule-section">
             <div className="text-bounds">
               <h1>Schedule</h1>
-              <ul>
+              <ul className="session-list">
                 {sessions.map((session, index) =>
                   <SessionListItem key={"session-" + index} session={session}/>
                 )}

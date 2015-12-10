@@ -27,7 +27,7 @@ export default (locals, callback) => {
   const location = history.createLocation(locals.path)
 
   match({ routes, location }, (error, redirectLocation, renderProps) => {
-    var reactHTML = renderToString(<RoutingContext {...renderProps} />)
+    var reactHTML = renderToString(<RoutingContext {...renderProps} history={history}/>)
     var html = template({pageContent: reactHTML, css: css});
     callback(null, html);
   });

@@ -1,9 +1,39 @@
 import React from 'react'
 import data from '../../data'
 import { Link } from 'react-router'
-import SessionItem from './session-item.jsx'
+
+
+class SessionItem extends React.Component {
+  render() {
+    return (
+      <div className="session">
+        <h3 className="session--title">{this.props.session.title}</h3>
+        <div className="session--time">{this.props.session.time}</div>
+        <div className="session--description">{this.props.session.description}</div>
+      </div>
+    )
+  }
+}
+
+class WorkshopDetails extends React.Component {
+  render() {
+    return(
+      <div className="workshops">
+        <h2 className="sessions--heading">
+          {this.props.workshops.length > 1 ? 'Workshops' : 'Workshop'}
+        </h2>
+        {this.props.workshops.map(workshop =>
+          <SessionItem key={workshop.time} session={workshop} />
+        )}
+      </div>
+    )
+  }
+}
 
 export default class SpeakerPage extends React.Component {
+  handleClick() {
+    this.props.history.goBack()
+  }
   render() {
     let speaker = data.findSpeakerBySlug(this.props.params.slug)
     let sessions = data.findSessionBySpeakerSlug(this.props.params.slug)
@@ -20,10 +50,15 @@ export default class SpeakerPage extends React.Component {
     if (speaker.twitter) {
       twitter = <div><a href={"https://twitter.com/"+speaker.twitter}>@{speaker.twitter}</a></div>
     }
+    let workshops = (data.findWorkshopBySpeakerSlug(this.props.params.slug))
+    let workshopSection
+    if (workshops.length > 0) {
+      workshopSection = <WorkshopDetails workshops={workshops}/>
+    }
     return (
       <div id="content" className="speaker-page-content">
         <header className="speaker-page--header">
-          <Link to="/">
+          <Link to="/" onClick={this.handleClick.bind(this)}>
             <img src="/img/pgd_logo.svg" />
           </Link>
         </header>
@@ -35,6 +70,7 @@ export default class SpeakerPage extends React.Component {
           <div  className="speaker--bio">{speaker.bio}</div>
           {twitter}
           {sessionSection}
+          {workshopSection}
         </div>
       </div>
     )

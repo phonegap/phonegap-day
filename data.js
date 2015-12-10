@@ -16,7 +16,7 @@ module.exports = {
       slug: "ericalli",
       name: "Eric Alli",
       title: "Web Designer, Developer, and Musician",
-      bio: "Eric is a San Francico based designer &amp; engineer who enjoys building useful products for niche spaces and sharing his affinity for music and art."
+      bio: "Eric is a San Francico based designer & engineer who enjoys building useful products for niche spaces and sharing his affinity for music and art."
     },{
       id: 2,
       avatar: "/img/bio/alexblom.jpg",
@@ -24,7 +24,7 @@ module.exports = {
       slug: "alexblom",
       name: "Alex Blom",
       title: "Partner, Isle of Code",
-      bio: "Alex is a hacker who works with Ember, Ruby &amp; Go. He is a Partner at Isle of Code, a Toronto based agency focused on Ember, and using Ember in PhoneGap &amp; iBeacon contexts. Prior, Alex was building a browser extension based startup in Ember (morse).</div>"
+      bio: "Alex is a hacker who works with Ember, Ruby & Go. He is a Partner at Isle of Code, a Toronto based agency focused on Ember, and using Ember in PhoneGap & iBeacon contexts. Prior, Alex was building a browser extension based startup in Ember (morse).</div>"
     },{
       id: 22,
       avatar: "/img/bio/garthdb.jpg",
@@ -40,7 +40,7 @@ module.exports = {
       slug: "michaelbrooks",
       name: "Michael Brooks",
       title: "Senior Software Barista, Adobe",
-      bio: "Orphaned as a child, Michael Brooks was raised by his elderly Uncle Ben and Aunt May. Academically gifted, he displayed an uncanny affinity for Computer Science with speciality in signal processing and computer vision. While attending a developer meetup at the age of 26, Michael was bitten on the hand by a radioactive Nitobi employee, empowering him with the company’s proportional open source belief, community, and ability to ship products. Now disguised as mwbrooks and teamed with Adobe, Michael slings between vim, GitHub, Twitter, and IRC to protect the innocent, confront evil, and make PhoneGap &amp; Apache Cordova a safer framework for the future of application development."
+      bio: "Orphaned as a child, Michael Brooks was raised by his elderly Uncle Ben and Aunt May. Academically gifted, he displayed an uncanny affinity for Computer Science with speciality in signal processing and computer vision. While attending a developer meetup at the age of 26, Michael was bitten on the hand by a radioactive Nitobi employee, empowering him with the company’s proportional open source belief, community, and ability to ship products. Now disguised as mwbrooks and teamed with Adobe, Michael slings between vim, GitHub, Twitter, and IRC to protect the innocent, confront evil, and make PhoneGap & Apache Cordova a safer framework for the future of application development."
     },{
       id: 4,
       avatar: "/img/bio/raymondcamden.jpg",
@@ -72,7 +72,7 @@ module.exports = {
       slug: "deanhaddock",
       name: "Dean Haddock",
       title: "Managing Director, StoryCorps",
-      bio: "Dean Haddock is the Managing Director of Digital &amp; Technical Innovation for StoryCorps, the national oral history project--one of the largest collections of human voices ever assembled--and popular NPR/PBS broadcast. He and his team design and build apps, websites and other platforms to further StoryCorps' mission of recording and preserving the stories of everyday people across the US and around the world. Most recently Dean led StoryCorps' 2015 $1m TED Prize initiative to build a mobile app and platform that anyone can use to record and archive oral history interviews permanently at the Library of Congress. He is a Nieman Foundation Visiting Fellow, a Knight Foundation Prototype Fund awardee, a two-time Google Fellow to the Personal Democracy Forum and a civic hacktivist."
+      bio: "Dean Haddock is the Managing Director of Digital & Technical Innovation for StoryCorps, the national oral history project--one of the largest collections of human voices ever assembled--and popular NPR/PBS broadcast. He and his team design and build apps, websites and other platforms to further StoryCorps' mission of recording and preserving the stories of everyday people across the US and around the world. Most recently Dean led StoryCorps' 2015 $1m TED Prize initiative to build a mobile app and platform that anyone can use to record and archive oral history interviews permanently at the Library of Congress. He is a Nieman Foundation Visiting Fellow, a Knight Foundation Prototype Fund awardee, a two-time Google Fellow to the Personal Democracy Forum and a civic hacktivist."
     },{
       id: 7,
       avatar: "/img/bio/ryanhanna.jpg",
@@ -128,7 +128,7 @@ module.exports = {
       slug: "brucelefebvre",
       name: "Bruce Lefebvre",
       title: "Computer Scientist, Adobe",
-      bio: "Bruce is a programmer at Adobe focused on bringing Experience Manager and the open web together. As a member of the mobile R&amp;D team, he’s most recently been focused on the AEM + PhoneGap integration. When not at his desk he can usually be found outside on his bike.."
+      bio: "Bruce is a programmer at Adobe focused on bringing Experience Manager and the open web together. As a member of the mobile R&D team, he’s most recently been focused on the AEM + PhoneGap integration. When not at his desk he can usually be found outside on his bike.."
     },{
       id: 12,
       avatar: "/img/bio/simonmacdonald.jpg",
@@ -341,7 +341,7 @@ module.exports = {
       sessions: [
         {
           title: "PhoneGap Beginner",
-          speakerSlug: "garthdb",
+          speakerSlug: "GarthDB",
           description: "This workshop will provide an introduction to PhoneGap, the philosophy behind it, and how to get started quickly using a variety of different tools available. You will learn how to create a simple mobile app using the PhoneGap CLI, PhoneGap Desktop App, PhoneGap Developer App, and more. You'll then learn how to extend the app with plugins, manipulate it with hooks, and debug it with the various tools available. By the end of this beginner workshop, you will walk away with a solid understanding of what PhoneGap is all about and how to use it for your next project."
         },
         {
@@ -491,5 +491,23 @@ module.exports = {
       }
     }
     return null;
+  },
+  findWorkshopBySpeakerSlug: function(slug) {
+    var sessions = [];
+    // console.log(this.workshops)
+    for (var i = 0; i < this.workshops.length; i++) {
+      var time = this.workshops[i].time
+      var workshopTime = this.workshops[i]
+      if(workshopTime.hasOwnProperty('sessions')){
+        for (var j = 0; j < workshopTime.sessions.length; j++) {
+          if(workshopTime.sessions[j].speakerSlug == slug){
+            var session = workshopTime.sessions[j];
+            session.time = time;
+            sessions.push(session);
+          }
+        }
+      }
+    }
+    return sessions;
   }
 }
