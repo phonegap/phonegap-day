@@ -218,7 +218,7 @@ module.exports = {
     {
       time: "9:00am-9:15am",
       title: "PhoneGap kick off",
-      speakerSlug: "mwbrooks"
+      speakerSlug: "michaelbrooks"
     },
     {
       time: "9:15am-9:50am",
