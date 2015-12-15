@@ -26480,17 +26480,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	                  'Sponsors'
 	                ),
 	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Interested in sponsoring? Email Jen Gray at ',
-	                  _react2.default.createElement(
-	                    'a',
-	                    { href: 'mailto:jgray@adobe.com' },
-	                    'jgray@adobe.com'
-	                  ),
-	                  '.'
-	                ),
-	                _react2.default.createElement(
 	                  'div',
 	                  null,
 	                  _react2.default.createElement(
@@ -27785,6 +27774,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	                  'h1',
 	                  null,
 	                  'Sponsors'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Interested in sponsoring? Email Jen Gray at ',
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'mailto:jgray@adobe.com' },
+	                    'jgray@adobe.com'
+	                  ),
+	                  '.'
 	                ),
 	                _react2.default.createElement(
 	                  'div',

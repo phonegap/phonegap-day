@@ -106,7 +106,6 @@ export default class Us2016 extends React.Component {
               </section>
               <section>
                 <h1>Sponsors</h1>
-                <p>Interested in sponsoring? Email Jen Gray at <a href="mailto:jgray@adobe.com">jgray@adobe.com</a>.</p>
                 <div><a href="http://www.telerik.com/"><img src="/img/Telerik_Logo.svg" width={300} /></a></div>
                 <div><a href="http://www.mobify.com/"><img src="/img/Mobify_Logo.svg" width={280} /></a></div>
                 <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} /></a></div>

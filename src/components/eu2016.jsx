@@ -72,6 +72,7 @@ export default class Us2016 extends React.Component {
             <div className="text-bounds">
               <section>
                 <h1>Sponsors</h1>
+                <p>Interested in sponsoring? Email Jen Gray at <a href="mailto:jgray@adobe.com">jgray@adobe.com</a>.</p>
                 <div><a href="http://www.rangle.io/"><img src="/img/Rangle.io_Logo.svg" width={300} /></a></div>
                 <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} /></a></div>
                 <div><a href="http://www.onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} /></a></div>
