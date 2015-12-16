@@ -26594,7 +26594,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    twitter: "shazron",
 	    slug: "shazron",
 	    name: "Shazron Abdullah",
-	    title: "Web Developer, Adobe",
+	    title: "Senior Computer Scientist, Adobe",
 	    bio: "Based in San Francisco, by way of Vancouver, Canada and Singapore, Shaz has nearly two decades of software development experience getting with the nitty gritty of Windows, OS X and iOS and probably helped code something you know. Currently he helps maintain the iOS platform of Apache Cordova and Adobe PhoneGap and has been part of the project for quite some time."
 	  }, {
 	    id: 1,
