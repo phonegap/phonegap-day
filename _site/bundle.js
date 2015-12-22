@@ -26594,7 +26594,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    twitter: "shazron",
 	    slug: "shazron",
 	    name: "Shazron Abdullah",
-	    title: "Senior Computer Scientist, Adobe",
+	    title: "Senior Computer Scientisth, Adobe",
 	    bio: "Based in San Francisco, by way of Vancouver, Canada and Singapore, Shaz has nearly two decades of software development experience getting with the nitty gritty of Windows, OS X and iOS and probably helped code something you know. Currently he helps maintain the iOS platform of Apache Cordova and Adobe PhoneGap and has been part of the project for quite some time."
 	  }, {
 	    id: 1,
@@ -26905,7 +26905,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }, {
 	      title: "Hands-on Bluetooth Low Energy",
 	      speakerSlug: "doncoleman",
-	      description: "You’ve heard a lot about Bluetooth low energy, but do you understand how it works? This workshop will give you a chance to get hands-on experience building a Bluetooth smart device and an iPhone or Android application to control it. We will cover Bluetooth LE concepts like services and characteristics while we are building the hardware and software. The peripheral will be built with Arduino-compatible hardware and a Nordic Bluetooth LE radio. We will use open source libraries and tools to define a custom Bluetooth LE service to control the hardware. No soldering will be required. The phone application will be written with Apache Cordova so it will run on iOS or Android. The phone will be control hardware via Bluetooth LE, and automatically receive notifications when something changes on the peripheral. Participants will be required to bring a laptop and are encouraged to bring a Bluetooth LE-capable iOS or Android phone. There will be a limited number of phones that people can borrow for the workshop. Familiarity with at least one programming language is helpful but not required. A list of required free software will be sent to attendees before the workshop."
+	      description: "You’ve heard a lot about Bluetooth low energy, but do you understand how it works? This workshop will give you a chance to get hands-on experience building PhoneGap applications that interact with Bluetooth Smart devices. We will cover Bluetooth LE concepts like services and characteristics while we are building the software. The mobile application will be written with PhoneGap so it will run on iOS or Android. The phone will control hardware via Bluetooth LE, and automatically receive notifications when something changes on the peripheral. Participants will be required to bring a laptop and are encouraged to bring a Bluetooth LE-capable iOS or Android phone. There will be a limited number of phones that people can borrow for the workshop. Familiarity with at least one programming language is helpful but not required. A list of required free software will be sent to attendees before the workshop."
 	    }, {
 	      title: "Privacy and security",
 	      speakerSlug: "tommywilliams",
