@@ -19,7 +19,7 @@
     "phonegap"
   ],
   "author": "Garth Braithwaite <garthdb@gmail.com>",
-  "license": "Apache2",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/phonegap/phonegap-day/issues"
   },
@@ -33,7 +33,7 @@
     "babel-preset-react": "^6.1.18",
     "circular-json": "^0.3.0",
     "css-loader": "^0.23.0",
-    "history": "1.13.1",
+    "history": "1.17.0",
     "imagemin-cli": "^2.0.0",
     "jade": "^1.11.0",
     "jade-loader": "^0.8.0",
