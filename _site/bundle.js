@@ -26429,7 +26429,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                _react2.default.createElement(
 	                  'p',
 	                  null,
-	                  'Need a place to stay in Utah? We have room blocks available at:'
+	                  'Need a place to stay in Utah? Here are some recommended hotels in the area:'
 	                ),
 	                _react2.default.createElement(
 	                  'p',
@@ -26440,13 +26440,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    { href: 'http://www.marriott.com/hotels/travel/slcli-courtyard-lehi-at-thanksgiving-point/' },
 	                    'Courtyard Marriott in Lehi'
 	                  ),
-	                  ' conveniently located right across I-15 from the Adobe Lehi office. Book online ',
-	                  _react2.default.createElement(
-	                    'a',
-	                    { href: 'http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Adobe%20Phone%20Gap%20Day%20US%202016%5Eslcli%60adbadba%7Cadbadbb%60124.00%60USD%60false%601%601/27/16%601/31/16%601/6/16&app=resvlink&stop_mobi=yes' },
-	                    'here'
-	                  ),
-	                  '.'
+	                  ' conveniently located right across I-15 from the Adobe Lehi office.'
 	                ),
 	                _react2.default.createElement(
 	                  'p',
@@ -26457,18 +26451,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    { href: 'http://www.monaco-saltlakecity.com/' },
 	                    'Hotel Monaco'
 	                  ),
-	                  ' in Salt Lake City located 30 minutes north of the Adobe Lehi office. Book ',
-	                  _react2.default.createElement(
-	                    'a',
-	                    { href: 'https://gc.synxis.com/rez.aspx?Hotel=26759&Chain=10179&arrive=1/27/2016&depart=1/31/2016&adult=1&child=0&group=12360603288' },
-	                    'online here'
-	                  ),
-	                  ' or call 1 (800) KIMPTON and request a reservation as part of the Adobe Systems Incorporated block.'
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'If reservations are not needed, please cancel 24 hours prior to arrival.'
+	                  ' in Salt Lake City located 30 minutes north of the Adobe Lehi office.'
 	                )
 	              ),
 	              _react2.default.createElement(
