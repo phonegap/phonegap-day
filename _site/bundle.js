@@ -26244,7 +26244,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    _react2.default.createElement(
 	                      'span',
 	                      null,
-	                      '$150'
+	                      'Soldout'
 	                    )
 	                  )
 	                )
