@@ -394,8 +394,8 @@ module.exports = {
         },
         {
           title: "Cordova Plugins in Action",
-          speakerSlug: "",
-          description: ""
+          speakerSlug: ["brianrinaldi", "tjvantoll"],
+          description: "Do you love Cordova plugins? So do we! At Telerik we maintain a Cordova plugins marketplace at plugins.telerik.com/cordova, and we’re up to 65 free plugins and counting. In this workshop you’ll install a wide variety of plugins to see how they work in action. You’ll learn about the various ways you can install and test plugins—from the Cordova CLI, to premium tooling available in the Telerik Platform. Come with a laptop and ready to learn about plugins you can use in your next app."
         },
         {
           title: "Rangle.io",
