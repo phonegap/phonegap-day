@@ -26943,7 +26943,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }, {
 	      title: "Embedding PhoneGap natively: The Hybrid Sweet Spot",
 	      speakerSlug: "aniskadri",
-	      description: ""
+	      description: "Many developers choose to build native navigation and transitions into their apps but use webviews for the main content, allowing them to realize a large cost and time savings while making their app available to a wider range of users quickly. This approach also provides the ability to push timely updates without app store approval hassles. With this model, only a small native code-base needs to be maintained per platform, and it’s typically the static elements of the app rather than the main content, thus more manageable."
 	    }]
 	  }, {
 	    time: "3:30pm-3:45pm",
