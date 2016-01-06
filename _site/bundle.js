@@ -27028,10 +27028,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var workshopTime = this.workshops[i];
 	      if (workshopTime.hasOwnProperty('sessions')) {
 	        for (var j = 0; j < workshopTime.sessions.length; j++) {
-	          if (workshopTime.sessions[j].speakerSlug == slug) {
-	            var session = workshopTime.sessions[j];
-	            session.time = time;
-	            sessions.push(session);
+	          if (Array.isArray(workshopTime.sessions[j].speakerSlug)) {
+	            for (var k = 0; k < workshopTime.sessions[j].speakerSlug.length; k++) {
+	              if (workshopTime.sessions[j].speakerSlug[k] == slug) {
+	                var session = workshopTime.sessions[j];
+	                session.time = time;
+	                sessions.push(session);
+	              }
+	            }
+	          } else {
+	            if (workshopTime.sessions[j].speakerSlug == slug) {
+	              var session = workshopTime.sessions[j];
+	              session.time = time;
+	              sessions.push(session);
+	            }
 	          }
 	        }
 	      }
