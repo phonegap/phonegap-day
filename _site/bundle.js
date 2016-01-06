@@ -26920,7 +26920,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    sessions: [{
 	      title: "Build the Amazon App",
 	      speakerSlug: "",
-	      description: "A workshop on quickly building a hybrid app with feature parity to Amazon's app with a mix of native and web interfaces (Mobify)"
+	      description: "A workshop on quickly building a hybrid app with feature parity to Amazon's app with a mix of native and web interfaces. In this workshop we will guide you through building a commerce-enabled app with feature parity to the Amazon iOS app using a combination of web and native components using Astro, our latest SDK built on top of Cordova."
 	    }, {
 	      title: "Cordova Plugins in Action",
 	      speakerSlug: ["brianrinaldi", "tjvantoll"],
