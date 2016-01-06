@@ -366,7 +366,7 @@ a:hover {
   background-position: center -50px;
   background-size: 450px;
   position: absolute;
-  background-image: url("/img/buildbot-line-dark.svg");
+  background-image: url("../img/buildbot-line-dark.svg");
   background-color: #fff;
 }
 .header-bounds {
@@ -572,7 +572,7 @@ a:hover {
     position: absolute;
     background-position: center -50px;
     background-size: 450px;
-    background-image: url("/img/buildbot-line-dark.svg");
+    background-image: url("../img/buildbot-line-dark.svg");
     background-color: #fff;
   }
   .logo {
@@ -660,7 +660,7 @@ a:hover {
     position: absolute;
     background-position: center 70px;
     background-size: 450px;
-    background-image: url("/img/buildbot-line-dark.svg");
+    background-image: url("../img/buildbot-line-dark.svg");
     background-color: #fff;
   }
   .logo {
@@ -725,7 +725,7 @@ a:hover {
     position: absolute;
     background-position: center -100px;
     background-size: 680px;
-    background-image: url("/img/buildbot-line-dark.svg");
+    background-image: url("../img/buildbot-line-dark.svg");
     background-color: #fff;
   }
   .logo {
@@ -795,7 +795,7 @@ a:hover {
     position: absolute;
     background-position: center 100px;
     background-size: 1100px;
-    background-image: url("/img/buildbot-line-dark.svg");
+    background-image: url("../img/buildbot-line-dark.svg");
     background-color: #fff;
   }
   .pricing {
@@ -873,7 +873,7 @@ a:hover {
     position: absolute;
     background-position: center 300px;
     background-size: 1100px;
-    background-image: url("/img/buildbot-line-dark.svg");
+    background-image: url("../img/buildbot-line-dark.svg");
     background-color: #fff;
   }
   .header-bounds {
@@ -1273,12 +1273,12 @@ a:hover {
           flex-direction: column;
   border: 1px solid rgba(3,51,81,0.2);
 }
-.workshop--list li {
+.workshop--list > li {
   width: 100%;
   padding: 2px 5px;
   box-sizing: border-box;
 }
-.workshop--list li:nth-child(n+2) {
+.workshop--list > li:nth-child(n+2) {
   border-left: 0;
   border-top: 1px solid rgba(3,51,81,0.2);
 }
@@ -1289,6 +1289,19 @@ workshop--title {
 .workshop--title {
   font-weight: bold;
   font-size: 1.125rem;
+}
+.workshop--speaker-list {
+  list-style: none;
+}
+.workshop--speaker-list > li {
+  display: inline-block;
+}
+.workshop--speaker-list > li:nth-child(-n+1):after {
+  content: ",";
+  margin-right: 3px;
+}
+.workshop--speaker-list > li:last-child:before {
+  content: "and ";
 }
 @media only screen and (min-width: 400px) {
   .speaker-section .speaker-list {
@@ -1320,7 +1333,7 @@ workshop--title {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .workshop--list li:nth-child(n+2) {
+  .workshop--list > li:nth-child(n+2) {
     border-left: 1px solid rgba(3,51,81,0.2);
     border-top: 0;
   }
@@ -1394,4 +1407,4 @@ workshop--title {
             column-count: 2;
   }
 }
-</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--></head><body><div id="react-output" data-reactid=".27q2psr9uyo" data-react-checksum="-1911864362"><div id="content" class="speaker-page-content" data-reactid=".27q2psr9uyo.0"><header class="speaker-page--header" data-reactid=".27q2psr9uyo.0.0"><a class="" href="/" data-reactid=".27q2psr9uyo.0.0.0"><img src="/img/pgd_logo.svg" data-reactid=".27q2psr9uyo.0.0.0.0"/></a></header><div class="text-bounds speaker" data-reactid=".27q2psr9uyo.0.1"><a class="" href="/" data-reactid=".27q2psr9uyo.0.1.0"><span data-reactid=".27q2psr9uyo.0.1.0.0">&lt; </span><span data-reactid=".27q2psr9uyo.0.1.0.1">Home</span></a><div data-reactid=".27q2psr9uyo.0.1.1"><img class="speaker--photo" src="/img/bio/alexblom.jpg" alt="Alex Blom" data-reactid=".27q2psr9uyo.0.1.1.0"/></div><h1 class="speaker--name" data-reactid=".27q2psr9uyo.0.1.2">Alex Blom</h1><h2 class="speaker--title" data-reactid=".27q2psr9uyo.0.1.3">Partner, Isle of Code</h2><div class="speaker--bio" data-reactid=".27q2psr9uyo.0.1.4">Alex is a hacker who works with Ember, Ruby &amp; Go. He is a Partner at Isle of Code, a Toronto based agency focused on Ember, and using Ember in PhoneGap &amp; iBeacon contexts. Prior, Alex was building a browser extension based startup in Ember (morse).&lt;/div&gt;</div><div data-reactid=".27q2psr9uyo.0.1.5"><a href="https://twitter.com/AlexBlom" data-reactid=".27q2psr9uyo.0.1.5.0"><span data-reactid=".27q2psr9uyo.0.1.5.0.0">@</span><span data-reactid=".27q2psr9uyo.0.1.5.0.1">AlexBlom</span></a></div><div class="sessions" data-reactid=".27q2psr9uyo.0.1.6"><h2 class="sessions--heading" data-reactid=".27q2psr9uyo.0.1.6.0">Session</h2><div class="session" data-reactid=".27q2psr9uyo.0.1.6.1:$11=225am-12=205pm"><h3 class="session--title" data-reactid=".27q2psr9uyo.0.1.6.1:$11=225am-12=205pm.0">PhoneGap Applications with Ember: Lessons learned</h3><div class="session--time" data-reactid=".27q2psr9uyo.0.1.6.1:$11=225am-12=205pm.1">11:25am-12:05pm</div><div class="session--description" data-reactid=".27q2psr9uyo.0.1.6.1:$11=225am-12=205pm.2">The benefits of hybrid applications are obvious (less code, simpler code, iterate faster). Developers often make quick pace, boot their app and then hit a wall trying to make it &#x27;feel native&#x27;. This talk will discuss lessons learned &amp; optimization techniques from having built many apps with Ember &amp; phonegap. While this talk uses Ember &amp; Ember packages, the tools and techniques discussed generically apply to any Phonegap application. </div></div></div></div></div><script id="initial-props" type="application/json" data-reactid=".27q2psr9uyo.1">{"history":{},"location":{"pathname":"/us2016/speaker/alexblom","search":"","hash":"","state":null,"action":"POP","key":"bik9bf"},"params":{"slug":"alexblom"},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/us2016/"},{"path":"/us2016/speaker/:slug"},{"path":"/eu2016/"}]},"routeParams":{},"routes":["~route","~route~childRoutes~1"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~childRoutes~1","routeParams":{"slug":"alexblom"},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".27q2psr9uyo","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".27q2psr9uyo","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":210,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":209,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".27q2psr9uyo.2"></script></div></body></html>
+</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--></head><body><div id="react-output" data-reactid=".3a69cv3v9c" data-react-checksum="-1442567855"><div id="content" class="speaker-page-content" data-reactid=".3a69cv3v9c.0"><header class="speaker-page--header" data-reactid=".3a69cv3v9c.0.0"><a class="" href="/" data-reactid=".3a69cv3v9c.0.0.0"><img src="/img/pgd_logo.svg" data-reactid=".3a69cv3v9c.0.0.0.0"/></a></header><div class="text-bounds speaker" data-reactid=".3a69cv3v9c.0.1"><a class="" href="/" data-reactid=".3a69cv3v9c.0.1.0"><span data-reactid=".3a69cv3v9c.0.1.0.0">&lt; </span><span data-reactid=".3a69cv3v9c.0.1.0.1">Home</span></a><div data-reactid=".3a69cv3v9c.0.1.1"><img class="speaker--photo" src="/img/bio/alexblom.jpg" alt="Alex Blom" data-reactid=".3a69cv3v9c.0.1.1.0"/></div><h1 class="speaker--name" data-reactid=".3a69cv3v9c.0.1.2">Alex Blom</h1><h2 class="speaker--title" data-reactid=".3a69cv3v9c.0.1.3">Partner, Isle of Code</h2><div class="speaker--bio" data-reactid=".3a69cv3v9c.0.1.4">Alex is a hacker who works with Ember, Ruby &amp; Go. He is a Partner at Isle of Code, a Toronto based agency focused on Ember, and using Ember in PhoneGap &amp; iBeacon contexts. Prior, Alex was building a browser extension based startup in Ember (morse).&lt;/div&gt;</div><div data-reactid=".3a69cv3v9c.0.1.5"><a href="https://twitter.com/AlexBlom" data-reactid=".3a69cv3v9c.0.1.5.0"><span data-reactid=".3a69cv3v9c.0.1.5.0.0">@</span><span data-reactid=".3a69cv3v9c.0.1.5.0.1">AlexBlom</span></a></div><div class="sessions" data-reactid=".3a69cv3v9c.0.1.6"><h2 class="sessions--heading" data-reactid=".3a69cv3v9c.0.1.6.0">Session</h2><div class="session" data-reactid=".3a69cv3v9c.0.1.6.1:$11=225am-12=205pm"><h3 class="session--title" data-reactid=".3a69cv3v9c.0.1.6.1:$11=225am-12=205pm.0">PhoneGap Applications with Ember: Lessons learned</h3><div class="session--time" data-reactid=".3a69cv3v9c.0.1.6.1:$11=225am-12=205pm.1">11:25am-12:05pm</div><div class="session--description" data-reactid=".3a69cv3v9c.0.1.6.1:$11=225am-12=205pm.2"><div>The benefits of hybrid applications are obvious (less code, simpler code, iterate faster). Developers often make quick pace, boot their app and then hit a wall trying to make it 'feel native'. This talk will discuss lessons learned & optimization techniques from having built many apps with Ember & phonegap. While this talk uses Ember & Ember packages, the tools and techniques discussed generically apply to any Phonegap application. </div></div></div></div></div></div><script id="initial-props" type="application/json" data-reactid=".3a69cv3v9c.1">{"history":{},"location":{"pathname":"/us2016/speaker/alexblom","search":"","hash":"","state":null,"action":"POP","key":"snlo1p"},"params":{"slug":"alexblom"},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/us2016/"},{"path":"/us2016/speaker/:slug"},{"path":"/eu2016/"}]},"routeParams":{},"routes":["~route","~route~childRoutes~1"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~childRoutes~1","routeParams":{"slug":"alexblom"},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".3a69cv3v9c","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".3a69cv3v9c","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":212,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":211,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".3a69cv3v9c.2"></script></div></body></html>

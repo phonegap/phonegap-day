@@ -366,7 +366,7 @@ a:hover {
   background-position: center -50px;
   background-size: 450px;
   position: absolute;
-  background-image: url("/img/buildbot-line-dark.svg");
+  background-image: url("../img/buildbot-line-dark.svg");
   background-color: #fff;
 }
 .header-bounds {
@@ -572,7 +572,7 @@ a:hover {
     position: absolute;
     background-position: center -50px;
     background-size: 450px;
-    background-image: url("/img/buildbot-line-dark.svg");
+    background-image: url("../img/buildbot-line-dark.svg");
     background-color: #fff;
   }
   .logo {
@@ -660,7 +660,7 @@ a:hover {
     position: absolute;
     background-position: center 70px;
     background-size: 450px;
-    background-image: url("/img/buildbot-line-dark.svg");
+    background-image: url("../img/buildbot-line-dark.svg");
     background-color: #fff;
   }
   .logo {
@@ -725,7 +725,7 @@ a:hover {
     position: absolute;
     background-position: center -100px;
     background-size: 680px;
-    background-image: url("/img/buildbot-line-dark.svg");
+    background-image: url("../img/buildbot-line-dark.svg");
     background-color: #fff;
   }
   .logo {
@@ -795,7 +795,7 @@ a:hover {
     position: absolute;
     background-position: center 100px;
     background-size: 1100px;
-    background-image: url("/img/buildbot-line-dark.svg");
+    background-image: url("../img/buildbot-line-dark.svg");
     background-color: #fff;
   }
   .pricing {
@@ -873,7 +873,7 @@ a:hover {
     position: absolute;
     background-position: center 300px;
     background-size: 1100px;
-    background-image: url("/img/buildbot-line-dark.svg");
+    background-image: url("../img/buildbot-line-dark.svg");
     background-color: #fff;
   }
   .header-bounds {
@@ -1273,12 +1273,12 @@ a:hover {
           flex-direction: column;
   border: 1px solid rgba(3,51,81,0.2);
 }
-.workshop--list li {
+.workshop--list > li {
   width: 100%;
   padding: 2px 5px;
   box-sizing: border-box;
 }
-.workshop--list li:nth-child(n+2) {
+.workshop--list > li:nth-child(n+2) {
   border-left: 0;
   border-top: 1px solid rgba(3,51,81,0.2);
 }
@@ -1289,6 +1289,19 @@ workshop--title {
 .workshop--title {
   font-weight: bold;
   font-size: 1.125rem;
+}
+.workshop--speaker-list {
+  list-style: none;
+}
+.workshop--speaker-list > li {
+  display: inline-block;
+}
+.workshop--speaker-list > li:nth-child(-n+1):after {
+  content: ",";
+  margin-right: 3px;
+}
+.workshop--speaker-list > li:last-child:before {
+  content: "and ";
 }
 @media only screen and (min-width: 400px) {
   .speaker-section .speaker-list {
@@ -1320,7 +1333,7 @@ workshop--title {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .workshop--list li:nth-child(n+2) {
+  .workshop--list > li:nth-child(n+2) {
     border-left: 1px solid rgba(3,51,81,0.2);
     border-top: 0;
   }
@@ -1394,4 +1407,4 @@ workshop--title {
             column-count: 2;
   }
 }
-</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--></head><body><div id="react-output" data-reactid=".23qoez48ow0" data-react-checksum="211440609"><div id="content" class="speaker-page-content" data-reactid=".23qoez48ow0.0"><header class="speaker-page--header" data-reactid=".23qoez48ow0.0.0"><a class="" href="/" data-reactid=".23qoez48ow0.0.0.0"><img src="/img/pgd_logo.svg" data-reactid=".23qoez48ow0.0.0.0.0"/></a></header><div class="text-bounds speaker" data-reactid=".23qoez48ow0.0.1"><a class="" href="/" data-reactid=".23qoez48ow0.0.1.0"><span data-reactid=".23qoez48ow0.0.1.0.0">&lt; </span><span data-reactid=".23qoez48ow0.0.1.0.1">Home</span></a><div data-reactid=".23qoez48ow0.0.1.1"><img class="speaker--photo" src="/img/bio/michaelbrooks.jpg" alt="Michael Brooks" data-reactid=".23qoez48ow0.0.1.1.0"/></div><h1 class="speaker--name" data-reactid=".23qoez48ow0.0.1.2">Michael Brooks</h1><h2 class="speaker--title" data-reactid=".23qoez48ow0.0.1.3">Senior Software Barista, Adobe</h2><div class="speaker--bio" data-reactid=".23qoez48ow0.0.1.4">Orphaned as a child, Michael Brooks was raised by his elderly Uncle Ben and Aunt May. Academically gifted, he displayed an uncanny affinity for Computer Science with speciality in signal processing and computer vision. While attending a developer meetup at the age of 26, Michael was bitten on the hand by a radioactive Nitobi employee, empowering him with the company’s proportional open source belief, community, and ability to ship products. Now disguised as mwbrooks and teamed with Adobe, Michael slings between vim, GitHub, Twitter, and IRC to protect the innocent, confront evil, and make PhoneGap &amp; Apache Cordova a safer framework for the future of application development.</div><div data-reactid=".23qoez48ow0.0.1.5"><a href="https://twitter.com/mwbrooks" data-reactid=".23qoez48ow0.0.1.5.0"><span data-reactid=".23qoez48ow0.0.1.5.0.0">@</span><span data-reactid=".23qoez48ow0.0.1.5.0.1">mwbrooks</span></a></div><div class="sessions" data-reactid=".23qoez48ow0.0.1.6"><h2 class="sessions--heading" data-reactid=".23qoez48ow0.0.1.6.0">Session</h2><div class="session" data-reactid=".23qoez48ow0.0.1.6.1:$9=200am-9=215am"><h3 class="session--title" data-reactid=".23qoez48ow0.0.1.6.1:$9=200am-9=215am.0">PhoneGap kick off</h3><div class="session--time" data-reactid=".23qoez48ow0.0.1.6.1:$9=200am-9=215am.1">9:00am-9:15am</div><div class="session--description" data-reactid=".23qoez48ow0.0.1.6.1:$9=200am-9=215am.2"></div></div></div></div></div><script id="initial-props" type="application/json" data-reactid=".23qoez48ow0.1">{"history":{},"location":{"pathname":"/us2016/speaker/michaelbrooks","search":"","hash":"","state":null,"action":"POP","key":"dd2cyq"},"params":{"slug":"michaelbrooks"},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/us2016/"},{"path":"/us2016/speaker/:slug"},{"path":"/eu2016/"}]},"routeParams":{},"routes":["~route","~route~childRoutes~1"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~childRoutes~1","routeParams":{"slug":"michaelbrooks"},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".23qoez48ow0","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".23qoez48ow0","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":223,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":222,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".23qoez48ow0.2"></script></div></body></html>
+</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--></head><body><div id="react-output" data-reactid=".d9jdlmigw0" data-react-checksum="1888443781"><div id="content" class="speaker-page-content" data-reactid=".d9jdlmigw0.0"><header class="speaker-page--header" data-reactid=".d9jdlmigw0.0.0"><a class="" href="/" data-reactid=".d9jdlmigw0.0.0.0"><img src="/img/pgd_logo.svg" data-reactid=".d9jdlmigw0.0.0.0.0"/></a></header><div class="text-bounds speaker" data-reactid=".d9jdlmigw0.0.1"><a class="" href="/" data-reactid=".d9jdlmigw0.0.1.0"><span data-reactid=".d9jdlmigw0.0.1.0.0">&lt; </span><span data-reactid=".d9jdlmigw0.0.1.0.1">Home</span></a><div data-reactid=".d9jdlmigw0.0.1.1"><img class="speaker--photo" src="/img/bio/michaelbrooks.jpg" alt="Michael Brooks" data-reactid=".d9jdlmigw0.0.1.1.0"/></div><h1 class="speaker--name" data-reactid=".d9jdlmigw0.0.1.2">Michael Brooks</h1><h2 class="speaker--title" data-reactid=".d9jdlmigw0.0.1.3">Senior Software Barista, Adobe</h2><div class="speaker--bio" data-reactid=".d9jdlmigw0.0.1.4">Orphaned as a child, Michael Brooks was raised by his elderly Uncle Ben and Aunt May. Academically gifted, he displayed an uncanny affinity for Computer Science with speciality in signal processing and computer vision. While attending a developer meetup at the age of 26, Michael was bitten on the hand by a radioactive Nitobi employee, empowering him with the company’s proportional open source belief, community, and ability to ship products. Now disguised as mwbrooks and teamed with Adobe, Michael slings between vim, GitHub, Twitter, and IRC to protect the innocent, confront evil, and make PhoneGap &amp; Apache Cordova a safer framework for the future of application development.</div><div data-reactid=".d9jdlmigw0.0.1.5"><a href="https://twitter.com/mwbrooks" data-reactid=".d9jdlmigw0.0.1.5.0"><span data-reactid=".d9jdlmigw0.0.1.5.0.0">@</span><span data-reactid=".d9jdlmigw0.0.1.5.0.1">mwbrooks</span></a></div><div class="sessions" data-reactid=".d9jdlmigw0.0.1.6"><h2 class="sessions--heading" data-reactid=".d9jdlmigw0.0.1.6.0">Session</h2><div class="session" data-reactid=".d9jdlmigw0.0.1.6.1:$9=200am-9=215am"><h3 class="session--title" data-reactid=".d9jdlmigw0.0.1.6.1:$9=200am-9=215am.0">PhoneGap kick off</h3><div class="session--time" data-reactid=".d9jdlmigw0.0.1.6.1:$9=200am-9=215am.1">9:00am-9:15am</div><div class="session--description" data-reactid=".d9jdlmigw0.0.1.6.1:$9=200am-9=215am.2"><div>undefined</div></div></div></div></div></div><script id="initial-props" type="application/json" data-reactid=".d9jdlmigw0.1">{"history":{},"location":{"pathname":"/us2016/speaker/michaelbrooks","search":"","hash":"","state":null,"action":"POP","key":"ho1jma"},"params":{"slug":"michaelbrooks"},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/us2016/"},{"path":"/us2016/speaker/:slug"},{"path":"/eu2016/"}]},"routeParams":{},"routes":["~route","~route~childRoutes~1"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~childRoutes~1","routeParams":{"slug":"michaelbrooks"},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".d9jdlmigw0","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".d9jdlmigw0","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":225,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":224,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".d9jdlmigw0.2"></script></div></body></html>

@@ -4,12 +4,15 @@ import { Link } from 'react-router'
 
 
 class SessionItem extends React.Component {
+  createMarkup() {
+    return {__html: "<div>"+this.props.session.description+"</div>"}
+  }
   render() {
     return (
       <div className="session">
         <h3 className="session--title">{this.props.session.title}</h3>
         <div className="session--time">{this.props.session.time}</div>
-        <div className="session--description">{this.props.session.description}</div>
+        <div className="session--description" dangerouslySetInnerHTML={this.createMarkup()} />
       </div>
     )
   }

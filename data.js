@@ -366,7 +366,7 @@ module.exports = {
         {
           title: "PhoneGap Intermediate",
           speakerSlug: "hollyschinsky",
-          description: "In this workshop we'll walk through creating an app from start to finish. Throughout the process we'll gain an understanding of:\n - Common mobile app development paradigms (navigation, view stacks) \n - Popular mobile framework options \n - Mobile UI design patterns (flat vs. material design) \n - Performance tips \n - App configuration (preferences, permissions, icons/splashscreens) \n And more!"
+          description: "<p>In this workshop we'll walk through creating an app from start to finish. Throughout the process we'll gain an understanding of:</p><ul><li>Common mobile app development paradigms (navigation, view stacks)</li><li>Popular mobile framework options</li><li>Mobile UI design patterns (flat vs. material design)</li><li>Performance tips</li><li>App configuration (preferences, permissions, icons/splashscreens) And more!</li></ul>"
         },
         {
           title: "Building an App with Ionic 2",

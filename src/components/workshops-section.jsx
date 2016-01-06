@@ -4,19 +4,39 @@ import data from '../../data'
 
 class Workshop extends React.Component {
   render(){
-    let speakerData = data.findSpeakerBySlug(this.props.workshop.speakerSlug)
-    let speaker = <h2>test</h2>
-    if(speakerData) {
-      speaker = (
+    let session
+    if (Array.isArray(this.props.workshop.speakerSlug)){
+      let speakers = []
+      for (let [index, speakerSlug] of this.props.workshop.speakerSlug.entries()) {
+        let speakerData = data.findSpeakerBySlug(speakerSlug)
+        speakers.push(speakerData)
+      }
+      session = (
+        <span>
+          <span className="workshop--title">{this.props.workshop.title}</span>
+          <div>
+            <ul className="workshop--speaker-list">
+              {speakers.map((speakerObject, index) =>
+                <li key={speakerObject.id+"-"+speakerObject.slug}><Link to={"/us2016/speaker/"+speakerObject.slug}>{speakerObject.name}</Link></li>
+              )}
+            </ul>
+          </div>
+        </span>
+      )
+    } else if (this.props.workshop.speakerSlug != "") {
+      let speakerData = data.findSpeakerBySlug(this.props.workshop.speakerSlug)
+      session = (
         <span>
           <span className="workshop--title">
             <Link to={"/us2016/speaker/"+this.props.workshop.speakerSlug}>{this.props.workshop.title}</Link>
           </span>
-          <span className="workshop--speaker">{speakerData.name}</span>
+          <div>
+            <span className="workshop--speaker">{speakerData.name}</span>
+          </div>
         </span>
       )
     } else {
-      speaker = (
+      session = (
         <span>
           <span className="workshop--title">{this.props.workshop.title}</span>
         </span>
@@ -24,7 +44,7 @@ class Workshop extends React.Component {
     }
     return (
       <li>
-        {speaker}
+        {session}
       </li>
     )
   }
