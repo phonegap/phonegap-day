@@ -59,7 +59,7 @@ export default class Us2016 extends React.Component {
               <h1>The Lowdown</h1>
               <p><span className="sub">One part conference, one part celebration.</span><br />Join us for an incredible day to hear how the brightest minds in mobile are using PhoneGap to accelerate and optimize their mobile development strategy. You’ll hear from industry experts all ready to share tips and best practices, experiences with coding and performance, and the latest mobile trends. Meet members from the PhoneGap team, hear the latest PhoneGap news, and find out what’s coming next!</p>
               <p>Already have native apps at your organization? Come to PhoneGap Day to learn how to still use native controls for your app while leveraging webviews for the main content to make editing and updates easier and to enable your marketing team and other non technical users to update your app.</p>
-              <p>Need help justifying your trip? Download our “<a href="justify-your-trip-to-phonegapday.docx">Letter to your Boss</a>” document.</p>
+              <p>Need help justifying your trip? Download our “<a href="/justify-your-trip-to-phonegapday.docx">Letter to your Boss</a>” document.</p>
             </div>
           </section>
           <section className="about-details">
