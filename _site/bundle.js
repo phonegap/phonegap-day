@@ -26937,9 +26937,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      speakerSlug: "timkim",
 	      description: "Submitting an app."
 	    }, {
-	      title: "PhoneGap push notifications",
+	      title: "PhoneGap Push Notifications",
 	      speakerSlug: "simonmacdonald",
-	      description: ""
+	      description: "In this workshop we'll walk through adding push notification capabilities to your application. You'll learn how to set up a Google Cloud Messaging project for Android notifications and adding push capabilities to your iOS certificate and provisioning profiles. You'll gain an understanding of how to register with your remote push service and handle incoming notifications. Advanced topics will include how to add action buttons, responding to silent push notifications and testing using node.js."
 	    }, {
 	      title: "Embedding PhoneGap natively: The Hybrid Sweet Spot",
 	      speakerSlug: "aniskadri",
