@@ -205,8 +205,8 @@ module.exports = {
       avatar: "/img/bio/masahirotanaka.jpg",
       slug: "masahirotanaka",
       name: "Masahiro Tanaka",
-      title: "CEO, Asial Corporation",
-      bio: "Masa is the CEO of Asial Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter."
+      title: "CEO, Monaca Corporation",
+      bio: "Masa is the CEO of Monaca Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter."
     },{
       id: 26,
       avatar: "/img/bio/tommywilliams.jpg",
@@ -459,9 +459,9 @@ module.exports = {
           description: "Join Crosswalk architect, Alexis Menard, in a hands-on lab where you will discover how to leverage the power of Crosswalk in your web and hybrid applications and take advantage of the latest web innovations across Android, iOS, and Windows."
         },
         {
-          title: "Learning IoT Programming",
+          title: "Optimizing Performance and User Interface",
           speakerSlug: "masahirotanaka",
-          description: ""
+          description: "Performance was a major concern among hybrid app developers for many years, which has been dramatically improved by the computing power and the performant web views. However, it does not mean you can build an app that runs smoothly without any prior knowledge. This session will describe some of the best practices to analyze, measure and improve the app, ensuring its better user experience."
         }
       ]
     },
