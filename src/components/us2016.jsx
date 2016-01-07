@@ -112,6 +112,7 @@ export default class Us2016 extends React.Component {
                 <div><a href="http://www.onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} /></a></div>
                 <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} /></a></div>
                 <div><a href="http://www.visualstudio.com/"><img src="/img/VisualStudio_Logo.svg" width={300} /></a></div>
+                <div><a href="https://crosswalk-project.org/"><img src="/img/Crosswalk_Project_Logo.svg" width={300} /></a></div>
               </section>
             </div>
           </section>
