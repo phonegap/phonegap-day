@@ -26533,6 +26533,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    { href: 'https://crosswalk-project.org/' },
 	                    _react2.default.createElement('img', { src: '/img/Crosswalk_Project_Logo.svg', width: 300 })
 	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://redhat.com/' },
+	                    _react2.default.createElement('img', { src: '/img/Redhat_Logo.svg', width: 300 })
+	                  )
 	                )
 	              )
 	            )
