@@ -26725,6 +26725,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	    title: "Sr. Computer Scientist, Adobe",
 	    bio: "Jesse is a primordial PhoneGap contributor that has been around long enough to see many phonegap-killers come and go. He has written plugins for everything from the device accelerometer to bluetooth connected wearables like the ms-band, across windows, windows phone, android and ios. A self-proclaimed prolific procrastinator, Jesse often loses interest before he has a chance to fi"
 	  }, {
+	    id: 27,
+	    avatar: "/img/bio/alexismenard.jpg",
+	    twitter: "darktears",
+	    slug: "alexismenard",
+	    name: "Alexis Menard",
+	    title: "Software Engineer, Intel",
+	    bio: "Alexis Menard is a software engineer working at Intel in Oregon as part of the Open Source Technology Center. Here his main focus is on the ever evolving Web Platform, which includes work on W3C standards as well as Blink/Chromium. In the latter projects, he serves as both developer and code reviewer. Alexis is also working on Crosswalk, an HTML5 runtime/webview for Android and Windows where he does a bit of everything. Prior to Intel, Alexis worked on QtWebKit and WebKit itself at the Brazilian Nokia research center known as INdT. Before moving to Brazil, Alexis worked out of Norway, mostly on the Qt framework as a part of Nokia (former Trolltech). He is also a former KDE contributor where he contributed mostly to Plasma, the desktop shell of KDE."
+	  }, {
 	    id: 13,
 	    avatar: "/img/bio/lokimeyburg.jpg",
 	    twitter: "lokimeyburg",
@@ -26764,6 +26772,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	    name: "Holly Schinsky",
 	    title: "Senior Technical Evangelist, Adobe",
 	    bio: "Holly Schinsky is working with the PhoneGap team at Adobe and currently focused on mobile development using PhoneGap, HTML/CSS and JavaScript. She has 17 years experience in software development including Java, Adobe Flex/AIR and ActionScript in addition to her recent hybrid mobile work. Holly’s latest focus is on developer advocacy and education via her blog, samples and workshops. In her free time she’s usually found driving a carpool, running or hanging out with her family."
+	  }, {
+	    id: 28,
+	    avatar: "/img/bio/bobspencer.jpg",
+	    slug: "bobspencer",
+	    name: "Bob Spencer",
+	    title: "Software Architect, Intel",
+	    bio: "Bob Spencer is a software architect in Intel's Open Source Technology Center where for the past decade his work has been centered on open source developer tools and SDKs. He is the community manager on the Crosswalk Project team. In his free time he will be biking, backpacking, or hanging with his family."
 	  }, {
 	    id: 20,
 	    avatar: "/img/bio/masahirotanaka.jpg",
@@ -26857,7 +26872,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    description: "Does the idea of writing enterprise software conjure up images of bland user interfaces, XML-based configuration, and IE8 compatibility? The folks on Adobe’s Experience Manager Apps team have been working hard at avoiding these stereotypes, while building a platform for delivering and managing mobile apps for enterprise customers. This talk will provide a glimpse into the following: What are the perks of including a content management system in my app dev arsenal? Which tools are available for me to take full advantage of Adobe’s Marketing Cloud solutions? As a developer, what open source goodness can I try out today?"
 	  }, {
 	    time: "3:25pm-3:45pm",
-	    title: "Crosswalk"
+	    title: "The Crosswalk Advantage – a powerful runtime for your Cordova Apps",
+	    speakerSlug: "bobspencer",
+	    description: "Discover how to add advanced capabilities to your PhoneGap applications with very little effort. The Crosswalk runtime gives your application the ability to use the newest, just-released features on all platforms with predictable behavior."
 	  }, {
 	    time: "3:45pm-4:00pm",
 	    title: "BREAK"
@@ -26928,7 +26945,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    time: "1:00pm-2:00pm",
 	    sessions: [{
 	      title: "Build the Amazon App",
-	      speakerSlug: "",
+	      speakerSlug: ["shawnjansepar", "lokimeyburg"],
 	      description: "A workshop on quickly building a hybrid app with feature parity to Amazon's app with a mix of native and web interfaces. In this workshop we will guide you through building a commerce-enabled app with feature parity to the Amazon iOS app using a combination of web and native components using Astro, our latest SDK built on top of Cordova."
 	    }, {
 	      title: "Cordova Plugins in Action",
@@ -26964,12 +26981,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      speakerSlug: "",
 	      description: ""
 	    }, {
-	      title: "Crosswalk",
-	      speakerSlug: "",
-	      description: ""
+	      title: "Hands on: Create advanced apps with the Crosswalk runtime",
+	      speakerSlug: "alexismenard",
+	      description: "Join Crosswalk architect, Alexis Menard, in a hands-on lab where you will discover how to leverage the power of Crosswalk in your web and hybrid applications and take advantage of the latest web innovations across Android, iOS, and Windows."
 	    }, {
 	      title: "Learning IoT Programming",
-	      speakerSlug: "",
+	      speakerSlug: "masahirotanaka",
 	      description: ""
 	    }]
 	  }, {
