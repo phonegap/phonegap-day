@@ -208,6 +208,13 @@ module.exports = {
       title: "CEO, Monaca Corporation",
       bio: "Masa is the CEO of Monaca Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter."
     },{
+      id: 29,
+      avatar: "/img/bio/jedwatson.jpg",
+      slug: "jedwatson",
+      name: "Jed Watson",
+      title: "Founder, Thinkmill",
+      bio: "Founder of Thinkmill, Javascript / node.js developer, entrepreneur, creator of Keystone JS and TouchstoneJS."
+    },{
       id: 26,
       avatar: "/img/bio/tommywilliams.jpg",
       twitter: "therealdevgeeks",
@@ -292,7 +299,8 @@ module.exports = {
     },
     {
       time: "1:35pm-2:15pm",
-      title: "Jed Watson"
+      title: "TBA by Jed Watson",
+      speakerSlug: "jedwatson"
     },
     {
       time: "2:15pm-2:35pm",
