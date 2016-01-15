@@ -391,9 +391,9 @@ module.exports = {
           description: "You've built Ionic apps before, but now that V2 is out, what can you expect? In this session, we'll look at an Ionic 1 app and go through the process of building its Ionic 2 equivalent."
         },
         {
-          title: "Plugins are Everything, and Everything is a Plugin!",
-          speakerSlug: "purplecabbage",
-          description: "Jesse has been writing PhoneGap plugins since before there were plugins.  In this deep dive workshop Jesse will cover all the requirements of making great plugins, from conception to testing to publishing. He will also share some secrets from his bag'o'tricks and demonstrate some interesting uses for plugins you may not have thought of. Come ready to build!"
+          title: "App submission",
+          speakerSlug: "timkim",
+          description: "Submitting an app."
         }
       ]
     },
@@ -410,25 +410,20 @@ module.exports = {
           description: "A workshop on quickly building a hybrid app with feature parity to Amazon's app with a mix of native and web interfaces. In this workshop we will guide you through building a commerce-enabled app with feature parity to the Amazon iOS app using a combination of web and native components using Astro, our latest SDK built on top of Cordova."
         },
         {
-          title: "Cordova Plugins in Action",
-          speakerSlug: ["brianrinaldi", "tjvantoll"],
-          description: "Do you love Cordova plugins? So do we! At Telerik we maintain a Cordova plugins marketplace at plugins.telerik.com/cordova, and we’re up to 65 free plugins and counting. In this workshop you’ll install a wide variety of plugins to see how they work in action. You’ll learn about the various ways you can install and test plugins—from the Cordova CLI, to premium tooling available in the Telerik Platform. Come with a laptop and ready to learn about plugins you can use in your next app."
-        },
-        {
           title: "Rangle.io",
           speakerSlug: "",
           description: ""
+        },
+        {
+          title: "Cordova Plugins in Action",
+          speakerSlug: ["brianrinaldi", "tjvantoll"],
+          description: "Do you love Cordova plugins? So do we! At Telerik we maintain a Cordova plugins marketplace at plugins.telerik.com/cordova, and we’re up to 65 free plugins and counting. In this workshop you’ll install a wide variety of plugins to see how they work in action. You’ll learn about the various ways you can install and test plugins—from the Cordova CLI, to premium tooling available in the Telerik Platform. Come with a laptop and ready to learn about plugins you can use in your next app."
         }
       ]
     },
     {
       time: "2:00pm-3:30pm",
       sessions: [
-        {
-          title: "App submission",
-          speakerSlug: "timkim",
-          description: "Submitting an app."
-        },
         {
           title: "PhoneGap Push Notifications",
           speakerSlug: "simonmacdonald",
@@ -438,6 +433,11 @@ module.exports = {
           title: "Embedding PhoneGap natively: The Hybrid Sweet Spot",
           speakerSlug: "aniskadri",
           description: "Many developers choose to build native navigation and transitions into their apps but use webviews for the main content, allowing them to realize a large cost and time savings while making their app available to a wider range of users quickly. This approach also provides the ability to push timely updates without app store approval hassles. With this model, only a small native code-base needs to be maintained per platform, and it’s typically the static elements of the app rather than the main content, thus more manageable."
+        },
+        {
+          title: "Plugins are Everything, and Everything is a Plugin!",
+          speakerSlug: "purplecabbage",
+          description: "Jesse has been writing PhoneGap plugins since before there were plugins.  In this deep dive workshop Jesse will cover all the requirements of making great plugins, from conception to testing to publishing. He will also share some secrets from his bag'o'tricks and demonstrate some interesting uses for plugins you may not have thought of. Come ready to build!"
         }
       ]
     },
@@ -469,8 +469,8 @@ module.exports = {
       time: "4:45pm-6:00pm",
       sessions: [
         {
-          title: "Visual Studio",
-          speakerSlug: "ryanjsalva",
+          title: "REPEAT PhoneGap Push Notifications",
+          speakerSlug: "simonmacdonald",
           description: ""
         },
         {
@@ -479,8 +479,8 @@ module.exports = {
           description: ""
         },
         {
-          title: "REPEAT PhoneGap Push Notifications",
-          speakerSlug: "simonmacdonald",
+          title: "Visual Studio",
+          speakerSlug: "ryanjsalva",
           description: ""
         }
       ]
