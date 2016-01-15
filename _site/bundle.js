@@ -26861,8 +26861,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    title: "LUNCH"
 	  }, {
 	    time: "1:15pm-1:35pm",
-	    title: "Microsoft Visual Studio",
-	    speakerSlug: "ryanjsalva"
+	    title: "Session: Cordova Plugin Roundup",
+	    speakerSlug: "tjvantoll",
+	    description: "In last few years Cordova plugins have become the cornerstone of many high-quality Cordova and PhoneGap applications. In just the last year, we at Telerik have grown our curated Cordova plugins marketplace from small handful of plugins to now 65 and counting. In this talk you’ll learn about the latest greatest in the Cordova plugin world, including plugins for the Apple Watch, Mapbox maps, and a whole lot more."
 	  }, {
 	    time: "1:35pm-2:15pm",
 	    title: "Jed Watson"
@@ -26904,9 +26905,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    description: "Hot-code reload for html/css/js is so 2015, everyone can do it. You probably thought you couldn't hot-reload plugin native code, well you were wrong! I'll show you how (and maybe bake a cake)."
 	  }, {
 	    time: "5:30pm 5:50pm",
-	    title: "Session: Cordova Plugin Roundup",
-	    speakerSlug: "tjvantoll",
-	    description: "In last few years Cordova plugins have become the cornerstone of many high-quality Cordova and PhoneGap applications. In just the last year, we at Telerik have grown our curated Cordova plugins marketplace from small handful of plugins to now 65 and counting. In this talk you’ll learn about the latest greatest in the Cordova plugin world, including plugins for the Apple Watch, Mapbox maps, and a whole lot more."
+	    title: "Microsoft Visual Studio",
+	    speakerSlug: "ryanjsalva"
 	  }, {
 	    time: "6:00pm-8:00pm",
 	    title: "Pub mixer"
