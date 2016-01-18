@@ -26632,7 +26632,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    id: 4,
 	    avatar: "/img/bio/raymondcamden.jpg",
-	    twitter: "https://twitter.com/raymondcamden",
+	    twitter: "raymondcamden",
 	    slug: "raymondcamden",
 	    name: "Raymond Camden",
 	    title: "Developer Advocate, IBM",
@@ -26640,7 +26640,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    id: 23,
 	    avatar: "/img/bio/doncoleman.jpg",
-	    twitter: "https://twitter.com/doncoleman",
+	    twitter: "doncoleman",
 	    slug: "doncoleman",
 	    name: "Don Coleman",
 	    title: "Director, Chariot Solutions",
@@ -26806,6 +26806,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    id: 29,
 	    avatar: "/img/bio/jedwatson.jpg",
 	    slug: "jedwatson",
+	    twitter: "jedwatson",
 	    name: "Jed Watson",
 	    title: "Founder, Thinkmill",
 	    bio: "Jed is a founder of Thinkmill, a web and mobile app development agency in Sydney, and has been writing JavaScript since IE6 was new and exciting. A prolific open source contributor, Jed is the driving force behind KeystoneJS - the node.js content management platform - and several major React.js libraries including Elemental UI and TouchstoneJS, which is a UI Framework for hybrid mobile apps."
