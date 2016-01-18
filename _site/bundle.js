@@ -26654,6 +26654,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	    title: "Product Creator, Sworkit",
 	    bio: "Mobile and frontend developer focused on Ionic SDK and AngularJS apps, with a strong background in UX, Agile, eXtreme Programming, and startup growth. Living in the Midwest and contributing to the world."
 	  }, {
+	    id: 31,
+	    avatar: "/img/bio/chrisgosselin.jpg",
+	    slug: "chrisgosselin",
+	    name: "Chris Gosselin",
+	    title: "Full-stack developer, Rangle.io",
+	    bio: "Chris is a full-stack developer at Rangle.io, a Toronto-based development firm, where he works on creating high-end enterprise mobile apps. Chris' interest in coding started as a teen when he created a variant of a popular board game for his programming class. Since then he has contributed to various open source projects, growth-hacked a startup, and worked extensively on both server-side and client-side projects. When he’s not programming he enjoys rock climbing."
+	  }, {
 	    id: 6,
 	    avatar: "/img/bio/deanhaddock.jpg",
 	    twitter: "systemconscious",
@@ -26803,6 +26810,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	    title: "Founder, Thinkmill",
 	    bio: "Jed is a founder of Thinkmill, a web and mobile app development agency in Sydney, and has been writing JavaScript since IE6 was new and exciting. A prolific open source contributor, Jed is the driving force behind KeystoneJS - the node.js content management platform - and several major React.js libraries including Elemental UI and TouchstoneJS, which is a UI Framework for hybrid mobile apps."
 	  }, {
+	    id: 30,
+	    avatar: "/img/bio/nickvanweerdenburg.jpg",
+	    slug: "nickvanweerdenburg",
+	    twitter: "n1cholasv",
+	    name: "Nick Van Weerdenburg",
+	    title: "Founder, Rangle.io",
+	    bio: "Nick is Rangle.io’s founder, first developer, and now leads the company’s business development and strategy activities. Nick first did server-side JavaScript in 1997 and has 15 years of experience in web software in diverse roles and industries. He is a firm believer in the thin-server, full-JavaScript stack and an active speaker, delivering about a dozen talks each year."
+	  }, {
 	    id: 26,
 	    avatar: "/img/bio/tommywilliams.jpg",
 	    twitter: "therealdevgeeks",
@@ -26883,7 +26898,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    description: "This talk will cover basic internationalization, globalization issues with Cordova apps. I'll talk about the Globalization plugin (and how to work around the async nature of the plugin), the Intl class, and other options. Also, I'll discuss why you should give a damn as a developer."
 	  }, {
 	    time: "2:35pm-2:55pm",
-	    title: "Rangle.io"
+	    title: "Fixing Continuous Delivery for Mobile.",
+	    speakerSlug: "nickvanweerdenburg",
+	    description: "Manual builds and app store approval lags make it near impossible to have an effective mobile continuous delivery process. In turn, this hurts our attempts to be truly Agile with our mobile projects. The solution? Per-pull request deployment through CircleCI, CodePush and a custom CodePush loader in your app. This enables hands-free, automated deployment from commit to a user device, radically changing your testing, validation, and your user feedback processes."
 	  }, {
 	    time: "2:55pm-3:25pm",
 	    title: "Making Enterprise Sh_t",
@@ -26967,9 +26984,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      speakerSlug: ["shawnjansepar", "lokimeyburg"],
 	      description: "A workshop on quickly building a hybrid app with feature parity to Amazon's app with a mix of native and web interfaces. In this workshop we will guide you through building a commerce-enabled app with feature parity to the Amazon iOS app using a combination of web and native components using Astro, our latest SDK built on top of Cordova."
 	    }, {
-	      title: "Rangle.io",
-	      speakerSlug: "",
-	      description: ""
+	      title: "Memory Leaks in Hybrid Mobile Apps.",
+	      speakerSlug: "chrisgosselin",
+	      description: "An investigation into how memory leaks effect hybrid applications and how to track them down."
 	    }, {
 	      title: "Cordova Plugins in Action",
 	      speakerSlug: ["brianrinaldi", "tjvantoll"],
