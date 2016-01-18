@@ -26376,7 +26376,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	                _react2.default.createElement(
 	                  'p',
 	                  null,
-	                  'After the conference, join us on Saturday, January 30th for a PhoneGap ski day on Utah’s famous mountains. More details to come!'
+	                  'After the conference, join us on Saturday, January 30th for a PhoneGap ski day on Utah’s famous mountains. We\'ll be headed to ',
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://www.sundanceresort.com/', target: '_blank' },
+	                    'Sundance Mountain Resort'
+	                  ),
+	                  '. It\'s a boutique resort tucked away on 5,000 picturesque acres of wilderness in the shadow of Utah\'s 12,000-foot Mt. Timpanogos. Join us for skiing, snowshoeing, cross-country skiing, or relax at one of Sundance\'s many excellent restaurants.'
 	                )
 	              ),
 	              _react2.default.createElement(
