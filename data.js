@@ -213,7 +213,7 @@ module.exports = {
       slug: "jedwatson",
       name: "Jed Watson",
       title: "Founder, Thinkmill",
-      bio: "Founder of Thinkmill, Javascript / node.js developer, entrepreneur, creator of Keystone JS and TouchstoneJS."
+      bio: "Jed is a founder of Thinkmill, a web and mobile app development agency in Sydney, and has been writing JavaScript since IE6 was new and exciting. A prolific open source contributor, Jed is the driving force behind KeystoneJS - the node.js content management platform - and several major React.js libraries including Elemental UI and TouchstoneJS, which is a UI Framework for hybrid mobile apps."
     },{
       id: 26,
       avatar: "/img/bio/tommywilliams.jpg",
@@ -299,8 +299,9 @@ module.exports = {
     },
     {
       time: "1:35pm-2:15pm",
-      title: "TBA by Jed Watson",
-      speakerSlug: "jedwatson"
+      title: "PhoneGap and React.js",
+      speakerSlug: "jedwatson",
+      description: "React.js has been changing the way web developers build user interfaces for the web, but what about hybrid mobile apps, where jQuery Mobile and Angular remain the most popular frameworks? In this talk Jed will review the advantages and challenges of React for mobile, why it is an exciting framework to use, and how to integrate the React ecosystem into your development workflow."
     },
     {
       time: "2:15pm-2:35pm",
@@ -335,21 +336,22 @@ module.exports = {
       description: "This talk will provide the tools and methodologies to help any solo developer or small team build and then market their app to ensure it has the best chance for success. We'll take a transparent look at the early beginnings of Sworkit to where it is now. From a single developer to a team of 10 employees, and from 10 downloads to 10 million. This talk will be a combination of the development and marketing lessons learned and implemented along the way."
     },
     {
-      time: "4:30pm-5:10pm",
+      time: "4:30pm-5:00pm",
       title: "Generate for AEM and PhoneGap: Design Evolution 3.0 - D2W",
       speakerSlug: "reneelance",
       description: "Taking design to the digital environment has traditionally been time consuming, resource intensive and something designers and developers have been challenged with since the inception of designing for the web. So what if we had the ability to take design compositions from within Photoshop or Illustrator (or any other design tool if there really is any other) and directly turn them into and app, website or email marketing with a one button click? Something that seems too good to be true doesn’t it, well maybe not. This talk will show new Adobe innovation still in the labs, which look at streamlining workflows and rapid prototyping for App creation with Adobe AEM and PhoneGap."
     },
     {
-      time: "5:10pm-5:30pm",
+      time: "5:00pm-5:20pm",
       title: "Loading native code (plugins) dynamically for the enterprise",
       speakerSlug: "shazron",
       description: "Hot-code reload for html/css/js is so 2015, everyone can do it. You probably thought you couldn't hot-reload plugin native code, well you were wrong! I'll show you how (and maybe bake a cake)."
     },
     {
-      time: "5:30pm 5:50pm",
+      time: "5:20pm 5:40pm",
       title: "Microsoft Visual Studio",
-      speakerSlug: "ryanjsalva"
+      speakerSlug: "ryanjsalva",
+      description: "TBA"
     },
     {
       time: "6:00pm-8:00pm",
