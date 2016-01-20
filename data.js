@@ -50,6 +50,14 @@ module.exports = {
       title: "Developer Advocate, IBM",
       bio: "Raymon is a 42 year old married father of six living in beautiful Lafayette, Louisiana. His primary technical focus is on the MobileFirst platform, web standards and client-side development. Most of his time is spent writing, researching, or presenting. When he's not behind a computer, he's an avid XBox/PS4 player, he enjoys movies, and he reads like crazy."
     },{
+      id: 32,
+      avatar: "/img/bio/cianclarke.jpg",
+      twitter: "cianclarke",
+      slug: "cianclarke",
+      name: "Cian Clarke",
+      title: "Software Engineer, Red Hat Mobile",
+      bio: 'Cian is a Software Engineer on the Red Hat Mobile Team. An early technologist, he founded his own web consultancy business at 16. Cian was a member of the original FeedHenry mobile team, since acquired by Red Hat. At Red Hat, Cian builds functionality for the Mobile Application Platform, and also helps with solutions architecture and evangelism. In addition to his day job, he also regularly blogs about the intersection of all things mobile, microservices and Node.js. Cian is originally from Waterford, Ireland, and currently resides in Boston, Massachusetts.'
+    },{
       id: 23,
       avatar: "/img/bio/doncoleman.jpg",
       twitter: "doncoleman",
@@ -477,9 +485,9 @@ module.exports = {
       time: "3:45pm-4:45pm",
       sessions: [
         {
-          title: "Redhat",
-          speakerSlug: "",
-          description: ""
+          title: "Supercharge your Hybrid Apps with Microservices for Mobile",
+          speakerSlug: "cianclarke",
+          description: "In this hands-on session, we will first build a simple Cordova based mobile app using the barcode scanner plugin. Then, we’ll build a microservice written in Node.js to retrieve some hard-to-get data. Along the way, we’ll explore the benefits of this approach, and why hybrid mobile apps are really just an extension of microservices to the client side. Participants only need to bring a laptop with a modern web browser, and will leave the session primed with practical experience building microservices for their mobile apps."
         },
         {
           title: "Hands on: Create advanced apps with the Crosswalk runtime",

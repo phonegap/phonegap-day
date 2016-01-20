@@ -46,7 +46,7 @@ export default class Us2016 extends React.Component {
               <div className="pricing">
                 <h2>Conference Ticket Pricing</h2>
                 <ul>
-                  <li><span>Conference</span><span className="leader" /><span>$100</span></li>
+                  <li><span>Conference</span><span className="leader" /><span>Soldout</span></li>
                   <li><span>Conf + Workshops</span><span className="leader" /><span>Soldout</span></li>
                 </ul>
               </div><a href="http://www.eventbrite.com/e/phonegap-day-us-2016-tickets-18659846102" className="button--cta">Get Tickets</a>
