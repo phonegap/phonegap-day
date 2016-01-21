@@ -26865,7 +26865,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    time: "9:50am-10:10am",
 	    title: "Automated App Testing: A pain or cure?",
 	    speakerSlug: "martinposchenrieder",
-	    description: "At testmunk we have been working with many popular apps by helping them ship better apps faster. We have automated testing for various Phonegap/Cordova apps (as well as others), allowing for quick detection of layout issues and crashes. In this talk I'd like to touch on some of the testing challenges developers/QAs come across due to today’s large device and OS fragmentation, and how automated testing can ease some of these issues. I will also show some examples of how developers can quickly set up their own automated tests and run them on a large set of devices"
+	    description: "You want to ship an app you can be proud of, without bugs or defects. You want it delivered quickly. However, the testing process is looked at as simply a ‘necessary evil’ and there is never enough time in the day to test everything manually. Automated testing claims to be the answer but you’ve found it ‘hard to set up’ and ‘difficult to maintain’. Is going back to pure manual testing the answer? Hiring more resources? What is the right balance between manual and automated testing? Can I make automated testing easier? What are some of the current testing trends? From my experience working with many small and large companies, I hope to share my observations, and answer some of these questions."
 	  }, {
 	    time: "10:10am-10:30am",
 	    title: "Finding the sweet spot - blending the best of native and web",
@@ -27950,7 +27950,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                  _react2.default.createElement(
 	                    'a',
 	                    { href: 'https://crosswalk-project.org/' },
-	                    _react2.default.createElement('img', { src: '/img/Crosswalk_Project_Logo.png', width: 300 })
+	                    _react2.default.createElement('img', { src: '/img/Crosswalk_Project_Logo.svg', width: 300 })
 	                  )
 	                )
 	              ),
