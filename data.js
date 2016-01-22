@@ -264,7 +264,8 @@ module.exports = {
     {
       time: "9:00am-9:15am",
       title: "PhoneGap kick off",
-      speakerSlug: "michaelbrooks"
+      speakerSlug: "michaelbrooks",
+      description: "Stop! Wait a moment. Close your eyes. Are they closed? Yea? Alright! Now take a deep breath. No, this isn't yoga. This may be your last relaxing moment for the next two days.<br/><br/>Ahead of you are some amazing presentations from developers in our community. Developers like you, who have contributed their time, talent, and energy to move hybrid mobile app developement forward. PhoneGap Day is an event for you. It's a place for you to meet the people behind the scenes, share your work, and leave your mark on the next version of PhoneGap and Apache Cordova.<br/><br/>Now it's time to enjoy some code, drinks, and powder on the PhoneGap Team!"
     },
     {
       time: "9:15am-9:50am",
