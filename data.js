@@ -462,9 +462,9 @@ module.exports = {
       time: "2:00pm-3:30pm",
       sessions: [
         {
-          title: "PhoneGap Push Notifications",
-          speakerSlug: "simonmacdonald",
-          description: "In this workshop we'll walk through adding push notification capabilities to your application. You'll learn how to set up a Google Cloud Messaging project for Android notifications and adding push capabilities to your iOS certificate and provisioning profiles. You'll gain an understanding of how to register with your remote push service and handle incoming notifications. Advanced topics will include how to add action buttons, responding to silent push notifications and testing using node.js."
+          title: "REPEAT PhoneGap Beginner",
+          speakerSlug: "GarthDB",
+          description: "This workshop will provide an introduction to PhoneGap, the philosophy behind it, and how to get started quickly using a variety of different tools available. You will learn how to create a simple mobile app using the PhoneGap CLI, PhoneGap Desktop App, PhoneGap Developer App, and more. You'll then learn how to extend the app with plugins, manipulate it with hooks, and debug it with the various tools available. By the end of this beginner workshop, you will walk away with a solid understanding of what PhoneGap is all about and how to use it for your next project."
         },
         {
           title: "Embedding PhoneGap natively: The Hybrid Sweet Spot",
@@ -506,9 +506,9 @@ module.exports = {
       time: "4:45pm-6:00pm",
       sessions: [
         {
-          title: "REPEAT PhoneGap Push Notifications",
+          title: "PhoneGap Push Notifications",
           speakerSlug: "simonmacdonald",
-          description: ""
+          description: "In this workshop we'll walk through adding push notification capabilities to your application. You'll learn how to set up a Google Cloud Messaging project for Android notifications and adding push capabilities to your iOS certificate and provisioning profiles. You'll gain an understanding of how to register with your remote push service and handle incoming notifications. Advanced topics will include how to add action buttons, responding to silent push notifications and testing using node.js."
         },
         {
           title: "REPEAT Hands-on Bluetooth Low Energy",
