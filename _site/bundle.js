@@ -26555,17 +26555,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    time: "10:45am-12:00pm",
 	    sessions: [{
-	      title: "PhoneGap Intermediate",
-	      speakerSlug: "hollyschinsky",
-	      description: "<p>In this workshop we'll walk through creating an app from start to finish. Throughout the process we'll gain an understanding of:</p><ul><li>Common mobile app development paradigms (navigation, view stacks)</li><li>Popular mobile framework options</li><li>Mobile UI design patterns (flat vs. material design)</li><li>Performance tips</li><li>App configuration (preferences, permissions, icons/splashscreens) And more!</li></ul>"
+	      title: "App submission",
+	      speakerSlug: "timkim",
+	      description: "Submitting an app."
 	    }, {
 	      title: "Building an App with Ionic 2",
 	      speakerSlug: "mikehartington",
 	      description: "You've built Ionic apps before, but now that V2 is out, what can you expect? In this session, we'll look at an Ionic 1 app and go through the process of building its Ionic 2 equivalent."
 	    }, {
-	      title: "App submission",
-	      speakerSlug: "timkim",
-	      description: "Submitting an app."
+	      title: "PhoneGap Intermediate",
+	      speakerSlug: "hollyschinsky",
+	      description: "<p>In this workshop we'll walk through creating an app from start to finish. Throughout the process we'll gain an understanding of:</p><ul><li>Common mobile app development paradigms (navigation, view stacks)</li><li>Popular mobile framework options</li><li>Mobile UI design patterns (flat vs. material design)</li><li>Performance tips</li><li>App configuration (preferences, permissions, icons/splashscreens) And more!</li></ul>"
 	    }]
 	  }, {
 	    time: "12:00pm-1:00pm",
