@@ -26654,7 +26654,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    description: "TBA"
 	  }, {
 	    time: "6:00pm-8:00pm",
-	    title: "Pub mixer"
+	    title: "Pub mixer: Drinks and appetizers right after the conference."
 	  }],
 	  workshops: [{
 	    time: "8:30am - 9:00am",

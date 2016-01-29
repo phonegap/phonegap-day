@@ -382,7 +382,7 @@ module.exports = {
     },
     {
       time: "6:00pm-8:00pm",
-      title: "Pub mixer"
+      title: "Pub mixer: Drinks and appetizers right after the conference."
     }
   ],
   workshops: [
