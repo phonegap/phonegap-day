@@ -1273,12 +1273,12 @@ a:hover {
           flex-direction: column;
   border: 1px solid rgba(3,51,81,0.2);
 }
-.workshop--list li {
+.workshop--list > li {
   width: 100%;
   padding: 2px 5px;
   box-sizing: border-box;
 }
-.workshop--list li:nth-child(n+2) {
+.workshop--list > li:nth-child(n+2) {
   border-left: 0;
   border-top: 1px solid rgba(3,51,81,0.2);
 }
@@ -1289,6 +1289,19 @@ workshop--title {
 .workshop--title {
   font-weight: bold;
   font-size: 1.125rem;
+}
+.workshop--speaker-list {
+  list-style: none;
+}
+.workshop--speaker-list > li {
+  display: inline-block;
+}
+.workshop--speaker-list > li:nth-child(-n+1):after {
+  content: ",";
+  margin-right: 3px;
+}
+.workshop--speaker-list > li:last-child:before {
+  content: "and ";
 }
 @media only screen and (min-width: 400px) {
   .speaker-section .speaker-list {
@@ -1320,7 +1333,7 @@ workshop--title {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .workshop--list li:nth-child(n+2) {
+  .workshop--list > li:nth-child(n+2) {
     border-left: 1px solid rgba(3,51,81,0.2);
     border-top: 0;
   }
@@ -1394,4 +1407,4 @@ workshop--title {
             column-count: 2;
   }
 }
-</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--></head><body><div id="react-output" data-reactid=".wqpua7mkg0" data-react-checksum="6271856"><div class="splash--contents" data-reactid=".wqpua7mkg0.0"><div class="splash--us2016" data-reactid=".wqpua7mkg0.0.0"><div class="splash--images" data-reactid=".wqpua7mkg0.0.0.0"><div class="splash--image" data-reactid=".wqpua7mkg0.0.0.0.0"></div><div class="splash--image" data-reactid=".wqpua7mkg0.0.0.0.1"></div></div><a class="" href="/us2016/" data-reactid=".wqpua7mkg0.0.0.1"></a></div><div class="splash--eu2016" data-reactid=".wqpua7mkg0.0.1"><a class="" href="/eu2016/" data-reactid=".wqpua7mkg0.0.1.0"></a></div></div><script id="initial-props" type="application/json" data-reactid=".wqpua7mkg0.1">{"history":{},"location":{"pathname":"/","search":"","hash":"","state":null,"action":"POP","key":"2b3t9e"},"params":{},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/us2016/"},{"path":"/us2016/speaker/:slug"},{"path":"/eu2016/"}]},"routeParams":{},"routes":["~route","~route~indexRoute"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~indexRoute","routeParams":{},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".wqpua7mkg0","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".wqpua7mkg0","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":2,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":1,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".wqpua7mkg0.2"></script></div></body></html>
+</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--></head><body><div id="react-output" data-reactid=".16zcpbttpmo" data-react-checksum="-1281574551"><div class="splash--contents" data-reactid=".16zcpbttpmo.0"><div class="splash--us2016" data-reactid=".16zcpbttpmo.0.0"><div class="splash--images" data-reactid=".16zcpbttpmo.0.0.0"><div class="splash--image" data-reactid=".16zcpbttpmo.0.0.0.0"></div><div class="splash--image" data-reactid=".16zcpbttpmo.0.0.0.1"></div></div><a class="" href="/us2016/" data-reactid=".16zcpbttpmo.0.0.1"></a></div><div class="splash--eu2016" data-reactid=".16zcpbttpmo.0.1"><a class="" href="/eu2016/" data-reactid=".16zcpbttpmo.0.1.0"></a></div></div><script id="initial-props" type="application/json" data-reactid=".16zcpbttpmo.1">{"history":{},"location":{"pathname":"/","search":"","hash":"","state":null,"action":"POP","key":"6qb8b1"},"params":{},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/us2016/"},{"path":"/us2016/speaker/:slug"},{"path":"/eu2016/"}]},"routeParams":{},"routes":["~route","~route~indexRoute"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~indexRoute","routeParams":{},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".16zcpbttpmo","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".16zcpbttpmo","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":2,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":1,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".16zcpbttpmo.2"></script></div></body></html>

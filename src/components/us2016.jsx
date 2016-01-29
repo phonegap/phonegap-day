@@ -46,8 +46,8 @@ export default class Us2016 extends React.Component {
               <div className="pricing">
                 <h2>Conference Ticket Pricing</h2>
                 <ul>
-                  <li><span>Conference</span><span className="leader" /><span>$100</span></li>
-                  <li><span>Conf + Workshops</span><span className="leader" /><span>$150</span></li>
+                  <li><span>Conference</span><span className="leader" /><span>Soldout</span></li>
+                  <li><span>Conf + Workshops</span><span className="leader" /><span>Soldout</span></li>
                 </ul>
               </div><a href="http://www.eventbrite.com/e/phonegap-day-us-2016-tickets-18659846102" className="button--cta">Get Tickets</a>
             </div>
@@ -59,7 +59,7 @@ export default class Us2016 extends React.Component {
               <h1>The Lowdown</h1>
               <p><span className="sub">One part conference, one part celebration.</span><br />Join us for an incredible day to hear how the brightest minds in mobile are using PhoneGap to accelerate and optimize their mobile development strategy. You’ll hear from industry experts all ready to share tips and best practices, experiences with coding and performance, and the latest mobile trends. Meet members from the PhoneGap team, hear the latest PhoneGap news, and find out what’s coming next!</p>
               <p>Already have native apps at your organization? Come to PhoneGap Day to learn how to still use native controls for your app while leveraging webviews for the main content to make editing and updates easier and to enable your marketing team and other non technical users to update your app.</p>
-              <p>Need help justifying your trip? Download our “<a href="justify-your-trip-to-phonegapday.docx">Letter to your Boss</a>” document.</p>
+              <p>Need help justifying your trip? Download our “<a href="/justify-your-trip-to-phonegapday.docx">Letter to your Boss</a>” document.</p>
             </div>
           </section>
           <SessionsSection sessions={sessions} heading={"Schedule"}/>
@@ -84,7 +84,7 @@ export default class Us2016 extends React.Component {
             <div className="text-bounds">
               <section>
                 <h1>Ski Day</h1>
-                <p>After the conference, join us on Saturday, January 30th for a PhoneGap ski day on Utah’s famous mountains. More details to come!</p>
+                <p>After the conference, join us on Saturday, January 30th for a PhoneGap ski day on Utah’s famous mountains. We'll be headed to <a href="http://www.sundanceresort.com/" target="_blank">Sundance Mountain Resort</a>. It's a boutique resort tucked away on 5,000 picturesque acres of wilderness in the shadow of Utah's 12,000-foot Mt. Timpanogos. Join us for skiing, snowshoeing, cross-country skiing, or relax at one of Sundance's many excellent restaurants.</p>
               </section>
               <section>
                 <h1>Venue</h1>
@@ -111,6 +111,8 @@ export default class Us2016 extends React.Component {
                 <div><a href="http://www.onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} /></a></div>
                 <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} /></a></div>
                 <div><a href="http://www.visualstudio.com/"><img src="/img/VisualStudio_Logo.svg" width={300} /></a></div>
+                <div><a href="https://crosswalk-project.org/"><img src="/img/Crosswalk_Project_Logo.svg" width={300} /></a></div>
+                <div><a href="http://redhat.com/"><img src="/img/Redhat_Logo.svg" width={300} /></a></div>
               </section>
             </div>
           </section>

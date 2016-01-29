@@ -44,15 +44,23 @@ module.exports = {
     },{
       id: 4,
       avatar: "/img/bio/raymondcamden.jpg",
-      twitter: "https://twitter.com/raymondcamden",
+      twitter: "raymondcamden",
       slug: "raymondcamden",
       name: "Raymond Camden",
       title: "Developer Advocate, IBM",
       bio: "Raymon is a 42 year old married father of six living in beautiful Lafayette, Louisiana. His primary technical focus is on the MobileFirst platform, web standards and client-side development. Most of his time is spent writing, researching, or presenting. When he's not behind a computer, he's an avid XBox/PS4 player, he enjoys movies, and he reads like crazy."
     },{
+      id: 32,
+      avatar: "/img/bio/cianclarke.jpg",
+      twitter: "cianclarke",
+      slug: "cianclarke",
+      name: "Cian Clarke",
+      title: "Software Engineer, Red Hat Mobile",
+      bio: 'Cian is a Software Engineer on the Red Hat Mobile Team. An early technologist, he founded his own web consultancy business at 16. Cian was a member of the original FeedHenry mobile team, since acquired by Red Hat. At Red Hat, Cian builds functionality for the Mobile Application Platform, and also helps with solutions architecture and evangelism. In addition to his day job, he also regularly blogs about the intersection of all things mobile, microservices and Node.js. Cian is originally from Waterford, Ireland, and currently resides in Boston, Massachusetts.'
+    },{
       id: 23,
       avatar: "/img/bio/doncoleman.jpg",
-      twitter: "https://twitter.com/doncoleman",
+      twitter: "doncoleman",
       slug: "doncoleman",
       name: "Don Coleman",
       title: "Director, Chariot Solutions",
@@ -65,6 +73,13 @@ module.exports = {
       name: "David Frahm",
       title: "Product Creator, Sworkit",
       bio: "Mobile and frontend developer focused on Ionic SDK and AngularJS apps, with a strong background in UX, Agile, eXtreme Programming, and startup growth. Living in the Midwest and contributing to the world."
+    },{
+      id: 31,
+      avatar: "/img/bio/chrisgosselin.jpg",
+      slug: "chrisgosselin",
+      name: "Chris Gosselin",
+      title: "Full-stack developer, Rangle.io",
+      bio: "Chris is a full-stack developer at Rangle.io, a Toronto-based development firm, where he works on creating high-end enterprise mobile apps. Chris' interest in coding started as a teen when he created a variant of a popular board game for his programming class. Since then he has contributed to various open source projects, growth-hacked a startup, and worked extensively on both server-side and client-side projects. When he’s not programming he enjoys rock climbing."
     },{
       id: 6,
       avatar: "/img/bio/deanhaddock.jpg",
@@ -146,6 +161,14 @@ module.exports = {
       title: "Sr. Computer Scientist, Adobe",
       bio: "Jesse is a primordial PhoneGap contributor that has been around long enough to see many phonegap-killers come and go. He has written plugins for everything from the device accelerometer to bluetooth connected wearables like the ms-band, across windows, windows phone, android and ios. A self-proclaimed prolific procrastinator, Jesse often loses interest before he has a chance to fi"
     },{
+      id: 27,
+      avatar: "/img/bio/alexismenard.jpg",
+      twitter: "darktears",
+      slug: "alexismenard",
+      name: "Alexis Menard",
+      title: "Software Engineer, Intel",
+      bio: "Alexis Menard is a software engineer working at Intel in Oregon as part of the Open Source Technology Center. Here his main focus is on the ever evolving Web Platform, which includes work on W3C standards as well as Blink/Chromium. In the latter projects, he serves as both developer and code reviewer. Alexis is also working on Crosswalk, an HTML5 runtime/webview for Android and Windows where he does a bit of everything. Prior to Intel, Alexis worked on QtWebKit and WebKit itself at the Brazilian Nokia research center known as INdT. Before moving to Brazil, Alexis worked out of Norway, mostly on the Qt framework as a part of Nokia (former Trolltech). He is also a former KDE contributor where he contributed mostly to Plasma, the desktop shell of KDE."
+    },{
       id: 13,
       avatar: "/img/bio/lokimeyburg.jpg",
       twitter: "lokimeyburg",
@@ -186,12 +209,35 @@ module.exports = {
       title: "Senior Technical Evangelist, Adobe",
       bio: "Holly Schinsky is working with the PhoneGap team at Adobe and currently focused on mobile development using PhoneGap, HTML/CSS and JavaScript. She has 17 years experience in software development including Java, Adobe Flex/AIR and ActionScript in addition to her recent hybrid mobile work. Holly’s latest focus is on developer advocacy and education via her blog, samples and workshops. In her free time she’s usually found driving a carpool, running or hanging out with her family."
     },{
+      id: 28,
+      avatar: "/img/bio/bobspencer.jpg",
+      slug: "bobspencer",
+      name: "Bob Spencer",
+      title: "Software Architect, Intel",
+      bio: "Bob Spencer is a software architect in Intel's Open Source Technology Center where for the past decade his work has been centered on open source developer tools and SDKs. He is the community manager on the Crosswalk Project team. In his free time he will be biking, backpacking, or hanging with his family."
+    },{
       id: 20,
       avatar: "/img/bio/masahirotanaka.jpg",
       slug: "masahirotanaka",
       name: "Masahiro Tanaka",
-      title: "CEO, Asial Corporation",
-      bio: "Masa is the CEO of Asial Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter."
+      title: "CEO, Monaca Corporation",
+      bio: "Masa is the CEO of Monaca Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter."
+    },{
+      id: 29,
+      avatar: "/img/bio/jedwatson.jpg",
+      slug: "jedwatson",
+      twitter: "jedwatson",
+      name: "Jed Watson",
+      title: "Founder, Thinkmill",
+      bio: "Jed is a founder of Thinkmill, a web and mobile app development agency in Sydney, and has been writing JavaScript since IE6 was new and exciting. A prolific open source contributor, Jed is the driving force behind KeystoneJS - the node.js content management platform - and several major React.js libraries including Elemental UI and TouchstoneJS, which is a UI Framework for hybrid mobile apps."
+    },{
+      id: 30,
+      avatar: "/img/bio/nickvanweerdenburg.jpg",
+      slug: "nickvanweerdenburg",
+      twitter: "n1cholasv",
+      name: "Nick Van Weerdenburg",
+      title: "Founder, Rangle.io",
+      bio: "Nick is Rangle.io’s founder, first developer, and now leads the company’s business development and strategy activities. Nick first did server-side JavaScript in 1997 and has 15 years of experience in web software in diverse roles and industries. He is a firm believer in the thin-server, full-JavaScript stack and an active speaker, delivering about a dozen talks each year."
     },{
       id: 26,
       avatar: "/img/bio/tommywilliams.jpg",
@@ -218,7 +264,8 @@ module.exports = {
     {
       time: "9:00am-9:15am",
       title: "PhoneGap kick off",
-      speakerSlug: "michaelbrooks"
+      speakerSlug: "michaelbrooks",
+      description: "Stop! Wait a moment. Close your eyes. Are they closed? Yea? Alright! Now take a deep breath. No, this isn't yoga. This may be your last relaxing moment for the next two days.<br/><br/>Ahead of you are some amazing presentations from developers in our community. Developers like you, who have contributed their time, talent, and energy to move hybrid mobile app developement forward. PhoneGap Day is an event for you. It's a place for you to meet the people behind the scenes, share your work, and leave your mark on the next version of PhoneGap and Apache Cordova.<br/><br/>Now it's time to enjoy some code, drinks, and powder on the PhoneGap Team!"
     },
     {
       time: "9:15am-9:50am",
@@ -230,7 +277,7 @@ module.exports = {
       time: "9:50am-10:10am",
       title: "Automated App Testing: A pain or cure?",
       speakerSlug: "martinposchenrieder",
-      description: "At testmunk we have been working with many popular apps by helping them ship better apps faster. We have automated testing for various Phonegap/Cordova apps (as well as others), allowing for quick detection of layout issues and crashes. In this talk I'd like to touch on some of the testing challenges developers/QAs come across due to today’s large device and OS fragmentation, and how automated testing can ease some of these issues. I will also show some examples of how developers can quickly set up their own automated tests and run them on a large set of devices"
+      description: "You want to ship an app you can be proud of, without bugs or defects. You want it delivered quickly. However, the testing process is looked at as simply a ‘necessary evil’ and there is never enough time in the day to test everything manually. Automated testing claims to be the answer but you’ve found it ‘hard to set up’ and ‘difficult to maintain’. Is going back to pure manual testing the answer? Hiring more resources? What is the right balance between manual and automated testing? Can I make automated testing easier? What are some of the current testing trends? From my experience working with many small and large companies, I hope to share my observations, and answer some of these questions."
     },
     {
       time: "10:10am-10:30am",
@@ -271,12 +318,15 @@ module.exports = {
     },
     {
       time: "1:15pm-1:35pm",
-      title: "Microsoft Visual Studio",
-      speakerSlug: "ryanjsalva"
+      title: "Session: Cordova Plugin Roundup",
+      speakerSlug: "tjvantoll",
+      description: "In last few years Cordova plugins have become the cornerstone of many high-quality Cordova and PhoneGap applications. In just the last year, we at Telerik have grown our curated Cordova plugins marketplace from small handful of plugins to now 65 and counting. In this talk you’ll learn about the latest greatest in the Cordova plugin world, including plugins for the Apple Watch, Mapbox maps, and a whole lot more."
     },
     {
       time: "1:35pm-2:15pm",
-      title: "Jed Watson"
+      title: "PhoneGap and React.js",
+      speakerSlug: "jedwatson",
+      description: "React.js has been changing the way web developers build user interfaces for the web, but what about hybrid mobile apps, where jQuery Mobile and Angular remain the most popular frameworks? In this talk Jed will review the advantages and challenges of React for mobile, why it is an exciting framework to use, and how to integrate the React ecosystem into your development workflow."
     },
     {
       time: "2:15pm-2:35pm",
@@ -286,7 +336,9 @@ module.exports = {
     },
     {
       time: "2:35pm-2:55pm",
-      title: "Rangle.io"
+      title: "Fixing Continuous Delivery for Mobile.",
+      speakerSlug: "nickvanweerdenburg",
+      description: "Manual builds and app store approval lags make it near impossible to have an effective mobile continuous delivery process. In turn, this hurts our attempts to be truly Agile with our mobile projects. The solution? Per-pull request deployment through CircleCI, CodePush and a custom CodePush loader in your app. This enables hands-free, automated deployment from commit to a user device, radically changing your testing, validation, and your user feedback processes."
     },
     {
       time: "2:55pm-3:25pm",
@@ -296,7 +348,9 @@ module.exports = {
     },
     {
       time: "3:25pm-3:45pm",
-      title: "Crosswalk"
+      title: "The Crosswalk Advantage – a powerful runtime for your Cordova Apps",
+      speakerSlug: "bobspencer",
+      description: "Discover how to add advanced capabilities to your PhoneGap applications with very little effort. The Crosswalk runtime gives your application the ability to use the newest, just-released features on all platforms with predictable behavior."
     },
     {
       time: "3:45pm-4:00pm",
@@ -309,22 +363,22 @@ module.exports = {
       description: "This talk will provide the tools and methodologies to help any solo developer or small team build and then market their app to ensure it has the best chance for success. We'll take a transparent look at the early beginnings of Sworkit to where it is now. From a single developer to a team of 10 employees, and from 10 downloads to 10 million. This talk will be a combination of the development and marketing lessons learned and implemented along the way."
     },
     {
-      time: "4:30pm-5:10pm",
+      time: "4:30pm-5:00pm",
       title: "Generate for AEM and PhoneGap: Design Evolution 3.0 - D2W",
       speakerSlug: "reneelance",
       description: "Taking design to the digital environment has traditionally been time consuming, resource intensive and something designers and developers have been challenged with since the inception of designing for the web. So what if we had the ability to take design compositions from within Photoshop or Illustrator (or any other design tool if there really is any other) and directly turn them into and app, website or email marketing with a one button click? Something that seems too good to be true doesn’t it, well maybe not. This talk will show new Adobe innovation still in the labs, which look at streamlining workflows and rapid prototyping for App creation with Adobe AEM and PhoneGap."
     },
     {
-      time: "5:10pm-5:30pm",
+      time: "5:00pm-5:20pm",
       title: "Loading native code (plugins) dynamically for the enterprise",
       speakerSlug: "shazron",
       description: "Hot-code reload for html/css/js is so 2015, everyone can do it. You probably thought you couldn't hot-reload plugin native code, well you were wrong! I'll show you how (and maybe bake a cake)."
     },
     {
-      time: "5:30pm 5:50pm",
-      title: "Session: Cordova Plugin Roundup",
-      speakerSlug: "tjvantoll",
-      description: "In last few years Cordova plugins have become the cornerstone of many high-quality Cordova and PhoneGap applications. In just the last year, we at Telerik have grown our curated Cordova plugins marketplace from small handful of plugins to now 65 and counting. In this talk you’ll learn about the latest greatest in the Cordova plugin world, including plugins for the Apple Watch, Mapbox maps, and a whole lot more."
+      time: "5:20pm 5:40pm",
+      title: "Microsoft Visual Studio",
+      speakerSlug: "ryanjsalva",
+      description: "TBA"
     },
     {
       time: "6:00pm-8:00pm",
@@ -350,9 +404,9 @@ module.exports = {
           description: "You’ve heard a lot about Bluetooth low energy, but do you understand how it works? This workshop will give you a chance to get hands-on experience building PhoneGap applications that interact with Bluetooth Smart devices. We will cover Bluetooth LE concepts like services and characteristics while we are building the software. The mobile application will be written with PhoneGap so it will run on iOS or Android. The phone will control hardware via Bluetooth LE, and automatically receive notifications when something changes on the peripheral. Participants will be required to bring a laptop and are encouraged to bring a Bluetooth LE-capable iOS or Android phone. There will be a limited number of phones that people can borrow for the workshop. Familiarity with at least one programming language is helpful but not required. A list of required free software will be sent to attendees before the workshop."
         },
         {
-          title: "Privacy and security",
+          title: "App Privacy and Security for PhoneGap Developers",
           speakerSlug: "tommywilliams",
-          description: "There's some security and privacy."
+          description: "Our mobile devices are rich targets packed full of sensors, and ripe for the harvesting of personal information. All too often, developers on deadlines leave security and privacy concerns until the last minute, or don't get around to them at all. This workshop will show not only the importance of security and privacy, but some basic steps we as developers can take to ensure our apps are a safe place for our users (not to mention keeping the app safe from those same users). From avoiding XSS, understanding the whitelist and CSP, to ensuring that what data we do collect is kept safe. This workshop will give you a better understanding of how to ensure privacy and security are a part of your app from day one."
         }
       ]
     },
@@ -364,9 +418,9 @@ module.exports = {
       time: "10:45am-12:00pm",
       sessions: [
         {
-          title: "PhoneGap Intermediate",
-          speakerSlug: "hollyschinsky",
-          description: "In this workshop we'll walk through creating an app from start to finish. Throughout the process we'll gain an understanding of:\n - Common mobile app development paradigms (navigation, view stacks) \n - Popular mobile framework options \n - Mobile UI design patterns (flat vs. material design) \n - Performance tips \n - App configuration (preferences, permissions, icons/splashscreens) \n And more!"
+          title: "App submission",
+          speakerSlug: "timkim",
+          description: "Submitting an app."
         },
         {
           title: "Building an App with Ionic 2",
@@ -374,9 +428,9 @@ module.exports = {
           description: "You've built Ionic apps before, but now that V2 is out, what can you expect? In this session, we'll look at an Ionic 1 app and go through the process of building its Ionic 2 equivalent."
         },
         {
-          title: "Plugins are Everything, and Everything is a Plugin!",
-          speakerSlug: "purplecabbage",
-          description: "Jesse has been writing PhoneGap plugins since before there were plugins.  In this deep dive workshop Jesse will cover all the requirements of making great plugins, from conception to testing to publishing. He will also share some secrets from his bag'o'tricks and demonstrate some interesting uses for plugins you may not have thought of. Come ready to build!"
+          title: "PhoneGap Intermediate",
+          speakerSlug: "hollyschinsky",
+          description: "<p>In this workshop we'll walk through creating an app from start to finish. Throughout the process we'll gain an understanding of:</p><ul><li>Common mobile app development paradigms (navigation, view stacks)</li><li>Popular mobile framework options</li><li>Mobile UI design patterns (flat vs. material design)</li><li>Performance tips</li><li>App configuration (preferences, permissions, icons/splashscreens) And more!</li></ul>"
         }
       ]
     },
@@ -389,18 +443,18 @@ module.exports = {
       sessions: [
         {
           title: "Build the Amazon App",
-          speakerSlug: "",
-          description: "A workshop on quickly building a hybrid app with feature parity to Amazon's app with a mix of native and web interfaces (Mobify)"
+          speakerSlug: ["shawnjansepar", "lokimeyburg"],
+          description: "A workshop on quickly building a hybrid app with feature parity to Amazon's app with a mix of native and web interfaces. In this workshop we will guide you through building a commerce-enabled app with feature parity to the Amazon iOS app using a combination of web and native components using Astro, our latest SDK built on top of Cordova."
+        },
+        {
+          title: "Memory Leaks in Hybrid Mobile Apps.",
+          speakerSlug: "chrisgosselin",
+          description: "An investigation into how memory leaks effect hybrid applications and how to track them down."
         },
         {
           title: "Cordova Plugins in Action",
-          speakerSlug: "",
-          description: ""
-        },
-        {
-          title: "Rangle.io",
-          speakerSlug: "",
-          description: ""
+          speakerSlug: ["brianrinaldi", "tjvantoll"],
+          description: "Do you love Cordova plugins? So do we! At Telerik we maintain a Cordova plugins marketplace at plugins.telerik.com/cordova, and we’re up to 65 free plugins and counting. In this workshop you’ll install a wide variety of plugins to see how they work in action. You’ll learn about the various ways you can install and test plugins—from the Cordova CLI, to premium tooling available in the Telerik Platform. Come with a laptop and ready to learn about plugins you can use in your next app."
         }
       ]
     },
@@ -408,19 +462,19 @@ module.exports = {
       time: "2:00pm-3:30pm",
       sessions: [
         {
-          title: "App submission",
-          speakerSlug: "timkim",
-          description: "Submitting an app."
-        },
-        {
-          title: "PhoneGap push notifications",
-          speakerSlug: "simonmacdonald",
-          description: ""
+          title: "REPEAT PhoneGap Beginner",
+          speakerSlug: "GarthDB",
+          description: "This workshop will provide an introduction to PhoneGap, the philosophy behind it, and how to get started quickly using a variety of different tools available. You will learn how to create a simple mobile app using the PhoneGap CLI, PhoneGap Desktop App, PhoneGap Developer App, and more. You'll then learn how to extend the app with plugins, manipulate it with hooks, and debug it with the various tools available. By the end of this beginner workshop, you will walk away with a solid understanding of what PhoneGap is all about and how to use it for your next project."
         },
         {
           title: "Embedding PhoneGap natively: The Hybrid Sweet Spot",
           speakerSlug: "aniskadri",
-          description: ""
+          description: "Many developers choose to build native navigation and transitions into their apps but use webviews for the main content, allowing them to realize a large cost and time savings while making their app available to a wider range of users quickly. This approach also provides the ability to push timely updates without app store approval hassles. With this model, only a small native code-base needs to be maintained per platform, and it’s typically the static elements of the app rather than the main content, thus more manageable."
+        },
+        {
+          title: "Plugins are Everything, and Everything is a Plugin!",
+          speakerSlug: "purplecabbage",
+          description: "Jesse has been writing PhoneGap plugins since before there were plugins.  In this deep dive workshop Jesse will cover all the requirements of making great plugins, from conception to testing to publishing. He will also share some secrets from his bag'o'tricks and demonstrate some interesting uses for plugins you may not have thought of. Come ready to build!"
         }
       ]
     },
@@ -432,19 +486,19 @@ module.exports = {
       time: "3:45pm-4:45pm",
       sessions: [
         {
-          title: "Redhat",
-          speakerSlug: "",
-          description: ""
+          title: "Supercharge your Hybrid Apps with Microservices for Mobile",
+          speakerSlug: "cianclarke",
+          description: "In this hands-on session, we will first build a simple Cordova based mobile app using the barcode scanner plugin. Then, we’ll build a microservice written in Node.js to retrieve some hard-to-get data. Along the way, we’ll explore the benefits of this approach, and why hybrid mobile apps are really just an extension of microservices to the client side. Participants only need to bring a laptop with a modern web browser, and will leave the session primed with practical experience building microservices for their mobile apps."
         },
         {
-          title: "Crosswalk",
-          speakerSlug: "",
-          description: ""
+          title: "Hands on: Create advanced apps with the Crosswalk runtime",
+          speakerSlug: "alexismenard",
+          description: "Join Crosswalk architect, Alexis Menard, in a hands-on lab where you will discover how to leverage the power of Crosswalk in your web and hybrid applications and take advantage of the latest web innovations across Android, iOS, and Windows."
         },
         {
-          title: "Learning IoT Programming",
-          speakerSlug: "",
-          description: ""
+          title: "Optimizing Performance and User Interface",
+          speakerSlug: "masahirotanaka",
+          description: "Performance was a major concern among hybrid app developers for many years, which has been dramatically improved by the computing power and the performant web views. However, it does not mean you can build an app that runs smoothly without any prior knowledge. This session will describe some of the best practices to analyze, measure and improve the app, ensuring its better user experience."
         }
       ]
     },
@@ -452,9 +506,9 @@ module.exports = {
       time: "4:45pm-6:00pm",
       sessions: [
         {
-          title: "Visual Studio",
-          speakerSlug: "ryanjsalva",
-          description: ""
+          title: "PhoneGap Push Notifications",
+          speakerSlug: "simonmacdonald",
+          description: "In this workshop we'll walk through adding push notification capabilities to your application. You'll learn how to set up a Google Cloud Messaging project for Android notifications and adding push capabilities to your iOS certificate and provisioning profiles. You'll gain an understanding of how to register with your remote push service and handle incoming notifications. Advanced topics will include how to add action buttons, responding to silent push notifications and testing using node.js."
         },
         {
           title: "REPEAT Hands-on Bluetooth Low Energy",
@@ -462,8 +516,8 @@ module.exports = {
           description: ""
         },
         {
-          title: "REPEAT PhoneGap Push Notifications",
-          speakerSlug: "simonmacdonald",
+          title: "Visual Studio",
+          speakerSlug: "ryanjsalva",
           description: ""
         }
       ]
@@ -508,10 +562,20 @@ module.exports = {
       var workshopTime = this.workshops[i]
       if(workshopTime.hasOwnProperty('sessions')){
         for (var j = 0; j < workshopTime.sessions.length; j++) {
-          if(workshopTime.sessions[j].speakerSlug == slug){
-            var session = workshopTime.sessions[j];
-            session.time = time;
-            sessions.push(session);
+          if(Array.isArray(workshopTime.sessions[j].speakerSlug)){
+            for (var k = 0; k < workshopTime.sessions[j].speakerSlug.length; k++) {
+              if(workshopTime.sessions[j].speakerSlug[k] == slug){
+                var session = workshopTime.sessions[j];
+                session.time = time;
+                sessions.push(session);
+              }
+            }
+          } else {
+            if(workshopTime.sessions[j].speakerSlug == slug){
+              var session = workshopTime.sessions[j];
+              session.time = time;
+              sessions.push(session);
+            }
           }
         }
       }
