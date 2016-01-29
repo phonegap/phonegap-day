@@ -62,6 +62,7 @@ export default class Us2016 extends React.Component {
               <p>Need help justifying your trip? Download our “<a href="justify-your-trip-to-phonegapday.docx">Letter to your Boss</a>” document.</p>
             </div>
           </section>
+          <SessionsSection sessions={sessions} heading={"Schedule"}/>
           <section className="about-details">
             <div className="text-bounds">
               <div className="about--sessions"><img src="/img/sessions.jpg" />
@@ -79,8 +80,6 @@ export default class Us2016 extends React.Component {
             </div>
           </section>
           <SpeakersSection speakers={speakers} heading={"Speakers"}/>
-          <WorkshopsSection workshops={workshops} heading={"Workshops"}/>
-          <SessionsSection sessions={sessions} heading={"Schedule"}/>
           <section className="columns">
             <div className="text-bounds">
               <section>
@@ -121,6 +120,7 @@ export default class Us2016 extends React.Component {
               <p>Attendees are required to adhere to our <a href="/code-of-conduct.html">code of conduct</a>.</p>
             </div>
           </section>
+          <WorkshopsSection workshops={workshops} heading={"Workshops"}/>
         </div>
         <footer />
       </div>

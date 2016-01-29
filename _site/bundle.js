@@ -26002,6 +26002,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              )
 	            )
 	          ),
+	          _react2.default.createElement(_sessionsSection2.default, { sessions: _data.sessions, heading: "Schedule" }),
 	          _react2.default.createElement(
 	            'section',
 	            { className: 'about-details' },
@@ -26059,8 +26060,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	            )
 	          ),
 	          _react2.default.createElement(_speakersSection2.default, { speakers: _data.speakers, heading: "Speakers" }),
-	          _react2.default.createElement(_workshopsSection2.default, { workshops: _data.workshops, heading: "Workshops" }),
-	          _react2.default.createElement(_sessionsSection2.default, { sessions: _data.sessions, heading: "Schedule" }),
 	          _react2.default.createElement(
 	            'section',
 	            { className: 'columns' },
@@ -26253,7 +26252,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                '.'
 	              )
 	            )
-	          )
+	          ),
+	          _react2.default.createElement(_workshopsSection2.default, { workshops: _data.workshops, heading: "Workshops" })
 	        ),
 	        _react2.default.createElement('footer', null)
 	      );
