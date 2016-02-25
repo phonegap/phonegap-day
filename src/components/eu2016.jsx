@@ -22,13 +22,13 @@ export default class Us2016 extends React.Component {
               </h2>
               <div className="description">A one day conference and one day of workshops for PhoneGap, web, and mobile developers.</div>
                 <div className="pricing">
-                  <h2>Early Bird Ticket Pricing</h2>
+                  <h2>Ticket Pricing</h2>
                   <ul>
-                    <li><span>Conference</span><span className="leader" /><span>€120 + VAT</span></li>
+                    <li><span>Conference</span><span className="leader" /><span>€150 + VAT</span></li>
                     <li><span>Workshops</span><span className="leader" /><span>€100 + VAT</span></li>
                   </ul>
                 </div>
-                <a href="https://phonegapdayeu.paydro.net/" className="button--cta">Get Early Bird Tickets</a>
+                <a href="https://phonegapdayeu.paydro.net/" className="button--cta">Get Tickets</a>
             </div>
           </div>
         </header>
