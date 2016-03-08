@@ -27431,7 +27431,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          { className: 'speaker--name' },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: "/us2016/speaker/" + this.props.speaker.slug },
+	            { to: pageURL + this.props.speaker.slug },
 	            this.props.speaker.name
 	          )
 	        ),
@@ -27440,7 +27440,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          { className: 'speaker--title' },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: "/us2016/speaker/" + this.props.speaker.slug },
+	            { to: pageURL + this.props.speaker.slug },
 	            this.props.speaker.title
 	          )
 	        )
