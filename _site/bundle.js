@@ -27667,6 +27667,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(Us2016, [{
 	    key: 'render',
 	    value: function render() {
+	      var imageStyle = {
+	        width: "100%",
+	        height: "auto"
+	      };
 	      return _react2.default.createElement(
 	        'div',
 	        null,
@@ -27863,9 +27867,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    { href: 'https://dezwijger.nl/' },
 	                    'https://dezwijger.nl/'
 	                  )
-	                ),
-	                _react2.default.createElement('img', { src: '/img/bio/de-zwijger.jpg', alt: 'Pakhuis De Zwijger' })
-	              )
+	                )
+	              ),
+	              _react2.default.createElement('img', { src: '/img/de-zwijger.jpg', alt: 'Pakhuis De Zwijger', style: imageStyle })
 	            )
 	          ),
 	          _react2.default.createElement(
