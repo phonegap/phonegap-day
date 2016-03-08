@@ -28090,7 +28090,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    twitter: "photoKandy",
 	    slug: "kerrishotts",
 	    name: "Kerri Shotts",
-	    title: "Mobile App Developer, Author, Photographer",
+	    title: "Developer, Author, Photographer",
 	    bio: "Kerri Shotts is an IT consultant specializing in mobile hybrid application development. She has used PhoneGap/Cordova for several years while developing enterprise apps for her clients. She is the author of five books about PhoneGap. She serves as a moderator on the PhoneGap Google Group. Kerri is also a photographer and loves caffeine, art, music, and Minecraft."
 	  }, {
 	    id: 16,
@@ -28098,7 +28098,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    twitter: "rakaz",
 	    slug: "nielsleenheer",
 	    name: "Niels Leenheer",
-	    title: "Mobile App Developer, Author, Photographer",
+	    title: "Founder, Salonhub",
 	    bio: "Niels is a founder of Salonhub and creates web applications for a living. He has been using PhoneGap professionally for the last five years. In his free time he runs one of the largest Open Device Labs in the world, created the HTML5test.com website and has recently given a number of talks about Smart TV and game console browsers. He loves to research obscure browsers and submit bug reports."
 	  }, {
 	    id: 17,
