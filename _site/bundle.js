@@ -26364,7 +26364,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              )
 	            )
 	          ),
-	          _react2.default.createElement(_speakersSection2.default, { speakers: _data.speakers, heading: "Speakers" }),
+	          _react2.default.createElement(_speakersSection2.default, { speakers: _data.speakers, heading: "Speakers", pageSlug: "us2016" }),
 	          _react2.default.createElement(
 	            'section',
 	            { className: 'columns' },
@@ -27412,12 +27412,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(SpeakerItem, [{
 	    key: 'render',
 	    value: function render() {
+	      var pageURL = undefined;
+	      if (this.props.hasOwnProperty('pageSlug')) {
+	        pageURL = "/" + this.props.pageSlug + "/speaker/";
+	      } else {
+	        pageURL = "/us2016/speaker/";
+	      }
 	      return _react2.default.createElement(
 	        'li',
 	        { className: 'speaker' },
 	        _react2.default.createElement(
 	          _reactRouter.Link,
-	          { to: "/us2016/speaker/" + this.props.speaker.slug },
+	          { to: pageURL + this.props.speaker.slug },
 	          _react2.default.createElement('img', { src: this.props.speaker.avatar, className: 'speaker--photo' })
 	        ),
 	        _react2.default.createElement(
@@ -27457,6 +27463,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(SpeakersSection, [{
 	    key: 'render',
 	    value: function render() {
+	      var _this3 = this;
+
 	      return _react2.default.createElement(
 	        'section',
 	        { className: 'speaker-section' },
@@ -27472,7 +27480,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            'ul',
 	            { className: 'speaker-list' },
 	            this.props.speakers.map(function (speaker) {
-	              return _react2.default.createElement(SpeakerItem, { key: speaker.id, speaker: speaker });
+	              return _react2.default.createElement(SpeakerItem, { key: speaker.id, speaker: speaker, pageSlug: _this3.props.pageSlug });
 	            })
 	          )
 	        )
@@ -27525,6 +27533,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	    value: function render() {
 	      var sessionListItem = undefined;
 	      var speakerSlug = this.props.session.speakerSlug;
+	      var pageURL = undefined;
+	      if (this.props.hasOwnProperty('pageSlug')) {
+	        pageURL = "/" + this.props.pageSlug + "/speaker/";
+	      } else {
+	        pageURL = "/us2016/speaker/";
+	      }
 	      if (typeof this.props.session.speakerSlug !== 'undefined') {
 	        if (Array.isArray(speakerSlug)) {
 	          speakerSlug = speakerSlug[0];
@@ -27536,7 +27550,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          ':',
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: "/us2016/speaker/" + speakerSlug },
+	            { to: pageURL + speakerSlug },
 	            ' ',
 	            this.props.session.title
 	          )
@@ -27834,7 +27848,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              )
 	            )
 	          ),
-	          _react2.default.createElement(_speakersSection2.default, { speakers: _dataEu.speakers, heading: "Speakers" }),
+	          _react2.default.createElement(_speakersSection2.default, { speakers: _dataEu.speakers, heading: "Speakers", pageSlug: "eu2016" }),
 	          _react2.default.createElement(
 	            'section',
 	            { className: 'columns' },

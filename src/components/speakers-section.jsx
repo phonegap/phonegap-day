@@ -3,9 +3,15 @@ import { Link } from 'react-router'
 
 class SpeakerItem extends React.Component {
   render() {
+    let pageURL
+    if (this.props.hasOwnProperty('pageSlug')) {
+      pageURL = "/"+this.props.pageSlug+"/speaker/"
+    } else {
+      pageURL = "/us2016/speaker/"
+    }
     return (
       <li className="speaker">
-        <Link to={"/us2016/speaker/"+this.props.speaker.slug}>
+        <Link to={pageURL+this.props.speaker.slug}>
           <img src={this.props.speaker.avatar} className="speaker--photo" />
         </Link>
         <h2 className="speaker--name">
@@ -27,7 +33,7 @@ export default class SpeakersSection extends React.Component {
           <h1>{this.props.heading}</h1>
           <ul className="speaker-list">
             {this.props.speakers.map(speaker =>
-              <SpeakerItem key={speaker.id} speaker={speaker} />
+              <SpeakerItem key={speaker.id} speaker={speaker} pageSlug={this.props.pageSlug}/>
             )}
           </ul>
         </div>

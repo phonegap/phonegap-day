@@ -5,13 +5,19 @@ class SessionListItem extends React.Component {
   render() {
     let sessionListItem
     let speakerSlug = this.props.session.speakerSlug
+    let pageURL
+    if (this.props.hasOwnProperty('pageSlug')) {
+      pageURL = "/"+this.props.pageSlug+"/speaker/"
+    } else {
+      pageURL = "/us2016/speaker/"
+    }
     if (typeof this.props.session.speakerSlug !== 'undefined') {
       if(Array.isArray(speakerSlug)){
         speakerSlug = speakerSlug[0]
       }
       sessionListItem = (
         <div>{this.props.session.time}:
-          <Link to={"/us2016/speaker/"+speakerSlug}> {this.props.session.title}</Link>
+          <Link to={pageURL+speakerSlug}> {this.props.session.title}</Link>
         </div>)
     } else {
       sessionListItem = (<div>{this.props.session.time}: {this.props.session.title}</div>)

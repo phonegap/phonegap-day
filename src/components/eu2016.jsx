@@ -51,7 +51,7 @@ export default class Us2016 extends React.Component {
               </section>
             </div>
           </section>
-          <SpeakersSection speakers={speakers} heading={"Speakers"}/>
+          <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"eu2016"}/>
           <section className="columns">
             <div className="text-bounds">
               <section>
