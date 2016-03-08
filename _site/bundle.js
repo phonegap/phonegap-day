@@ -27811,6 +27811,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              )
 	            )
 	          ),
+	          _react2.default.createElement(_speakersSection2.default, { speakers: _dataEu.speakers, heading: "Speakers", pageSlug: "eu2016" }),
 	          _react2.default.createElement(
 	            'section',
 	            { className: 'columns' },
@@ -27828,30 +27829,48 @@ return /******/ (function(modules) { // webpackBootstrap
 	                _react2.default.createElement(
 	                  'p',
 	                  null,
-	                  'Dive deeper into PhoneGap by attending the conference workshops on Friday, May 20th.'
+	                  'We\'re changing things up this year for PhoneGap Day EUers and having 2 separate tracks of workshops with a "choose your own adventure" theme. We\'ll have great content running all day in two different rooms so you can pick and choose what topics you\'d like to get some hands-on experience with. The PhoneGap team and other community experts will be running workshops on everything from plugin development to embeddable webviews.'
+	                ),
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Important: workshop location is different than the conference venue:'
 	                ),
 	                _react2.default.createElement(
 	                  'p',
 	                  null,
-	                  'We’re changing up workshops this year so you can choose your own adventure. We’ll have great content going all day where you can choose from different workshop tracks depending on your interests and skill-level. We’ll have something for everyone whether you’re a PhoneGap beginner or a seasoned expert.'
+	                  'Pakhuis De Zwijger',
+	                  _react2.default.createElement('br', null),
+	                  'Piet Heinkade 179',
+	                  _react2.default.createElement('br', null),
+	                  '1019 HC Amsterdam'
 	                ),
 	                _react2.default.createElement(
 	                  'p',
 	                  null,
-	                  'The workshops will be held at a different venue than the conference. The workshops will be held at ',
+	                  _react2.default.createElement(
+	                    'strong',
+	                    null,
+	                    'Public transport information'
+	                  ),
+	                  ': To reach the workshop venue, go to Central Station and take tram 26. It’s located very close to the second stop; you can see it from the tram.'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
 	                  _react2.default.createElement(
 	                    'a',
-	                    { href: 'https://dezwijger.nl/over-ons/about-us/' },
-	                    'Pakhuis de Zwijger'
+	                    { href: 'https://dezwijger.nl/' },
+	                    'https://dezwijger.nl/'
 	                  )
-	                )
+	                ),
+	                _react2.default.createElement('img', { src: '/img/bio/de-zwijger.jpg', alt: 'Pakhuis De Zwijger' })
 	              )
 	            )
 	          ),
-	          _react2.default.createElement(_speakersSection2.default, { speakers: _dataEu.speakers, heading: "Speakers", pageSlug: "eu2016" }),
 	          _react2.default.createElement(
 	            'section',
-	            { className: 'columns' },
+	            null,
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'text-bounds' },
@@ -27868,10 +27887,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	                  null,
 	                  'Will be announced closer to the event!'
 	                )
-	              ),
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'section',
+	              null,
 	              _react2.default.createElement(
-	                'section',
-	                null,
+	                'div',
+	                { className: 'text-bounds' },
 	                _react2.default.createElement(
 	                  'h1',
 	                  null,

@@ -8,6 +8,10 @@ import SessionsSection from './sessions-section.jsx'
 
 export default class Us2016 extends React.Component {
   render() {
+    let imageStyle = {
+      width:"100%",
+      height:"auto"
+    }
     return (
       <div>
         <header className="eu-main-header">
@@ -41,28 +45,33 @@ export default class Us2016 extends React.Component {
               <p>Need help justifying your trip? Download our “<a href="/justify-your-trip-to-phonegapday-eu.docx">Letter to your Boss</a>” document.</p>
             </div>
           </section>
+          <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"eu2016"}/>
           <section className="columns">
             <div className="text-bounds">
               <section className="workshops-section">
                 <h1>Workshops</h1>
-                <p>Dive deeper into PhoneGap by attending the conference workshops on Friday, May 20th.</p>
-                <p>We’re changing up workshops this year so you can choose your own adventure. We’ll have great content going all day where you can choose from different workshop tracks depending on your interests and skill-level. We’ll have something for everyone whether you’re a PhoneGap beginner or a seasoned expert.</p>
-                <p>The workshops will be held at a different venue than the conference. The workshops will be held at <a href="https://dezwijger.nl/over-ons/about-us/">Pakhuis de Zwijger</a></p>
+                <p>We're changing things up this year for PhoneGap Day EUers and having 2 separate tracks of workshops with a "choose your own adventure" theme. We'll have great content running all day in two different rooms so you can pick and choose what topics you'd like to get some hands-on experience with. The PhoneGap team and other community experts will be running workshops on everything from plugin development to embeddable webviews.</p>
+                <h3>Important: workshop location is different than the conference venue:</h3>
+                <p>Pakhuis De Zwijger<br/>Piet Heinkade 179<br/>1019 HC Amsterdam</p>
+                <p><strong>Public transport information</strong>: To reach the workshop venue, go to Central Station and take tram 26. It’s located very close to the second stop; you can see it from the tram.</p>
+                <p><a href="https://dezwijger.nl/">https://dezwijger.nl/</a></p>
               </section>
+              <img src="/img/de-zwijger.jpg" alt="Pakhuis De Zwijger" style={imageStyle}/>
             </div>
           </section>
-          <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"eu2016"}/>
-          <section className="columns">
+          <section>
             <div className="text-bounds">
               <section>
                 <h1>Schedule</h1>
                 <p>Will be announced closer to the event!</p>
               </section>
-              <section>
-                <h1>Venue</h1>
-                <p><a href="http://www.compagnietheater.nl/compagnietheater.html">Het Compagnietheater</a>, more details coming soon.</p>
-              </section>
             </div>
+          <section>
+            <div className="text-bounds">
+              <h1>Venue</h1>
+              <p><a href="http://www.compagnietheater.nl/compagnietheater.html">Het Compagnietheater</a>, more details coming soon.</p>
+            </div>
+          </section>
           </section>
           <section><img src="/img/compagnie-theater.jpg" className="full" /></section>
           <section className="columns">
