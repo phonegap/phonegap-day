@@ -28027,15 +28027,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	    name: "Anis Kadri",
 	    title: "Software Engineer, Adobe",
 	    bio: "Anis is a Software Engineer at Adobe. He works on PhoneGap and Cordova full-time and has been contributing to the project since its early inception. Lately, he’s been interested in trying to introduce  PhoneGap solutions to the enterprise world."
-	  }, {
-	    id: 6,
-	    avatar: "/img/bio/timkim.jpg",
-	    twitter: "timkim",
-	    slug: "timkim",
-	    name: "Tim Kim",
-	    title: "Expert Keyboard Masher, Adobe",
-	    bio: "Hacking on software by day and drawing digital illustrations by night, Tim enjoys all forms of creativity possible in the digital realm. Currently he works on the PhoneGap Developer App and making stickers for the PhoneGap team. When Tim isn't hard at work, you can can find him trying to memorize movie quotes, playing video games or generally ignoring his ever growing to-do list."
-	  }, {
+	  },
+	  // {
+	  //   id: 6,
+	  //   avatar: "/img/bio/timkim.jpg",
+	  //   twitter: "timkim",
+	  //   slug: "timkim",
+	  //   name: "Tim Kim",
+	  //   title: "Expert Keyboard Masher, Adobe",
+	  //   bio: "Hacking on software by day and drawing digital illustrations by night, Tim enjoys all forms of creativity possible in the digital realm. Currently he works on the PhoneGap Developer App and making stickers for the PhoneGap team. When Tim isn't hard at work, you can can find him trying to memorize movie quotes, playing video games or generally ignoring his ever growing to-do list."
+	  // },
+	  {
 	    id: 7,
 	    avatar: "/img/bio/simonmacdonald.jpg",
 	    twitter: "macdonst",
@@ -28058,22 +28060,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    name: "Masahiro Tanaka",
 	    title: "CEO, Monaca Corporation",
 	    bio: "Masa is the CEO of Monaca Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter."
-	  }, {
-	    id: 10,
-	    avatar: "/img/bio/tommywilliams.jpg",
-	    twitter: "therealdevgeeks",
-	    slug: "tommywilliams",
-	    name: "Tommy Williams",
-	    title: "Sr Computer Scientist, Adobe",
-	    bio: "Apache Cordova committer and developer advocate, creator of Encryptr, and Sr Computer Scientist on the PhoneGap team at Adobe."
-	  }, {
-	    id: 11,
-	    avatar: "/img/bio/tjvantoll.jpg",
-	    twitter: "tjvantoll",
-	    slug: "tjvantoll",
-	    name: "TJ VanToll",
-	    title: "Senior Developer Advocate, Telerik",
-	    bio: "TJ VanToll is a front-end developer, author, and a senior developer advocate for Telerik. TJ has over a decade of web development experience, including a few years working on the jQuery team. Nowadays, he spends his time helping web developers build mobile apps through projects like Cordova and NativeScript. TJ is @tjvantoll on Twitter and tjvantoll on GitHub."
 	  }, {
 	    id: 12,
 	    avatar: "/img/bio/purplecabbage.jpg",
