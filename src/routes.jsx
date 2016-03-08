@@ -7,6 +7,7 @@ import Index from './components/index.jsx'
 import Us2016 from './components/us2016.jsx'
 import Eu2016 from './components/eu2016.jsx'
 import SpeakerPage from './components/speaker-page.jsx'
+import SpeakerPageEU from './components/speaker-page-eu.jsx'
 
 export default (
   <Route path="/" component={Root}>
@@ -14,5 +15,6 @@ export default (
     <Route path="/us2016/" component={Us2016} onLeave={() => {window.fromHome = true}} />
     <Route path="/us2016/speaker/:slug" component={SpeakerPage} />
     <Route path="/eu2016/" component={Eu2016} onLeave={() => {window.fromHome = true}} />
+    <Route path="/eu2016/speaker/:slug" component={SpeakerPageEU} onLeave={() => {window.fromHome = true}} />
   </Route>
 )

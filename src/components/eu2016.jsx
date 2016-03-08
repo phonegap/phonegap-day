@@ -1,5 +1,5 @@
 import React from 'react'
-import { speakers, sessions, workshops } from '../../data'
+import { speakers } from '../../data-eu'
 import { Link } from 'react-router'
 
 import WorkshopsSection from './workshops-section.jsx'
@@ -49,12 +49,9 @@ export default class Us2016 extends React.Component {
                 <p>We’re changing up workshops this year so you can choose your own adventure. We’ll have great content going all day where you can choose from different workshop tracks depending on your interests and skill-level. We’ll have something for everyone whether you’re a PhoneGap beginner or a seasoned expert.</p>
                 <p>The workshops will be held at a different venue than the conference. The workshops will be held at <a href="https://dezwijger.nl/over-ons/about-us/">Pakhuis de Zwijger</a></p>
               </section>
-              <section className="speaker-section">
-                <h1>Speakers</h1>
-                <p>Interested in speaking? Fill out our <a href="https://docs.google.com/forms/d/17FdU1k_yEdOEi8bWC5XQw-FrAwD3rT4YPNYkdIcj6tw/viewform?usp=send_form</p>">Call for Speakers</a> form.</p>
-              </section>
             </div>
           </section>
+          <SpeakersSection speakers={speakers} heading={"Speakers"}/>
           <section className="columns">
             <div className="text-bounds">
               <section>
