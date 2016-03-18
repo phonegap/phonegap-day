@@ -1,6 +1,9 @@
 import React from 'react'
-import { speakers, sessions, workshops } from '../../data'
 import { Link } from 'react-router'
+import { sessions, workshops } from '../../data'
+import Data from '../../data'
+
+let speakers = Data.findSpeakersByConference('us2016')
 
 import WorkshopsSection from './workshops-section.jsx'
 import SpeakersSection from './speakers-section.jsx'
