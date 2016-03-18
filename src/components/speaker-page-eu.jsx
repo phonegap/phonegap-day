@@ -72,7 +72,7 @@ export default class SpeakerPageEU extends React.Component {
       <div id="content" className="speaker-page-content">
         <header className="speaker-page--header">
           <Link to="/eu2016/" onClick={this.handleClick.bind(this)}>
-            <img src="/img/pgd_logo.svg" />
+            <img src="/img/pgd_logo_eu.svg" />
           </Link>
         </header>
         <div className="text-bounds speaker">
