@@ -47,7 +47,8 @@ export default class SpeakerPageEU extends React.Component {
   }
   render() {
     let speaker = data.findSpeakerBySlug(this.props.params.slug)
-    let sessions = data.findSessionBySpeakerSlug(this.props.params.slug)
+    // let sessions = data.findSessionBySpeakerSlug(this.props.params.slug)
+    let sessions = []
     let sessionSection
     if (sessions.length > 0) {
       sessionSection = (<div className="sessions">
@@ -61,7 +62,8 @@ export default class SpeakerPageEU extends React.Component {
     if (speaker.twitter) {
       twitter = <div><a href={"https://twitter.com/"+speaker.twitter}>@{speaker.twitter}</a></div>
     }
-    let workshops = (data.findWorkshopBySpeakerSlug(this.props.params.slug))
+    // let workshops = (data.findWorkshopBySpeakerSlug(this.props.params.slug))
+    let workshops = []
     let workshopSection
     if (workshops.length > 0) {
       workshopSection = <WorkshopDetails workshops={workshops}/>

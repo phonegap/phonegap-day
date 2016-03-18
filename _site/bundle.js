@@ -28175,7 +28175,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'render',
 	    value: function render() {
 	      var speaker = _data2.default.findSpeakerBySlug(this.props.params.slug);
-	      var sessions = _data2.default.findSessionBySpeakerSlug(this.props.params.slug);
+	      // let sessions = data.findSessionBySpeakerSlug(this.props.params.slug)
+	      var sessions = [];
 	      var sessionSection = undefined;
 	      if (sessions.length > 0) {
 	        sessionSection = _react2.default.createElement(
@@ -28204,7 +28205,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	          )
 	        );
 	      }
-	      var workshops = _data2.default.findWorkshopBySpeakerSlug(this.props.params.slug);
+	      // let workshops = (data.findWorkshopBySpeakerSlug(this.props.params.slug))
+	      var workshops = [];
 	      var workshopSection = undefined;
 	      if (workshops.length > 0) {
 	        workshopSection = _react2.default.createElement(WorkshopDetails, { workshops: workshops });
