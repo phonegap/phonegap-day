@@ -2,7 +2,6 @@ var path = require('path')
 var webpack = require('webpack')
 var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 var data = require('./data')
-var dataEU = require('./data-eu')
 var autoprefixer = require('autoprefixer')
 
 module.exports = {
@@ -45,6 +44,6 @@ module.exports = {
     return [autoprefixer];
   },
   plugins: [
-    new StaticSiteGeneratorPlugin('main', data.routes().concat(dataEU.routes()), data)
+    new StaticSiteGeneratorPlugin('main', data.routes(), data)
   ]
 }

@@ -100,7 +100,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _us2 = _interopRequireDefault(_us);
 
-	var _main = __webpack_require__(240);
+	var _main = __webpack_require__(239);
 
 	var _main2 = _interopRequireDefault(_main);
 
@@ -25613,11 +25613,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _eu2 = _interopRequireDefault(_eu);
 
-	var _speakerPage = __webpack_require__(238);
+	var _speakerPage = __webpack_require__(237);
 
 	var _speakerPage2 = _interopRequireDefault(_speakerPage);
 
-	var _speakerPageEu = __webpack_require__(239);
+	var _speakerPageEu = __webpack_require__(238);
 
 	var _speakerPageEu2 = _interopRequireDefault(_speakerPageEu);
 
@@ -25782,9 +25782,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(198);
+
 	var _data = __webpack_require__(232);
 
-	var _reactRouter = __webpack_require__(198);
+	var _data2 = _interopRequireDefault(_data);
 
 	var _workshopsSection = __webpack_require__(233);
 
@@ -25805,6 +25807,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var speakers = _data2.default.findSpeakersByConference('us2016');
 
 	var Us2016 = (function (_React$Component) {
 	  _inherits(Us2016, _React$Component);
@@ -26066,7 +26070,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              )
 	            )
 	          ),
-	          _react2.default.createElement(_speakersSection2.default, { speakers: _data.speakers, heading: "Speakers", pageSlug: "us2016" }),
+	          _react2.default.createElement(_speakersSection2.default, { speakers: speakers, heading: "Speakers", pageSlug: "us2016" }),
 	          _react2.default.createElement(
 	            'section',
 	            { className: 'columns' },
@@ -26311,7 +26315,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "shazron",
 	    name: "Shazron Abdullah",
 	    title: "Senior Computer Scientist, Adobe",
-	    bio: "Based in San Francisco, by way of Vancouver, Canada and Singapore, Shaz has nearly two decades of software development experience getting with the nitty gritty of Windows, OS X and iOS and probably helped code something you know. Currently he helps maintain the iOS platform of Apache Cordova and Adobe PhoneGap and has been part of the project for quite some time."
+	    bio: "Based in San Francisco, by way of Vancouver, Canada and Singapore, Shaz has nearly two decades of software development experience getting with the nitty gritty of Windows, OS X and iOS and probably helped code something you know. Currently he helps maintain the iOS platform of Apache Cordova and Adobe PhoneGap and has been part of the project for quite some time.",
+	    conferences: ["us2016", "eu2016"]
 	  }, {
 	    id: 1,
 	    avatar: "/img/bio/ericalli.jpg",
@@ -26319,7 +26324,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "ericalli",
 	    name: "Eric Alli",
 	    title: "Web Designer, Developer, and Musician",
-	    bio: "Eric is a San Francico based designer & engineer who enjoys building useful products for niche spaces and sharing his affinity for music and art."
+	    bio: "Eric is a San Francico based designer & engineer who enjoys building useful products for niche spaces and sharing his affinity for music and art.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 2,
 	    avatar: "/img/bio/alexblom.jpg",
@@ -26327,7 +26333,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "alexblom",
 	    name: "Alex Blom",
 	    title: "Partner, Isle of Code",
-	    bio: "Alex is a hacker who works with Ember, Ruby & Go. He is a Partner at Isle of Code, a Toronto based agency focused on Ember, and using Ember in PhoneGap & iBeacon contexts. Prior, Alex was building a browser extension based startup in Ember (morse).</div>"
+	    bio: "Alex is a hacker who works with Ember, Ruby & Go. He is a Partner at Isle of Code, a Toronto based agency focused on Ember, and using Ember in PhoneGap & iBeacon contexts. Prior, Alex was building a browser extension based startup in Ember (morse).</div>",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 22,
 	    avatar: "/img/bio/garthdb.jpg",
@@ -26335,7 +26342,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "GarthDB",
 	    name: "Garth Braithwaite",
 	    title: "FED, Adobe",
-	    bio: "Garth is a person."
+	    bio: "Garth is a person.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 3,
 	    avatar: "/img/bio/michaelbrooks.jpg",
@@ -26343,7 +26351,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "michaelbrooks",
 	    name: "Michael Brooks",
 	    title: "Senior Software Barista, Adobe",
-	    bio: "Orphaned as a child, Michael Brooks was raised by his elderly Uncle Ben and Aunt May. Academically gifted, he displayed an uncanny affinity for Computer Science with speciality in signal processing and computer vision. While attending a developer meetup at the age of 26, Michael was bitten on the hand by a radioactive Nitobi employee, empowering him with the company’s proportional open source belief, community, and ability to ship products. Now disguised as mwbrooks and teamed with Adobe, Michael slings between vim, GitHub, Twitter, and IRC to protect the innocent, confront evil, and make PhoneGap & Apache Cordova a safer framework for the future of application development."
+	    bio: "Orphaned as a child, Michael Brooks was raised by his elderly Uncle Ben and Aunt May. Academically gifted, he displayed an uncanny affinity for Computer Science with speciality in signal processing and computer vision. While attending a developer meetup at the age of 26, Michael was bitten on the hand by a radioactive Nitobi employee, empowering him with the company’s proportional open source belief, community, and ability to ship products. Now disguised as mwbrooks and teamed with Adobe, Michael slings between vim, GitHub, Twitter, and IRC to protect the innocent, confront evil, and make PhoneGap & Apache Cordova a safer framework for the future of application development.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 4,
 	    avatar: "/img/bio/raymondcamden.jpg",
@@ -26351,7 +26360,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "raymondcamden",
 	    name: "Raymond Camden",
 	    title: "Developer Advocate, IBM",
-	    bio: "Raymon is a 42 year old married father of six living in beautiful Lafayette, Louisiana. His primary technical focus is on the MobileFirst platform, web standards and client-side development. Most of his time is spent writing, researching, or presenting. When he's not behind a computer, he's an avid XBox/PS4 player, he enjoys movies, and he reads like crazy."
+	    bio: "Raymon is a 42 year old married father of six living in beautiful Lafayette, Louisiana. His primary technical focus is on the MobileFirst platform, web standards and client-side development. Most of his time is spent writing, researching, or presenting. When he's not behind a computer, he's an avid XBox/PS4 player, he enjoys movies, and he reads like crazy.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 32,
 	    avatar: "/img/bio/cianclarke.jpg",
@@ -26359,7 +26369,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "cianclarke",
 	    name: "Cian Clarke",
 	    title: "Software Engineer, Red Hat Mobile",
-	    bio: 'Cian is a Software Engineer on the Red Hat Mobile Team. An early technologist, he founded his own web consultancy business at 16. Cian was a member of the original FeedHenry mobile team, since acquired by Red Hat. At Red Hat, Cian builds functionality for the Mobile Application Platform, and also helps with solutions architecture and evangelism. In addition to his day job, he also regularly blogs about the intersection of all things mobile, microservices and Node.js. Cian is originally from Waterford, Ireland, and currently resides in Boston, Massachusetts.'
+	    bio: 'Cian is a Software Engineer on the Red Hat Mobile Team. An early technologist, he founded his own web consultancy business at 16. Cian was a member of the original FeedHenry mobile team, since acquired by Red Hat. At Red Hat, Cian builds functionality for the Mobile Application Platform, and also helps with solutions architecture and evangelism. In addition to his day job, he also regularly blogs about the intersection of all things mobile, microservices and Node.js. Cian is originally from Waterford, Ireland, and currently resides in Boston, Massachusetts.',
+	    conferences: ["us2016"]
 	  }, {
 	    id: 23,
 	    avatar: "/img/bio/doncoleman.jpg",
@@ -26367,7 +26378,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "doncoleman",
 	    name: "Don Coleman",
 	    title: "Director, Chariot Solutions",
-	    bio: 'Don enjoys hacking with phones, Arduino and other hardware. He has written PhoneGap plugins for Bluetooth and NFC. Don is the co-author of "Make:Bluetooth" and "Beginning NFC".'
+	    bio: 'Don enjoys hacking with phones, Arduino and other hardware. He has written PhoneGap plugins for Bluetooth and NFC. Don is the co-author of "Make:Bluetooth" and "Beginning NFC".',
+	    conferences: ["us2016"]
 	  }, {
 	    id: 5,
 	    avatar: "/img/bio/davidfrahm.jpg",
@@ -26375,14 +26387,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "davidfrahm",
 	    name: "David Frahm",
 	    title: "Product Creator, Sworkit",
-	    bio: "Mobile and frontend developer focused on Ionic SDK and AngularJS apps, with a strong background in UX, Agile, eXtreme Programming, and startup growth. Living in the Midwest and contributing to the world."
+	    bio: "Mobile and frontend developer focused on Ionic SDK and AngularJS apps, with a strong background in UX, Agile, eXtreme Programming, and startup growth. Living in the Midwest and contributing to the world.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 31,
 	    avatar: "/img/bio/chrisgosselin.jpg",
 	    slug: "chrisgosselin",
 	    name: "Chris Gosselin",
 	    title: "Full-stack developer, Rangle.io",
-	    bio: "Chris is a full-stack developer at Rangle.io, a Toronto-based development firm, where he works on creating high-end enterprise mobile apps. Chris' interest in coding started as a teen when he created a variant of a popular board game for his programming class. Since then he has contributed to various open source projects, growth-hacked a startup, and worked extensively on both server-side and client-side projects. When he’s not programming he enjoys rock climbing."
+	    bio: "Chris is a full-stack developer at Rangle.io, a Toronto-based development firm, where he works on creating high-end enterprise mobile apps. Chris' interest in coding started as a teen when he created a variant of a popular board game for his programming class. Since then he has contributed to various open source projects, growth-hacked a startup, and worked extensively on both server-side and client-side projects. When he’s not programming he enjoys rock climbing.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 6,
 	    avatar: "/img/bio/deanhaddock.jpg",
@@ -26390,7 +26404,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "deanhaddock",
 	    name: "Dean Haddock",
 	    title: "Managing Director, StoryCorps",
-	    bio: "Dean Haddock is the Managing Director of Digital & Technical Innovation for StoryCorps, the national oral history project--one of the largest collections of human voices ever assembled--and popular NPR/PBS broadcast. He and his team design and build apps, websites and other platforms to further StoryCorps' mission of recording and preserving the stories of everyday people across the US and around the world. Most recently Dean led StoryCorps' 2015 $1m TED Prize initiative to build a mobile app and platform that anyone can use to record and archive oral history interviews permanently at the Library of Congress. He is a Nieman Foundation Visiting Fellow, a Knight Foundation Prototype Fund awardee, a two-time Google Fellow to the Personal Democracy Forum and a civic hacktivist."
+	    bio: "Dean Haddock is the Managing Director of Digital & Technical Innovation for StoryCorps, the national oral history project--one of the largest collections of human voices ever assembled--and popular NPR/PBS broadcast. He and his team design and build apps, websites and other platforms to further StoryCorps' mission of recording and preserving the stories of everyday people across the US and around the world. Most recently Dean led StoryCorps' 2015 $1m TED Prize initiative to build a mobile app and platform that anyone can use to record and archive oral history interviews permanently at the Library of Congress. He is a Nieman Foundation Visiting Fellow, a Knight Foundation Prototype Fund awardee, a two-time Google Fellow to the Personal Democracy Forum and a civic hacktivist.",
+	    conferences: ["us2016", "eu2016"]
 	  }, {
 	    id: 7,
 	    avatar: "/img/bio/ryanhanna.jpg",
@@ -26398,7 +26413,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "ryanhanna",
 	    name: "Ryan Hanna",
 	    title: "Director of Engineering, Sworkit",
-	    bio: "Ryan began learning to code online in 2012 and grew his side project into a top Health and Fitness app with over 10 million downloads. He is also a co-organizer of codebar.io in Brighton, England."
+	    bio: "Ryan began learning to code online in 2012 and grew his side project into a top Health and Fitness app with over 10 million downloads. He is also a co-organizer of codebar.io in Brighton, England.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 8,
 	    avatar: "/img/bio/mikehartington.jpg",
@@ -26406,7 +26422,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "mikehartington",
 	    name: "Mike Hartington",
 	    title: "Front End Developer, Ionic",
-	    bio: "Mike is a front-end developer who has used Ionic since its alpha. As Ionic’s developer advocate, Mike manages the Ionic Forum, serves as a resource to developers, and writes technical documentation. When he’s not working, you can find him relaxing with a beer and guitar."
+	    bio: "Mike is a front-end developer who has used Ionic since its alpha. As Ionic’s developer advocate, Mike manages the Ionic Forum, serves as a resource to developers, and writes technical documentation. When he’s not working, you can find him relaxing with a beer and guitar.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 9,
 	    avatar: "/img/bio/shawnjansepar.jpg",
@@ -26414,7 +26431,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "shawnjansepar",
 	    name: "Shawn Jansepar",
 	    title: "Engineering Manager, Mobify",
-	    bio: "Shawn loves to hack both on the front-end and back-end, with a heavy focus on the user experience. When he isn't hacking, you likely find him playing hockey/video games, eating, or travelling. Shawn has a BSc in Computer Science from Simon Fraser University in Vancouver."
+	    bio: "Shawn loves to hack both on the front-end and back-end, with a heavy focus on the user experience. When he isn't hacking, you likely find him playing hockey/video games, eating, or travelling. Shawn has a BSc in Computer Science from Simon Fraser University in Vancouver.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 10,
 	    avatar: "/img/bio/aniskadri.jpg",
@@ -26422,7 +26440,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "aniskadri",
 	    name: "Anis Kadri",
 	    title: "Software Engineer, Adobe",
-	    bio: "Anis is a Software Engineer at Adobe. He works on PhoneGap and Cordova full-time and has been contributing to the project since its early inception. Lately, he’s been interested in trying to introduce  PhoneGap solutions to the enterprise world."
+	    bio: "Anis is a Software Engineer at Adobe. He works on PhoneGap and Cordova full-time and has been contributing to the project since its early inception. Lately, he’s been interested in trying to introduce  PhoneGap solutions to the enterprise world.",
+	    conferences: ["us2016", "eu2016"]
 	  }, {
 	    id: 25,
 	    avatar: "/img/bio/timkim.jpg",
@@ -26430,7 +26449,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "timkim",
 	    name: "Tim Kim",
 	    title: "Expert Keyboard Masher, Adobe",
-	    bio: "Hacking on software by day and drawing digital illustrations by night, Tim enjoys all forms of creativity possible in the digital realm. Currently he works on the PhoneGap Developer App and making stickers for the PhoneGap team. When Tim isn't hard at work, you can can find him trying to memorize movie quotes, playing video games or generally ignoring his ever growing to-do list."
+	    bio: "Hacking on software by day and drawing digital illustrations by night, Tim enjoys all forms of creativity possible in the digital realm. Currently he works on the PhoneGap Developer App and making stickers for the PhoneGap team. When Tim isn't hard at work, you can can find him trying to memorize movie quotes, playing video games or generally ignoring his ever growing to-do list.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 19,
 	    avatar: "/img/bio/reneelance.jpg",
@@ -26438,7 +26458,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "reneelance",
 	    name: "Renée Lance",
 	    title: "Solutions Consultant, Adobe",
-	    bio: "Renée is a seasoned Web and UX designer and now an Adobe Solutions Consultant evangelizes Creative Cloud, Document Cloud and digital innovation. With more than 10 years experience with digital design, Renée is a passionate professional who is dedicated in developing solutions for business and creative professionals ensuring they remain competitive and deliver engaging customer experiences. Her creative-thinking skills and technical experience assist customers deliver innovative outcomes for creative and non-traditional creative industries."
+	    bio: "Renée is a seasoned Web and UX designer and now an Adobe Solutions Consultant evangelizes Creative Cloud, Document Cloud and digital innovation. With more than 10 years experience with digital design, Renée is a passionate professional who is dedicated in developing solutions for business and creative professionals ensuring they remain competitive and deliver engaging customer experiences. Her creative-thinking skills and technical experience assist customers deliver innovative outcomes for creative and non-traditional creative industries.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 11,
 	    avatar: "/img/bio/brucelefebvre.jpg",
@@ -26446,7 +26467,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "brucelefebvre",
 	    name: "Bruce Lefebvre",
 	    title: "Computer Scientist, Adobe",
-	    bio: "Bruce is a programmer at Adobe focused on bringing Experience Manager and the open web together. As a member of the mobile R&D team, he’s most recently been focused on the AEM + PhoneGap integration. When not at his desk he can usually be found outside on his bike.."
+	    bio: "Bruce is a programmer at Adobe focused on bringing Experience Manager and the open web together. As a member of the mobile R&D team, he’s most recently been focused on the AEM + PhoneGap integration. When not at his desk he can usually be found outside on his bike..",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 12,
 	    avatar: "/img/bio/simonmacdonald.jpg",
@@ -26454,7 +26476,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "simonmacdonald",
 	    name: "Simon Macdonald",
 	    title: "Senior Software Engineer, Adobe",
-	    bio: "Simon has over fifteen years of development experience and has worked on a variety of projects including object oriented databases, police communication systems, speech recognition and unified messaging. His current focus is contributing to the open source PhoneGap project to enable developers to create cross platform mobile applications using Web technologies. Simon’s been building web applications since the days they were written using shell scripts and he still has nightmares about those dark days."
+	    bio: "Simon has over fifteen years of development experience and has worked on a variety of projects including object oriented databases, police communication systems, speech recognition and unified messaging. His current focus is contributing to the open source PhoneGap project to enable developers to create cross platform mobile applications using Web technologies. Simon’s been building web applications since the days they were written using shell scripts and he still has nightmares about those dark days.",
+	    conferences: ["us2016", "eu2016"]
 	  }, {
 	    id: 24,
 	    avatar: "/img/bio/purplecabbage.jpg",
@@ -26462,7 +26485,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "purplecabbage",
 	    name: "Jesse MacFadyen",
 	    title: "Sr. Computer Scientist, Adobe",
-	    bio: "Jesse is a primordial PhoneGap contributor that has been around long enough to see many phonegap-killers come and go. He has written plugins for everything from the device accelerometer to bluetooth connected wearables like the ms-band, across windows, windows phone, android and ios. A self-proclaimed prolific procrastinator, Jesse often loses interest before he has a chance to fi"
+	    bio: "Jesse is a primordial PhoneGap contributor that has been around long enough to see many phonegap-killers come and go. He has written plugins for everything from the device accelerometer to bluetooth connected wearables like the ms-band, across windows, windows phone, android and ios. A self-proclaimed prolific procrastinator, Jesse often loses interest before he has a chance to fi",
+	    conferences: ["us2016", "eu2016"]
 	  }, {
 	    id: 27,
 	    avatar: "/img/bio/alexismenard.jpg",
@@ -26470,7 +26494,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "alexismenard",
 	    name: "Alexis Menard",
 	    title: "Software Engineer, Intel",
-	    bio: "Alexis Menard is a software engineer working at Intel in Oregon as part of the Open Source Technology Center. Here his main focus is on the ever evolving Web Platform, which includes work on W3C standards as well as Blink/Chromium. In the latter projects, he serves as both developer and code reviewer. Alexis is also working on Crosswalk, an HTML5 runtime/webview for Android and Windows where he does a bit of everything. Prior to Intel, Alexis worked on QtWebKit and WebKit itself at the Brazilian Nokia research center known as INdT. Before moving to Brazil, Alexis worked out of Norway, mostly on the Qt framework as a part of Nokia (former Trolltech). He is also a former KDE contributor where he contributed mostly to Plasma, the desktop shell of KDE."
+	    bio: "Alexis Menard is a software engineer working at Intel in Oregon as part of the Open Source Technology Center. Here his main focus is on the ever evolving Web Platform, which includes work on W3C standards as well as Blink/Chromium. In the latter projects, he serves as both developer and code reviewer. Alexis is also working on Crosswalk, an HTML5 runtime/webview for Android and Windows where he does a bit of everything. Prior to Intel, Alexis worked on QtWebKit and WebKit itself at the Brazilian Nokia research center known as INdT. Before moving to Brazil, Alexis worked out of Norway, mostly on the Qt framework as a part of Nokia (former Trolltech). He is also a former KDE contributor where he contributed mostly to Plasma, the desktop shell of KDE.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 13,
 	    avatar: "/img/bio/lokimeyburg.jpg",
@@ -26478,7 +26503,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "lokimeyburg",
 	    name: "Loki Meyburg",
 	    title: "Product Guy, Mobify",
-	    bio: "Loki is also the creator of Stacker, an open source project to kickstart the development of iOS apps. Previously he was the first employee at Medeo, a medical startup, that was acquired in 2014. Graduated with Honours in Business and Computer Science from the University of British Columbia."
+	    bio: "Loki is also the creator of Stacker, an open source project to kickstart the development of iOS apps. Previously he was the first employee at Medeo, a medical startup, that was acquired in 2014. Graduated with Honours in Business and Computer Science from the University of British Columbia.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 14,
 	    avatar: "/img/bio/martinposchenrieder.jpg",
@@ -26486,7 +26512,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "martinposchenrieder",
 	    name: "Martin Poschenrieder",
 	    title: "Founder, testmunk",
-	    bio: "Martin has been working in the mobile industry for most of the past decade. He began his career as an intern for one of the few German handset manufacturers, years before Android and iPhone were launched. After involvement with several app projects, he soon realized that one of the biggest pain-points in development was mobile app testing. In order to ease this pain, he started Testmunk. Testmunk is based in Silicon Valley, and provides automated app testing over the cloud."
+	    bio: "Martin has been working in the mobile industry for most of the past decade. He began his career as an intern for one of the few German handset manufacturers, years before Android and iPhone were launched. After involvement with several app projects, he soon realized that one of the biggest pain-points in development was mobile app testing. In order to ease this pain, he started Testmunk. Testmunk is based in Silicon Valley, and provides automated app testing over the cloud.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 15,
 	    avatar: "/img/bio/brianrinaldi.jpg",
@@ -26494,7 +26521,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "brianrinaldi",
 	    name: "Brian Rinaldi",
 	    title: "Developer Content Manager, Telerik",
-	    bio: "Brian is the Developer Content Manager at Telerik where he helps the Developer Relations team create top notch content for the developer community on the Telerik Developer Network. He is also co-editor of Mobile Web Weekly."
+	    bio: "Brian is the Developer Content Manager at Telerik where he helps the Developer Relations team create top notch content for the developer community on the Telerik Developer Network. He is also co-editor of Mobile Web Weekly.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 16,
 	    avatar: "/img/bio/ryanjsalva.jpg",
@@ -26502,7 +26530,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "ryanjsalva",
 	    name: "Ryan J Salva",
 	    title: "JavaScript Developer",
-	    bio: "JavaScript developer, Apache Cordova committer, Visual Studio program manager, CrossFitter, sci-fi connoisseur and whiskey enthusiast. With over 15 years of experience in software development, it’s hard to find a corner of the web where he hasn’t worked, but the important thing to know is this: Ryan is a passionate storyteller with deep insight into market forces, technology, user experience and design. Today, he owns tooling for cross-platform mobile app development at Microsoft. Tomorrow, the world."
+	    bio: "JavaScript developer, Apache Cordova committer, Visual Studio program manager, CrossFitter, sci-fi connoisseur and whiskey enthusiast. With over 15 years of experience in software development, it’s hard to find a corner of the web where he hasn’t worked, but the important thing to know is this: Ryan is a passionate storyteller with deep insight into market forces, technology, user experience and design. Today, he owns tooling for cross-platform mobile app development at Microsoft. Tomorrow, the world.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 17,
 	    avatar: "/img/bio/hollyschinsky.jpg",
@@ -26510,21 +26539,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "hollyschinsky",
 	    name: "Holly Schinsky",
 	    title: "Senior Technical Evangelist, Adobe",
-	    bio: "Holly Schinsky is working with the PhoneGap team at Adobe and currently focused on mobile development using PhoneGap, HTML/CSS and JavaScript. She has 17 years experience in software development including Java, Adobe Flex/AIR and ActionScript in addition to her recent hybrid mobile work. Holly’s latest focus is on developer advocacy and education via her blog, samples and workshops. In her free time she’s usually found driving a carpool, running or hanging out with her family."
+	    bio: "Holly Schinsky is working with the PhoneGap team at Adobe and currently focused on mobile development using PhoneGap, HTML/CSS and JavaScript. She has 17 years experience in software development including Java, Adobe Flex/AIR and ActionScript in addition to her recent hybrid mobile work. Holly’s latest focus is on developer advocacy and education via her blog, samples and workshops. In her free time she’s usually found driving a carpool, running or hanging out with her family.",
+	    conferences: ["us2016", "eu2016"]
 	  }, {
 	    id: 28,
 	    avatar: "/img/bio/bobspencer.jpg",
 	    slug: "bobspencer",
 	    name: "Bob Spencer",
 	    title: "Software Architect, Intel",
-	    bio: "Bob Spencer is a software architect in Intel's Open Source Technology Center where for the past decade his work has been centered on open source developer tools and SDKs. He is the community manager on the Crosswalk Project team. In his free time he will be biking, backpacking, or hanging with his family."
+	    bio: "Bob Spencer is a software architect in Intel's Open Source Technology Center where for the past decade his work has been centered on open source developer tools and SDKs. He is the community manager on the Crosswalk Project team. In his free time he will be biking, backpacking, or hanging with his family.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 20,
 	    avatar: "/img/bio/masahirotanaka.jpg",
 	    slug: "masahirotanaka",
 	    name: "Masahiro Tanaka",
 	    title: "CEO, Monaca Corporation",
-	    bio: "Masa is the CEO of Monaca Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter."
+	    bio: "Masa is the CEO of Monaca Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter.",
+	    conferences: ["us2016", "eu2016"]
 	  }, {
 	    id: 29,
 	    avatar: "/img/bio/jedwatson.jpg",
@@ -26532,7 +26564,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    twitter: "jedwatson",
 	    name: "Jed Watson",
 	    title: "Founder, Thinkmill",
-	    bio: "Jed is a founder of Thinkmill, a web and mobile app development agency in Sydney, and has been writing JavaScript since IE6 was new and exciting. A prolific open source contributor, Jed is the driving force behind KeystoneJS - the node.js content management platform - and several major React.js libraries including Elemental UI and TouchstoneJS, which is a UI Framework for hybrid mobile apps."
+	    bio: "Jed is a founder of Thinkmill, a web and mobile app development agency in Sydney, and has been writing JavaScript since IE6 was new and exciting. A prolific open source contributor, Jed is the driving force behind KeystoneJS - the node.js content management platform - and several major React.js libraries including Elemental UI and TouchstoneJS, which is a UI Framework for hybrid mobile apps.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 30,
 	    avatar: "/img/bio/nickvanweerdenburg.jpg",
@@ -26540,7 +26573,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    twitter: "n1cholasv",
 	    name: "Nick Van Weerdenburg",
 	    title: "Founder, Rangle.io",
-	    bio: "Nick is Rangle.io’s founder, first developer, and now leads the company’s business development and strategy activities. Nick first did server-side JavaScript in 1997 and has 15 years of experience in web software in diverse roles and industries. He is a firm believer in the thin-server, full-JavaScript stack and an active speaker, delivering about a dozen talks each year."
+	    bio: "Nick is Rangle.io’s founder, first developer, and now leads the company’s business development and strategy activities. Nick first did server-side JavaScript in 1997 and has 15 years of experience in web software in diverse roles and industries. He is a firm believer in the thin-server, full-JavaScript stack and an active speaker, delivering about a dozen talks each year.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 26,
 	    avatar: "/img/bio/tommywilliams.jpg",
@@ -26548,7 +26582,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "tommywilliams",
 	    name: "Tommy Williams",
 	    title: "Sr Computer Scientist, Adobe",
-	    bio: "Apache Cordova committer and developer advocate, creator of Encryptr, and Sr Computer Scientist on the PhoneGap team at Adobe."
+	    bio: "Apache Cordova committer and developer advocate, creator of Encryptr, and Sr Computer Scientist on the PhoneGap team at Adobe.",
+	    conferences: ["us2016"]
 	  }, {
 	    id: 18,
 	    avatar: "/img/bio/tjvantoll.jpg",
@@ -26556,7 +26591,61 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "tjvantoll",
 	    name: "TJ VanToll",
 	    title: "Senior Developer Advocate, Telerik",
-	    bio: "TJ VanToll is a front-end developer, author, and a senior developer advocate for Telerik. TJ has over a decade of web development experience, including a few years working on the jQuery team. Nowadays, he spends his time helping web developers build mobile apps through projects like Cordova and NativeScript. TJ is @tjvantoll on Twitter and tjvantoll on GitHub."
+	    bio: "TJ VanToll is a front-end developer, author, and a senior developer advocate for Telerik. TJ has over a decade of web development experience, including a few years working on the jQuery team. Nowadays, he spends his time helping web developers build mobile apps through projects like Cordova and NativeScript. TJ is @tjvantoll on Twitter and tjvantoll on GitHub.",
+	    conferences: ["us2016"]
+	  }, {
+	    id: 13,
+	    avatar: "/img/bio/saniyusuf.jpg",
+	    twitter: "saniyusuf",
+	    slug: "saniyusuf",
+	    name: "Sani Yusuf",
+	    title: "Founder, HAIBRID",
+	    bio: "Sani runs a startup called HAIBRID that uses cross-platform mobile development techniques to create innovative ​mobile ​ solutions. Sani also co-manages the Ionic UK community in UK and has had stints with companies like Microsoft, Huddlebuy & Anritsu in the past.",
+	    conferences: ["eu2016"]
+	  }, {
+	    id: 14,
+	    avatar: "/img/bio/remysharp.jpg",
+	    twitter: "rem",
+	    slug: "remysharp",
+	    name: "Remy Sharp",
+	    title: "Founder, ffconf",
+	    bio: "Remy is the founder and curator of ffconf, the UK based JavaScript conference. He also ran jQuery for Designers, co-authored Introducing HTML5 (adding all the JavaScripty bits) and likes to grumble on Twitter. Whilst he's not writing articles or running and speaking at conferences, he runs his own development and training company in Brighton called Left Logic. And he built these too: Confwall, jsbin.com, html5demos.com, responsivepx.com, nodemon, mit-license.org, snapbird.org, 5 minute fork and jsconsole.com!",
+	    conferences: ["eu2016"]
+	  }, {
+	    id: 15,
+	    avatar: "/img/bio/kerrishotts.jpg",
+	    twitter: "photoKandy",
+	    slug: "kerrishotts",
+	    name: "Kerri Shotts",
+	    title: "Developer, Author, Photographer",
+	    bio: "Kerri Shotts is an IT consultant specializing in mobile hybrid application development. She has used PhoneGap/Cordova for several years while developing enterprise apps for her clients. She is the author of five books about PhoneGap. She serves as a moderator on the PhoneGap Google Group. Kerri is also a photographer and loves caffeine, art, music, and Minecraft.",
+	    conferences: ["eu2016"]
+	  }, {
+	    id: 16,
+	    avatar: "/img/bio/nielsleenheer.jpg",
+	    twitter: "rakaz",
+	    slug: "nielsleenheer",
+	    name: "Niels Leenheer",
+	    title: "Founder, Salonhub",
+	    bio: "Niels is a founder of Salonhub and creates web applications for a living. He has been using PhoneGap professionally for the last five years. In his free time he runs one of the largest Open Device Labs in the world, created the HTML5test.com website and has recently given a number of talks about Smart TV and game console browsers. He loves to research obscure browsers and submit bug reports.",
+	    conferences: ["eu2016"]
+	  }, {
+	    id: 17,
+	    avatar: "/img/bio/wildabeast.jpg",
+	    slug: "wildabeast",
+	    name: "Ryan Willoughby",
+	    title: "Software Engineer, Adobe",
+	    bio: "Ryan works on PhoneGap Build and Cordova. He recently watched The Mist and threw a can of Old Milwaukee at the television in frustration. Not the bourbon sour though.",
+	    conferences: ["eu2016"]
+	  }, {
+	    id: 18,
+	    avatar: "/img/bio/stevesgill.jpg",
+	    twitter: "stevesgill",
+	    slug: "stevesgill",
+	    name: "Steve Gill",
+	    title: "Software Engineer, Adobe",
+	    bio: "Originally from Vancouver but currently living in San Francisco, Steve has been part of the PhoneGap team since 2009! He currently works on the tooling for Cordova and helps with releases. Outside of hacking, he loves hockey, biking, yoga and traveling!",
+	    conferences: ["eu2016"]
 	  }],
 	  sessions: [{
 	    time: "8:30am-9:00am",
@@ -26778,7 +26867,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return routes;
 	  })(function () {
 	    return routes = this.speakers.reduce(function (previousValue, currentValue, index) {
-	      previousValue.push("/us2016/speaker/" + currentValue.slug);
+	      if (currentValue.conferences.indexOf("us2016") >= 0) {
+	        previousValue.push("/us2016/speaker/" + currentValue.slug);
+	      }
+	      if (currentValue.conferences.indexOf("eu2016") >= 0) {
+	        previousValue.push("/eu2016/speaker/" + currentValue.slug);
+	      }
 	      return previousValue;
 	    }, ["/", "/us2016/", "/eu2016/"]);
 	  }),
@@ -26806,6 +26900,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    }
 	    return null;
+	  },
+	  findSpeakersByConference: function findSpeakersByConference(conferenceSlug) {
+	    var id = 0;
+	    var newSpeakerSet = this.speakers.filter(function (speaker) {
+	      if (speaker.conferences.indexOf(conferenceSlug) >= 0) {
+	        id++;
+	        speaker.id = id;
+	        return true;
+	      } else {
+	        return false;
+	      }
+	    });
+	    newSpeakerSet.sort(function (a, b) {
+	      if (a.slug < b.slug) return -1;
+	      if (a.slug > b.slug) return 1;
+	      return 0;
+	    });
+	    return newSpeakerSet;
 	  },
 	  findWorkshopBySpeakerSlug: function findWorkshopBySpeakerSlug(slug) {
 	    var sessions = [];
@@ -27333,9 +27445,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _dataEu = __webpack_require__(237);
-
 	var _reactRouter = __webpack_require__(198);
+
+	var _data = __webpack_require__(232);
+
+	var _data2 = _interopRequireDefault(_data);
 
 	var _workshopsSection = __webpack_require__(233);
 
@@ -27356,6 +27470,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var speakers = _data2.default.findSpeakersByConference('eu2016');
 
 	var Us2016 = (function (_React$Component) {
 	  _inherits(Us2016, _React$Component);
@@ -27517,7 +27633,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              )
 	            )
 	          ),
-	          _react2.default.createElement(_speakersSection2.default, { speakers: _dataEu.speakers, heading: "Speakers", pageSlug: "eu2016" }),
+	          _react2.default.createElement(_speakersSection2.default, { speakers: speakers, heading: "Speakers", pageSlug: "eu2016" }),
 	          _react2.default.createElement(
 	            'section',
 	            { className: 'columns' },
@@ -27721,219 +27837,6 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 237 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	// data.js
-	module.exports = {
-	  speakers: [{
-	    id: 1,
-	    avatar: "/img/bio/shazron.jpg",
-	    twitter: "shazron",
-	    slug: "shazron",
-	    name: "Shazron Abdullah",
-	    title: "Senior Computer Scientist, Adobe",
-	    bio: "Based in San Francisco, by way of Vancouver, Canada and Singapore, Shaz has nearly two decades of software development experience getting with the nitty gritty of Windows, OS X and iOS and probably helped code something you know. Currently he helps maintain the iOS platform of Apache Cordova and Adobe PhoneGap and has been part of the project for quite some time."
-	  },
-	  // {
-	  //   id: 2,
-	  //   avatar: "/img/bio/garthdb.jpg",
-	  //   twitter: "GarthDB",
-	  //   slug: "GarthDB",
-	  //   name: "Garth Braithwaite",
-	  //   title: "FED, Adobe",
-	  //   bio: "Garth is a person."
-	  // },
-	  // {
-	  //   id: 3,
-	  //   avatar: "/img/bio/michaelbrooks.jpg",
-	  //   twitter: "mwbrooks",
-	  //   slug: "michaelbrooks",
-	  //   name: "Michael Brooks",
-	  //   title: "Senior Software Barista, Adobe",
-	  //   bio: "Orphaned as a child, Michael Brooks was raised by his elderly Uncle Ben and Aunt May. Academically gifted, he displayed an uncanny affinity for Computer Science with speciality in signal processing and computer vision. While attending a developer meetup at the age of 26, Michael was bitten on the hand by a radioactive Nitobi employee, empowering him with the company’s proportional open source belief, community, and ability to ship products. Now disguised as mwbrooks and teamed with Adobe, Michael slings between vim, GitHub, Twitter, and IRC to protect the innocent, confront evil, and make PhoneGap & Apache Cordova a safer framework for the future of application development."
-	  // },
-	  {
-	    id: 4,
-	    avatar: "/img/bio/deanhaddock.jpg",
-	    twitter: "systemconscious",
-	    slug: "deanhaddock",
-	    name: "Dean Haddock",
-	    title: "Managing Director, StoryCorps",
-	    bio: "Dean Haddock is the Managing Director of Digital & Technical Innovation for StoryCorps, the national oral history project--one of the largest collections of human voices ever assembled--and popular NPR/PBS broadcast. He and his team design and build apps, websites and other platforms to further StoryCorps' mission of recording and preserving the stories of everyday people across the US and around the world. Most recently Dean led StoryCorps' 2015 $1m TED Prize initiative to build a mobile app and platform that anyone can use to record and archive oral history interviews permanently at the Library of Congress. He is a Nieman Foundation Visiting Fellow, a Knight Foundation Prototype Fund awardee, a two-time Google Fellow to the Personal Democracy Forum and a civic hacktivist."
-	  }, {
-	    id: 5,
-	    avatar: "/img/bio/aniskadri.jpg",
-	    twitter: "aniskadri",
-	    slug: "aniskadri",
-	    name: "Anis Kadri",
-	    title: "Software Engineer, Adobe",
-	    bio: "Anis is a Software Engineer at Adobe. He works on PhoneGap and Cordova full-time and has been contributing to the project since its early inception. Lately, he’s been interested in trying to introduce  PhoneGap solutions to the enterprise world."
-	  },
-	  // {
-	  //   id: 6,
-	  //   avatar: "/img/bio/timkim.jpg",
-	  //   twitter: "timkim",
-	  //   slug: "timkim",
-	  //   name: "Tim Kim",
-	  //   title: "Expert Keyboard Masher, Adobe",
-	  //   bio: "Hacking on software by day and drawing digital illustrations by night, Tim enjoys all forms of creativity possible in the digital realm. Currently he works on the PhoneGap Developer App and making stickers for the PhoneGap team. When Tim isn't hard at work, you can can find him trying to memorize movie quotes, playing video games or generally ignoring his ever growing to-do list."
-	  // },
-	  {
-	    id: 7,
-	    avatar: "/img/bio/simonmacdonald.jpg",
-	    twitter: "macdonst",
-	    slug: "simonmacdonald",
-	    name: "Simon Macdonald",
-	    title: "Senior Software Engineer, Adobe",
-	    bio: "Simon has over fifteen years of development experience and has worked on a variety of projects including object oriented databases, police communication systems, speech recognition and unified messaging. His current focus is contributing to the open source PhoneGap project to enable developers to create cross platform mobile applications using Web technologies. Simon’s been building web applications since the days they were written using shell scripts and he still has nightmares about those dark days."
-	  }, {
-	    id: 8,
-	    avatar: "/img/bio/hollyschinsky.jpg",
-	    twitter: "devgirlFL",
-	    slug: "hollyschinsky",
-	    name: "Holly Schinsky",
-	    title: "Senior Technical Evangelist, Adobe",
-	    bio: "Holly Schinsky is working with the PhoneGap team at Adobe and currently focused on mobile development using PhoneGap, HTML/CSS and JavaScript. She has 17 years experience in software development including Java, Adobe Flex/AIR and ActionScript in addition to her recent hybrid mobile work. Holly’s latest focus is on developer advocacy and education via her blog, samples and workshops. In her free time she’s usually found driving a carpool, running or hanging out with her family."
-	  }, {
-	    id: 9,
-	    avatar: "/img/bio/masahirotanaka.jpg",
-	    slug: "masahirotanaka",
-	    name: "Masahiro Tanaka",
-	    title: "CEO, Monaca Corporation",
-	    bio: "Masa is the CEO of Monaca Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter."
-	  }, {
-	    id: 12,
-	    avatar: "/img/bio/purplecabbage.jpg",
-	    twitter: "purplecabbage",
-	    slug: "purplecabbage",
-	    name: "Jesse MacFadyen",
-	    title: "Sr. Computer Scientist, Adobe",
-	    bio: "Jesse is a primordial PhoneGap contributor that has been around long enough to see many phonegap-killers come and go. He has written plugins for everything from the device accelerometer to bluetooth connected wearables like the ms-band, across windows, windows phone, android and ios. A self-proclaimed prolific procrastinator, Jesse often loses interest before he has a chance to fi"
-	  }, {
-	    id: 13,
-	    avatar: "/img/bio/saniyusuf.jpg",
-	    twitter: "saniyusuf",
-	    slug: "saniyusuf",
-	    name: "Sani Yusuf",
-	    title: "Founder, HAIBRID",
-	    bio: "Sani runs a startup called HAIBRID that uses cross-platform mobile development techniques to create innovative ​mobile ​ solutions. Sani also co-manages the Ionic UK community in UK and has had stints with companies like Microsoft, Huddlebuy & Anritsu in the past."
-	  }, {
-	    id: 14,
-	    avatar: "/img/bio/remysharp.jpg",
-	    twitter: "rem",
-	    slug: "remysharp",
-	    name: "Remy Sharp",
-	    title: "Founder, ffconf",
-	    bio: "Remy is the founder and curator of ffconf, the UK based JavaScript conference. He also ran jQuery for Designers, co-authored Introducing HTML5 (adding all the JavaScripty bits) and likes to grumble on Twitter. Whilst he's not writing articles or running and speaking at conferences, he runs his own development and training company in Brighton called Left Logic. And he built these too: Confwall, jsbin.com, html5demos.com, responsivepx.com, nodemon, mit-license.org, snapbird.org, 5 minute fork and jsconsole.com!"
-	  }, {
-	    id: 15,
-	    avatar: "/img/bio/kerrishotts.jpg",
-	    twitter: "photoKandy",
-	    slug: "kerrishotts",
-	    name: "Kerri Shotts",
-	    title: "Developer, Author, Photographer",
-	    bio: "Kerri Shotts is an IT consultant specializing in mobile hybrid application development. She has used PhoneGap/Cordova for several years while developing enterprise apps for her clients. She is the author of five books about PhoneGap. She serves as a moderator on the PhoneGap Google Group. Kerri is also a photographer and loves caffeine, art, music, and Minecraft."
-	  }, {
-	    id: 16,
-	    avatar: "/img/bio/nielsleenheer.jpg",
-	    twitter: "rakaz",
-	    slug: "nielsleenheer",
-	    name: "Niels Leenheer",
-	    title: "Founder, Salonhub",
-	    bio: "Niels is a founder of Salonhub and creates web applications for a living. He has been using PhoneGap professionally for the last five years. In his free time he runs one of the largest Open Device Labs in the world, created the HTML5test.com website and has recently given a number of talks about Smart TV and game console browsers. He loves to research obscure browsers and submit bug reports."
-	  }, {
-	    id: 17,
-	    avatar: "/img/bio/wildabeast.jpg",
-	    slug: "wildabeast",
-	    name: "Ryan Willoughby",
-	    title: "Software Engineer, Adobe",
-	    bio: "Ryan works on PhoneGap Build and Cordova. He recently watched The Mist and threw a can of Old Milwaukee at the television in frustration. Not the bourbon sour though."
-	  }, {
-	    id: 18,
-	    avatar: "/img/bio/stevesgill.jpg",
-	    twitter: "stevesgill",
-	    slug: "stevesgill",
-	    name: "Steve Gill",
-	    title: "Software Engineer, Adobe",
-	    bio: "Originally from Vancouver but currently living in San Francisco, Steve has been part of the PhoneGap team since 2009! He currently works on the tooling for Cordova and helps with releases. Outside of hacking, he loves hockey, biking, yoga and traveling!"
-	  }],
-	  sessions: [],
-	  workshops: [],
-	  routes: (function (_routes) {
-	    function routes() {
-	      return _routes.apply(this, arguments);
-	    }
-
-	    routes.toString = function () {
-	      return _routes.toString();
-	    };
-
-	    return routes;
-	  })(function () {
-	    return routes = this.speakers.reduce(function (previousValue, currentValue, index) {
-	      previousValue.push("/us2016/speaker/" + currentValue.slug);
-	      return previousValue;
-	    }, ["/", "/us2016/", "/eu2016/"]);
-	  }),
-	  findSessionBySpeakerSlug: function findSessionBySpeakerSlug(slug) {
-	    var sessions = [];
-	    for (var i = 0; i < this.sessions.length; i++) {
-	      if (Array.isArray(this.sessions[i].speakerSlug)) {
-	        for (var j = 0; j < this.sessions[i].speakerSlug.length; j++) {
-	          if (this.sessions[i].speakerSlug[j] == slug) {
-	            sessions.push(this.sessions[i]);
-	          }
-	        }
-	      } else {
-	        if (this.sessions[i].speakerSlug == slug) {
-	          sessions.push(this.sessions[i]);
-	        }
-	      }
-	    }
-	    return sessions;
-	  },
-	  findSpeakerBySlug: function findSpeakerBySlug(slug) {
-	    for (var i = 0; i < this.speakers.length; i++) {
-	      if (this.speakers[i].slug == slug) {
-	        return this.speakers[i];
-	      }
-	    }
-	    return null;
-	  },
-	  findWorkshopBySpeakerSlug: function findWorkshopBySpeakerSlug(slug) {
-	    var sessions = [];
-	    // console.log(this.workshops)
-	    for (var i = 0; i < this.workshops.length; i++) {
-	      var time = this.workshops[i].time;
-	      var workshopTime = this.workshops[i];
-	      if (workshopTime.hasOwnProperty('sessions')) {
-	        for (var j = 0; j < workshopTime.sessions.length; j++) {
-	          if (Array.isArray(workshopTime.sessions[j].speakerSlug)) {
-	            for (var k = 0; k < workshopTime.sessions[j].speakerSlug.length; k++) {
-	              if (workshopTime.sessions[j].speakerSlug[k] == slug) {
-	                var session = workshopTime.sessions[j];
-	                session.time = time;
-	                sessions.push(session);
-	              }
-	            }
-	          } else {
-	            if (workshopTime.sessions[j].speakerSlug == slug) {
-	              var session = workshopTime.sessions[j];
-	              session.time = time;
-	              sessions.push(session);
-	            }
-	          }
-	        }
-	      }
-	    }
-	    return sessions;
-	  }
-	};
-
-/***/ },
-/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28100,7 +28003,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          { className: 'speaker-page--header' },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/', onClick: this.handleClick.bind(this) },
+	            { to: '/us2016/', onClick: this.handleClick.bind(this) },
 	            _react2.default.createElement('img', { src: '/img/pgd_logo.svg' })
 	          )
 	        ),
@@ -28109,7 +28012,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          { className: 'text-bounds speaker' },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/', onClick: this.handleClick.bind(this) },
+	            { to: '/us2016/', onClick: this.handleClick.bind(this) },
 	            '< ',
 	            this.fromHome ? "Back" : "Home"
 	          ),
@@ -28147,7 +28050,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = SpeakerPage;
 
 /***/ },
-/* 239 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28162,9 +28065,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _dataEu = __webpack_require__(237);
+	var _data = __webpack_require__(232);
 
-	var _dataEu2 = _interopRequireDefault(_dataEu);
+	var _data2 = _interopRequireDefault(_data);
 
 	var _reactRouter = __webpack_require__(198);
 
@@ -28271,8 +28174,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var speaker = _dataEu2.default.findSpeakerBySlug(this.props.params.slug);
-	      var sessions = _dataEu2.default.findSessionBySpeakerSlug(this.props.params.slug);
+	      var speaker = _data2.default.findSpeakerBySlug(this.props.params.slug);
+	      var sessions = _data2.default.findSessionBySpeakerSlug(this.props.params.slug);
 	      var sessionSection = undefined;
 	      if (sessions.length > 0) {
 	        sessionSection = _react2.default.createElement(
@@ -28301,7 +28204,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          )
 	        );
 	      }
-	      var workshops = _dataEu2.default.findWorkshopBySpeakerSlug(this.props.params.slug);
+	      var workshops = _data2.default.findWorkshopBySpeakerSlug(this.props.params.slug);
 	      var workshopSection = undefined;
 	      if (workshops.length > 0) {
 	        workshopSection = _react2.default.createElement(WorkshopDetails, { workshops: workshops });
@@ -28314,7 +28217,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          { className: 'speaker-page--header' },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/', onClick: this.handleClick.bind(this) },
+	            { to: '/eu2016/', onClick: this.handleClick.bind(this) },
 	            _react2.default.createElement('img', { src: '/img/pgd_logo.svg' })
 	          )
 	        ),
@@ -28323,7 +28226,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          { className: 'text-bounds speaker' },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/', onClick: this.handleClick.bind(this) },
+	            { to: '/eu2016/', onClick: this.handleClick.bind(this) },
 	            '< ',
 	            this.fromHome ? "Back" : "Home"
 	          ),
@@ -28361,7 +28264,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = SpeakerPageEU;
 
 /***/ },
-/* 240 */
+/* 239 */
 /***/ function(module, exports) {
 
 	module.exports = "html,\nbody,\ndiv,\nspan,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\nabbr,\naddress,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\nsamp,\nsmall,\nstrong,\nsub,\nsup,\nvar,\nb,\ni,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\nbody {\n  line-height: 1;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection {\n  display: block;\n}\nnav ul {\n  list-style: none;\n}\nblockquote,\nq {\n  quotes: none;\n}\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: '';\n  content: none;\n}\na {\n  margin: 0;\n  padding: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  background: transparent;\n}\nins {\n  background-color: #ff9;\n  color: #000;\n  text-decoration: none;\n}\nmark {\n  background-color: #ff9;\n  color: #000;\n  font-style: italic;\n  font-weight: bold;\n}\ndel {\n  text-decoration: line-through;\n}\nabbr[title],\ndfn[title] {\n  border-bottom: 1px dotted;\n  cursor: help;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #ccc;\n  margin: 1em 0;\n  padding: 0;\n}\ninput,\nselect {\n  vertical-align: middle;\n}\n@font-face {\n  font-family: 'league_spartan';\n  src: url(\"/fonts/leaguespartan-bold-webfont.eot\");\n  src: url(\"/fonts/leaguespartan-bold-webfont.eot?#iefix\") format('embedded-opentype'), url(\"/fonts/leaguespartan-bold-webfont.woff2\") format('woff2'), url(\"/fonts/leaguespartan-bold-webfont.woff\") format('woff'), url(\"/fonts/leaguespartan-bold-webfont.ttf\") format('truetype'), url(\"/fonts/leaguespartan-bold-webfont.svg#league_spartanregular\") format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n.splash--contents {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-align-content: stretch;\n      -ms-flex-line-pack: stretch;\n          align-content: stretch;\n  -webkit-box-align: stretch;\n  -webkit-align-items: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n}\n.splash--contents > div {\n  width: 100%;\n  position: relative;\n}\n.splash--contents > div a {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n}\n.splash--images {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: column;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-align-content: stretch;\n      -ms-flex-line-pack: stretch;\n          align-content: stretch;\n  -webkit-box-align: stretch;\n  -webkit-align-items: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n  overflow: hidden;\n}\n.splash--image:first-child {\n  background: url(\"/img/pgday-us.svg\") no-repeat center;\n  background-size: contain;\n  -webkit-box-flex: 2;\n  -webkit-flex-grow: 2;\n      -ms-flex-positive: 2;\n          flex-grow: 2;\n}\n.splash--image:last-child {\n  background: url(\"/img/pgd_logo.svg\") no-repeat center;\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  box-sizing: border-box;\n  margin: 60px;\n}\n.splash--us2016 {\n  background: #27a1c5;\n}\n.splash--eu2016 {\n  background: url(\"/img/pgday-eu-logo.svg\") no-repeat center, url(\"/img/pgday-eu-bg.svg\") no-repeat center;\n  background-size: contain, cover;\n  background-blend-mode: multiply;\n}\n@media only screen and (max-width: 800px) {\n  .splash--contents {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column;\n  }\n  .splash--contents > div {\n    height: 100%;\n  }\n  .splash--image:first-child {\n    display: none;\n  }\n  .splash--us2016 {\n    background: url(\"/img/buildbot-line.svg\") no-repeat center #27a1c5;\n    background-size: cover;\n  }\n}\n:root {\n  font-size: 16px;\n}\nbody {\n  font-family: 'adobe-clean', Helvetica, Arial, sans-serif;\n  color: #033351;\n  line-height: 1.75rem;\n  -webkit-font-smoothing: antialiased;\n}\n.bounds,\n.text-bounds,\n.header-bounds,\n.eu-header-bounds {\n  max-width: 1280px;\n  position: relative;\n  margin: 0 auto;\n}\n.text-bounds {\n  max-width: 900px;\n  box-sizing: border-box;\n  padding-left: 10px;\n  padding-right: 10px;\n}\na {\n  color: #27a1c5;\n  text-decoration: none;\n}\na:hover {\n  text-decoration: underline;\n}\n.main-header {\n  background: #27a1c5;\n}\n.header-title {\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-image: url(\"../img/buildbot-line.svg\");\n  position: relative;\n  background-color: #1793b3;\n  padding-top: 50px;\n  padding-bottom: 40px;\n  text-align: center;\n}\n.header-title .bounds {\n  display: inline-block;\n  width: auto;\n}\n.header-title h1 {\n  font-family: league_spartan;\n  font-size: 2rem;\n  line-height: 2rem;\n}\n.header-title .subhead {\n  font-family: league_spartan;\n  font-size: 1rem;\n  line-height: 3rem;\n  position: relative;\n}\n.header-title .description {\n  font-size: 1.2rem;\n  margin: 20px 0 40px;\n  max-width: 330px;\n}\n.header-title .button--cta {\n  position: relative;\n  margin: 0 auto;\n  font-size: 1.2rem;\n  text-transform: none;\n  font-weight: bold;\n}\n.header-title .pricing {\n  margin: 60px auto 40px;\n  max-width: 280px;\n}\n.header-title .pricing h2 {\n  padding-bottom: 8px;\n  border-bottom: 1px solid #fff;\n  font-size: 1.2rem;\n  font-weight: 900;\n  margin-bottom: 10px;\n}\n.header-title .pricing li {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  font-size: 1rem;\n}\n.header-title .pricing li span {\n  -webkit-flex-shrink: 0;\n      -ms-flex-negative: 0;\n          flex-shrink: 0;\n}\n.header-title .pricing .leader {\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  border-bottom: 2px dotted;\n  margin: 0 8px;\n  position: relative;\n  top: -8px;\n}\n.main-content,\n.speaker-page-content {\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-image: url(\"../img/buildbot-line-dark.svg\");\n  background-color: #fff;\n}\n.header-bounds {\n  width: 100%;\n  height: 330px;\n  overflow: hidden;\n}\n.logo {\n  position: absolute;\n  width: 120px;\n  height: 53px;\n  overflow: hidden;\n  right: 63px;\n  top: 235px;\n}\n.adobe-logo {\n  width: 52px;\n  position: absolute;\n  top: 0;\n  right: 20px;\n  z-index: 2;\n}\n.header-title {\n  color: #fff;\n  background: #1793b3;\n  padding: 20px;\n}\n.ipad-air2 {\n  width: 348px;\n  height: 512px;\n  position: absolute;\n  display: none;\n}\n.ipad-air2 .content-mask {\n  width: 298px;\n  height: 398px;\n  left: 28px;\n  top: 54px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.galaxy-s6 {\n  width: 368px;\n  height: 190px;\n  position: absolute;\n  left: 5px;\n  top: 5px;\n  -webkit-transform-origin: 0 0;\n          transform-origin: 0 0;\n  -webkit-transform: scale3d(0.842391304, 0.842391304, 1);\n          transform: scale3d(0.842391304, 0.842391304, 1);\n}\n.galaxy-s6 .content-mask {\n  width: 278px;\n  height: 154px;\n  left: 48px;\n  top: 14px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.galaxy-s6:after {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  content: url(\"../img/galaxy-s6-shine.svg\");\n}\n.iphone-6 {\n  width: 352px;\n  height: 178px;\n  position: absolute;\n  left: 3px;\n  top: 157px;\n  -webkit-transform-origin: 0 0;\n          transform-origin: 0 0;\n  -webkit-transform: scale3d(0.842391304, 0.842391304, 1);\n          transform: scale3d(0.842391304, 0.842391304, 1);\n}\n.iphone-6 .content-mask {\n  width: 258px;\n  height: 144px;\n  left: 50px;\n  top: 14px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n  background-position: center -70px;\n}\n.nexus-9 {\n  width: 570px;\n  height: 386px;\n  position: absolute;\n  display: none;\n}\n.nexus-9 .content-mask {\n  width: 446px;\n  height: 334px;\n  left: 66px;\n  top: 22px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.fire-hdx {\n  width: 580px;\n  height: 398px;\n  position: absolute;\n  display: none;\n}\n.fire-hdx .content-mask {\n  width: 478px;\n  height: 298px;\n  left: 54px;\n  top: 48px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.lumia-640xl {\n  width: 216px;\n  height: 400px;\n  position: absolute;\n  display: none;\n}\n.lumia-640xl .content-mask {\n  width: 166px;\n  height: 312px;\n  left: 26px;\n  top: 40px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n.one-m9 {\n  width: 372px;\n  height: 188px;\n  position: absolute;\n  display: none;\n}\n.one-m9 .content-mask {\n  width: 276px;\n  height: 156px;\n  left: 46px;\n  top: 12px;\n  background-color: #f4b504;\n  background-image: url(\"../img/buildbot.svg\");\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  background-position: center -50px;\n  background-size: 450px;\n  position: absolute;\n}\n@media only screen and (min-width: 360px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -50px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -50px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    right: 53px;\n    top: 288px;\n  }\n  .header-bounds {\n    max-width: 380px;\n    width: 100%;\n    height: 380px;\n  }\n  .galaxy-s6 {\n    -webkit-transform: none;\n            transform: none;\n    left: 0px;\n  }\n  .galaxy-s6 .content-mask {\n    background-position: center -50px;\n    background-size: 450px;\n  }\n  .iphone-6 {\n    top: 186px;\n    left: 24px;\n    -webkit-transform: none;\n            transform: none;\n  }\n  .iphone-6 .content-mask {\n    background-position: center -50px;\n    background-size: 450px;\n  }\n}\n@media only screen and (min-width: 600px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 70px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n    padding-top: 50px;\n    padding-bottom: 40px;\n  }\n  .header-title h1 {\n    font-size: 4rem;\n    line-height: 4rem;\n  }\n  .header-title .subhead {\n    font-size: 1.2rem;\n    line-height: 1.5rem;\n    left: -92px;\n  }\n  .header-title .description {\n    font-size: 1.5rem;\n    margin: 20px auto 20px;\n    max-width: 400px;\n  }\n  .header-title .button--cta {\n    position: relative;\n    margin: 0 auto;\n    font-size: 1.2rem;\n  }\n  .header-title .pricing {\n    max-width: 335px;\n  }\n  .header-title .pricing h2 {\n    font-size: 1.5rem;\n  }\n  .header-title .pricing li {\n    font-size: 1.25rem;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 70px;\n    background-size: 450px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    width: 230px;\n    height: auto;\n    right: 52px;\n    top: 337px;\n  }\n  .header-bounds {\n    max-width: 600px;\n    width: 100%;\n    height: 532px;\n  }\n  .galaxy-s6 {\n    display: none;\n  }\n  .iphone-6 {\n    display: none;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 230px;\n    top: 10px;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 70px;\n    background-size: 450px;\n  }\n  .lumia-640xl {\n    display: block;\n    left: 20px;\n    top: 70px;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center 70px;\n    background-size: 450px;\n  }\n}\n@media only screen and (min-width: 800px) {\n  .header-title {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -100px;\n    background-size: 680px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center -100px;\n    background-size: 680px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .logo {\n    width: 300px;\n    right: 58px;\n    top: 249px;\n  }\n  .header-bounds {\n    max-width: 800px;\n    width: 100%;\n    height: 440px;\n  }\n  .ipad-air2 {\n    display: none;\n  }\n  .fire-hdx {\n    display: block;\n    top: 30px;\n    left: 218px;\n  }\n  .fire-hdx .content-mask {\n    background-position: center -100px;\n    background-size: 680px;\n  }\n  .lumia-640xl {\n    top: 8px;\n    left: 1px;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center -100px;\n    background-size: 680px;\n  }\n}\n@media only screen and (min-width: 1030px) {\n  .header-title {\n    background-position: center 100px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    position: relative;\n    background-color: #1793b3;\n    padding-top: 150px;\n    padding-bottom: 120px;\n  }\n  .header-title h1 {\n    font-size: 6rem;\n    line-height: 5rem;\n  }\n  .header-title .subhead {\n    left: -98px;\n    font-size: 1.5rem;\n    line-height: 2.5rem;\n  }\n  .header-title .description {\n    position: relative;\n    margin: 20px auto 40px;\n    max-width: 400px;\n    font-size: 1.5rem;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 100px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .pricing {\n    margin: 100px auto 40px;\n  }\n  .logo {\n    width: 360px;\n    right: 136px;\n    top: 65px;\n  }\n  .header-bounds {\n    max-width: 1030px;\n    width: 100%;\n    height: 840px;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 20px;\n    top: 80px;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .fire-hdx {\n    display: block;\n    left: 375px;\n    top: 10px;\n  }\n  .fire-hdx .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .nexus-9 {\n    display: block;\n    left: 380px;\n    top: 420px;\n  }\n  .nexus-9 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .one-m9 {\n    display: block;\n    top: 600px;\n    left: 0;\n  }\n  .one-m9 .content-mask {\n    background-position: center 100px;\n    background-size: 1100px;\n  }\n  .lumia-640xl {\n    display: none;\n  }\n}\n@media only screen and (min-width: 1280px) {\n  .header-title {\n    background-position: center 300px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line.svg\");\n    background-color: #1793b3;\n    text-align: center;\n    padding-top: 150px;\n    padding-bottom: 150px;\n    position: relative;\n  }\n  .main-content,\n  .speaker-page-content {\n    background-color: #f4b504;\n    background-image: url(\"../img/buildbot.svg\");\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n    background-position: center -50px;\n    background-size: 450px;\n    position: absolute;\n    background-position: center 300px;\n    background-size: 1100px;\n    background-image: url(\"../img/buildbot-line-dark.svg\");\n    background-color: #fff;\n  }\n  .header-bounds {\n    max-width: 1280px;\n    height: 1698px;\n  }\n  .logo {\n    width: 1280px;\n    margin: 0 auto;\n    position: absolute;\n    top: 0;\n    right: auto;\n    padding: 20px 20px 0;\n    box-sizing: border-box;\n    z-index: 1;\n  }\n  .ipad-air2 {\n    display: block;\n    left: 56px;\n    top: 854px;\n    z-index: 2;\n  }\n  .ipad-air2 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .galaxy-s6 {\n    display: block;\n    left: 325px;\n    top: 648px;\n    z-index: 2;\n  }\n  .galaxy-s6 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .iphone-6 {\n    display: block;\n    left: 726px;\n    top: 703px;\n    z-index: 2;\n  }\n  .iphone-6 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .nexus-9 {\n    display: block;\n    left: 458px;\n    top: 886px;\n    z-index: 2;\n  }\n  .nexus-9 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .fire-hdx {\n    display: block;\n    left: 420px;\n    top: 1283px;\n    z-index: 2;\n  }\n  .fire-hdx .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .lumia-640xl {\n    display: block;\n    left: 1038px;\n    top: 988px;\n    z-index: 2;\n  }\n  .lumia-640xl .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n  .one-m9 {\n    display: block;\n    left: 15px;\n    top: 1398px;\n    z-index: 2;\n  }\n  .one-m9 .content-mask {\n    background-position: center 300px;\n    background-size: 1100px;\n  }\n}\n.eu-header-bounds {\n  width: 100%;\n  height: 330px;\n  background: url(\"/img/pgday-eu-logo.svg\") no-repeat center, url(\"/img/pgday-eu-bg.svg\") no-repeat center;\n  background-size: contain, cover;\n  background-blend-mode: multiply;\n  background-attachment: scroll, fixed;\n}\n.eu-main-header .header-title {\n  background: url(\"/img/pgday-eu-bg-light.svg\") no-repeat center #1793b3;\n  background-size: cover;\n  background-attachment: fixed;\n}\n.main-content.eu-content {\n  background: url(\"/img/pgday-eu-bg-dark.svg\") no-repeat center #fff;\n  background-size: cover;\n  background-attachment: fixed;\n}\n.subhead.eu-subhead {\n  left: 0;\n}\n@media only screen and (min-width: 360px) {\n  .eu-header-bounds {\n    height: 380px;\n  }\n  .subhead.eu-subhead {\n    margin-top: 10px;\n  }\n}\n@media only screen and (min-width: 600px) {\n  .eu-header-bounds {\n    height: 532px;\n  }\n}\n@media only screen and (min-width: 800px) {\n  .eu-header-bounds {\n    height: 440px;\n  }\n}\n@media only screen and (min-width: 1030px) {\n  .eu-header-bounds {\n    height: 840px;\n  }\n  .subhead.eu-subhead {\n    margin-top: 30px;\n  }\n}\n@media only screen and (min-width: 1280px) {\n  .eu-header-bounds {\n    width: 100%;\n    height: 85vh;\n    max-width: 100%;\n  }\n}\n.button--cta {\n  border-radius: 4px;\n  background: #f4b504;\n  color: #fff;\n  text-transform: uppercase;\n  border: none;\n  font-size: 1.0625rem;\n  font-weight: normal;\n  padding: 8px 27px 10px;\n  text-decoration: none;\n  display: inline-block;\n}\n.button--cta:hover {\n  text-decoration: none;\n  background: #f2a700;\n}\n.waiting-list-link {\n  color: #fff;\n  text-decoration: underline;\n}\n.main-content,\n.speaker-page-content {\n  width: 100%;\n}\n.main-content section,\n.speaker-page-content section {\n  margin-bottom: 40px;\n}\n.main-content h1,\n.speaker-page-content h1 {\n  font-family: league_spartan;\n  font-size: 2rem;\n  text-transform: uppercase;\n  max-width: 350px;\n  line-height: 3.5rem;\n  margin-bottom: 30px;\n}\n.main-content .sub,\n.speaker-page-content .sub {\n  font-size: 1.25rem;\n  max-width: 420px;\n  font-weight: bold;\n}\n.main-content p,\n.speaker-page-content p {\n  margin: 0 0 20px;\n  max-width: 420px;\n}\n.about h1 {\n  -webkit-column-span: all;\n  -moz-column-span: all;\n       column-span: all;\n}\n.about .text-bounds {\n  max-width: 920px;\n  padding-top: 120px;\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  max-width: 440px;\n}\n.about p {\n  max-width: 430px;\n  vertical-align: top;\n  font-size: 1rem;\n  line-height: 1.8rem;\n}\n.about-details {\n  background: #033351;\n  color: #fff;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 60px 30px;\n  overflow: hidden;\n}\n.about-details img {\n  width: 100%;\n  height: auto;\n}\n.about-details p {\n  max-width: 420px;\n}\n.about-heading {\n  max-width: 420px;\n  font-size: 2rem;\n  line-height: 2.7rem;\n  font-family: league_spartan;\n  text-transform: uppercase;\n}\n.about--skiing,\n.about--sessions,\n.about--networking {\n  position: relative;\n  margin: 0 auto;\n  max-width: 420px;\n  margin-bottom: 50px;\n}\n.about--skiing:last-child,\n.about--sessions:last-child,\n.about--networking:last-child {\n  margin-bottom: 0;\n}\n.audience-image {\n  display: none;\n}\n.speaker-section .text-bounds {\n  max-width: 900px;\n}\n.speaker-section .speaker-list {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.speaker--photo {\n  border-radius: 125px;\n  width: 125px;\n  height: 125px;\n}\n.speaker {\n  box-sizing: border-box;\n  text-align: center;\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n  padding: 0 20px;\n  max-width: 350px;\n  position: relative;\n  margin: 0 auto;\n  text-align: center;\n}\n.speaker::after {\n  content: ' ';\n  height: 50px;\n  display: block;\n}\n.speaker--bio {\n  text-align: left;\n}\n.speaker--name {\n  font-size: 1.5rem;\n  margin-bottom: 0;\n  text-align: center;\n}\n.speaker--title {\n  font-size: 1rem;\n  font-weight: 200;\n  font-style: italic;\n  line-height: 1.1rem;\n}\n.speaker--title a {\n  color: #033351;\n}\n.schedule-section h1 {\n  -webkit-column-span: all;\n  -moz-column-span: all;\n       column-span: all;\n}\n.schedule-section .text-bounds {\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.schedule-section li {\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n}\n.full {\n  width: 100%;\n  height: auto;\n  display: block;\n}\n.map {\n  width: 100%;\n  height: 300px;\n  background: url(\"/img/map.png\") center;\n  background-size: cover;\n  display: block;\n}\n.columns .text-bounds {\n  -webkit-column-count: 1;\n     -moz-column-count: 1;\n          column-count: 1;\n  -webkit-column-gap: 30px;\n     -moz-column-gap: 30px;\n          column-gap: 30px;\n}\n.columns section {\n  -webkit-column-break-inside: avoid;\n  column-break-inside: avoid;\n}\n.speaker-page-content {\n  height: 100%;\n}\n.speaker-page-content h1 {\n  line-height: 2.5rem;\n}\n.session {\n  margin-bottom: 20px;\n}\n.sessions--heading {\n  font-size: 2rem;\n  margin-bottom: 10px;\n}\n.session--title {\n  font-size: 1.2rem;\n  line-height: 1.2rem;\n  margin-bottom: 10px;\n}\n.sessions,\n.workshops {\n  margin-top: 30px;\n}\n.session--description {\n  text-align: left;\n}\n.session-list {\n  list-style: none;\n  margin: 0;\n}\n.speaker-page--header {\n  height: 120px;\n  background: #1793b3;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 15px 0;\n  text-align: center;\n}\n.speaker-page--header img {\n  height: 100%;\n}\n.speaker-page--header img:last-child {\n  opacity: 0.9;\n  margin-left: 20px;\n}\n.workshops {\n  text-align: center;\n}\n.workshops header {\n  color: #fff;\n  background: #033351;\n}\n.workshop--list {\n  list-style: none;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: column;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  border: 1px solid rgba(3,51,81,0.2);\n}\n.workshop--list > li {\n  width: 100%;\n  padding: 2px 5px;\n  box-sizing: border-box;\n}\n.workshop--list > li:nth-child(n+2) {\n  border-left: 0;\n  border-top: 1px solid rgba(3,51,81,0.2);\n}\n.workshop--speaker,\nworkshop--title {\n  display: block;\n}\n.workshop--title {\n  font-weight: bold;\n  font-size: 1.125rem;\n}\n.workshop--speaker-list {\n  list-style: none;\n}\n.workshop--speaker-list > li {\n  display: inline-block;\n}\n.workshop--speaker-list > li:nth-child(-n+1):after {\n  content: \",\";\n  margin-right: 3px;\n}\n.workshop--speaker-list > li:last-child:before {\n  content: \"and \";\n}\n@media only screen and (min-width: 400px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n}\n@media only screen and (min-width: 550px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n  .speaker {\n    padding: 0;\n  }\n  .main-content h1 {\n    font-size: 3rem;\n  }\n  .speaker--photo {\n    width: 250px;\n    height: 250px;\n  }\n  .workshop--list {\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n    -webkit-flex-direction: row;\n        -ms-flex-direction: row;\n            flex-direction: row;\n  }\n  .workshop--list > li:nth-child(n+2) {\n    border-left: 1px solid rgba(3,51,81,0.2);\n    border-top: 0;\n  }\n}\n@media only screen and (min-width: 950px) {\n  .speaker-section .speaker-list {\n    -webkit-column-count: 3;\n       -moz-column-count: 3;\n            column-count: 3;\n  }\n  .about .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n    max-width: 920px;\n  }\n  .about-details img {\n    margin-bottom: 30px;\n  }\n  .about-details .text-bounds {\n    max-width: 920px;\n  }\n  .about-details .text-bounds > div {\n    max-width: 100%;\n  }\n  .about-heading {\n    font-size: 2.25rem;\n  }\n  .about--sessions {\n    left: -50px;\n  }\n  .about--sessions .about-heading {\n    position: absolute;\n    left: 348px;\n    top: -5px;\n  }\n  .about--sessions p {\n    position: absolute;\n    left: 348px;\n    top: 110px;\n  }\n  .about--sessions img {\n    width: 470px;\n  }\n  .about--networking {\n    left: -30px;\n  }\n  .about--networking img {\n    width: 450px;\n  }\n  .about--skiing {\n    position: absolute;\n    top: 270px;\n    left: 490px;\n  }\n  .about--skiing img {\n    width: 460px;\n  }\n  .about--skiing .audience-image {\n    display: block;\n    width: 450px;\n  }\n  .schedule-section .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n  .columns .text-bounds {\n    -webkit-column-count: 2;\n       -moz-column-count: 2;\n            column-count: 2;\n  }\n}\n"
