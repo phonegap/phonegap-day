@@ -610,7 +610,12 @@ module.exports = {
   ],
   routes: function () {
     return routes = this.speakers.reduce(function (previousValue, currentValue, index){
-      previousValue.push("/us2016/speaker/"+currentValue.slug);
+      if (currentValue.conferences.indexOf("us2016") >= 0) {
+        previousValue.push("/us2016/speaker/"+currentValue.slug);
+      }
+      if (currentValue.conferences.indexOf("eu2016") >= 0) {
+        previousValue.push("/eu2016/speaker/"+currentValue.slug);
+      }
       return previousValue;
     }, ["/","/us2016/","/eu2016/"]);
   },
@@ -638,6 +643,24 @@ module.exports = {
       }
     }
     return null;
+  },
+  findSpeakersByConference: function(conferenceSlug) {
+    var id = 0;
+    var newSpeakerSet = this.speakers.filter(function(speaker){
+      if (speaker.conferences.indexOf(conferenceSlug) >= 0){
+        id++;
+        speaker.id = id;
+        return true;
+      } else {
+        return false;
+      }
+    });
+    newSpeakerSet.sort(function(a,b) {
+      if(a.slug < b.slug) return -1;
+      if(a.slug > b.slug) return 1;
+      return 0;
+    });
+    return newSpeakerSet;
   },
   findWorkshopBySpeakerSlug: function(slug) {
     var sessions = [];
