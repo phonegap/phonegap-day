@@ -161,7 +161,7 @@ module.exports = {
       name: "Bruce Lefebvre",
       title: "Computer Scientist, Adobe",
       bio: "Bruce is a programmer at Adobe focused on bringing Experience Manager and the open web together. As a member of the mobile R&D team, he’s most recently been focused on the AEM + PhoneGap integration. When not at his desk he can usually be found outside on his bike..",
-      conferences: ["us2016"]
+      conferences: ["us2016", "eu2016"]
     },{
       id: 12,
       avatar: "/img/bio/simonmacdonald.jpg",
@@ -224,7 +224,7 @@ module.exports = {
       name: "Ryan J Salva",
       title: "JavaScript Developer",
       bio: "JavaScript developer, Apache Cordova committer, Visual Studio program manager, CrossFitter, sci-fi connoisseur and whiskey enthusiast. With over 15 years of experience in software development, it’s hard to find a corner of the web where he hasn’t worked, but the important thing to know is this: Ryan is a passionate storyteller with deep insight into market forces, technology, user experience and design. Today, he owns tooling for cross-platform mobile app development at Microsoft. Tomorrow, the world.",
-      conferences: ["us2016"]
+      conferences: ["us2016", "eu2016"]
     },{
       id: 17,
       avatar: "/img/bio/hollyschinsky.jpg",
@@ -267,7 +267,7 @@ module.exports = {
       name: "Nick Van Weerdenburg",
       title: "Founder, Rangle.io",
       bio: "Nick is Rangle.io’s founder, first developer, and now leads the company’s business development and strategy activities. Nick first did server-side JavaScript in 1997 and has 15 years of experience in web software in diverse roles and industries. He is a firm believer in the thin-server, full-JavaScript stack and an active speaker, delivering about a dozen talks each year.",
-      conferences: ["us2016"]
+      conferences: ["us2016", "eu2016"]
     },{
       id: 26,
       avatar: "/img/bio/tommywilliams.jpg",
@@ -338,6 +338,38 @@ module.exports = {
       name: "Steve Gill",
       title: "Software Engineer, Adobe",
       bio: "Originally from Vancouver but currently living in San Francisco, Steve has been part of the PhoneGap team since 2009! He currently works on the tooling for Cordova and helps with releases. Outside of hacking, he loves hockey, biking, yoga and traveling!",
+      conferences: ["eu2016"]
+    },{
+      avatar: "/img/bio/martijnwalraven.jpg",
+      twitter: "martijnwalraven",
+      slug: "martijnwalraven",
+      name: "Martijn Walraven",
+      title: "Core Developer, Meteor Development Group",
+      bio: "Martin works on mobile support for the Meteor JavaScript app platform, including the Cordova integration. He is also the creator of Meteor iOS, which integrates native iOS apps with Meteor.",
+      conferences: ["eu2016"]
+    },{
+      avatar: "/img/bio/brettrudd.jpg",
+      twitter: "brettrudd",
+      slug: "brettrudd",
+      name: "Brett Rudd",
+      title: "Development Lead, Adobe",
+      bio: "Brett is a cordova committer and also the development team lead for Adobe’s PhoneGap Build. PhoneGap Build allows you to create mobile apps using HTML, CSS, and JavaScript - and then easily compile them for multiple platforms in the cloud. It has built over 2 million apps and assists developers during prototyping, development and all the way through signing and packaging for App Store submittal. Brett has no hobbies.",
+      conferences: ["eu2016"]
+    },{
+      avatar: "/img/bio/denisradin.jpg",
+      twitter: "PixelsCommander",
+      slug: "denisradin",
+      name: "Denis Radin",
+      title: "Front-end Engineer, Liberty Global",
+      bio: "Front-end engineer working on ‘embedded JavaScript’ in Liberty Global (Ziggo, UPC). Passionate about UI experiments and performance optimization. Launching JavaScript into space and stratosphere in spare time and believe this is a sunrise of interactive revolution. Blogging at PixelsCommander.com",
+      conferences: ["eu2016"]
+    },{
+      avatar: "/img/bio/eddyverbruggen.jpg",
+      twitter: "eddyverbruggen",
+      slug: "eddyverbruggen",
+      name: "Eddy Verbruggen",
+      title: "Cordova plugins hacker, Telerik",
+      bio: "Eddy is the author of many PhoneGap plugins. Over the past few years, he created popular plugins such as SocialSharing, Calendar, and Toast. What started as an open source hobby resulted in him teaming up with Telerik with the goal to increase the quality of the Cordova plugin ecosystem. These days, Eddy is the maintainer of the Telerik Verified Plugins Marketplace at plugins.telerik.com",
       conferences: ["eu2016"]
     }
   ],
