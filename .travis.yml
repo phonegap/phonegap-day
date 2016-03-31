@@ -5,7 +5,7 @@ rvm:
   - 2.1.4
 before_script:
   - npm install
-  - npm build:production
+  - npm run build:production
 script: bundle exec rake test
 sudo: false
 env:
