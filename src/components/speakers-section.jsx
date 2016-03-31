@@ -12,7 +12,7 @@ class SpeakerItem extends React.Component {
     return (
       <li className="speaker">
         <Link to={pageURL+this.props.speaker.slug}>
-          <img src={this.props.speaker.avatar} className="speaker--photo" />
+          <img src={this.props.speaker.avatar} className="speaker--photo" alt={this.props.speaker.name}/>
         </Link>
         <h2 className="speaker--name">
           <Link to={pageURL+this.props.speaker.slug}>{this.props.speaker.name}</Link>

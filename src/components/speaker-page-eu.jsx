@@ -72,12 +72,12 @@ export default class SpeakerPageEU extends React.Component {
       <div id="content" className="speaker-page-content">
         <header className="speaker-page--header">
           <Link to="/eu2016/" onClick={this.handleClick.bind(this)}>
-            <img src="/img/pgd_logo_eu.svg" />
+            <img src="/img/pgd_logo_eu.svg" alt="PhoneGap Day EU logo"/>
           </Link>
         </header>
         <div className="text-bounds speaker">
           <Link to="/eu2016/" onClick={this.handleClick.bind(this)}>&lt; {this.fromHome ? "Back" : "Home"}</Link>
-          <div><img className="speaker--photo" src={speaker.avatar} alt={speaker.name} /></div>
+          <div><img className="speaker--photo" src={speaker.avatar} alt={speaker.name}/></div>
           <h1 className="speaker--name">{speaker.name}</h1>
           <h2 className="speaker--title">{speaker.title}</h2>
           <div  className="speaker--bio">{speaker.bio}</div>

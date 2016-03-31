@@ -18,7 +18,7 @@ export default class Us2016 extends React.Component {
       <div>
         <header className="eu-main-header">
           <div className="eu-header-bounds">
-            <div className="adobe-logo"><a href="http://adobe.com"><img src="/img/adobe-logo.svg" /></a></div>
+            <div className="adobe-logo"><a href="http://adobe.com"><img src="/img/adobe-logo.svg" alt="Adobe logo"/></a></div>
           </div>
           <div className="header-title">
             <div className="bounds">
@@ -75,18 +75,18 @@ export default class Us2016 extends React.Component {
             </div>
           </section>
           </section>
-          <section><img src="/img/compagnie-theater.jpg" className="full" /></section>
+          <section><img src="/img/compagnie-theater.jpg" className="full" alt="Compagnie Theater"/></section>
           <section className="columns">
             <div className="text-bounds">
               <section>
                 <h1>Sponsors</h1>
                 <p>Interested in sponsoring? Email Jen Gray at <a href="mailto:jgray@adobe.com">jgray@adobe.com</a>.</p>
-                <div><a href="http://www.rangle.io/"><img src="/img/Rangle.io_Logo.svg" width={300} /></a></div>
-                <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} /></a></div>
-                <div><a href="http://www.onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} /></a></div>
-                <div><a href="https://crosswalk-project.org/"><img src="/img/Crosswalk_Project_Logo.svg" width={300} /></a></div>
-                <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} /></a></div>
-                <div><a href="http://www.microsoft.com/"><img src="/img/Microsoft_Logo.svg" width={300} /></a></div>
+                <div><a href="http://www.rangle.io/"><img src="/img/Rangle.io_Logo.svg" width={300} alt="Rangle logo"/></a></div>
+                <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} alt="Monaca logo"/></a></div>
+                <div><a href="http://www.onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} alt="OnsenUI logo"/></a></div>
+                <div><a href="https://crosswalk-project.org/"><img src="/img/Crosswalk_Project_Logo.svg" width={300} alt="Crosswalk logo"/></a></div>
+                <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} alt="Ionic logo"/></a></div>
+                <div><a href="http://www.microsoft.com/"><img src="/img/Microsoft_Logo.svg" width={300} alt="Microsoft logo"/></a></div>
               </section>
               <section>
                   <h1>Code of Conduct</h1>
