@@ -15,29 +15,29 @@ export default class Us2016 extends React.Component {
       <div>
         <header className="main-header">
           <div className="header-bounds">
-            <div className="ipad-air2"><img src="/img/ipad-air2.svg" />
+            <div className="ipad-air2"><img src="/img/ipad-air2.svg" alt="iPad Air 2"/>
               <div className="content-mask" />
             </div>
-            <div className="galaxy-s6"><img src="/img/galaxy-s6.svg" />
+            <div className="galaxy-s6"><img src="/img/galaxy-s6.svg" alt="Galaxy s6"/>
               <div className="content-mask" />
             </div>
-            <div className="iphone-6"><img src="/img/iphone-6.svg" />
+            <div className="iphone-6"><img src="/img/iphone-6.svg" alt="iPhone 6"/>
               <div className="content-mask" />
             </div>
-            <div className="nexus-9"><img src="/img/nexus-9.svg" />
+            <div className="nexus-9"><img src="/img/nexus-9.svg" alt="Nexus 9"/>
               <div className="content-mask" />
             </div>
-            <div className="fire-hdx"><img src="/img/fire-hdx-8.9.svg" />
+            <div className="fire-hdx"><img src="/img/fire-hdx-8.9.svg" alt="Fire HDX 8.9"/>
               <div className="content-mask" />
             </div>
-            <div className="lumia-640xl"><img src="/img/lumia-640xl.svg" />
+            <div className="lumia-640xl"><img src="/img/lumia-640xl.svg" alt="Lumia 640 XL"/>
               <div className="content-mask" />
             </div>
-            <div className="one-m9"><img src="/img/one-m9.svg" />
+            <div className="one-m9"><img src="/img/one-m9.svg" alt="One m9"/>
               <div className="content-mask" />
             </div>
-            <div className="logo"><img src="/img/pgd_logo.svg" /></div>
-            <div className="adobe-logo"><a href="http://adobe.com"><img src="/img/adobe-logo.svg" /></a></div>
+            <div className="logo"><img src="/img/pgd_logo.svg" alt="PhoneGap Day logo"/></div>
+            <div className="adobe-logo"><a href="http://adobe.com"><img src="/img/adobe-logo.svg" alt="Adobe logo"/></a></div>
           </div>
           <div className="header-title">
             <div className="bounds">
@@ -68,17 +68,17 @@ export default class Us2016 extends React.Component {
           <SessionsSection sessions={sessions} heading={"Schedule"}/>
           <section className="about-details">
             <div className="text-bounds">
-              <div className="about--sessions"><img src="/img/sessions.jpg" />
+              <div className="about--sessions"><img src="/img/sessions.jpg" alt="sessions"/>
                 <h2 className="about-heading">10+ Sessions,<br />15+ workshops.</h2>
                 <p>Hear from industry leaders and attend targeted workshop sessions to get some hands-on training with the PhoneGap team and other experts from the mobile community.</p>
               </div>
-              <div className="about--networking"><img src="/img/network.jpg" />
+              <div className="about--networking"><img src="/img/network.jpg" alt="network"/>
                 <h2 className="about-heading">Spend time with good people with brilliant minds.</h2>
                 <p>Network and share ideas with PhoneGap developers from around the world and gain valuable insight for your next project.</p>
               </div>
-              <div className="about--skiing"><img src="/img/skiing.jpg" />
+              <div className="about--skiing"><img src="/img/skiing.jpg" alt="skiing"/>
                 <h2 className="about-heading">Ski day for all attendees.</h2>
-                <p>What's a trip to Utah without some skiing? After a jam-packed day of learning and coding, wind down on Utah's famous mountains and experience "the greatest snow on Earth".</p><img src="/img/audience.jpg" className="audience-image" />
+                <p>What's a trip to Utah without some skiing? After a jam-packed day of learning and coding, wind down on Utah's famous mountains and experience "the greatest snow on Earth".</p><img src="/img/audience.jpg" className="audience-image" alt="audience"/>
               </div>
             </div>
           </section>
@@ -96,7 +96,7 @@ export default class Us2016 extends React.Component {
               </section>
             </div>
           </section>
-          <section><img src="/img/lehi-office.jpg" className="full" /><a href="https://goo.gl/maps/4f5admiUNPn" className="map" /></section>
+          <section><img src="/img/lehi-office.jpg" className="full" alt="Adobe Lehi Office"/><a href="https://goo.gl/maps/4f5admiUNPn" className="map" /></section>
           <section className="columns">
             <div className="text-bounds">
               <section>
@@ -107,15 +107,15 @@ export default class Us2016 extends React.Component {
               </section>
               <section>
                 <h1>Sponsors</h1>
-                <div><a href="http://www.telerik.com/"><img src="/img/Telerik_Logo.svg" width={300} /></a></div>
-                <div><a href="http://www.mobify.com/"><img src="/img/Mobify_Logo.svg" width={280} /></a></div>
-                <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} /></a></div>
-                <div><a href="http://www.rangle.io/"><img src="/img/Rangle.io_Logo.svg" width={300} /></a></div>
-                <div><a href="http://www.onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} /></a></div>
-                <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} /></a></div>
-                <div><a href="http://www.visualstudio.com/"><img src="/img/VisualStudio_Logo.svg" width={300} /></a></div>
-                <div><a href="https://crosswalk-project.org/"><img src="/img/Crosswalk_Project_Logo.svg" width={300} /></a></div>
-                <div><a href="http://redhat.com/"><img src="/img/Redhat_Logo.svg" width={300} /></a></div>
+                <div><a href="http://www.telerik.com/"><img src="/img/Telerik_Logo.svg" width={300} alt="Telerik logo"/></a></div>
+                <div><a href="http://www.mobify.com/"><img src="/img/Mobify_Logo.svg" width={280} alt="Mobify logo"/></a></div>
+                <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} alt="Ionic logo"/></a></div>
+                <div><a href="http://www.rangle.io/"><img src="/img/Rangle.io_Logo.svg" width={300} alt="Rangle.io logo"/></a></div>
+                <div><a href="http://www.onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} alt="OnsenUI logo"/></a></div>
+                <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} alt="Monaca logo"/></a></div>
+                <div><a href="http://www.visualstudio.com/"><img src="/img/VisualStudio_Logo.svg" width={300} alt="VisualStudio logo"/></a></div>
+                <div><a href="https://crosswalk-project.org/"><img src="/img/Crosswalk_Project_Logo.svg" width={300} alt="Crosswalk_Project logo"/></a></div>
+                <div><a href="http://redhat.com/"><img src="/img/Redhat_Logo.svg" width={300} alt="Redhat logo"/></a></div>
               </section>
             </div>
           </section>
