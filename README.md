@@ -1,4 +1,4 @@
-# PhoneGap Day
+# PhoneGap Day [![Travis CI Status](https://travis-ci.org/phonegap/phonegap-day.svg?branch=master)](https://travis-ci.org/phonegap/phonegap-day)
 
 The marketing website for PhoneGap Day
 
