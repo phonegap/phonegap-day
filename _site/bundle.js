@@ -28113,13 +28113,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    _react2.default.createElement(
 	                      'span',
 	                      null,
-	                      'Workshops are sold out. ',
-	                      _react2.default.createElement(
-	                        'a',
-	                        { href: 'https://docs.google.com/forms/d/1GE4xJkcKsf-gvf3OHAnf--6bNaxr9JJRICJOsJTssCk/viewform', className: 'waiting-list-link' },
-	                        'Join the waiting list'
-	                      ),
-	                      '.'
+	                      'Workshops'
+	                    ),
+	                    _react2.default.createElement('span', { className: 'leader' }),
+	                    _react2.default.createElement(
+	                      'span',
+	                      null,
+	                      'Soldout'
 	                    )
 	                  )
 	                )

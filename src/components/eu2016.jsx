@@ -33,7 +33,7 @@ export default class Us2016 extends React.Component {
                   <h2>Ticket Pricing</h2>
                   <ul>
                     <li><span>Conference</span><span className="leader" /><span>€150 + VAT</span></li>
-                    <li><span>Workshops are sold out. <a href="https://docs.google.com/forms/d/1GE4xJkcKsf-gvf3OHAnf--6bNaxr9JJRICJOsJTssCk/viewform" className="waiting-list-link">Join the waiting list</a>.</span></li>
+                    <li><span>Workshops</span><span className="leader" /><span>Soldout</span></li>
                   </ul>
                 </div>
                 <a href="https://phonegapdayeu.paydro.net/" className="button--cta">Get Tickets</a>
