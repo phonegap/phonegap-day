@@ -371,6 +371,28 @@ module.exports = {
       title: "Cordova plugins hacker, Telerik",
       bio: "Eddy is the author of many PhoneGap plugins. Over the past few years, he created popular plugins such as SocialSharing, Calendar, and Toast. What started as an open source hobby resulted in him teaming up with Telerik with the goal to increase the quality of the Cordova plugin ecosystem. These days, Eddy is the maintainer of the Telerik Verified Plugins Marketplace at plugins.telerik.com",
       conferences: ["eu2016"]
+    },{
+      avatar: "/img/bio/andreasschacherbauer.jpg",
+      slug: "andreasschacherbauer",
+      name: "Andreas Schacherbauer",
+      title: "Head of SDK, Wikitude",
+      bio: "Andreas has been developing Wikitude's augmented reality SDK from the ground up. He leads the SDK engineering group within Wikitude and is actively developing the first PhoneGap Plugin for augmented reality for more than 4 years.",
+      conferences: ["eu2016"]
+    },{
+      avatar: "/img/bio/raphaelkubodacosta.jpg",
+      slug: "raphaelkubodacosta",
+      name: "Raphael Kubo Da Costa",
+      title: "Software Engineer, Intel",
+      bio: "Raphael is a software engineer working on web engines and web technologies at Intel's Open Source Technology Center. He has been working on Crosswalk since its creation, and is responsible for its infrastructure, release engineering and everything required for making it work great for everyone, including Cordova users. Raphael currently lives in Amsterdam, a city he is still getting to know, and likes to scratch his itches by contributing to other open source projects in his free time, from FreeBSD to KDE.",
+      conferences: ["eu2016"]
+    },{
+      avatar: "/img/bio/timlancina.jpg",
+      twitter: "timlancina",
+      slug: "timlancina",
+      name: "Tim Lancina",
+      title: "Developer, Ionic",
+      bio: "Tim is a developer at Ionic working on tooling. When not trying to get computers to do what he wants, he is usually playing soccer, traveling, or enjoying a good book.",
+      conferences: ["eu2016"]
     }
   ],
   sessions: [
