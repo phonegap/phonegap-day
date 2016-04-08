@@ -8,11 +8,15 @@ class SessionItem extends React.Component {
     return {__html: "<div>"+this.props.session.description+"</div>"}
   }
   render() {
+    let sessionDescription
+    if(this.props.session.description) {
+      sessionDescription = <div className="session--description" dangerouslySetInnerHTML={this.createMarkup()} />
+    }
     return (
       <div className="session">
         <h3 className="session--title">{this.props.session.title}</h3>
         <div className="session--time">{this.props.session.time}</div>
-        <div className="session--description" dangerouslySetInnerHTML={this.createMarkup()} />
+        {sessionDescription}
       </div>
     )
   }
@@ -47,7 +51,7 @@ export default class SpeakerPage extends React.Component {
   }
   render() {
     let speaker = data.findSpeakerBySlug(this.props.params.slug)
-    let sessions = data.findSessionBySpeakerSlug(this.props.params.slug)
+    let sessions = data.findSessionBySpeakerSlug(this.props.params.slug, 'us2016')
     let sessionSection
     if (sessions.length > 0) {
       sessionSection = (<div className="sessions">
@@ -61,7 +65,7 @@ export default class SpeakerPage extends React.Component {
     if (speaker.twitter) {
       twitter = <div><a href={"https://twitter.com/"+speaker.twitter}>@{speaker.twitter}</a></div>
     }
-    let workshops = (data.findWorkshopBySpeakerSlug(this.props.params.slug))
+    let workshops = (data.findWorkshopBySpeakerSlug(this.props.params.slug, 'us2016'))
     let workshopSection
     if (workshops.length > 0) {
       workshopSection = <WorkshopDetails workshops={workshops}/>

@@ -4,6 +4,7 @@ import Data from '../../data'
 
 let speakers = Data.findSpeakersByConference('eu2016')
 let workshops = Data.workshops.eu2016
+let sessions = Data.sessions.eu2016
 
 import WorkshopsSection from './workshops-section.jsx'
 import SpeakersSection from './speakers-section.jsx'
@@ -62,20 +63,13 @@ export default class Us2016 extends React.Component {
               <img src="/img/de-zwijger.jpg" alt="Pakhuis De Zwijger" style={imageStyle}/>
             </div>
           </section>
-          <WorkshopsSection workshops={workshops}/>
-          <section>
-            <div className="text-bounds">
-              <section>
-                <h1>Schedule</h1>
-                <p>Will be announced closer to the event!</p>
-              </section>
-            </div>
+          <WorkshopsSection workshops={workshops} pageSlug={"eu2016"}/>
+          <SessionsSection sessions={sessions} heading={"Schedule"} pageSlug={"eu2016"}/>
           <section>
             <div className="text-bounds">
               <h1>Venue</h1>
               <p><a href="http://www.compagnietheater.nl/compagnietheater.html">Het Compagnietheater</a>, more details coming soon.</p>
             </div>
-          </section>
           </section>
           <section><img src="/img/compagnie-theater.jpg" className="full" alt="Compagnie Theater"/></section>
           <section className="columns">

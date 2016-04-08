@@ -38,7 +38,7 @@ export default class SessionsSection extends React.Component {
           <h1>{this.props.heading}</h1>
           <ul className="session-list">
             {this.props.sessions.map((session, index) =>
-              <SessionListItem key={"session-" + index} session={session}/>
+              <SessionListItem key={"session-" + index} session={session} pageSlug={this.props.pageSlug}/>
             )}
           </ul>
         </div>

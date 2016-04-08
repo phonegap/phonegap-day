@@ -26108,6 +26108,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var speakers = _data2.default.findSpeakersByConference('us2016');
 	var workshops = _data2.default.workshops.us2016;
+	var sessions = _data2.default.sessions.us2016;
 
 	var Us2016 = (function (_React$Component) {
 	  _inherits(Us2016, _React$Component);
@@ -26312,7 +26313,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              )
 	            )
 	          ),
-	          _react2.default.createElement(_sessionsSection2.default, { sessions: _data.sessions, heading: "Schedule" }),
+	          _react2.default.createElement(_sessionsSection2.default, { sessions: sessions, heading: "Schedule", pageSlug: "us2016" }),
 	          _react2.default.createElement(
 	            'section',
 	            { className: 'about-details' },
@@ -26587,7 +26588,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              )
 	            )
 	          ),
-	          _react2.default.createElement(_workshopsSection2.default, { workshops: workshops, heading: "Workshops" })
+	          _react2.default.createElement(_workshopsSection2.default, { workshops: workshops, heading: "Workshops", pageSlug: "us2016" })
 	        ),
 	        _react2.default.createElement('footer', null)
 	      );
@@ -27000,111 +27001,209 @@ return /******/ (function(modules) { // webpackBootstrap
 	    bio: "Tim is a developer at Ionic working on tooling. When not trying to get computers to do what he wants, he is usually playing soccer, traveling, or enjoying a good book.",
 	    conferences: ["eu2016"]
 	  }],
-	  sessions: [{
-	    time: "8:30am-9:00am",
-	    title: "Registration and breakfast"
-	  }, {
-	    time: "9:00am-9:15am",
-	    title: "PhoneGap kick off",
-	    speakerSlug: "michaelbrooks",
-	    description: "Stop! Wait a moment. Close your eyes. Are they closed? Yea? Alright! Now take a deep breath. No, this isn't yoga. This may be your last relaxing moment for the next two days.<br/><br/>Ahead of you are some amazing presentations from developers in our community. Developers like you, who have contributed their time, talent, and energy to move hybrid mobile app developement forward. PhoneGap Day is an event for you. It's a place for you to meet the people behind the scenes, share your work, and leave your mark on the next version of PhoneGap and Apache Cordova.<br/><br/>Now it's time to enjoy some code, drinks, and powder on the PhoneGap Team!"
-	  }, {
-	    time: "9:15am-9:50am",
-	    title: "Mind the Gap: Supercharge your PhoneGap workflow",
-	    speakerSlug: "ericalli",
-	    description: "Developing a complex and sustainable PhoneGap app can present many challenges. As your app grows, a seamless development workflow is crucial. Can you efficiently deploy and test in different environments? What are your pain points when implementing new functionality? How can you organize all the facets of your app with minimal effort? Mind the gap focuses on some of the ways you can create a development workflow that automates these inefficiencies, boosts scalability and most of all, preserves developer sanity."
-	  }, {
-	    time: "9:50am-10:10am",
-	    title: "Automated App Testing: A pain or cure?",
-	    speakerSlug: "martinposchenrieder",
-	    description: "You want to ship an app you can be proud of, without bugs or defects. You want it delivered quickly. However, the testing process is looked at as simply a ‘necessary evil’ and there is never enough time in the day to test everything manually. Automated testing claims to be the answer but you’ve found it ‘hard to set up’ and ‘difficult to maintain’. Is going back to pure manual testing the answer? Hiring more resources? What is the right balance between manual and automated testing? Can I make automated testing easier? What are some of the current testing trends? From my experience working with many small and large companies, I hope to share my observations, and answer some of these questions."
-	  }, {
-	    time: "10:10am-10:30am",
-	    title: "Finding the sweet spot - blending the best of native and web",
-	    speakerSlug: ["shawnjansepar", "lokimeyburg"],
-	    description: "Choose the best technology for the job. Too often projects begin as hybrid apps, but switch to native for performance reasons. But it’s almost never the case that all features of your app need to be fully native. Today, many apps such as Amazon, Basecamp, Yelp and more take a blended approach. We'll guide you through case studies of how we build high performance apps that blend the best of native and web and highlight lessons we've learned along the way."
-	  }, {
-	    time: "10:30am-10:40am",
-	    title: "BREAK"
-	  }, {
-	    time: "10:40am-11:00",
-	    title: "Ionic: Version 2 and Beyond",
-	    speakerSlug: "mikehartington",
-	    description: "Ionic 1.0 has enabled many web developers to become mobile app developers. With the arrival of Angular 2 and its changes, and with ES6 being finalized, development has been improved yet again. How will that impact Ionic? In this session, we’ll compare Ionic 1 and Ionic 2 and go over what we've learned, what improvements we're making to Ionic, and how easy it will be to develop apps with Ionic 2."
-	  }, {
-	    time: "11:00am-11:25am",
-	    title: "The Story of an App: How StoryCorps Built and Launched the StoryCorps.me Beta Platform and What We've Learned So Far",
-	    speakerSlug: "deanhaddock",
-	    description: "Dean Haddock shares the story of the StoryCorps app, from early prototypes to the TED Prize and beyond."
-	  }, {
-	    time: "11:25am-12:05pm",
-	    title: "PhoneGap Applications with Ember: Lessons learned",
-	    speakerSlug: "alexblom",
-	    description: "The benefits of hybrid applications are obvious (less code, simpler code, iterate faster). Developers often make quick pace, boot their app and then hit a wall trying to make it 'feel native'. This talk will discuss lessons learned & optimization techniques from having built many apps with Ember & phonegap. While this talk uses Ember & Ember packages, the tools and techniques discussed generically apply to any Phonegap application. "
-	  }, {
-	    time: "12:05pm-12:25pm",
-	    speakerSlug: "masahirotanaka",
-	    title: "Using Monaca Cloud to enhance Cordova development"
-	  }, {
-	    time: "12:25pm-1:15pm",
-	    title: "LUNCH"
-	  }, {
-	    time: "1:15pm-1:35pm",
-	    title: "Session: Cordova Plugin Roundup",
-	    speakerSlug: "tjvantoll",
-	    description: "In last few years Cordova plugins have become the cornerstone of many high-quality Cordova and PhoneGap applications. In just the last year, we at Telerik have grown our curated Cordova plugins marketplace from small handful of plugins to now 65 and counting. In this talk you’ll learn about the latest greatest in the Cordova plugin world, including plugins for the Apple Watch, Mapbox maps, and a whole lot more."
-	  }, {
-	    time: "1:35pm-2:15pm",
-	    title: "PhoneGap and React.js",
-	    speakerSlug: "jedwatson",
-	    description: "React.js has been changing the way web developers build user interfaces for the web, but what about hybrid mobile apps, where jQuery Mobile and Angular remain the most popular frameworks? In this talk Jed will review the advantages and challenges of React for mobile, why it is an exciting framework to use, and how to integrate the React ecosystem into your development workflow."
-	  }, {
-	    time: "2:15pm-2:35pm",
-	    title: "When the heck is 4/8/2016?",
-	    speakerSlug: "raymondcamden",
-	    description: "This talk will cover basic internationalization, globalization issues with Cordova apps. I'll talk about the Globalization plugin (and how to work around the async nature of the plugin), the Intl class, and other options. Also, I'll discuss why you should give a damn as a developer."
-	  }, {
-	    time: "2:35pm-2:55pm",
-	    title: "Fixing Continuous Delivery for Mobile.",
-	    speakerSlug: "nickvanweerdenburg",
-	    description: "Manual builds and app store approval lags make it near impossible to have an effective mobile continuous delivery process. In turn, this hurts our attempts to be truly Agile with our mobile projects. The solution? Per-pull request deployment through CircleCI, CodePush and a custom CodePush loader in your app. This enables hands-free, automated deployment from commit to a user device, radically changing your testing, validation, and your user feedback processes."
-	  }, {
-	    time: "2:55pm-3:25pm",
-	    title: "Making Enterprise Sh_t",
-	    speakerSlug: "brucelefebvre",
-	    description: "Does the idea of writing enterprise software conjure up images of bland user interfaces, XML-based configuration, and IE8 compatibility? The folks on Adobe’s Experience Manager Apps team have been working hard at avoiding these stereotypes, while building a platform for delivering and managing mobile apps for enterprise customers. This talk will provide a glimpse into the following: What are the perks of including a content management system in my app dev arsenal? Which tools are available for me to take full advantage of Adobe’s Marketing Cloud solutions? As a developer, what open source goodness can I try out today?"
-	  }, {
-	    time: "3:25pm-3:45pm",
-	    title: "The Crosswalk Advantage – a powerful runtime for your Cordova Apps",
-	    speakerSlug: "bobspencer",
-	    description: "Discover how to add advanced capabilities to your PhoneGap applications with very little effort. The Crosswalk runtime gives your application the ability to use the newest, just-released features on all platforms with predictable behavior."
-	  }, {
-	    time: "3:45pm-4:00pm",
-	    title: "BREAK"
-	  }, {
-	    time: "4:00pm-4:30pm",
-	    title: "Build and Market Your App: Small Team Success",
-	    speakerSlug: "ryanhanna",
-	    description: "This talk will provide the tools and methodologies to help any solo developer or small team build and then market their app to ensure it has the best chance for success. We'll take a transparent look at the early beginnings of Sworkit to where it is now. From a single developer to a team of 10 employees, and from 10 downloads to 10 million. This talk will be a combination of the development and marketing lessons learned and implemented along the way."
-	  }, {
-	    time: "4:30pm-5:00pm",
-	    title: "Generate for AEM and PhoneGap: Design Evolution 3.0 - D2W",
-	    speakerSlug: "reneelance",
-	    description: "Taking design to the digital environment has traditionally been time consuming, resource intensive and something designers and developers have been challenged with since the inception of designing for the web. So what if we had the ability to take design compositions from within Photoshop or Illustrator (or any other design tool if there really is any other) and directly turn them into and app, website or email marketing with a one button click? Something that seems too good to be true doesn’t it, well maybe not. This talk will show new Adobe innovation still in the labs, which look at streamlining workflows and rapid prototyping for App creation with Adobe AEM and PhoneGap."
-	  }, {
-	    time: "5:00pm-5:20pm",
-	    title: "Loading native code (plugins) dynamically for the enterprise",
-	    speakerSlug: "shazron",
-	    description: "Hot-code reload for html/css/js is so 2015, everyone can do it. You probably thought you couldn't hot-reload plugin native code, well you were wrong! I'll show you how (and maybe bake a cake)."
-	  }, {
-	    time: "5:20pm 5:40pm",
-	    title: "Microsoft Visual Studio",
-	    speakerSlug: "ryanjsalva",
-	    description: "TBA"
-	  }, {
-	    time: "6:00pm-8:00pm",
-	    title: "Pub mixer: Drinks and appetizers right after the conference."
-	  }],
+	  sessions: {
+	    us2016: [{
+	      time: "8:30am-9:00am",
+	      title: "Registration and breakfast"
+	    }, {
+	      time: "9:00am-9:15am",
+	      title: "PhoneGap kick off",
+	      speakerSlug: "michaelbrooks",
+	      description: "Stop! Wait a moment. Close your eyes. Are they closed? Yea? Alright! Now take a deep breath. No, this isn't yoga. This may be your last relaxing moment for the next two days.<br/><br/>Ahead of you are some amazing presentations from developers in our community. Developers like you, who have contributed their time, talent, and energy to move hybrid mobile app developement forward. PhoneGap Day is an event for you. It's a place for you to meet the people behind the scenes, share your work, and leave your mark on the next version of PhoneGap and Apache Cordova.<br/><br/>Now it's time to enjoy some code, drinks, and powder on the PhoneGap Team!"
+	    }, {
+	      time: "9:15am-9:50am",
+	      title: "Mind the Gap: Supercharge your PhoneGap workflow",
+	      speakerSlug: "ericalli",
+	      description: "Developing a complex and sustainable PhoneGap app can present many challenges. As your app grows, a seamless development workflow is crucial. Can you efficiently deploy and test in different environments? What are your pain points when implementing new functionality? How can you organize all the facets of your app with minimal effort? Mind the gap focuses on some of the ways you can create a development workflow that automates these inefficiencies, boosts scalability and most of all, preserves developer sanity."
+	    }, {
+	      time: "9:50am-10:10am",
+	      title: "Automated App Testing: A pain or cure?",
+	      speakerSlug: "martinposchenrieder",
+	      description: "You want to ship an app you can be proud of, without bugs or defects. You want it delivered quickly. However, the testing process is looked at as simply a ‘necessary evil’ and there is never enough time in the day to test everything manually. Automated testing claims to be the answer but you’ve found it ‘hard to set up’ and ‘difficult to maintain’. Is going back to pure manual testing the answer? Hiring more resources? What is the right balance between manual and automated testing? Can I make automated testing easier? What are some of the current testing trends? From my experience working with many small and large companies, I hope to share my observations, and answer some of these questions."
+	    }, {
+	      time: "10:10am-10:30am",
+	      title: "Finding the sweet spot - blending the best of native and web",
+	      speakerSlug: ["shawnjansepar", "lokimeyburg"],
+	      description: "Choose the best technology for the job. Too often projects begin as hybrid apps, but switch to native for performance reasons. But it’s almost never the case that all features of your app need to be fully native. Today, many apps such as Amazon, Basecamp, Yelp and more take a blended approach. We'll guide you through case studies of how we build high performance apps that blend the best of native and web and highlight lessons we've learned along the way."
+	    }, {
+	      time: "10:30am-10:40am",
+	      title: "BREAK"
+	    }, {
+	      time: "10:40am-11:00",
+	      title: "Ionic: Version 2 and Beyond",
+	      speakerSlug: "mikehartington",
+	      description: "Ionic 1.0 has enabled many web developers to become mobile app developers. With the arrival of Angular 2 and its changes, and with ES6 being finalized, development has been improved yet again. How will that impact Ionic? In this session, we’ll compare Ionic 1 and Ionic 2 and go over what we've learned, what improvements we're making to Ionic, and how easy it will be to develop apps with Ionic 2."
+	    }, {
+	      time: "11:00am-11:25am",
+	      title: "The Story of an App: How StoryCorps Built and Launched the StoryCorps.me Beta Platform and What We've Learned So Far",
+	      speakerSlug: "deanhaddock",
+	      description: "Dean Haddock shares the story of the StoryCorps app, from early prototypes to the TED Prize and beyond."
+	    }, {
+	      time: "11:25am-12:05pm",
+	      title: "PhoneGap Applications with Ember: Lessons learned",
+	      speakerSlug: "alexblom",
+	      description: "The benefits of hybrid applications are obvious (less code, simpler code, iterate faster). Developers often make quick pace, boot their app and then hit a wall trying to make it 'feel native'. This talk will discuss lessons learned & optimization techniques from having built many apps with Ember & phonegap. While this talk uses Ember & Ember packages, the tools and techniques discussed generically apply to any Phonegap application. "
+	    }, {
+	      time: "12:05pm-12:25pm",
+	      speakerSlug: "masahirotanaka",
+	      title: "Using Monaca Cloud to enhance Cordova development"
+	    }, {
+	      time: "12:25pm-1:15pm",
+	      title: "LUNCH"
+	    }, {
+	      time: "1:15pm-1:35pm",
+	      title: "Session: Cordova Plugin Roundup",
+	      speakerSlug: "tjvantoll",
+	      description: "In last few years Cordova plugins have become the cornerstone of many high-quality Cordova and PhoneGap applications. In just the last year, we at Telerik have grown our curated Cordova plugins marketplace from small handful of plugins to now 65 and counting. In this talk you’ll learn about the latest greatest in the Cordova plugin world, including plugins for the Apple Watch, Mapbox maps, and a whole lot more."
+	    }, {
+	      time: "1:35pm-2:15pm",
+	      title: "PhoneGap and React.js",
+	      speakerSlug: "jedwatson",
+	      description: "React.js has been changing the way web developers build user interfaces for the web, but what about hybrid mobile apps, where jQuery Mobile and Angular remain the most popular frameworks? In this talk Jed will review the advantages and challenges of React for mobile, why it is an exciting framework to use, and how to integrate the React ecosystem into your development workflow."
+	    }, {
+	      time: "2:15pm-2:35pm",
+	      title: "When the heck is 4/8/2016?",
+	      speakerSlug: "raymondcamden",
+	      description: "This talk will cover basic internationalization, globalization issues with Cordova apps. I'll talk about the Globalization plugin (and how to work around the async nature of the plugin), the Intl class, and other options. Also, I'll discuss why you should give a damn as a developer."
+	    }, {
+	      time: "2:35pm-2:55pm",
+	      title: "Fixing Continuous Delivery for Mobile.",
+	      speakerSlug: "nickvanweerdenburg",
+	      description: "Manual builds and app store approval lags make it near impossible to have an effective mobile continuous delivery process. In turn, this hurts our attempts to be truly Agile with our mobile projects. The solution? Per-pull request deployment through CircleCI, CodePush and a custom CodePush loader in your app. This enables hands-free, automated deployment from commit to a user device, radically changing your testing, validation, and your user feedback processes."
+	    }, {
+	      time: "2:55pm-3:25pm",
+	      title: "Making Enterprise Sh_t",
+	      speakerSlug: "brucelefebvre",
+	      description: "Does the idea of writing enterprise software conjure up images of bland user interfaces, XML-based configuration, and IE8 compatibility? The folks on Adobe’s Experience Manager Apps team have been working hard at avoiding these stereotypes, while building a platform for delivering and managing mobile apps for enterprise customers. This talk will provide a glimpse into the following: What are the perks of including a content management system in my app dev arsenal? Which tools are available for me to take full advantage of Adobe’s Marketing Cloud solutions? As a developer, what open source goodness can I try out today?"
+	    }, {
+	      time: "3:25pm-3:45pm",
+	      title: "The Crosswalk Advantage – a powerful runtime for your Cordova Apps",
+	      speakerSlug: "bobspencer",
+	      description: "Discover how to add advanced capabilities to your PhoneGap applications with very little effort. The Crosswalk runtime gives your application the ability to use the newest, just-released features on all platforms with predictable behavior."
+	    }, {
+	      time: "3:45pm-4:00pm",
+	      title: "BREAK"
+	    }, {
+	      time: "4:00pm-4:30pm",
+	      title: "Build and Market Your App: Small Team Success",
+	      speakerSlug: "ryanhanna",
+	      description: "This talk will provide the tools and methodologies to help any solo developer or small team build and then market their app to ensure it has the best chance for success. We'll take a transparent look at the early beginnings of Sworkit to where it is now. From a single developer to a team of 10 employees, and from 10 downloads to 10 million. This talk will be a combination of the development and marketing lessons learned and implemented along the way."
+	    }, {
+	      time: "4:30pm-5:00pm",
+	      title: "Generate for AEM and PhoneGap: Design Evolution 3.0 - D2W",
+	      speakerSlug: "reneelance",
+	      description: "Taking design to the digital environment has traditionally been time consuming, resource intensive and something designers and developers have been challenged with since the inception of designing for the web. So what if we had the ability to take design compositions from within Photoshop or Illustrator (or any other design tool if there really is any other) and directly turn them into and app, website or email marketing with a one button click? Something that seems too good to be true doesn’t it, well maybe not. This talk will show new Adobe innovation still in the labs, which look at streamlining workflows and rapid prototyping for App creation with Adobe AEM and PhoneGap."
+	    }, {
+	      time: "5:00pm-5:20pm",
+	      title: "Loading native code (plugins) dynamically for the enterprise",
+	      speakerSlug: "shazron",
+	      description: "Hot-code reload for html/css/js is so 2015, everyone can do it. You probably thought you couldn't hot-reload plugin native code, well you were wrong! I'll show you how (and maybe bake a cake)."
+	    }, {
+	      time: "5:20pm-5:40pm",
+	      title: "Microsoft Visual Studio",
+	      speakerSlug: "ryanjsalva",
+	      description: "TBA"
+	    }, {
+	      time: "6:00pm-8:00pm",
+	      title: "Pub mixer: Drinks and appetizers right after the conference."
+	    }],
+	    eu2016: [{
+	      time: "8:30am-9:00am",
+	      title: "Registration and breakfast"
+	    }, {
+	      time: "9:00am-9:15am",
+	      title: "PhoneGap Kickoff",
+	      speakerSlug: "simonmacdonald"
+	    }, {
+	      time: "9:15am-9:55am",
+	      title: "Common PhoneGap Gotchas",
+	      speakerSlug: "kerrishotts",
+	      description: "Your users deserve a great experience when they launch your app! Be sure to avoid these common gotchas! The talk would focus on various practices that one should use to avoid a poor user experience, including responding to device events, slow/fast taps, providing affordances, faster animations, designing responsively, a quick touch on security, and also how to handle network connectivity (or lack thereof)."
+	    }, {
+	      time: "9:55am-10:15am",
+	      title: "Do we still need a server? P2P web applications distribution on mobile landscape",
+	      speakerSlug: "denisradin",
+	      description: "WebRTC becomes first class citizen on web platform and opens us vast sea of possibilities. P2P applications distribution is one of them which can reduce operational costs (by reducing server load and latency) and decentralize access to web content by building self maintainable CDN of user`s devices. So what should we expect from this technology and how big is impact of using P2P distributed content for mobile web world?"
+	    }, {
+	      time: "10:15am-10:35am",
+	      title: "Ionic V2",
+	      speakerSlug: "timlancina"
+	    }, {
+	      time: "10:35am-11:00am",
+	      title: "Break"
+	    }, {
+	      time: "11:00am-11:20am",
+	      title: "TBD",
+	      speakerSlug: "eddyverbruggen",
+	      description: "TBD"
+	    }, {
+	      time: "11:20am-11:40am",
+	      title: "Quantifiable performance",
+	      speakerSlug: "brucelefebvre",
+	      description: "It can be difficult to pinpoint exactly when that lightning fast, yet smooth as silk app of yours started showing it's first signs of jank. First a dropped frame, next a choppy animation.. In this talk we'll introduce tools and processes that you can use today to start metering the performance of your app in key scenarios, helping you identify issues before your users do. We'll get there with the help of Appium, wd, browser-perf, and perfjankie."
+	    }, {
+	      time: "11:40am-12:00pm",
+	      title: "Progressive enhancement for mobile apps: exploring the continuum between Cordova and React Native",
+	      speakerSlug: "martijnwalraven",
+	      description: "<p>Rather than looking at Cordova and React Native as two separate technologies that mobile developers have to choose between, these approaches can be seen as part of a continuum that allows for progressive enhancement. It should be possible to build apps from a shared codebase that work out of the box on both desktop and mobile devices, but that can be iterated on to get you all the way to a fully native user experience for the parts where this makes sense.</p><p>The React programming model is especially suited for this, both because of its focus on composability, and because it has shown that a JavaScript UI framework does not have to be dependent on the DOM. This talk will explore how this model makes it possible to reuse components between web and native platforms, and may even allow for ways to seamlessly mix native views and web elements within a single component tree. It will also discuss ongoing work on establishing a common API surface for accessing device-native features.</p>"
+	    }, {
+	      time: "12:00pm-12:20pm",
+	      title: "Fixing Continuous Delivery for Mobile",
+	      speakerSlug: "nickvanweerdenburg",
+	      description: "Manual builds and app store approval lags make it near impossible to have an effective mobile continuous delivery process. In turn, this hurts our attempts to be truly Agile with our mobile projects. The solution? Per-pull request deployment through CircleCI, CodePush and a custom CodePush loader in your app. This enables hands-free, automated deployment from commit to a user device, radically changing your testing, validation, and your user feedback processes."
+	    }, {
+	      time: "12:20pm-1:20pm",
+	      title: "Lunch"
+	    }, {
+	      time: "1:20pm-2:00pm",
+	      title: "The State of the Gap",
+	      speakerSlug: "remysharp",
+	      description: "<p>\"PhoneGap is a polyfill, and the ultimate purpose of PhoneGap is to cease to exist\" – Brian LeRoux, SPACELORD!1!! at Adobe, 2012.</p><p>Clearly PhoneGap, and Cordova are still required today, but when is it really needed? Did the web ever catch up? Do we always need to turn to a PhoneGap shell for all our solutions?</p>"
+	    }, {
+	      time: "2:00pm-2:20pm",
+	      title: "TBD",
+	      speakerSlug: "masahirotanaka",
+	      description: "TBD"
+	    }, {
+	      time: "2:20pm-2:40pm",
+	      title: "Hybrid Apps Powering African Mobile Solutions",
+	      speakerSlug: "saniyusuf",
+	      description: "With one of the youngest and fast growing populations around, it is a great opportunity to shine a light on how developers in the developing world (Africa) are changing the world with Hybrid solutions. This talk was inspired by months travelling in Africa meeting real developers using Hybrid technologies. This talk will also highlight some of the goodness they are doing and also discuss some challenges faced by these innovators like slower internet connections & supporting legacy mobile devices."
+	    }, {
+	      time: "2:40pm-2:55pm",
+	      title: "What's new with PhoneGap Build",
+	      speakerSlug: "brettrudd"
+	    }, {
+	      time: "2:55pm-3:15pm",
+	      title: "TBD",
+	      speakerSlug: "ryanjsalva",
+	      description: "TBD"
+	    }, {
+	      time: "3:15pm-3:45pm",
+	      title: "Break"
+	    }, {
+	      time: "3:45pm-4:05pm",
+	      title: "Making Apps for the Big Screen",
+	      speakerSlug: "nielsleenheer",
+	      description: "When PhoneGap was first released, its goal was to become obsolete. On mobile that never happened. However, if you want to create an app for a Smart TV, set-top box or game console, you will find web apps are almost always natively supported. And in many cases it is the only way to build apps. This talk will focus on the different platforms that are out there, the SDKs that you can use, and the practical problems you are going to encounter when you port your apps to the big screen."
+	    }, {
+	      time: "4:05pm-4:25pm",
+	      title: "Crosswalk Project Empowers PhoneGap Apps",
+	      speakerSlug: "raphaelkubodacosta",
+	      description: "The Crosswalk Project web runtime gives web applications a predictable environment to run in with world class performance. Use new, cutting-edge, or experimental APIs and extensions and deploy complex web applications with confidence. This sessions explores how Crosswalk solves fragmentation challenges across the full range of target mobile devices, improves web app performance, and opens up opportunities to use new APIs for 3D cameras, WebVR, and more. Adding the Crosswalk pluggable webview has never been easier. So much goodness for so little work!"
+	    }, {
+	      time: "4:25pm-5:05pm",
+	      title: "Case Study: StoryCorps App",
+	      speakerSlug: "deanhaddock"
+	    }, {
+	      time: "5:05pm-5:20pm",
+	      title: "Closing Remarks",
+	      speakerSlug: "shazron"
+	    }, {
+	      time: "5:30pm",
+	      title: "Networking Pub Mixer"
+	    }]
+	  },
 	  workshops: {
 	    us2016: [{
 	      time: "8:30am - 9:00am",
@@ -27306,18 +27405,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return previousValue;
 	    }, ["/", "/us2016/", "/eu2016/"]);
 	  }),
-	  findSessionBySpeakerSlug: function findSessionBySpeakerSlug(slug) {
+	  findSessionBySpeakerSlug: function findSessionBySpeakerSlug(slug, conferenceSlug) {
 	    var sessions = [];
-	    for (var i = 0; i < this.sessions.length; i++) {
-	      if (Array.isArray(this.sessions[i].speakerSlug)) {
-	        for (var j = 0; j < this.sessions[i].speakerSlug.length; j++) {
-	          if (this.sessions[i].speakerSlug[j] == slug) {
-	            sessions.push(this.sessions[i]);
+	    for (var i = 0; i < this.sessions[conferenceSlug].length; i++) {
+	      if (Array.isArray(this.sessions[conferenceSlug][i].speakerSlug)) {
+	        for (var j = 0; j < this.sessions[conferenceSlug][i].speakerSlug.length; j++) {
+	          if (this.sessions[conferenceSlug][i].speakerSlug[j] == slug) {
+	            sessions.push(this.sessions[conferenceSlug][i]);
 	          }
 	        }
 	      } else {
-	        if (this.sessions[i].speakerSlug == slug) {
-	          sessions.push(this.sessions[i]);
+	        if (this.sessions[conferenceSlug][i].speakerSlug == slug) {
+	          sessions.push(this.sessions[conferenceSlug][i]);
 	        }
 	      }
 	    }
@@ -27349,12 +27448,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    });
 	    return newSpeakerSet;
 	  },
-	  findWorkshopBySpeakerSlug: function findWorkshopBySpeakerSlug(slug) {
+	  findWorkshopBySpeakerSlug: function findWorkshopBySpeakerSlug(slug, conferenceSlug) {
 	    var sessions = [];
-	    // console.log(this.workshops)
-	    for (var i = 0; i < this.workshops.length; i++) {
-	      var time = this.workshops[i].time;
-	      var workshopTime = this.workshops[i];
+	    for (var i = 0; i < this.workshops[conferenceSlug].length; i++) {
+	      var time = this.workshops[conferenceSlug][i].time;
+	      var workshopTime = this.workshops[conferenceSlug][i];
 	      if (workshopTime.hasOwnProperty('sessions')) {
 	        for (var j = 0; j < workshopTime.sessions.length; j++) {
 	          if (Array.isArray(workshopTime.sessions[j].speakerSlug)) {
@@ -27423,6 +27521,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(Workshop, [{
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+
 	      var session = undefined;
 	      if (Array.isArray(this.props.workshop.speakerSlug)) {
 	        var speakers = [];
@@ -27475,7 +27575,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                  { key: speakerObject.id + "-" + speakerObject.slug },
 	                  _react2.default.createElement(
 	                    _reactRouter.Link,
-	                    { to: "/us2016/speaker/" + speakerObject.slug },
+	                    { to: '/' + _this2.props.pageSlug + '/speaker/' + speakerObject.slug },
 	                    speakerObject.name
 	                  )
 	                );
@@ -27493,7 +27593,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            { className: 'workshop--title' },
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: "/us2016/speaker/" + this.props.workshop.speakerSlug },
+	              { to: '/' + this.props.pageSlug + '/speaker/' + this.props.workshop.speakerSlug },
 	              this.props.workshop.title
 	            )
 	          ),
@@ -27541,10 +27641,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(WorkshopGroup, [{
 	    key: 'render',
 	    value: function render() {
+	      var _this4 = this;
+
 	      var workshopGroup = undefined;
 	      if (this.props.workshop.hasOwnProperty('sessions')) {
 	        workshopGroup = this.props.workshop.sessions.map(function (session, index) {
-	          return _react2.default.createElement(Workshop, { workshop: session, key: "workshop-" + index });
+	          return _react2.default.createElement(Workshop, { workshop: session, key: "workshop-" + index, pageSlug: _this4.props.pageSlug });
 	        });
 	      } else {
 	        workshopGroup = _react2.default.createElement(
@@ -27590,6 +27692,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(WorkshopsSection, [{
 	    key: 'render',
 	    value: function render() {
+	      var _this6 = this;
+
 	      var workshopHeader = undefined;
 	      if (this.props.heading) {
 	        workshopHeader = _react2.default.createElement(
@@ -27609,7 +27713,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            'div',
 	            { className: 'workshops' },
 	            this.props.workshops.map(function (workshop, index) {
-	              return _react2.default.createElement(WorkshopGroup, { workshop: workshop, key: "workshop-group-" + index });
+	              return _react2.default.createElement(WorkshopGroup, { workshop: workshop, key: "workshop-group-" + index, pageSlug: _this6.props.pageSlug });
 	            })
 	          )
 	        )
@@ -27835,6 +27939,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(SessionsSection, [{
 	    key: 'render',
 	    value: function render() {
+	      var _this3 = this;
+
 	      return _react2.default.createElement(
 	        'section',
 	        { className: 'schedule-section' },
@@ -27850,7 +27956,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            'ul',
 	            { className: 'session-list' },
 	            this.props.sessions.map(function (session, index) {
-	              return _react2.default.createElement(SessionListItem, { key: "session-" + index, session: session });
+	              return _react2.default.createElement(SessionListItem, { key: "session-" + index, session: session, pageSlug: _this3.props.pageSlug });
 	            })
 	          )
 	        )
@@ -27907,6 +28013,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var speakers = _data2.default.findSpeakersByConference('eu2016');
 	var workshops = _data2.default.workshops.eu2016;
+	var sessions = _data2.default.sessions.eu2016;
 
 	var Us2016 = (function (_React$Component) {
 	  _inherits(Us2016, _React$Component);
@@ -28125,7 +28232,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	              _react2.default.createElement('img', { src: '/img/de-zwijger.jpg', alt: 'Pakhuis De Zwijger', style: imageStyle })
 	            )
 	          ),
-	          _react2.default.createElement(_workshopsSection2.default, { workshops: workshops }),
+	          _react2.default.createElement(_workshopsSection2.default, { workshops: workshops, pageSlug: "eu2016" }),
+	          _react2.default.createElement(_sessionsSection2.default, { sessions: sessions, heading: "Schedule", pageSlug: "eu2016" }),
 	          _react2.default.createElement(
 	            'section',
 	            null,
@@ -28133,41 +28241,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	              'div',
 	              { className: 'text-bounds' },
 	              _react2.default.createElement(
-	                'section',
+	                'h1',
+	                null,
+	                'Venue'
+	              ),
+	              _react2.default.createElement(
+	                'p',
 	                null,
 	                _react2.default.createElement(
-	                  'h1',
-	                  null,
-	                  'Schedule'
+	                  'a',
+	                  { href: 'http://www.compagnietheater.nl/compagnietheater.html' },
+	                  'Het Compagnietheater'
 	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  'Will be announced closer to the event!'
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'section',
-	              null,
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'text-bounds' },
-	                _react2.default.createElement(
-	                  'h1',
-	                  null,
-	                  'Venue'
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  null,
-	                  _react2.default.createElement(
-	                    'a',
-	                    { href: 'http://www.compagnietheater.nl/compagnietheater.html' },
-	                    'Het Compagnietheater'
-	                  ),
-	                  ', more details coming soon.'
-	                )
+	                ', more details coming soon.'
 	              )
 	            )
 	          ),
@@ -28336,6 +28422,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var sessionDescription = undefined;
+	      if (this.props.session.description) {
+	        sessionDescription = _react2.default.createElement('div', { className: 'session--description', dangerouslySetInnerHTML: this.createMarkup() });
+	      }
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'session' },
@@ -28349,7 +28439,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          { className: 'session--time' },
 	          this.props.session.time
 	        ),
-	        _react2.default.createElement('div', { className: 'session--description', dangerouslySetInnerHTML: this.createMarkup() })
+	        sessionDescription
 	      );
 	    }
 	  }]);
@@ -28415,7 +28505,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'render',
 	    value: function render() {
 	      var speaker = _data2.default.findSpeakerBySlug(this.props.params.slug);
-	      var sessions = _data2.default.findSessionBySpeakerSlug(this.props.params.slug);
+	      var sessions = _data2.default.findSessionBySpeakerSlug(this.props.params.slug, 'us2016');
 	      var sessionSection = undefined;
 	      if (sessions.length > 0) {
 	        sessionSection = _react2.default.createElement(
@@ -28444,7 +28534,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          )
 	        );
 	      }
-	      var workshops = _data2.default.findWorkshopBySpeakerSlug(this.props.params.slug);
+	      var workshops = _data2.default.findWorkshopBySpeakerSlug(this.props.params.slug, 'us2016');
 	      var workshopSection = undefined;
 	      if (workshops.length > 0) {
 	        workshopSection = _react2.default.createElement(WorkshopDetails, { workshops: workshops });
@@ -28550,6 +28640,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var sessionDescription = undefined;
+	      if (this.props.session.description) {
+	        sessionDescription = _react2.default.createElement('div', { className: 'session--description', dangerouslySetInnerHTML: this.createMarkup() });
+	      }
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'session' },
@@ -28563,7 +28657,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          { className: 'session--time' },
 	          this.props.session.time
 	        ),
-	        _react2.default.createElement('div', { className: 'session--description', dangerouslySetInnerHTML: this.createMarkup() })
+	        sessionDescription
 	      );
 	    }
 	  }]);
@@ -28629,8 +28723,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'render',
 	    value: function render() {
 	      var speaker = _data2.default.findSpeakerBySlug(this.props.params.slug);
-	      // let sessions = data.findSessionBySpeakerSlug(this.props.params.slug)
-	      var sessions = [];
+	      var sessions = _data2.default.findSessionBySpeakerSlug(this.props.params.slug, 'eu2016');
 	      var sessionSection = undefined;
 	      if (sessions.length > 0) {
 	        sessionSection = _react2.default.createElement(
@@ -28659,8 +28752,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          )
 	        );
 	      }
-	      // let workshops = (data.findWorkshopBySpeakerSlug(this.props.params.slug))
-	      var workshops = [];
+	      var workshops = _data2.default.findWorkshopBySpeakerSlug(this.props.params.slug, 'eu2016');
 	      var workshopSection = undefined;
 	      if (workshops.length > 0) {
 	        workshopSection = _react2.default.createElement(WorkshopDetails, { workshops: workshops });

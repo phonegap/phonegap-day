@@ -17,7 +17,7 @@ class Workshop extends React.Component {
           <div>
             <ul className="workshop--speaker-list">
               {speakers.map((speakerObject, index) =>
-                <li key={speakerObject.id+"-"+speakerObject.slug}><Link to={"/us2016/speaker/"+speakerObject.slug}>{speakerObject.name}</Link></li>
+                <li key={speakerObject.id+"-"+speakerObject.slug}><Link to={`/${this.props.pageSlug}/speaker/${speakerObject.slug}`}>{speakerObject.name}</Link></li>
               )}
             </ul>
           </div>
@@ -28,7 +28,7 @@ class Workshop extends React.Component {
       session = (
         <span>
           <span className="workshop--title">
-            <Link to={"/us2016/speaker/"+this.props.workshop.speakerSlug}>{this.props.workshop.title}</Link>
+            <Link to={`/${this.props.pageSlug}/speaker/${this.props.workshop.speakerSlug}`}>{this.props.workshop.title}</Link>
           </span>
           <div>
             <span className="workshop--speaker">{speakerData.name}</span>
@@ -55,7 +55,7 @@ class WorkshopGroup extends React.Component {
     let workshopGroup
     if (this.props.workshop.hasOwnProperty('sessions')){
       workshopGroup = this.props.workshop.sessions.map((session, index) =>
-        <Workshop workshop={session} key={"workshop-"+index} />
+        <Workshop workshop={session} key={"workshop-"+index} pageSlug={this.props.pageSlug}/>
       )
     } else {
       workshopGroup = <li>{this.props.workshop.title}</li>
@@ -84,7 +84,7 @@ export default class WorkshopsSection extends React.Component {
           {workshopHeader}
           <div className="workshops">
             {this.props.workshops.map((workshop, index) =>
-              <WorkshopGroup workshop={workshop} key={"workshop-group-"+index}/>
+              <WorkshopGroup workshop={workshop} key={"workshop-group-"+index} pageSlug={this.props.pageSlug}/>
             )}
           </div>
         </div>
