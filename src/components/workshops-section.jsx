@@ -74,10 +74,14 @@ class WorkshopGroup extends React.Component {
 
 export default class WorkshopsSection extends React.Component {
   render(){
+    let workshopHeader
+    if (this.props.heading) {
+      workshopHeader = <h1>{this.props.heading}</h1>
+    }
     return (
       <section>
         <div className="text-bounds">
-          <h1>{this.props.heading}</h1>
+          {workshopHeader}
           <div className="workshops">
             {this.props.workshops.map((workshop, index) =>
               <WorkshopGroup workshop={workshop} key={"workshop-group-"+index}/>

@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import Data from '../../data'
 
 let speakers = Data.findSpeakersByConference('eu2016')
+let workshops = Data.workshops.eu2016
 
 import WorkshopsSection from './workshops-section.jsx'
 import SpeakersSection from './speakers-section.jsx'
@@ -61,6 +62,7 @@ export default class Us2016 extends React.Component {
               <img src="/img/de-zwijger.jpg" alt="Pakhuis De Zwijger" style={imageStyle}/>
             </div>
           </section>
+          <WorkshopsSection workshops={workshops}/>
           <section>
             <div className="text-bounds">
               <section>

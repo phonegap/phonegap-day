@@ -524,144 +524,250 @@ module.exports = {
       title: "Pub mixer: Drinks and appetizers right after the conference."
     }
   ],
-  workshops: [
-    {
-      time: "8:30am - 9:00am",
-      title: "Registration and breakfast"
-    },
-    {
-      time: "9:00am-10:30am",
-      sessions: [
-        {
-          title: "PhoneGap Beginner",
-          speakerSlug: "GarthDB",
-          description: "This workshop will provide an introduction to PhoneGap, the philosophy behind it, and how to get started quickly using a variety of different tools available. You will learn how to create a simple mobile app using the PhoneGap CLI, PhoneGap Desktop App, PhoneGap Developer App, and more. You'll then learn how to extend the app with plugins, manipulate it with hooks, and debug it with the various tools available. By the end of this beginner workshop, you will walk away with a solid understanding of what PhoneGap is all about and how to use it for your next project."
-        },
-        {
-          title: "Hands-on Bluetooth Low Energy",
-          speakerSlug: "doncoleman",
-          description: "You’ve heard a lot about Bluetooth low energy, but do you understand how it works? This workshop will give you a chance to get hands-on experience building PhoneGap applications that interact with Bluetooth Smart devices. We will cover Bluetooth LE concepts like services and characteristics while we are building the software. The mobile application will be written with PhoneGap so it will run on iOS or Android. The phone will control hardware via Bluetooth LE, and automatically receive notifications when something changes on the peripheral. Participants will be required to bring a laptop and are encouraged to bring a Bluetooth LE-capable iOS or Android phone. There will be a limited number of phones that people can borrow for the workshop. Familiarity with at least one programming language is helpful but not required. A list of required free software will be sent to attendees before the workshop."
-        },
-        {
-          title: "App Privacy and Security for PhoneGap Developers",
-          speakerSlug: "tommywilliams",
-          description: "Our mobile devices are rich targets packed full of sensors, and ripe for the harvesting of personal information. All too often, developers on deadlines leave security and privacy concerns until the last minute, or don't get around to them at all. This workshop will show not only the importance of security and privacy, but some basic steps we as developers can take to ensure our apps are a safe place for our users (not to mention keeping the app safe from those same users). From avoiding XSS, understanding the whitelist and CSP, to ensuring that what data we do collect is kept safe. This workshop will give you a better understanding of how to ensure privacy and security are a part of your app from day one."
-        }
-      ]
-    },
-    {
-      time: "10:30am-10:45am",
-      title: "Break"
-    },
-    {
-      time: "10:45am-12:00pm",
-      sessions: [
-        {
-          title: "App submission",
-          speakerSlug: "timkim",
-          description: "Submitting an app."
-        },
-        {
-          title: "Building an App with Ionic 2",
-          speakerSlug: "mikehartington",
-          description: "You've built Ionic apps before, but now that V2 is out, what can you expect? In this session, we'll look at an Ionic 1 app and go through the process of building its Ionic 2 equivalent."
-        },
-        {
-          title: "PhoneGap Intermediate",
-          speakerSlug: "hollyschinsky",
-          description: "<p>In this workshop we'll walk through creating an app from start to finish. Throughout the process we'll gain an understanding of:</p><ul><li>Common mobile app development paradigms (navigation, view stacks)</li><li>Popular mobile framework options</li><li>Mobile UI design patterns (flat vs. material design)</li><li>Performance tips</li><li>App configuration (preferences, permissions, icons/splashscreens) And more!</li></ul>"
-        }
-      ]
-    },
-    {
-      time: "12:00pm-1:00pm",
-      title: "Lunch"
-    },
-    {
-      time: "1:00pm-2:00pm",
-      sessions: [
-        {
-          title: "Build the Amazon App",
-          speakerSlug: ["shawnjansepar", "lokimeyburg"],
-          description: "A workshop on quickly building a hybrid app with feature parity to Amazon's app with a mix of native and web interfaces. In this workshop we will guide you through building a commerce-enabled app with feature parity to the Amazon iOS app using a combination of web and native components using Astro, our latest SDK built on top of Cordova."
-        },
-        {
-          title: "Memory Leaks in Hybrid Mobile Apps.",
-          speakerSlug: "chrisgosselin",
-          description: "An investigation into how memory leaks effect hybrid applications and how to track them down."
-        },
-        {
-          title: "Cordova Plugins in Action",
-          speakerSlug: ["brianrinaldi", "tjvantoll"],
-          description: "Do you love Cordova plugins? So do we! At Telerik we maintain a Cordova plugins marketplace at plugins.telerik.com/cordova, and we’re up to 65 free plugins and counting. In this workshop you’ll install a wide variety of plugins to see how they work in action. You’ll learn about the various ways you can install and test plugins—from the Cordova CLI, to premium tooling available in the Telerik Platform. Come with a laptop and ready to learn about plugins you can use in your next app."
-        }
-      ]
-    },
-    {
-      time: "2:00pm-3:30pm",
-      sessions: [
-        {
-          title: "REPEAT PhoneGap Beginner",
-          speakerSlug: "GarthDB",
-          description: "This workshop will provide an introduction to PhoneGap, the philosophy behind it, and how to get started quickly using a variety of different tools available. You will learn how to create a simple mobile app using the PhoneGap CLI, PhoneGap Desktop App, PhoneGap Developer App, and more. You'll then learn how to extend the app with plugins, manipulate it with hooks, and debug it with the various tools available. By the end of this beginner workshop, you will walk away with a solid understanding of what PhoneGap is all about and how to use it for your next project."
-        },
-        {
-          title: "Embedding PhoneGap natively: The Hybrid Sweet Spot",
-          speakerSlug: "aniskadri",
-          description: "Many developers choose to build native navigation and transitions into their apps but use webviews for the main content, allowing them to realize a large cost and time savings while making their app available to a wider range of users quickly. This approach also provides the ability to push timely updates without app store approval hassles. With this model, only a small native code-base needs to be maintained per platform, and it’s typically the static elements of the app rather than the main content, thus more manageable. Note: iOS only."
-        },
-        {
-          title: "Plugins are Everything, and Everything is a Plugin!",
-          speakerSlug: "purplecabbage",
-          description: "Jesse has been writing PhoneGap plugins since before there were plugins.  In this deep dive workshop Jesse will cover all the requirements of making great plugins, from conception to testing to publishing. He will also share some secrets from his bag'o'tricks and demonstrate some interesting uses for plugins you may not have thought of. Come ready to build!"
-        }
-      ]
-    },
-    {
-      time: "3:30pm-3:45pm",
-      title: "Break"
-    },
-    {
-      time: "3:45pm-4:45pm",
-      sessions: [
-        {
-          title: "Supercharge your Hybrid Apps with Microservices for Mobile",
-          speakerSlug: "cianclarke",
-          description: "In this hands-on session, we will first build a simple Cordova based mobile app using the barcode scanner plugin. Then, we’ll build a microservice written in Node.js to retrieve some hard-to-get data. Along the way, we’ll explore the benefits of this approach, and why hybrid mobile apps are really just an extension of microservices to the client side. Participants only need to bring a laptop with a modern web browser, and will leave the session primed with practical experience building microservices for their mobile apps."
-        },
-        {
-          title: "Hands on: Create advanced apps with the Crosswalk runtime",
-          speakerSlug: "alexismenard",
-          description: "Join Crosswalk architect, Alexis Menard, in a hands-on lab where you will discover how to leverage the power of Crosswalk in your web and hybrid applications and take advantage of the latest web innovations across Android, iOS, and Windows."
-        },
-        {
-          title: "Optimizing Performance and User Interface",
-          speakerSlug: "masahirotanaka",
-          description: "Performance was a major concern among hybrid app developers for many years, which has been dramatically improved by the computing power and the performant web views. However, it does not mean you can build an app that runs smoothly without any prior knowledge. This session will describe some of the best practices to analyze, measure and improve the app, ensuring its better user experience."
-        }
-      ]
-    },
-    {
-      time: "4:45pm-6:00pm",
-      sessions: [
-        {
-          title: "PhoneGap Push Notifications",
-          speakerSlug: "simonmacdonald",
-          description: "In this workshop we'll walk through adding push notification capabilities to your application. You'll learn how to set up a Google Cloud Messaging project for Android notifications and adding push capabilities to your iOS certificate and provisioning profiles. You'll gain an understanding of how to register with your remote push service and handle incoming notifications. Advanced topics will include how to add action buttons, responding to silent push notifications and testing using node.js."
-        },
-        {
-          title: "REPEAT Hands-on Bluetooth Low Energy",
-          speakerSlug: "doncoleman",
-          description: ""
-        },
-        {
-          title: "Visual Studio",
-          speakerSlug: "ryanjsalva",
-          description: ""
-        }
-      ]
-    }
-  ],
+  workshops: {
+    us2016: [
+      {
+        time: "8:30am - 9:00am",
+        title: "Registration and breakfast"
+      },
+      {
+        time: "9:00am-10:30am",
+        sessions: [
+          {
+            title: "PhoneGap Beginner",
+            speakerSlug: "GarthDB",
+            description: "This workshop will provide an introduction to PhoneGap, the philosophy behind it, and how to get started quickly using a variety of different tools available. You will learn how to create a simple mobile app using the PhoneGap CLI, PhoneGap Desktop App, PhoneGap Developer App, and more. You'll then learn how to extend the app with plugins, manipulate it with hooks, and debug it with the various tools available. By the end of this beginner workshop, you will walk away with a solid understanding of what PhoneGap is all about and how to use it for your next project."
+          },
+          {
+            title: "Hands-on Bluetooth Low Energy",
+            speakerSlug: "doncoleman",
+            description: "You’ve heard a lot about Bluetooth low energy, but do you understand how it works? This workshop will give you a chance to get hands-on experience building PhoneGap applications that interact with Bluetooth Smart devices. We will cover Bluetooth LE concepts like services and characteristics while we are building the software. The mobile application will be written with PhoneGap so it will run on iOS or Android. The phone will control hardware via Bluetooth LE, and automatically receive notifications when something changes on the peripheral. Participants will be required to bring a laptop and are encouraged to bring a Bluetooth LE-capable iOS or Android phone. There will be a limited number of phones that people can borrow for the workshop. Familiarity with at least one programming language is helpful but not required. A list of required free software will be sent to attendees before the workshop."
+          },
+          {
+            title: "App Privacy and Security for PhoneGap Developers",
+            speakerSlug: "tommywilliams",
+            description: "Our mobile devices are rich targets packed full of sensors, and ripe for the harvesting of personal information. All too often, developers on deadlines leave security and privacy concerns until the last minute, or don't get around to them at all. This workshop will show not only the importance of security and privacy, but some basic steps we as developers can take to ensure our apps are a safe place for our users (not to mention keeping the app safe from those same users). From avoiding XSS, understanding the whitelist and CSP, to ensuring that what data we do collect is kept safe. This workshop will give you a better understanding of how to ensure privacy and security are a part of your app from day one."
+          }
+        ]
+      },
+      {
+        time: "10:30am-10:45am",
+        title: "Break"
+      },
+      {
+        time: "10:45am-12:00pm",
+        sessions: [
+          {
+            title: "App submission",
+            speakerSlug: "timkim",
+            description: "Submitting an app."
+          },
+          {
+            title: "Building an App with Ionic 2",
+            speakerSlug: "mikehartington",
+            description: "You've built Ionic apps before, but now that V2 is out, what can you expect? In this session, we'll look at an Ionic 1 app and go through the process of building its Ionic 2 equivalent."
+          },
+          {
+            title: "PhoneGap Intermediate",
+            speakerSlug: "hollyschinsky",
+            description: "<p>In this workshop we'll walk through creating an app from start to finish. Throughout the process we'll gain an understanding of:</p><ul><li>Common mobile app development paradigms (navigation, view stacks)</li><li>Popular mobile framework options</li><li>Mobile UI design patterns (flat vs. material design)</li><li>Performance tips</li><li>App configuration (preferences, permissions, icons/splashscreens) And more!</li></ul>"
+          }
+        ]
+      },
+      {
+        time: "12:00pm-1:00pm",
+        title: "Lunch"
+      },
+      {
+        time: "1:00pm-2:00pm",
+        sessions: [
+          {
+            title: "Build the Amazon App",
+            speakerSlug: ["shawnjansepar", "lokimeyburg"],
+            description: "A workshop on quickly building a hybrid app with feature parity to Amazon's app with a mix of native and web interfaces. In this workshop we will guide you through building a commerce-enabled app with feature parity to the Amazon iOS app using a combination of web and native components using Astro, our latest SDK built on top of Cordova."
+          },
+          {
+            title: "Memory Leaks in Hybrid Mobile Apps.",
+            speakerSlug: "chrisgosselin",
+            description: "An investigation into how memory leaks effect hybrid applications and how to track them down."
+          },
+          {
+            title: "Cordova Plugins in Action",
+            speakerSlug: ["brianrinaldi", "tjvantoll"],
+            description: "Do you love Cordova plugins? So do we! At Telerik we maintain a Cordova plugins marketplace at plugins.telerik.com/cordova, and we’re up to 65 free plugins and counting. In this workshop you’ll install a wide variety of plugins to see how they work in action. You’ll learn about the various ways you can install and test plugins—from the Cordova CLI, to premium tooling available in the Telerik Platform. Come with a laptop and ready to learn about plugins you can use in your next app."
+          }
+        ]
+      },
+      {
+        time: "2:00pm-3:30pm",
+        sessions: [
+          {
+            title: "REPEAT PhoneGap Beginner",
+            speakerSlug: "GarthDB",
+            description: "This workshop will provide an introduction to PhoneGap, the philosophy behind it, and how to get started quickly using a variety of different tools available. You will learn how to create a simple mobile app using the PhoneGap CLI, PhoneGap Desktop App, PhoneGap Developer App, and more. You'll then learn how to extend the app with plugins, manipulate it with hooks, and debug it with the various tools available. By the end of this beginner workshop, you will walk away with a solid understanding of what PhoneGap is all about and how to use it for your next project."
+          },
+          {
+            title: "Embedding PhoneGap natively: The Hybrid Sweet Spot",
+            speakerSlug: "aniskadri",
+            description: "Many developers choose to build native navigation and transitions into their apps but use webviews for the main content, allowing them to realize a large cost and time savings while making their app available to a wider range of users quickly. This approach also provides the ability to push timely updates without app store approval hassles. With this model, only a small native code-base needs to be maintained per platform, and it’s typically the static elements of the app rather than the main content, thus more manageable. Note: iOS only."
+          },
+          {
+            title: "Plugins are Everything, and Everything is a Plugin!",
+            speakerSlug: "purplecabbage",
+            description: "Jesse has been writing PhoneGap plugins since before there were plugins.  In this deep dive workshop Jesse will cover all the requirements of making great plugins, from conception to testing to publishing. He will also share some secrets from his bag'o'tricks and demonstrate some interesting uses for plugins you may not have thought of. Come ready to build!"
+          }
+        ]
+      },
+      {
+        time: "3:30pm-3:45pm",
+        title: "Break"
+      },
+      {
+        time: "3:45pm-4:45pm",
+        sessions: [
+          {
+            title: "Supercharge your Hybrid Apps with Microservices for Mobile",
+            speakerSlug: "cianclarke",
+            description: "In this hands-on session, we will first build a simple Cordova based mobile app using the barcode scanner plugin. Then, we’ll build a microservice written in Node.js to retrieve some hard-to-get data. Along the way, we’ll explore the benefits of this approach, and why hybrid mobile apps are really just an extension of microservices to the client side. Participants only need to bring a laptop with a modern web browser, and will leave the session primed with practical experience building microservices for their mobile apps."
+          },
+          {
+            title: "Hands on: Create advanced apps with the Crosswalk runtime",
+            speakerSlug: "alexismenard",
+            description: "Join Crosswalk architect, Alexis Menard, in a hands-on lab where you will discover how to leverage the power of Crosswalk in your web and hybrid applications and take advantage of the latest web innovations across Android, iOS, and Windows."
+          },
+          {
+            title: "Optimizing Performance and User Interface",
+            speakerSlug: "masahirotanaka",
+            description: "Performance was a major concern among hybrid app developers for many years, which has been dramatically improved by the computing power and the performant web views. However, it does not mean you can build an app that runs smoothly without any prior knowledge. This session will describe some of the best practices to analyze, measure and improve the app, ensuring its better user experience."
+          }
+        ]
+      },
+      {
+        time: "4:45pm-6:00pm",
+        sessions: [
+          {
+            title: "PhoneGap Push Notifications",
+            speakerSlug: "simonmacdonald",
+            description: "In this workshop we'll walk through adding push notification capabilities to your application. You'll learn how to set up a Google Cloud Messaging project for Android notifications and adding push capabilities to your iOS certificate and provisioning profiles. You'll gain an understanding of how to register with your remote push service and handle incoming notifications. Advanced topics will include how to add action buttons, responding to silent push notifications and testing using node.js."
+          },
+          {
+            title: "REPEAT Hands-on Bluetooth Low Energy",
+            speakerSlug: "doncoleman",
+            description: ""
+          },
+          {
+            title: "Visual Studio",
+            speakerSlug: "ryanjsalva",
+            description: ""
+          }
+        ]
+      }
+    ],
+    eu2016: [
+      {
+        time: "8:30am-9:00am",
+        title: "Registration and Breakfast"
+      },
+      {
+        time: "9:00am-10:30am",
+        sessions: [
+          {
+            title: "PhoneGap Essentials",
+            speakerSlug: "hollyschinsky",
+            description: "In this workshop we'll learn the essential building blocks needed for building apps with PhoneGap while actually building a fully functioning app. Some concepts we'll cover include: <ul><li>Common mobile app development paradigms (navigation, view stacks)</li><li>Mobile UI design patterns (flat vs. material design)</li><li>Performance tips</li><li>App debugging</li><li>App configuration (preferences, permissions, icons/splash screens)</li><li>Using plugins</li></ul>"
+          },
+          {
+            title: "Plugins are Everything, and Everything is a Plugin!",
+            speakerSlug: "purplecabbage",
+            description: "Jesse has been writing PhoneGap plugins since before there were plugins. In this deep dive workshop Jesse will cover all the requirements of making great plugins, from conception to testing to publishing. He will also share some secrets from his bag'o'tricks and demonstrate some interesting uses for plugins you may not have thought of. Come ready to build!"
+          }
+        ]
+      },
+      {
+        time: "10:30am-10:45am",
+        title: "Break"
+      },
+      {
+        time: "10:45am-11:45am",
+        sessions: [
+          {
+            title: "Rangle.io",
+            speakerSlug: ""
+          },
+          {
+            title: "Microsoft",
+            speakerSlug: ""
+          }
+        ]
+      },
+      {
+        time: "11:45am-12:45pm",
+        sessions: [
+          {
+            title: "PhoneGap Build",
+            speakerSlug: "wildabeast",
+            description: "Let the people who work on PhoneGap Build show you how to use the service efficiently, hands on. You'll learn how to build a simple cross-platform mobile app with Build, how to add and use plugins, and how to sign your apps for publishing to app stores, all while avoiding platform SDKs. We'll welcome questions, feature requests and feedback for improving the service."
+          },
+          {
+            title: "Embedding PhoneGap in a native app",
+            speakerSlug: ["aniskadri","eddyverbruggen"],
+            description: "Many developers choose to build native navigation and transitions into their apps but use webviews for the main content, allowing them to realize a large cost and time savings while making their app available to a wider range of users quickly. This approach also provides the ability to push timely updates without app store approval hassles. With this model, only a small native code-base needs to be maintained per platform, and it’s typically the static elements of the app rather than the main content, thus more manageable."
+          }
+        ]
+      },
+      {
+        time: "12:45pm-1:45am",
+        title: "Lunch"
+      },
+      {
+        time: "1:45am-3:15pm",
+        sessions: [
+          {
+            title: "App Privacy and Security for PhoneGap Developers",
+            speakerSlug: "stevesgill",
+            description: "Our mobile devices are rich targets packed full of sensors, and ripe for the harvesting of personal information. All too often, developers on deadlines leave security and privacy concerns until the last minute, or don’t get around to them at all. This workshop will show not only the importance of security and privacy, but some basic steps we as developers can take to ensure our apps are a safe place for our users (not to mention keeping the app safe from those same users). From avoiding XSS, understanding the whitelist and CSP, to ensuring that what data we do collect is kept safe. This workshop will give you a better understanding of how to ensure privacy and security are a part of your app from day one."
+          },
+          {
+            title: "PhoneGap Push Notifications",
+            speakerSlug: "simonmacdonald",
+            description: "In this workshop we'll walk through adding push notification capabilities to your application. You'll learn how to set up a Google Cloud Messaging project for Android notifications and adding push capabilities to your iOS certificate and provisioning profiles. You'll gain an understanding of how to register with your remote push service and handle incoming notifications. Advanced topics will include how to add action buttons, responding to silent push notifications and testing using node.js."
+          }
+        ]
+      },
+      {
+        time: "3:15pm-4:15pm",
+        sessions: [
+          {
+            title: "Monaca",
+            speakerSlug: ""
+          },
+          {
+            title: "Canonical",
+            speakerSlug: ""
+          }
+        ]
+      },
+      {
+        time: "4:15pm-4:30pm",
+        title: "Break"
+      },
+      {
+        time: "4:30pm-5:30pm",
+        sessions: [
+          {
+            title: "Augmented reality apps with PhoneGap",
+            speakerSlug: "andreasschacherbauer",
+            description: "In this workshop we will what augmented reality has to offer and how to integrate AR functionality into your PhoneGap/Cordova app. We will have a look how to create AR experiences using Wikitude's JavaScript API."
+          },
+          {
+            title: "App Submission",
+            speakerSlug: "shazron",
+            description: "This workshop will cover best practices when submitting an app."
+          }
+        ]
+      }
+    ]
+  },
   routes: function () {
     return routes = this.speakers.reduce(function (previousValue, currentValue, index){
       if (currentValue.conferences.indexOf("us2016") >= 0) {
