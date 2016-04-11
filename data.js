@@ -558,9 +558,9 @@ module.exports = {
       },
       {
         time: "11:00am-11:20am",
-        title: "TBD",
+        title: "Comparing Dutch Banking App Architectures",
         speakerSlug: "eddyverbruggen",
-        description: "TBD"
+        description: "<p>Let's be honest. Cordova doesn't immediately come to mind when you want to build an app used daily by millions of users to manage their bank accounts. However, there may be good reasons to do so and in this session we'll explore the why and how of 3 recent approaches medium and large Dutch banks have taken.</p><p>I'll share my first-hand experience and opinion about these approaches and extract a few tips and tricks that can be applied to Cordova apps in general.</p>"
       },
       {
         time: "11:20am-11:40am",
