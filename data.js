@@ -231,8 +231,8 @@ module.exports = {
       twitter: "devgirlFL",
       slug: "hollyschinsky",
       name: "Holly Schinsky",
-      title: "Senior Technical Evangelist, Adobe",
-      bio: "Holly Schinsky is working with the PhoneGap team at Adobe and currently focused on mobile development using PhoneGap, HTML/CSS and JavaScript. She has 17 years experience in software development including Java, Adobe Flex/AIR and ActionScript in addition to her recent hybrid mobile work. Holly’s latest focus is on developer advocacy and education via her blog, samples and workshops. In her free time she’s usually found driving a carpool, running or hanging out with her family.",
+      title: "Senior Software Engineer, Adobe",
+      bio: "Holly works on the PhoneGap team at Adobe with a heavy focus on Developer Advocacy and Education via her blogging, sample apps and workshops. In her free time she’s usually found running, driving a carpool or hanging out with her family.",
       conferences: ["us2016","eu2016"]
     },{
       id: 28,
