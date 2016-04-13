@@ -26838,8 +26838,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    twitter: "devgirlFL",
 	    slug: "hollyschinsky",
 	    name: "Holly Schinsky",
-	    title: "Senior Technical Evangelist, Adobe",
-	    bio: "Holly Schinsky is working with the PhoneGap team at Adobe and currently focused on mobile development using PhoneGap, HTML/CSS and JavaScript. She has 17 years experience in software development including Java, Adobe Flex/AIR and ActionScript in addition to her recent hybrid mobile work. Holly’s latest focus is on developer advocacy and education via her blog, samples and workshops. In her free time she’s usually found driving a carpool, running or hanging out with her family.",
+	    title: "Senior Software Engineer, Adobe",
+	    bio: "Holly works on the PhoneGap team at Adobe with a heavy focus on Developer Advocacy and Education via her blogging, sample apps and workshops. In her free time she’s usually found running, driving a carpool or hanging out with her family.",
 	    conferences: ["us2016", "eu2016"]
 	  }, {
 	    id: 28,
@@ -27309,10 +27309,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }]
 	    }],
 	    eu2016: [{
-	      time: "8:30am-9:00am",
-	      title: "Registration and Breakfast"
+	      time: "9:00am-9:30am",
+	      title: "Registration"
 	    }, {
-	      time: "9:00am-10:30am",
+	      time: "9:30am-11:00am",
 	      sessions: [{
 	        title: "PhoneGap Essentials",
 	        speakerSlug: "hollyschinsky",
@@ -27323,10 +27323,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        description: "Jesse has been writing PhoneGap plugins since before there were plugins. In this deep dive workshop Jesse will cover all the requirements of making great plugins, from conception to testing to publishing. He will also share some secrets from his bag'o'tricks and demonstrate some interesting uses for plugins you may not have thought of. Come ready to build!"
 	      }]
 	    }, {
-	      time: "10:30am-10:45am",
+	      time: "11:00am-11:15am",
 	      title: "Break"
 	    }, {
-	      time: "10:45am-11:45am",
+	      time: "11:15am-12:15pm",
 	      sessions: [{
 	        title: "Rangle.io",
 	        speakerSlug: ""
@@ -27335,7 +27335,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        speakerSlug: ""
 	      }]
 	    }, {
-	      time: "11:45am-12:45pm",
+	      time: "12:15pm-1:15pm",
 	      sessions: [{
 	        title: "PhoneGap Build",
 	        speakerSlug: "wildabeast",
@@ -27346,10 +27346,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        description: "Many developers choose to build native navigation and transitions into their apps but use webviews for the main content, allowing them to realize a large cost and time savings while making their app available to a wider range of users quickly. This approach also provides the ability to push timely updates without app store approval hassles. With this model, only a small native code-base needs to be maintained per platform, and it’s typically the static elements of the app rather than the main content, thus more manageable."
 	      }]
 	    }, {
-	      time: "12:45pm-1:45am",
+	      time: "1:15pm-2:15am",
 	      title: "Lunch"
 	    }, {
-	      time: "1:45am-3:15pm",
+	      time: "2:15am-3:45pm",
 	      sessions: [{
 	        title: "App Privacy and Security for PhoneGap Developers",
 	        speakerSlug: "stevesgill",
@@ -27360,19 +27360,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	        description: "In this workshop we'll walk through adding push notification capabilities to your application. You'll learn how to set up a Google Cloud Messaging project for Android notifications and adding push capabilities to your iOS certificate and provisioning profiles. You'll gain an understanding of how to register with your remote push service and handle incoming notifications. Advanced topics will include how to add action buttons, responding to silent push notifications and testing using node.js."
 	      }]
 	    }, {
-	      time: "3:15pm-4:15pm",
+	      time: "3:45pm-4:45pm",
 	      sessions: [{
-	        title: "Monaca",
-	        speakerSlug: ""
+	        title: "Learn React with Onsen UI 2",
+	        speakerSlug: "masahirotanaka",
+	        description: "<p>In this workshop, you will understand how to develop beautiful apps using React and Onsen UI 2. You will learn React and how to effectively use it for developing Cordova apps.</p><p>Level: Beginner to Intermediate.</p>"
 	      }, {
 	        title: "Canonical",
 	        speakerSlug: ""
 	      }]
 	    }, {
-	      time: "4:15pm-4:30pm",
+	      time: "4:45pm-5:00pm",
 	      title: "Break"
 	    }, {
-	      time: "4:30pm-5:30pm",
+	      time: "5:00pm-6:00pm",
 	      sessions: [{
 	        title: "Augmented reality apps with PhoneGap",
 	        speakerSlug: "andreasschacherbauer",
@@ -28176,6 +28177,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            )
 	          ),
 	          _react2.default.createElement(_speakersSection2.default, { speakers: speakers, heading: "Speakers", pageSlug: "eu2016" }),
+	          _react2.default.createElement(_sessionsSection2.default, { sessions: sessions, heading: "Schedule", pageSlug: "eu2016" }),
 	          _react2.default.createElement(
 	            'section',
 	            { className: 'columns' },
@@ -28233,7 +28235,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	            )
 	          ),
 	          _react2.default.createElement(_workshopsSection2.default, { workshops: workshops, pageSlug: "eu2016" }),
-	          _react2.default.createElement(_sessionsSection2.default, { sessions: sessions, heading: "Schedule", pageSlug: "eu2016" }),
 	          _react2.default.createElement(
 	            'section',
 	            null,
