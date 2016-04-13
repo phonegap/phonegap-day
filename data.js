@@ -859,8 +859,9 @@ module.exports = {
         time: "3:45pm-4:45pm",
         sessions: [
           {
-            title: "Monaca",
-            speakerSlug: ""
+            title: "Learn React with Onsen UI 2",
+            speakerSlug: "masahirotanaka",
+            description: "<p>In this workshop, you will understand how to develop beautiful apps using React and Onsen UI 2. You will learn React and how to effectively use it for developing Cordova apps.</p><p>Level: Beginner to Intermediate.</p>"
           },
           {
             title: "Canonical",
