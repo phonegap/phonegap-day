@@ -50,6 +50,7 @@ export default class Us2016 extends React.Component {
             </div>
           </section>
           <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"eu2016"}/>
+          <SessionsSection sessions={sessions} heading={"Schedule"} pageSlug={"eu2016"}/>
           <section className="columns">
             <div className="text-bounds">
               <section className="workshops-section">
@@ -64,7 +65,6 @@ export default class Us2016 extends React.Component {
             </div>
           </section>
           <WorkshopsSection workshops={workshops} pageSlug={"eu2016"}/>
-          <SessionsSection sessions={sessions} heading={"Schedule"} pageSlug={"eu2016"}/>
           <section>
             <div className="text-bounds">
               <h1>Venue</h1>
