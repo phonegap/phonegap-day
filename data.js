@@ -786,11 +786,11 @@ module.exports = {
     ],
     eu2016: [
       {
-        time: "8:30am-9:00am",
-        title: "Registration and Breakfast"
+        time: "9:00am-9:30am",
+        title: "Registration"
       },
       {
-        time: "9:00am-10:30am",
+        time: "9:30am-11:00am",
         sessions: [
           {
             title: "PhoneGap Essentials",
@@ -805,11 +805,11 @@ module.exports = {
         ]
       },
       {
-        time: "10:30am-10:45am",
+        time: "11:00am-11:15am",
         title: "Break"
       },
       {
-        time: "10:45am-11:45am",
+        time: "11:15am-12:15pm",
         sessions: [
           {
             title: "Rangle.io",
@@ -822,7 +822,7 @@ module.exports = {
         ]
       },
       {
-        time: "11:45am-12:45pm",
+        time: "12:15pm-1:15pm",
         sessions: [
           {
             title: "PhoneGap Build",
@@ -837,11 +837,11 @@ module.exports = {
         ]
       },
       {
-        time: "12:45pm-1:45am",
+        time: "1:15pm-2:15am",
         title: "Lunch"
       },
       {
-        time: "1:45am-3:15pm",
+        time: "2:15am-3:45pm",
         sessions: [
           {
             title: "App Privacy and Security for PhoneGap Developers",
@@ -856,7 +856,7 @@ module.exports = {
         ]
       },
       {
-        time: "3:15pm-4:15pm",
+        time: "3:45pm-4:45pm",
         sessions: [
           {
             title: "Monaca",
@@ -869,11 +869,11 @@ module.exports = {
         ]
       },
       {
-        time: "4:15pm-4:30pm",
+        time: "4:45pm-5:00pm",
         title: "Break"
       },
       {
-        time: "4:30pm-5:30pm",
+        time: "5:00pm-6:00pm",
         sessions: [
           {
             title: "Augmented reality apps with PhoneGap",
