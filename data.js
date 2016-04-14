@@ -592,9 +592,8 @@ module.exports = {
       },
       {
         time: "2:00pm-2:20pm",
-        title: "TBD",
-        speakerSlug: "masahirotanaka",
-        description: "TBD"
+        title: "Using Monaca Cloud to enhance Cordova development",
+        speakerSlug: "masahirotanaka"
       },
       {
         time: "2:20pm-2:40pm",
