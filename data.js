@@ -528,7 +528,7 @@ module.exports = {
     eu2016 :[
       {
         time: "8:30am-9:00am",
-        title: "Registration and breakfast"
+        title: "Registration"
       },
       {
         time: "9:00am-9:15am",
