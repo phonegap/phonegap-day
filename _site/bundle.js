@@ -27161,9 +27161,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      description: "<p>\"PhoneGap is a polyfill, and the ultimate purpose of PhoneGap is to cease to exist\" – Brian LeRoux, SPACELORD!1!! at Adobe, 2012.</p><p>Clearly PhoneGap, and Cordova are still required today, but when is it really needed? Did the web ever catch up? Do we always need to turn to a PhoneGap shell for all our solutions?</p>"
 	    }, {
 	      time: "2:00pm-2:20pm",
-	      title: "TBD",
-	      speakerSlug: "masahirotanaka",
-	      description: "TBD"
+	      title: "Using Monaca Cloud to enhance Cordova development",
+	      speakerSlug: "masahirotanaka"
 	    }, {
 	      time: "2:20pm-2:40pm",
 	      title: "Hybrid Apps Powering African Mobile Solutions",
