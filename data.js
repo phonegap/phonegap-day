@@ -836,11 +836,11 @@ module.exports = {
         ]
       },
       {
-        time: "1:15pm-2:15am",
+        time: "1:15pm-2:15pm",
         title: "Lunch"
       },
       {
-        time: "2:15am-3:45pm",
+        time: "2:15pm-3:45pm",
         sessions: [
           {
             title: "App Privacy and Security for PhoneGap Developers",
