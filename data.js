@@ -167,7 +167,7 @@ module.exports = {
       avatar: "/img/bio/simonmacdonald.jpg",
       twitter: "macdonst",
       slug: "simonmacdonald",
-      name: "Simon Macdonald",
+      name: "Simon MacDonald",
       title: "Senior Software Engineer, Adobe",
       bio: "Simon has over fifteen years of development experience and has worked on a variety of projects including object oriented databases, police communication systems, speech recognition and unified messaging. His current focus is contributing to the open source PhoneGap project to enable developers to create cross platform mobile applications using Web technologies. Simon’s been building web applications since the days they were written using shell scripts and he still has nightmares about those dark days.",
       conferences: ["us2016","eu2016"]
