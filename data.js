@@ -549,8 +549,9 @@ module.exports = {
       },
       {
         time: "10:15am-10:35am",
-        title: "Ionic V2",
-        speakerSlug: "timlancina"
+        title: "Handling the keyboard in hybrid applications",
+        speakerSlug: "timlancina",
+        description: "Many developers encounter problems with the keyboard while building apps, regardless of the platform they're targeting. Whether it's covering content at the bottom of the screen or messing up your app's layout as the browser tries to bring focused elements into view, getting the keyboard to interact nicely with your content, while still having good UX, can be a challenge. This talk will outline some of the problems specific to handling the keyboard in hybrid apps and go over the different approaches to solving those problems."
       },
       {
         time: "10:35am-11:00am",
