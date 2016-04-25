@@ -393,6 +393,22 @@ module.exports = {
       title: "Developer, Ionic",
       bio: "Tim is a developer at Ionic working on tooling. When not trying to get computers to do what he wants, he is usually playing soccer, traveling, or enjoying a good book.",
       conferences: ["eu2016"]
+    },{
+      avatar: "/img/bio/evanschultz.jpg",
+      twitter: "e_p82",
+      slug: "evanschultz",
+      name: "Evan Schultz",
+      title: "JavaScript Architect, Rangle.io",
+      bio: "Evan is a passionate software developer with nearly 10 years experience. As a seasoned JavaScript architect he adapts to new technologies, and has contributed to many team-based projects, whilst mentoring other developers. Evan leads and contributes to the Rangle.io’s guidelines, code reviews and training material. He educates peers and clients and writes about development best practices for Rangle.io’s blog, http://blog.rangle.io/",
+      conferences: ["eu2016"]
+    },{
+      avatar: "/img/bio/bertrandkarerangabo.jpg",
+      twitter: "codenarian",
+      slug: "bertrandkarerangabo",
+      name: "Bertrand Karerangabo",
+      title: "Developer, Rangle.io",
+      bio: "Bertrand's a full-stack web developer with extensive experience building complex applications in ReactJS on web & native platforms.",
+      conferences: ["eu2016"]
     }
   ],
   sessions: {
@@ -813,8 +829,9 @@ module.exports = {
         time: "11:15am-12:15pm",
         sessions: [
           {
-            title: "Rangle.io",
-            speakerSlug: ""
+            title: "Hot Updates of your PhoneGap apps using CodePush and Ionic 2",
+            speakerSlug: ["evanschultz","bertrandkarerangabo"],
+            description: "<p>Submitting new builds through the Apple App Store approval process can slow down getting important bug fixes and features to your users. In this workshop, you will learn how to make use of Microsoft's CodePush services to deploy your PhoneGap applications updates directly to users.</p><p>At the end of the workshop, attendees will understand the foundations of using CodePush to update their PhoneGap applications.</p><p>This workshop will cover:<ul><li>Setting up CodePush</li><li>Getting started with a basic Ionic 2 Application</li><li>Hooking up CodePush into your application</li><li>Managing deployments and rollbacks</li></ul></p><p>Prerequisites:<ul><li>node</li><li>git</li><li>CodePush CLI tools installed</li><li>ionic2 CLI tools installed</li><li>Xcode</li></ul>"
           },
           {
             title: "Microsoft",

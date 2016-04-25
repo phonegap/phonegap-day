@@ -25618,7 +25618,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	{
 	buf.push("<meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:site\" content=\"@phonegap\"><meta name=\"twitter:creator\" content=\"@garthdb\"><meta name=\"twitter:title\" content=\"PhoneGap Day Early Bird Pricing\"><meta name=\"twitter:description\" content=\"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees.\"><meta name=\"twitter:image\" content=\"http://pgday.phonegap.com/img/twitter-card.png\"><meta name=\"description\" content=\"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees.\"><meta name=\"keywords\" content=\"HTML,CSS,PhoneGap Day,JavaScript,conference,event\"><meta property=\"og:image\" content=\"http://pgday.phonegap.com/img/ogimage.png\">");
 	}
-	buf.push("<title>PhoneGap Day 2016</title><script src=\"//use.typekit.net/exp7awb.js\"></script><script type=\"text/javascript\">try{Typekit.load();}catch(e){}</script><style>" + (null == (jade_interp = locals.css) ? "" : jade_interp) + "</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')\n  <!-- Twitter universal website tag code -->--><script src=\"//platform.twitter.com/oct.js\" type=\"text/javascript\"></script><script type=\"text/javascript\">twttr.conversion.trackPid('nusbi', { tw_sale_amount: 0, tw_order_quantity: 0 });</script></head><body>" + (null == (jade_interp = locals.pageContent) ? "" : jade_interp) + "</body></html>");;return buf.join("");
+	buf.push("<title>PhoneGap Day 2016</title><script src=\"//use.typekit.net/exp7awb.js\"></script><script type=\"text/javascript\">try{Typekit.load();}catch(e){}</script><style>" + (null == (jade_interp = locals.css) ? "" : jade_interp) + "</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--><!-- Twitter universal website tag code--><script src=\"//platform.twitter.com/oct.js\" type=\"text/javascript\"></script><script type=\"text/javascript\">twttr.conversion.trackPid('nusbi', { tw_sale_amount: 0, tw_order_quantity: 0 });</script></head><body>" + (null == (jade_interp = locals.pageContent) ? "" : jade_interp) + "</body></html>");;return buf.join("");
 	}
 
 /***/ },
@@ -27000,6 +27000,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	    title: "Developer, Ionic",
 	    bio: "Tim is a developer at Ionic working on tooling. When not trying to get computers to do what he wants, he is usually playing soccer, traveling, or enjoying a good book.",
 	    conferences: ["eu2016"]
+	  }, {
+	    avatar: "/img/bio/evanschultz.jpg",
+	    twitter: "e_p82",
+	    slug: "evanschultz",
+	    name: "Evan Schultz",
+	    title: "JavaScript Architect, Rangle.io",
+	    bio: "Evan is a passionate software developer with nearly 10 years experience. As a seasoned JavaScript architect he adapts to new technologies, and has contributed to many team-based projects, whilst mentoring other developers. Evan leads and contributes to the Rangle.io’s guidelines, code reviews and training material. He educates peers and clients and writes about development best practices for Rangle.io’s blog, http://blog.rangle.io/",
+	    conferences: ["eu2016"]
+	  }, {
+	    avatar: "/img/bio/bertrandkarerangabo.jpg",
+	    twitter: "codenarian",
+	    slug: "bertrandkarerangabo",
+	    name: "Bertrand Karerangabo",
+	    title: "Developer, Rangle.io",
+	    bio: "Bertrand's a full-stack web developer with extensive experience building complex applications in ReactJS on web & native platforms.",
+	    conferences: ["eu2016"]
 	  }],
 	  sessions: {
 	    us2016: [{
@@ -27329,8 +27345,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }, {
 	      time: "11:15am-12:15pm",
 	      sessions: [{
-	        title: "Rangle.io",
-	        speakerSlug: ""
+	        title: "Hot Updates of your PhoneGap apps using CodePush and Ionic 2",
+	        speakerSlug: ["evanschultz", "bertrandkarerangabo"],
+	        description: "<p>Submitting new builds through the Apple App Store approval process can slow down getting important bug fixes and features to your users. In this workshop, you will learn how to make use of Microsoft's CodePush services to deploy your PhoneGap applications updates directly to users.</p><p>At the end of the workshop, attendees will understand the foundations of using CodePush to update their PhoneGap applications.</p><p>This workshop will cover:<ul><li>Setting up CodePush</li><li>Getting started with a basic Ionic 2 Application</li><li>Hooking up CodePush into your application</li><li>Managing deployments and rollbacks</li></ul></p><p>Prerequisites:<ul><li>node</li><li>git</li><li>CodePush CLI tools installed</li><li>ionic2 CLI tools installed</li><li>Xcode</li></ul>"
 	      }, {
 	        title: "Microsoft",
 	        speakerSlug: ""
