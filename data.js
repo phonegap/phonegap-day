@@ -826,9 +826,9 @@ module.exports = {
         time: "12:15pm-1:15pm",
         sessions: [
           {
-            title: "PhoneGap Build",
-            speakerSlug: "wildabeast",
-            description: "Let the people who work on PhoneGap Build show you how to use the service efficiently, hands on. You'll learn how to build a simple cross-platform mobile app with Build, how to add and use plugins, and how to sign your apps for publishing to app stores, all while avoiding platform SDKs. We'll welcome questions, feature requests and feedback for improving the service."
+            title: "Augmented reality apps with PhoneGap",
+            speakerSlug: "andreasschacherbauer",
+            description: "In this workshop we will what augmented reality has to offer and how to integrate AR functionality into your PhoneGap/Cordova app. We will have a look how to create AR experiences using Wikitude's JavaScript API."
           },
           {
             title: "Embedding PhoneGap in a native app",
@@ -878,9 +878,9 @@ module.exports = {
         time: "5:00pm-6:00pm",
         sessions: [
           {
-            title: "Augmented reality apps with PhoneGap",
-            speakerSlug: "andreasschacherbauer",
-            description: "In this workshop we will what augmented reality has to offer and how to integrate AR functionality into your PhoneGap/Cordova app. We will have a look how to create AR experiences using Wikitude's JavaScript API."
+            title: "PhoneGap Build",
+            speakerSlug: "wildabeast",
+            description: "Let the people who work on PhoneGap Build show you how to use the service efficiently, hands on. You'll learn how to build a simple cross-platform mobile app with Build, how to add and use plugins, and how to sign your apps for publishing to app stores, all while avoiding platform SDKs. We'll welcome questions, feature requests and feedback for improving the service."
           },
           {
             title: "App Submission",
