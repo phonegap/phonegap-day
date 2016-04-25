@@ -631,7 +631,8 @@ module.exports = {
       {
         time: "4:25pm-5:05pm",
         title: "Case Study: StoryCorps App",
-        speakerSlug: "deanhaddock"
+        speakerSlug: "deanhaddock",
+        description: "Dean Haddock shares the story of the StoryCorps app, from early prototypes to the TED Prize and beyond."
       },
       {
         time: "5:05pm-5:20pm",
