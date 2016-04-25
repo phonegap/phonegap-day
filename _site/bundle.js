@@ -28340,6 +28340,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    { href: 'http://www.microsoft.com/' },
 	                    _react2.default.createElement('img', { src: '/img/Microsoft_Logo.svg', width: 300, alt: 'Microsoft logo' })
 	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://www.ubuntu.com/about/canonical-and-ubuntu' },
+	                    _react2.default.createElement('img', { src: '/img/Ubuntu_Logo.svg', width: 300, alt: 'Ubuntu logo' })
+	                  )
 	                )
 	              ),
 	              _react2.default.createElement(

@@ -83,6 +83,7 @@ export default class Us2016 extends React.Component {
                 <div><a href="https://crosswalk-project.org/"><img src="/img/Crosswalk_Project_Logo.svg" width={300} alt="Crosswalk logo"/></a></div>
                 <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} alt="Ionic logo"/></a></div>
                 <div><a href="http://www.microsoft.com/"><img src="/img/Microsoft_Logo.svg" width={300} alt="Microsoft logo"/></a></div>
+                <div><a href="http://www.ubuntu.com/about/canonical-and-ubuntu"><img src="/img/Ubuntu_Logo.svg" width={300} alt="Ubuntu logo"/></a></div>
               </section>
               <section>
                   <h1>Code of Conduct</h1>
