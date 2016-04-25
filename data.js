@@ -890,7 +890,8 @@ module.exports = {
           },
           {
             title: "Developing Cordova apps on Ubuntu devices",
-            speakerSlug: "We'll walk you through the basics of getting a development environment ready for Cordova on Ubuntu, talk about specific aspects of the Ubuntu application model and security, and run a couple of demos to illustrate the capabilities of the platform and of the Ubuntu Oxide webview. With Ubuntu spanning across Desktop, mobile and IOT with converged laptop / tablet device, this will be the opportunity to see how Cordova apps can literally stretch across form factors."
+            speakerSlug: "davidbarth",
+            description: "We'll walk you through the basics of getting a development environment ready for Cordova on Ubuntu, talk about specific aspects of the Ubuntu application model and security, and run a couple of demos to illustrate the capabilities of the platform and of the Ubuntu Oxide webview. With Ubuntu spanning across Desktop, mobile and IOT with converged laptop / tablet device, this will be the opportunity to see how Cordova apps can literally stretch across form factors."
           }
         ]
       },
