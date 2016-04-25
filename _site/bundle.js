@@ -25618,7 +25618,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	{
 	buf.push("<meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:site\" content=\"@phonegap\"><meta name=\"twitter:creator\" content=\"@garthdb\"><meta name=\"twitter:title\" content=\"PhoneGap Day Early Bird Pricing\"><meta name=\"twitter:description\" content=\"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees.\"><meta name=\"twitter:image\" content=\"http://pgday.phonegap.com/img/twitter-card.png\"><meta name=\"description\" content=\"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees.\"><meta name=\"keywords\" content=\"HTML,CSS,PhoneGap Day,JavaScript,conference,event\"><meta property=\"og:image\" content=\"http://pgday.phonegap.com/img/ogimage.png\">");
 	}
-	buf.push("<title>PhoneGap Day 2016</title><script src=\"//use.typekit.net/exp7awb.js\"></script><script type=\"text/javascript\">try{Typekit.load();}catch(e){}</script><style>" + (null == (jade_interp = locals.css) ? "" : jade_interp) + "</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--></head><body>" + (null == (jade_interp = locals.pageContent) ? "" : jade_interp) + "</body></html>");;return buf.join("");
+	buf.push("<title>PhoneGap Day 2016</title><script src=\"//use.typekit.net/exp7awb.js\"></script><script type=\"text/javascript\">try{Typekit.load();}catch(e){}</script><style>" + (null == (jade_interp = locals.css) ? "" : jade_interp) + "</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')\n  <!-- Twitter universal website tag code -->--><script src=\"//platform.twitter.com/oct.js\" type=\"text/javascript\"></script><script type=\"text/javascript\">twttr.conversion.trackPid('nusbi', { tw_sale_amount: 0, tw_order_quantity: 0 });</script></head><body>" + (null == (jade_interp = locals.pageContent) ? "" : jade_interp) + "</body></html>");;return buf.join("");
 	}
 
 /***/ },
@@ -26774,7 +26774,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    avatar: "/img/bio/simonmacdonald.jpg",
 	    twitter: "macdonst",
 	    slug: "simonmacdonald",
-	    name: "Simon Macdonald",
+	    name: "Simon MacDonald",
 	    title: "Senior Software Engineer, Adobe",
 	    bio: "Simon has over fifteen years of development experience and has worked on a variety of projects including object oriented databases, police communication systems, speech recognition and unified messaging. His current focus is contributing to the open source PhoneGap project to enable developers to create cross platform mobile applications using Web technologies. Simon’s been building web applications since the days they were written using shell scripts and he still has nightmares about those dark days.",
 	    conferences: ["us2016", "eu2016"]
@@ -27345,10 +27345,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        description: "Many developers choose to build native navigation and transitions into their apps but use webviews for the main content, allowing them to realize a large cost and time savings while making their app available to a wider range of users quickly. This approach also provides the ability to push timely updates without app store approval hassles. With this model, only a small native code-base needs to be maintained per platform, and it’s typically the static elements of the app rather than the main content, thus more manageable."
 	      }]
 	    }, {
-	      time: "1:15pm-2:15am",
+	      time: "1:15pm-2:15pm",
 	      title: "Lunch"
 	    }, {
-	      time: "2:15am-3:45pm",
+	      time: "2:15pm-3:45pm",
 	      sessions: [{
 	        title: "App Privacy and Security for PhoneGap Developers",
 	        speakerSlug: "stevesgill",
