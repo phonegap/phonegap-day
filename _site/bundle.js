@@ -27016,6 +27016,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	    title: "Developer, Rangle.io",
 	    bio: "Bertrand's a full-stack web developer with extensive experience building complex applications in ReactJS on web & native platforms.",
 	    conferences: ["eu2016"]
+	  }, {
+	    avatar: "/img/bio/davidbarth.jpg",
+	    slug: "davidbarth",
+	    name: "David Barth",
+	    title: "Engineering Manager, Canonical",
+	    bio: 'David heads up the Webapps Team at Canonical, the makers of Ubuntu. David and his team’s involvement in Ubuntu app development is centered on the integration of web technologies into the core of the Ubuntu platform. This includes the development of the Oxide project, a modern webview optimized to run on Ubuntu, the Ubuntu Cordova port, and more generally JS frameworks related to developing apps and "scopes" on Ubuntu.',
+	    conferences: ["eu2016"]
 	  }],
 	  sessions: {
 	    us2016: [{
@@ -27384,8 +27391,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        speakerSlug: "masahirotanaka",
 	        description: "<p>In this workshop, you will understand how to develop beautiful apps using React and Onsen UI 2. You will learn React and how to effectively use it for developing Cordova apps.</p><p>Level: Beginner to Intermediate.</p>"
 	      }, {
-	        title: "Canonical",
-	        speakerSlug: ""
+	        title: "Developing Cordova apps on Ubuntu devices",
+	        speakerSlug: "We'll walk you through the basics of getting a development environment ready for Cordova on Ubuntu, talk about specific aspects of the Ubuntu application model and security, and run a couple of demos to illustrate the capabilities of the platform and of the Ubuntu Oxide webview. With Ubuntu spanning across Desktop, mobile and IOT with converged laptop / tablet device, this will be the opportunity to see how Cordova apps can literally stretch across form factors."
 	      }]
 	    }, {
 	      time: "4:45pm-5:00pm",
