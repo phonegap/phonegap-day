@@ -267,7 +267,7 @@ module.exports = {
       name: "Nick Van Weerdenburg",
       title: "Founder, Rangle.io",
       bio: "Nick is Rangle.io’s founder, first developer, and now leads the company’s business development and strategy activities. Nick first did server-side JavaScript in 1997 and has 15 years of experience in web software in diverse roles and industries. He is a firm believer in the thin-server, full-JavaScript stack and an active speaker, delivering about a dozen talks each year.",
-      conferences: ["us2016", "eu2016"]
+      conferences: ["us2016"]
     },{
       id: 26,
       avatar: "/img/bio/tommywilliams.jpg",
@@ -601,7 +601,7 @@ module.exports = {
       {
         time: "12:00pm-12:20pm",
         title: "Fixing Continuous Delivery for Mobile",
-        speakerSlug: "nickvanweerdenburg",
+        speakerSlug: "evanschultz",
         description: "Manual builds and app store approval lags make it near impossible to have an effective mobile continuous delivery process. In turn, this hurts our attempts to be truly Agile with our mobile projects. The solution? Per-pull request deployment through CircleCI, CodePush and a custom CodePush loader in your app. This enables hands-free, automated deployment from commit to a user device, radically changing your testing, validation, and your user feedback processes."
       },
       {
