@@ -632,9 +632,9 @@ module.exports = {
       },
       {
         time: "2:55pm-3:15pm",
-        title: "TBD",
+        title: "Simulating Plugins in the Browser",
         speakerSlug: "ryanjsalva",
-        description: "TBD"
+        description: "I'll talk about how and why you can continue develop in the browser even after you've added hardware-dependent plugins like the barcode scanner."
       },
       {
         time: "3:15pm-3:45pm",
@@ -841,8 +841,9 @@ module.exports = {
             description: "<p>Submitting new builds through the Apple App Store approval process can slow down getting important bug fixes and features to your users. In this workshop, you will learn how to make use of Microsoft's CodePush services to deploy your PhoneGap applications updates directly to users.</p><p>At the end of the workshop, attendees will understand the foundations of using CodePush to update their PhoneGap applications.</p><p>This workshop will cover:<ul><li>Setting up CodePush</li><li>Getting started with a basic Ionic 2 Application</li><li>Hooking up CodePush into your application</li><li>Managing deployments and rollbacks</li></ul></p><p>Prerequisites:<ul><li>node</li><li>git</li><li>CodePush CLI tools installed</li><li>ionic2 CLI tools installed</li><li>Xcode</li></ul>"
           },
           {
-            title: "Microsoft",
-            speakerSlug: ""
+            title: "Creating the ideal Cordova dev environment",
+            speakerSlug: "ryanjsalva",
+            description: "We'll geek out over strategies for managing Node + NPM, customizing the command line with bash scripts, tricking out your code editor with plugins, optimizing your edit/preview/debug development loop, choosing devices for your hardware library, and streamlining deployment with continuous integration/release."
           }
         ]
       },
