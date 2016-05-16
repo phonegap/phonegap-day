@@ -590,7 +590,7 @@ module.exports = {
         time: "11:20am-11:40am",
         title: "Quantifiable performance",
         speakerSlug: "brucelefebvre",
-        description: "It can be difficult to pinpoint exactly when that lightning fast, yet smooth as silk app of yours started showing it's first signs of jank. First a dropped frame, next a choppy animation.. In this talk we'll introduce tools and processes that you can use today to start metering the performance of your app in key scenarios, helping you identify issues before your users do. We'll get there with the help of Appium, wd, browser-perf, and perfjankie."
+        description: "It can be difficult to pinpoint exactly when that lightning fast, yet smooth as silk app of yours started showing it's first signs of jank. First a dropped frame, next a choppy animation.. In this talk we'll introduce tools and processes that you can use today to start metering the performance of your app in key scenarios, helping you identify issues before your users do. We'll get there with the help of your browser's DevTools, Appium, and browser-perf."
       },
       {
         time: "11:40am-12:00pm",
