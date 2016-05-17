@@ -77,13 +77,13 @@ export default class Us2016 extends React.Component {
               <section>
                 <h1>Sponsors</h1>
                 <p>Interested in sponsoring? Email Jen Gray at <a href="mailto:jgray@adobe.com">jgray@adobe.com</a>.</p>
-                <div><a href="http://www.rangle.io/"><img src="/img/Rangle.io_Logo.svg" width={300} alt="Rangle logo"/></a></div>
-                <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} alt="Monaca logo"/></a></div>
-                <div><a href="http://www.onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} alt="OnsenUI logo"/></a></div>
-                <div><a href="https://crosswalk-project.org/"><img src="/img/Crosswalk_Project_Logo.svg" width={300} alt="Crosswalk logo"/></a></div>
-                <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} alt="Ionic logo"/></a></div>
-                <div><a href="http://www.microsoft.com/"><img src="/img/Microsoft_Logo.svg" width={300} alt="Microsoft logo"/></a></div>
-                <div><a href="http://www.ubuntu.com/about/canonical-and-ubuntu"><img src="/img/Ubuntu_Logo.svg" width={300} alt="Ubuntu logo"/></a></div>
+                <div className="sponsor__rangleio"><a href="http://www.rangle.io/"></a></div>
+                <div className="sponsor__monaca"><a href="http://monaca.io/"></a></div>
+                <div className="sponsor__onsen"><a href="http://www.onsen.io/"></a></div>
+                <div className="sponsor__crosswalk"><a href="https://crosswalk-project.org/"></a></div>
+                <div className="sponsor__ionic"><a href="http://www.ionicframework.com/"></a></div>
+                <div className="sponsor__microsoft"><a href="http://www.microsoft.com/"></a></div>
+                <div className="sponsor__ubuntu"><a href="http://www.ubuntu.com/about/canonical-and-ubuntu"></a></div>
               </section>
               <section>
                   <h1>Code of Conduct</h1>
