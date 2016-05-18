@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
+import data from '../../data'
 
 class SessionListItem extends React.Component {
   render() {
@@ -17,13 +18,13 @@ class SessionListItem extends React.Component {
       }
       sessionListItem = (
         <div>{this.props.session.time}:
-          <Link to={pageURL+speakerSlug}> {this.props.session.title}</Link>
+          <Link to={pageURL+speakerSlug} className="session__speaker-name"> {data.findSpeakerBySlug(speakerSlug).name}</Link> - <Link to={pageURL+speakerSlug} className="session__name">{this.props.session.title}</Link>
         </div>)
     } else {
       sessionListItem = (<div>{this.props.session.time}: {this.props.session.title}</div>)
     }
     return (
-      <li>
+      <li className="session-list-item">
       {sessionListItem}
       </li>
     )
