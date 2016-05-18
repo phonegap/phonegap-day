@@ -621,9 +621,9 @@ module.exports = {
       },
       {
         time: "2:20pm-2:40pm",
-        title: "Hybrid Apps Powering African Mobile Solutions",
-        speakerSlug: "saniyusuf",
-        description: "With one of the youngest and fast growing populations around, it is a great opportunity to shine a light on how developers in the developing world (Africa) are changing the world with Hybrid solutions. This talk was inspired by months travelling in Africa meeting real developers using Hybrid technologies. This talk will also highlight some of the goodness they are doing and also discuss some challenges faced by these innovators like slower internet connections & supporting legacy mobile devices."
+        title: "Making Apps for the Big Screen",
+        speakerSlug: "nielsleenheer",
+        description: "When PhoneGap was first released, its goal was to become obsolete. On mobile that never happened. However, if you want to create an app for a Smart TV, set-top box or game console, you will find web apps are almost always natively supported. And in many cases it is the only way to build apps. This talk will focus on the different platforms that are out there, the SDKs that you can use, and the practical problems you are going to encounter when you port your apps to the big screen."
       },
       {
         time: "2:40pm-2:55pm",
@@ -642,9 +642,9 @@ module.exports = {
       },
       {
         time: "3:45pm-4:05pm",
-        title: "Making Apps for the Big Screen",
-        speakerSlug: "nielsleenheer",
-        description: "When PhoneGap was first released, its goal was to become obsolete. On mobile that never happened. However, if you want to create an app for a Smart TV, set-top box or game console, you will find web apps are almost always natively supported. And in many cases it is the only way to build apps. This talk will focus on the different platforms that are out there, the SDKs that you can use, and the practical problems you are going to encounter when you port your apps to the big screen."
+        title: "Hybrid Apps Powering African Mobile Solutions",
+        speakerSlug: "saniyusuf",
+        description: "With one of the youngest and fast growing populations around, it is a great opportunity to shine a light on how developers in the developing world (Africa) are changing the world with Hybrid solutions. This talk was inspired by months travelling in Africa meeting real developers using Hybrid technologies. This talk will also highlight some of the goodness they are doing and also discuss some challenges faced by these innovators like slower internet connections & supporting legacy mobile devices."
       },
       {
         time: "4:05pm-4:25pm",

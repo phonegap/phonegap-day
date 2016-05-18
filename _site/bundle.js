@@ -26891,9 +26891,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      speakerSlug: "masahirotanaka"
 	    }, {
 	      time: "2:20pm-2:40pm",
-	      title: "Hybrid Apps Powering African Mobile Solutions",
-	      speakerSlug: "saniyusuf",
-	      description: "With one of the youngest and fast growing populations around, it is a great opportunity to shine a light on how developers in the developing world (Africa) are changing the world with Hybrid solutions. This talk was inspired by months travelling in Africa meeting real developers using Hybrid technologies. This talk will also highlight some of the goodness they are doing and also discuss some challenges faced by these innovators like slower internet connections & supporting legacy mobile devices."
+	      title: "Making Apps for the Big Screen",
+	      speakerSlug: "nielsleenheer",
+	      description: "When PhoneGap was first released, its goal was to become obsolete. On mobile that never happened. However, if you want to create an app for a Smart TV, set-top box or game console, you will find web apps are almost always natively supported. And in many cases it is the only way to build apps. This talk will focus on the different platforms that are out there, the SDKs that you can use, and the practical problems you are going to encounter when you port your apps to the big screen."
 	    }, {
 	      time: "2:40pm-2:55pm",
 	      title: "What's new with PhoneGap Build",
@@ -26908,9 +26908,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      title: "Break"
 	    }, {
 	      time: "3:45pm-4:05pm",
-	      title: "Making Apps for the Big Screen",
-	      speakerSlug: "nielsleenheer",
-	      description: "When PhoneGap was first released, its goal was to become obsolete. On mobile that never happened. However, if you want to create an app for a Smart TV, set-top box or game console, you will find web apps are almost always natively supported. And in many cases it is the only way to build apps. This talk will focus on the different platforms that are out there, the SDKs that you can use, and the practical problems you are going to encounter when you port your apps to the big screen."
+	      title: "Hybrid Apps Powering African Mobile Solutions",
+	      speakerSlug: "saniyusuf",
+	      description: "With one of the youngest and fast growing populations around, it is a great opportunity to shine a light on how developers in the developing world (Africa) are changing the world with Hybrid solutions. This talk was inspired by months travelling in Africa meeting real developers using Hybrid technologies. This talk will also highlight some of the goodness they are doing and also discuss some challenges faced by these innovators like slower internet connections & supporting legacy mobile devices."
 	    }, {
 	      time: "4:05pm-4:25pm",
 	      title: "Crosswalk Project Empowers PhoneGap Apps",
@@ -27875,47 +27875,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _react2.default.createElement(
 	          'div',
 	          { id: 'content', className: 'main-content eu-content' },
-	          _react2.default.createElement(
-	            'section',
-	            { className: 'about' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'text-bounds' },
-	              _react2.default.createElement(
-	                'h1',
-	                null,
-	                'The Lowdown'
-	              ),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                _react2.default.createElement(
-	                  'span',
-	                  { className: 'sub' },
-	                  'One part conference, one part celebration.'
-	                ),
-	                _react2.default.createElement('br', null),
-	                'Join PhoneGap and Cordova experts from around the world to hear what’s new in web and mobile development. Get the inside scoop on emerging frameworks and technologies and learn valuable tips and tricks to help with your next project. This is one of the best opportunities to network and learn from top industry leaders, meet with members of the PhoneGap team, hear the latest PhoneGap news, and find out what’s coming next!'
-	              ),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'Already have native apps at your organization? Come to PhoneGap Day to learn how to still use native controls for your app while leveraging webviews for the main content to make editing and updates easier and to enable your marketing team and other non technical users to update your app.'
-	              ),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'Need help justifying your trip? Download our “',
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: '/justify-your-trip-to-phonegapday-eu.docx' },
-	                  'Letter to your Boss'
-	                ),
-	                '” document.'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(_speakersSection2.default, { speakers: speakers, heading: "Speakers", pageSlug: "eu2016" }),
 	          _react2.default.createElement(_sessionsSection2.default, { sessions: sessions, heading: "Schedule", pageSlug: "eu2016" }),
 	          _react2.default.createElement(
 	            'section',
@@ -28002,6 +27961,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            null,
 	            _react2.default.createElement('img', { src: '/img/compagnie-theater.jpg', className: 'full', alt: 'Compagnie Theater' })
 	          ),
+	          _react2.default.createElement(_speakersSection2.default, { speakers: speakers, heading: "Speakers", pageSlug: "eu2016" }),
 	          _react2.default.createElement(
 	            'section',
 	            { className: 'columns' },

@@ -41,15 +41,6 @@ export default class Us2016 extends React.Component {
           </div>
         </header>
         <div id="content" className="main-content eu-content">
-          <section className="about">
-            <div className="text-bounds">
-              <h1>The Lowdown</h1>
-              <p><span className="sub">One part conference, one part celebration.</span><br />Join PhoneGap and Cordova experts from around the world to hear what’s new in web and mobile development. Get the inside scoop on emerging frameworks and technologies and learn valuable tips and tricks to help with your next project. This is one of the best opportunities to network and learn from top industry leaders, meet with members of the PhoneGap team, hear the latest PhoneGap news, and find out what’s coming next!</p>
-              <p>Already have native apps at your organization? Come to PhoneGap Day to learn how to still use native controls for your app while leveraging webviews for the main content to make editing and updates easier and to enable your marketing team and other non technical users to update your app.</p>
-              <p>Need help justifying your trip? Download our “<a href="/justify-your-trip-to-phonegapday-eu.docx">Letter to your Boss</a>” document.</p>
-            </div>
-          </section>
-          <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"eu2016"}/>
           <SessionsSection sessions={sessions} heading={"Schedule"} pageSlug={"eu2016"}/>
           <section className="columns">
             <div className="text-bounds">
@@ -72,6 +63,7 @@ export default class Us2016 extends React.Component {
             </div>
           </section>
           <section><img src="/img/compagnie-theater.jpg" className="full" alt="Compagnie Theater"/></section>
+          <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"eu2016"}/>
           <section className="columns">
             <div className="text-bounds">
               <section>
