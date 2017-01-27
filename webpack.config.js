@@ -9,7 +9,7 @@ module.exports = {
     'main': './src/main.js'
   },
   output: {
-    path: __dirname+"/_site",
+    path: __dirname+"/docs",
     filename: 'bundle.js',
     libraryTarget: 'umd'
   },

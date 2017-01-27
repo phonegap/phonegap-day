@@ -6,10 +6,10 @@
   "scripts": {
     "webpack": "webpack --progress --colors",
     "dev": "webpack-dev-server --progress --colors",
-    "build:images": "imagemin ./img ./_site/img",
+    "build:images": "imagemin ./img ./docs/img",
     "build:production": "npm run webpack && npm run build:images",
     "start": "npm run dev",
-    "deploy": "git subtree push --prefix _site origin gh-pages"
+    "deploy": "git subtree push --prefix docs origin gh-pages"
   },
   "repository": {
     "type": "git",

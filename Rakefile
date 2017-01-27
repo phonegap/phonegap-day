@@ -5,7 +5,7 @@ task :default => :test
 
 desc "build and test website"
 task :test do
-  HTMLProofer.check_directory("./_site", {
+  HTMLProofer.check_directory("./docs", {
     :empty_alt_ignore => true,
     :url_ignore => [],
     :cache => {
