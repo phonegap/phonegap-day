@@ -3,7 +3,7 @@ node_js:
   - "4.2"
 before_script:
   - npm run build:production
-  - rvm install 2.1.4
+  - rvm install 2.2.2
   - bundle install
 script: bundle exec rake test
 sudo: false

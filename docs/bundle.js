@@ -26589,7 +26589,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    id: 19,
 	    avatar: "/img/bio/reneelance.jpg",
-	    twitter: "AdobeGeekGirl",
+	    twitter: "geekystardust",
 	    slug: "reneelance",
 	    name: "Renée Lance",
 	    title: "Solutions Consultant, Adobe",
@@ -28514,7 +28514,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                  null,
 	                  _react2.default.createElement(
 	                    'a',
-	                    { href: 'http://www.onsen.io/' },
+	                    { href: 'http://onsen.io/' },
 	                    _react2.default.createElement('img', { src: '/img/OnsenUI_Logo.svg', width: 300, alt: 'OnsenUI logo' })
 	                  )
 	                ),

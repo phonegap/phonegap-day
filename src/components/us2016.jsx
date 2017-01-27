@@ -112,7 +112,7 @@ export default class Us2016 extends React.Component {
                 <div><a href="http://www.mobify.com/"><img src="/img/Mobify_Logo.svg" width={280} alt="Mobify logo"/></a></div>
                 <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} alt="Ionic logo"/></a></div>
                 <div><a href="http://www.rangle.io/"><img src="/img/Rangle.io_Logo.svg" width={300} alt="Rangle.io logo"/></a></div>
-                <div><a href="http://www.onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} alt="OnsenUI logo"/></a></div>
+                <div><a href="http://onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} alt="OnsenUI logo"/></a></div>
                 <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} alt="Monaca logo"/></a></div>
                 <div><a href="http://www.visualstudio.com/"><img src="/img/VisualStudio_Logo.svg" width={300} alt="VisualStudio logo"/></a></div>
                 <div><a href="https://crosswalk-project.org/"><img src="/img/Crosswalk_Project_Logo.svg" width={300} alt="Crosswalk_Project logo"/></a></div>

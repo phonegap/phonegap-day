@@ -8,8 +8,7 @@
     "dev": "webpack-dev-server --progress --colors",
     "build:images": "imagemin ./img ./docs/img",
     "build:production": "npm run webpack && npm run build:images",
-    "start": "npm run dev",
-    "deploy": "git subtree push --prefix docs origin gh-pages"
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",

@@ -147,7 +147,7 @@ module.exports = {
     },{
       id: 19,
       avatar: "/img/bio/reneelance.jpg",
-      twitter: "AdobeGeekGirl",
+      twitter: "geekystardust",
       slug: "reneelance",
       name: "Renée Lance",
       title: "Solutions Consultant, Adobe",
