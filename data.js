@@ -923,7 +923,7 @@ module.exports = {
         previousValue.push("/eu2017/speaker/"+currentValue.slug);
       }
       return previousValue;
-    }, ["/","/us2016/","/eu2017/"]);
+    }, ["/","/eu2017/"]); //["/","/us2016/","/eu2017/"]
   },
   findSessionBySpeakerSlug: function(slug, conferenceSlug) {
     var sessions = []
