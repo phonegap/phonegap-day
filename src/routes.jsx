@@ -12,9 +12,9 @@ import SpeakerPageEU from './components/speaker-page-eu.jsx'
 export default (
   <Route path="/" component={Root}>
     <IndexRoute component={Index} />
-    // <Route path="/us2016/" component={Us2016} onLeave={() => {window.fromHome = true}} />
-    // <Route path="/us2016/speaker/:slug" component={SpeakerPage} />
     <Route path="/eu2017/" component={Eu2017} onLeave={() => {window.fromHome = true}} />
     <Route path="/eu2017/speaker/:slug" component={SpeakerPageEU} onLeave={() => {window.fromHome = true}} />
   </Route>
 )
+// <Route path="/us2016/" component={Us2016} onLeave={() => {window.fromHome = true}} />
+// <Route path="/us2016/speaker/:slug" component={SpeakerPage} />
