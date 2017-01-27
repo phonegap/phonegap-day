@@ -107,7 +107,7 @@ module.exports = {
       name: "Ryan Hanna",
       title: "Director of Engineering, Sworkit",
       bio: "Ryan began learning to code online in 2012 and grew his side project into a top Health and Fitness app with over 10 million downloads. He is also a co-organizer of codebar.io in Brighton, England.",
-      conferences: ["us2016"]
+      conferences: ["us2016","eu2017"]
     },{
       id: 8,
       avatar: "/img/bio/mikehartington.jpg",
@@ -170,7 +170,7 @@ module.exports = {
       name: "Simon MacDonald",
       title: "Senior Software Engineer, Adobe",
       bio: "Simon has over fifteen years of development experience and has worked on a variety of projects including object oriented databases, police communication systems, speech recognition and unified messaging. His current focus is contributing to the open source PhoneGap project to enable developers to create cross platform mobile applications using Web technologies. Simon’s been building web applications since the days they were written using shell scripts and he still has nightmares about those dark days.",
-      conferences: ["us2016","eu2016"]
+      conferences: ["us2016","eu2016","eu2017"]
     },{
       id: 24,
       avatar: "/img/bio/purplecabbage.jpg",
@@ -179,7 +179,7 @@ module.exports = {
       name: "Jesse MacFadyen",
       title: "Sr. Computer Scientist, Adobe",
       bio: "Jesse is a primordial PhoneGap contributor that has been around long enough to see many phonegap-killers come and go. He has written plugins for everything from the device accelerometer to bluetooth connected wearables like the ms-band, across windows, windows phone, android and ios. A self-proclaimed prolific procrastinator, Jesse often loses interest before he has a chance to fi",
-      conferences: ["us2016","eu2016"]
+      conferences: ["us2016","eu2016","eu2017"]
     },{
       id: 27,
       avatar: "/img/bio/alexismenard.jpg",
@@ -233,7 +233,7 @@ module.exports = {
       name: "Holly Schinsky",
       title: "Senior Software Engineer, Adobe",
       bio: "Holly works on the PhoneGap team at Adobe with a heavy focus on Developer Advocacy and Education via her blogging, sample apps and workshops. In her free time she’s usually found running, driving a carpool or hanging out with her family.",
-      conferences: ["us2016","eu2016"]
+      conferences: ["us2016","eu2016","eu2017"]
     },{
       id: 28,
       avatar: "/img/bio/bobspencer.jpg",
@@ -294,7 +294,7 @@ module.exports = {
       name: "Sani Yusuf",
       title: "Founder, HAIBRID",
       bio: "Sani runs a startup called HAIBRID that uses cross-platform mobile development techniques to create innovative ​mobile ​ solutions. Sani also co-manages the Ionic UK community in UK and has had stints with companies like Microsoft, Huddlebuy & Anritsu in the past.",
-      conferences: ["eu2016"]
+      conferences: ["eu2016","eu2017"]
     },{
       id: 14,
       avatar: "/img/bio/remysharp.jpg",
@@ -312,7 +312,7 @@ module.exports = {
       name: "Kerri Shotts",
       title: "Developer, Author, Photographer",
       bio: "Kerri Shotts is an IT consultant specializing in mobile hybrid application development. She has used PhoneGap/Cordova for several years while developing enterprise apps for her clients. She is the author of five books about PhoneGap. She serves as a moderator on the PhoneGap Google Group. Kerri is also a photographer and loves caffeine, art, music, and Minecraft.",
-      conferences: ["eu2016"]
+      conferences: ["eu2016","eu2017"]
     },{
       id: 16,
       avatar: "/img/bio/nielsleenheer.jpg",
@@ -919,14 +919,11 @@ module.exports = {
   },
   routes: function () {
     return routes = this.speakers.reduce(function (previousValue, currentValue, index){
-      if (currentValue.conferences.indexOf("us2016") >= 0) {
-        previousValue.push("/us2016/speaker/"+currentValue.slug);
-      }
-      if (currentValue.conferences.indexOf("eu2016") >= 0) {
-        previousValue.push("/eu2016/speaker/"+currentValue.slug);
+      if (currentValue.conferences.indexOf("eu2017") >= 0) {
+        previousValue.push("/eu2017/speaker/"+currentValue.slug);
       }
       return previousValue;
-    }, ["/","/us2016/","/eu2016/"]);
+    }, ["/","/us2016/","/eu2017/"]);
   },
   findSessionBySpeakerSlug: function(slug, conferenceSlug) {
     var sessions = []

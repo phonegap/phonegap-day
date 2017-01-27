@@ -11,8 +11,8 @@ export default class Us2016 extends React.Component {
             <div className="splash--image" />
           </div><Link to="/us2016/" />
         </div>
-        <div className="splash--eu2016">
-          <Link to="/eu2016/" />
+        <div className="splash--eu2017">
+          <Link to="/eu2017/" />
         </div>
       </div>
     )
