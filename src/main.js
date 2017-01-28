@@ -109,7 +109,7 @@ export default (locals, callback) => {
         content:"PhoneGap Day EU will be held at Het Compagnietheater in Amsterdam on May 19 & 20, 2016."
       },{
         name:'twitter:image',
-        content:'http://pgday.phonegap.com/img/twitter-card-eu2016sm.png'
+        content:'http://pgday.phonegap.com/img/twitter-card-eu2017sm.png'
       },{
         name:'description',
         content:"PhoneGap Day EU will be held at Het Compagnietheater in Amsterdam on May 19 & 20, 2016."
