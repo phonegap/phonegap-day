@@ -141,7 +141,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      content: "PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016 and at Het Compagnietheater in Amsterdam on May 19 & 20, 2016."
 	    }, {
 	      name: 'twitter:image',
-	      content: 'http://pgday.phonegap.com/img/twitter-card2016sm.png'
+	      content: 'http://pgday.phonegap.com/img/twitter-card.png'
 	    }, {
 	      name: 'description',
 	      content: "PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016 and at Het Compagnietheater in Amsterdam on May 19 & 20, 2016."
