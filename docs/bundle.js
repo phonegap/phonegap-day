@@ -28012,7 +28012,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _react2.default.createElement(
 	            _reactRouter.Link,
 	            { to: '/eu2016/', onClick: this.handleClick.bind(this) },
-	            _react2.default.createElement('img', { src: '/img/pgd_logo_eu.svg', alt: 'PhoneGap Day EU logo' })
+	            _react2.default.createElement('img', { src: '/img/pgd_logo_eu-2017.svg', alt: 'PhoneGap Day EU logo' })
 	          )
 	        ),
 	        _react2.default.createElement(
