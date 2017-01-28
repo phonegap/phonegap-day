@@ -8,6 +8,7 @@ task :test do
   HTMLProofer.check_directory("./docs", {
     :empty_alt_ignore => true,
     :url_ignore => [],
+    :http_status_ignore => [0],
     :cache => {
       :timeframe => '1d'
     },
