@@ -25757,7 +25757,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                _react2.default.createElement(
 	                  'div',
 	                  { className: 'description' },
-	                  'More details to come. Sign up to recieve updates.'
+	                  'More details to come. Sign up to receive updates.'
 	                )
 	              ),
 	              _react2.default.createElement(
