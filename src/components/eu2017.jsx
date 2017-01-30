@@ -66,9 +66,8 @@ export default class Eu2017 extends React.Component {
                 <h1>Workshops</h1>
                 <p>Get some 1:1 time with our PhoneGap experts ahead of the conference. Join our workshop day on Thursday, May 18. We'll have 2 workshop tracks on May 18th with great content running all day. More details to be announced soon, but we'll have workshops on things like progressive web apps, offline capabilities, security, and virtual reality. You won't want to miss these! Note: the workshop venue is different than the conference venue. More information coming soon!</p>
                 <h3>Important: workshop location is different than the conference venue:</h3>
-                <p>Pakhuis De Zwijger<br/>Piet Heinkade 179<br/>1019 HC Amsterdam</p>
-                <p><strong>Public transport information</strong>: To reach the workshop venue, go to Central Station and take tram 26. It’s located very close to the second stop; you can see it from the tram.</p>
-                <p><a href="https://dezwijger.nl/">https://dezwijger.nl/</a></p>
+                <p>Spaces Herengracht<br/>Herengracht 124-128<br/>1015 BT Amsterdam</p>
+                <p><a href="https://goo.gl/maps/uvby2U7nLpT2">Google Map</a></p>
               </section>
               <img src="/img/de-zwijger.jpg" alt="Pakhuis De Zwijger" style={imageStyle}/>
             </div>
