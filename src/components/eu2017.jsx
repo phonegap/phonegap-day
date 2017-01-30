@@ -69,7 +69,7 @@ export default class Eu2017 extends React.Component {
                 <p>Spaces Herengracht<br/>Herengracht 124-128<br/>1015 BT Amsterdam</p>
                 <p><a href="https://goo.gl/maps/uvby2U7nLpT2">Google Map</a></p>
               </section>
-              <img src="/img/de-zwijger.jpg" alt="Pakhuis De Zwijger" style={imageStyle}/>
+              <img src="/img/spaces-herengracht.jpg" alt="Spaces Herengracht" style={imageStyle}/>
             </div>
           </section>
           <section>

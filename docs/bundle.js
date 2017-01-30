@@ -26363,7 +26363,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                  )
 	                )
 	              ),
-	              _react2.default.createElement('img', { src: '/img/de-zwijger.jpg', alt: 'Pakhuis De Zwijger', style: imageStyle })
+	              _react2.default.createElement('img', { src: '/img/spaces-herengracht.jpg', alt: 'Spaces Herengracht', style: imageStyle })
 	            )
 	          ),
 	          _react2.default.createElement(
