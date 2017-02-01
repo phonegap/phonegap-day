@@ -159,11 +159,14 @@ select {
   height: 100%;
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
 }
@@ -185,15 +188,19 @@ select {
   width: 100%;
   height: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
   overflow: hidden;
@@ -202,12 +209,14 @@ select {
   background: url("/img/pgday-us.svg") no-repeat center;
   background-size: contain;
   -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
 }
 .splash--image:last-child {
   background: url("/img/pgd_logo.svg") no-repeat center;
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   box-sizing: border-box;
@@ -230,6 +239,7 @@ select {
   .splash--contents {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -333,16 +343,19 @@ a:hover {
 }
 .header-title .pricing li {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-size: 1rem;
 }
 .header-title .pricing li span {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 .header-title .pricing .leader {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   border-bottom: 2px dotted;
@@ -1024,16 +1037,20 @@ a:hover {
 .subscribe-form--splash {
   min-height: 40vh;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1046,12 +1063,15 @@ a:hover {
 }
 .subscribe-form--splash form {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px;
@@ -1096,12 +1116,15 @@ a:hover {
 }
 .subscribe-form--eu form {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1384,10 +1407,12 @@ a:hover {
 .workshop--list {
   list-style: none;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid rgba(3,51,81,0.2);
@@ -1518,6 +1543,7 @@ workshop--title {
   .workshop--list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
   }
@@ -1595,4 +1621,4 @@ workshop--title {
             column-count: 2;
   }
 }
-</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--><!-- Twitter universal website tag code--><script src="//platform.twitter.com/oct.js" type="text/javascript"></script><script type="text/javascript">twttr.conversion.trackPid('nusbi', { tw_sale_amount: 0, tw_order_quantity: 0 });</script></head><body><div id="react-output" data-reactid=".6px58jc0ak" data-react-checksum="930896602"><div id="content" class="speaker-page-content" data-reactid=".6px58jc0ak.0"><header class="speaker-page--header" data-reactid=".6px58jc0ak.0.0"><a class="" href="/eu2016/" data-reactid=".6px58jc0ak.0.0.0"><img src="/img/pgd_logo_eu-2017.svg" alt="PhoneGap Day EU logo" data-reactid=".6px58jc0ak.0.0.0.0"/></a></header><div class="text-bounds speaker" data-reactid=".6px58jc0ak.0.1"><a class="" href="/eu2016/" data-reactid=".6px58jc0ak.0.1.0"><span data-reactid=".6px58jc0ak.0.1.0.0">&lt; </span><span data-reactid=".6px58jc0ak.0.1.0.1">Home</span></a><div data-reactid=".6px58jc0ak.0.1.1"><img class="speaker--photo" src="/img/bio/kerrishotts.jpg" alt="Kerri Shotts" data-reactid=".6px58jc0ak.0.1.1.0"/></div><h1 class="speaker--name" data-reactid=".6px58jc0ak.0.1.2">Kerri Shotts</h1><h2 class="speaker--title" data-reactid=".6px58jc0ak.0.1.3">Developer, Author, Photographer</h2><div class="speaker--bio" data-reactid=".6px58jc0ak.0.1.4">Kerri Shotts is an IT consultant specializing in mobile hybrid application development. She has used PhoneGap/Cordova for several years while developing enterprise apps for her clients. She is the author of five books about PhoneGap. She serves as a moderator on the PhoneGap Google Group. Kerri is also a photographer and loves caffeine, art, music, and Minecraft.</div><div data-reactid=".6px58jc0ak.0.1.5"><a href="https://twitter.com/photoKandy" data-reactid=".6px58jc0ak.0.1.5.0"><span data-reactid=".6px58jc0ak.0.1.5.0.0">@</span><span data-reactid=".6px58jc0ak.0.1.5.0.1">photoKandy</span></a></div><div class="sessions" data-reactid=".6px58jc0ak.0.1.6"><h2 class="sessions--heading" data-reactid=".6px58jc0ak.0.1.6.0">Session</h2><div class="session" data-reactid=".6px58jc0ak.0.1.6.1:$9=215am-9=255am"><h3 class="session--title" data-reactid=".6px58jc0ak.0.1.6.1:$9=215am-9=255am.0">Common PhoneGap Gotchas</h3><div class="session--time" data-reactid=".6px58jc0ak.0.1.6.1:$9=215am-9=255am.1">9:15am-9:55am</div><div class="session--description" data-reactid=".6px58jc0ak.0.1.6.1:$9=215am-9=255am.2"><div>Your users deserve a great experience when they launch your app! Be sure to avoid these common gotchas! The talk would focus on various practices that one should use to avoid a poor user experience, including responding to device events, slow/fast taps, providing affordances, faster animations, designing responsively, a quick touch on security, and also how to handle network connectivity (or lack thereof).</div></div></div></div></div></div><script id="initial-props" type="application/json" data-reactid=".6px58jc0ak.1">{"history":{},"location":{"pathname":"/eu2017/speaker/kerrishotts","search":"","hash":"","state":null,"action":"POP","key":"kh13r2"},"params":{"slug":"kerrishotts"},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/eu2017/"},{"path":"/eu2017/speaker/:slug"}]},"routeParams":{},"routes":["~route","~route~childRoutes~1"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~childRoutes~1","routeParams":{"slug":"kerrishotts"},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".6px58jc0ak","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".6px58jc0ak","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":67,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":66,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".6px58jc0ak.2"></script></div></body></html>
+</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--><!-- Twitter universal website tag code--><script src="//platform.twitter.com/oct.js" type="text/javascript"></script><script type="text/javascript">twttr.conversion.trackPid('nusbi', { tw_sale_amount: 0, tw_order_quantity: 0 });</script></head><body><div id="react-output" data-reactid=".jfume1km9g" data-react-checksum="1306421112"><div id="content" class="speaker-page-content" data-reactid=".jfume1km9g.0"><header class="speaker-page--header" data-reactid=".jfume1km9g.0.0"><a class="" href="/eu2016/" data-reactid=".jfume1km9g.0.0.0"><img src="/img/pgd_logo_eu-2017.svg" alt="PhoneGap Day EU logo" data-reactid=".jfume1km9g.0.0.0.0"/></a></header><div class="text-bounds speaker" data-reactid=".jfume1km9g.0.1"><a class="" href="/eu2016/" data-reactid=".jfume1km9g.0.1.0"><span data-reactid=".jfume1km9g.0.1.0.0">&lt; </span><span data-reactid=".jfume1km9g.0.1.0.1">Home</span></a><div data-reactid=".jfume1km9g.0.1.1"><img class="speaker--photo" src="/img/bio/kerrishotts.jpg" alt="Kerri Shotts" data-reactid=".jfume1km9g.0.1.1.0"/></div><h1 class="speaker--name" data-reactid=".jfume1km9g.0.1.2">Kerri Shotts</h1><h2 class="speaker--title" data-reactid=".jfume1km9g.0.1.3">Developer, Author, Photographer</h2><div class="speaker--bio" data-reactid=".jfume1km9g.0.1.4">Kerri Shotts is an IT consultant specializing in mobile hybrid application development. She has used PhoneGap/Cordova for several years while developing enterprise apps for her clients. She is the author of five books about PhoneGap. She serves as a moderator on the PhoneGap Google Group. Kerri is also a photographer and loves caffeine, art, music, and Minecraft.</div><div data-reactid=".jfume1km9g.0.1.5"><a href="https://twitter.com/photoKandy" data-reactid=".jfume1km9g.0.1.5.0"><span data-reactid=".jfume1km9g.0.1.5.0.0">@</span><span data-reactid=".jfume1km9g.0.1.5.0.1">photoKandy</span></a></div><div class="sessions" data-reactid=".jfume1km9g.0.1.6"><h2 class="sessions--heading" data-reactid=".jfume1km9g.0.1.6.0">Session</h2><div class="session" data-reactid=".jfume1km9g.0.1.6.1:$9=215am-9=255am"><h3 class="session--title" data-reactid=".jfume1km9g.0.1.6.1:$9=215am-9=255am.0">Common PhoneGap Gotchas</h3><div class="session--time" data-reactid=".jfume1km9g.0.1.6.1:$9=215am-9=255am.1">9:15am-9:55am</div><div class="session--description" data-reactid=".jfume1km9g.0.1.6.1:$9=215am-9=255am.2"><div>Your users deserve a great experience when they launch your app! Be sure to avoid these common gotchas! The talk would focus on various practices that one should use to avoid a poor user experience, including responding to device events, slow/fast taps, providing affordances, faster animations, designing responsively, a quick touch on security, and also how to handle network connectivity (or lack thereof).</div></div></div></div></div></div><script id="initial-props" type="application/json" data-reactid=".jfume1km9g.1">{"history":{},"location":{"pathname":"/eu2017/speaker/kerrishotts","search":"","hash":"","state":null,"action":"POP","key":"ztqcxo"},"params":{"slug":"kerrishotts"},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/eu2017/"},{"path":"/eu2017/speaker/:slug"}]},"routeParams":{},"routes":["~route","~route~childRoutes~1"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~childRoutes~1","routeParams":{"slug":"kerrishotts"},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".jfume1km9g","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".jfume1km9g","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":67,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":66,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".jfume1km9g.2"></script></div></body></html>
