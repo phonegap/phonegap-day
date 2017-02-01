@@ -40,16 +40,16 @@ export default (locals, callback) => {
         content:'@garthdb'
       },{
         name:'twitter:title',
-        content:'PhoneGap Days 2016 EU & US'
+        content:'PhoneGap Day Early Bird Pricing'
       },{
         name:'twitter:description',
-        content:"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016 and at Het Compagnietheater in Amsterdam on May 19 & 20, 2016."
+        content:"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017."
       },{
         name:'twitter:image',
         content:'http://pgday.phonegap.com/img/twitter-card.png'
       },{
         name:'description',
-        content:"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016 and at Het Compagnietheater in Amsterdam on May 19 & 20, 2016."
+        content:"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017."
       },{
         name:'keywords',
         content:'HTML,CSS,PhoneGap Day,JavaScript,conference,event'
