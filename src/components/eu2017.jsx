@@ -56,7 +56,7 @@ export default class Eu2017 extends React.Component {
               <h1>The Lowdown</h1>
               <p><span className="sub">One part conference, one part celebration.</span><br />Join PhoneGap and Cordova experts from around the world to hear what’s new in web and mobile development. Get the inside scoop on emerging frameworks and technologies and learn valuable tips and tricks to help with your next project. This is one of the best opportunities to network and learn from top industry leaders, meet with members of the PhoneGap team, hear the latest PhoneGap news, and find out what’s coming next!</p>
               <p>Already have native apps at your organization? Come to PhoneGap Day to learn how to still use native controls for your app while leveraging webviews for the main content to make editing and updates easier and to enable your marketing team and other non technical users to update your app.</p>
-              <p>Need help justifying your trip? Download our “<a href="/justify-your-trip-to-phonegapday-eu.docx">Letter to your Boss</a>” document.</p>
+              <p>Need help justifying your trip? Download our “<a href="/justify-your-trip-to-phonegapday-eu-2017.docx">Letter to your Boss</a>” document.</p>
             </div>
           </section>
           <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"eu2017"}/>
