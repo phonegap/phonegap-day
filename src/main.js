@@ -43,13 +43,13 @@ export default (locals, callback) => {
         content:'PhoneGap Day Early Bird Pricing'
       },{
         name:'twitter:description',
-        content:"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017."
+        content:"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017. PhoneGap Day US is scheduled for Fall 2017."
       },{
         name:'twitter:image',
-        content:'http://pgday.phonegap.com/img/twitter-card.png'
+        content:'http://pgday.phonegap.com/img/twitter-card2017sm.png'
       },{
         name:'description',
-        content:"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017."
+        content:"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017. PhoneGap Day US is scheduled for Fall 2017."
       },{
         name:'keywords',
         content:'HTML,CSS,PhoneGap Day,JavaScript,conference,event'
