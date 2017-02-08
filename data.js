@@ -307,11 +307,11 @@ module.exports = {
     },{
       id: 15,
       avatar: "/img/bio/kerrishotts.jpg",
-      twitter: "photoKandy",
+      twitter: "kerrishotts",
       slug: "kerrishotts",
       name: "Kerri Shotts",
       title: "Developer, Author, Photographer",
-      bio: "Kerri Shotts is an IT consultant specializing in mobile hybrid application development. She has used PhoneGap/Cordova for several years while developing enterprise apps for her clients. She is the author of five books about PhoneGap. She serves as a moderator on the PhoneGap Google Group. Kerri is also a photographer and loves caffeine, art, music, and Minecraft.",
+      bio: "Kerri Shotts is an IT consultant specializing in mobile hybrid application development. She has used PhoneGap/Cordova for several years while developing enterprise apps for her clients. She is the author of five books about PhoneGap and serves a moderator on the Adobe PhoneGap forum and the PhoneGap Google Group. She started programming on a lowly Commodore 64, and has a fondness for retro technology.",
       conferences: ["eu2016","eu2017"]
     },{
       id: 16,
@@ -667,7 +667,9 @@ module.exports = {
         time: "5:30pm",
         title: "Networking Pub Mixer"
       }
-    ]
+    ],
+    us2017: [],
+    eu2017: [],
   },
   workshops: {
     us2016: [
@@ -915,7 +917,9 @@ module.exports = {
           }
         ]
       }
-    ]
+    ],
+    us2017: [],
+    eu2017: [],
   },
   routes: function () {
     return routes = this.speakers.reduce(function (previousValue, currentValue, index){
