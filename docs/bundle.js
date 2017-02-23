@@ -26805,7 +26805,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }, {
 	      title: "Cordova and Citizen Science",
 	      speakerSlug: "edouardlafargue",
-	      description: "Ed will be presenting Safecast:Drive, an Android app that interfaces with the bGeigie Nano Geiger counter, and enables volunteers to submit their nuclear radiation surveys to Safecast.org. The talk will cover the challenges of building a complex app that includes mapping, USB and BLE with good performance, reliability and low power usage , as well as the strong requirements to make it easy to use for non technical volunteers.<br/>Safecast is an international, volunteer-centered organization devoted to open citizen science for the environment. You can find more information at <a href='www.safecast.org'>www.safecast.org</a>"
+	      description: "Ed will be presenting Safecast:Drive, an Android app that interfaces with the bGeigie Nano Geiger counter, and enables volunteers to submit their nuclear radiation surveys to Safecast.org. The talk will cover the challenges of building a complex app that includes mapping, USB and BLE with good performance, reliability and low power usage , as well as the strong requirements to make it easy to use for non technical volunteers.<br/>Safecast is an international, volunteer-centered organization devoted to open citizen science for the environment. You can find more information at <a href='http://www.safecast.org'>www.safecast.org</a>"
 	    }, {
 	      title: "Modern JavaScript and PhoneGap",
 	      speakerSlug: "kerrishotts",
