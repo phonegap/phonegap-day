@@ -26188,8 +26188,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    slug: "alexblom",
 	    name: "Alex Blom",
 	    title: "Partner, Isle of Code",
-	    bio: "Alex is a hacker who works with Ember, Ruby & Go. He is a Partner at Isle of Code, a Toronto based agency focused on Ember, and using Ember in PhoneGap & iBeacon contexts. Prior, Alex was building a browser extension based startup in Ember (morse).</div>",
-	    conferences: ["us2016"]
+	    bio: "Alex Blom is the lead maintainer of ember-cordova. He is also Managing Partner at Isle of Code, an Ember/Hybrid focused shop in Toronto.",
+	    conferences: ["us2016", "eu2017"]
 	  }, {
 	    id: 22,
 	    avatar: "/img/bio/garthdb.jpg",
@@ -26432,13 +26432,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	    conferences: ["us2016"]
 	  }, {
 	    id: 26,
-	    avatar: "/img/bio/tommywilliams.jpg",
+	    avatar: "/img/bio/tommywilliams-1.jpg",
 	    twitter: "therealdevgeeks",
 	    slug: "tommywilliams",
 	    name: "Tommy Williams",
-	    title: "Sr Computer Scientist, Adobe",
-	    bio: "Apache Cordova committer and developer advocate, creator of Encryptr, and Sr Computer Scientist on the PhoneGap team at Adobe.",
-	    conferences: ["us2016"]
+	    title: "Sr. Computer Scientist, Adobe",
+	    bio: "Tommy is a guitarist, aging punk, and app developer finally working on the PhoneGap team at Adobe. He is focussed on helping developers make beautiful, performant, and secure mobile apps with the web technologies that he loves. He is also a strong advocate for privacy particularly where it intersects app development. Tommy enjoys talking in the third person, vegan food, beer, attempts at humour, and trying to sound humble through self-deprecation.",
+	    conferences: ["us2016", "eu2017"]
 	  }, {
 	    id: 18,
 	    avatar: "/img/bio/tjvantoll.jpg",
@@ -26494,13 +26494,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	    conferences: ["eu2016"]
 	  }, {
 	    id: 18,
-	    avatar: "/img/bio/stevesgill.jpg",
+	    avatar: "/img/bio/stevesgill-1.jpg",
 	    twitter: "stevesgill",
 	    slug: "stevesgill",
 	    name: "Steve Gill",
 	    title: "Software Engineer, Adobe",
 	    bio: "Originally from Vancouver but currently living in San Francisco, Steve has been part of the PhoneGap team since 2009! He currently works on the tooling for Cordova and helps with releases. Outside of hacking, he loves hockey, biking, yoga and traveling!",
-	    conferences: ["eu2016"]
+	    conferences: ["eu2016", "eu2017"]
 	  }, {
 	    avatar: "/img/bio/martijnwalraven.jpg",
 	    twitter: "martijnwalraven",
@@ -26578,6 +26578,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	    title: "Engineering Manager, Canonical",
 	    bio: 'David heads up the Webapps Team at Canonical, the makers of Ubuntu. David and his team’s involvement in Ubuntu app development is centered on the integration of web technologies into the core of the Ubuntu platform. This includes the development of the Oxide project, a modern webview optimized to run on Ubuntu, the Ubuntu Cordova port, and more generally JS frameworks related to developing apps and "scopes" on Ubuntu.',
 	    conferences: ["eu2016"]
+	  }, {
+	    avatar: "/img/bio/joebowser.jpg",
+	    twitter: "infil00p",
+	    slug: "joebowser",
+	    name: "Joe Bowser",
+	    title: "Senior Computer Scientist, Adobe Systems Inc.",
+	    bio: 'Joe is one of the co-creators of PhoneGap, and originally wrote the Android implementation. He is the longest contributing member of the Apache Cordova project and the Project Management Committee (PMC). When he is not working on Cordova, he is working on various other projects, which often include open source hardware like the Arduino, 360 video, as well as building, flying and crashing quadcopters.',
+	    conferences: ["eu2017"]
+	  }, {
+	    avatar: "/img/bio/edouardlafargue.jpg",
+	    slug: "edouardlafargue",
+	    name: "Edouard Lafargue",
+	    title: "Solution Architect, Adobe",
+	    bio: "Ed has been with Adobe for 6 years working first in Europe and now in the US as a Solution Architect for the Adobe Marketing Cloud. As a life long technology enthusiast, Ed likes to apply his skills to bring creative solutions to technical challenges, whether he does this for Adobe's customers, or as part of his volunteer engagement with non-profits like Safecast.org",
+	    conferences: ["eu2017"]
 	  }],
 	  sessions: {
 	    us2016: [{
@@ -26783,7 +26798,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	      title: "Networking Pub Mixer"
 	    }],
 	    us2017: [],
-	    eu2017: []
+	    eu2017: [{
+	      title: "WebVR: Getting Started with A-Frame and VR View",
+	      speakerSlug: "joebowser",
+	      description: "Any developer with a modern Android or iOS device and a cardboard viewer can get started making unique experiences relatively quickly. This introductory talk will go over the basics of AFrame will discuss how to to use standard web development practices to bring these experiences quickly across devices, whether they be Cardboard or Daydream-based devices, or Desktop-based VR devices such as the Oculus Rift or HTC Vive. Due to cost and accessibility, this talk will primarily focus on Daydream and Cardboard."
+	    }, {
+	      title: "Cordova and Citizen Science",
+	      speakerSlug: "edouardlafargue",
+	      description: "Ed will be presenting Safecast:Drive, an Android app that interfaces with the bGeigie Nano Geiger counter, and enables volunteers to submit their nuclear radiation surveys to Safecast.org. The talk will cover the challenges of building a complex app that includes mapping, USB and BLE with good performance, reliability and low power usage , as well as the strong requirements to make it easy to use for non technical volunteers.<br/>Safecast is an international, volunteer-centered organization devoted to open citizen science for the environment. You can find more information at <a href='http://www.safecast.org'>www.safecast.org</a>"
+	    }, {
+	      title: "Modern JavaScript and PhoneGap",
+	      speakerSlug: "kerrishotts",
+	      description: "JavaScript is changing with new versions of the standard now releasing every year, and lots of proposals being considered for inclusion. Most mobile devices can only support this new world with the help of automation, module loaders and bundlers, and transpilers… but if all of those words sound a little scary, don’t worry — it’s easy to build a workflow that integrates modern JavaScript and PhoneGap together, and in this session we’ll show you how!"
+	    }, {
+	      title: "4 Way Databinding For An Offline Mobile Experience",
+	      speakerSlug: "saniyusuf",
+	      description: "In today's world, mobile is the primary way we access the internet for our very many important activities. The problem is a lot of apps work great online but become unusable offline. Image if you could not search the previous emails on you mail app when you had no Internet? Creating an offline experience can be challenging with soo many things to worry about like, how best to Sync when the internet comes back or how best to handle conflicts when multiple users change the same data offline? This talk will showcase how we can use PouchDB to achieve 4-way data binding by keeping the Model, View, Serve & Offline Data all in sync while providing the user with a mature offline experience."
+	    }, {
+	      title: "Sworkit: From Side Project to Full Time Venture",
+	      speakerSlug: "ryanhanna",
+	      description: "<p>Sworkit had very modest beginnings in 2012 with a humble goal: Build something fun to help Ryan learn to code, and maybe get 100 downloads.</p><p>Now with millions of users and over 45 million workouts completed, Sworkit has gone from a solo side project to a global fitness platform.</p><p>We'll take a transparent look at the key events and build decisions that helped Sworkit get to where it is today. Find out about the various technologies employed at each phase of Sworkit's growth, how to market an app with no budget, and how to successfully generate revenue.</p>"
+	    }]
 	  },
 	  workshops: {
 	    us2016: [{
@@ -26969,7 +27004,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }]
 	    }],
 	    us2017: [],
-	    eu2017: []
+	    eu2017: [{
+	      sessions: [{
+	        title: "App Privacy and Security for PhoneGap Developers",
+	        speakerSlug: "tommywilliams",
+	        description: "Our mobile devices are rich targets packed full of sensors, and ripe for the harvesting of personal information. All too often, developers on deadlines leave security and privacy concerns until the last minute, or don't get around to them at all. This workshop will show not only the importance of security and privacy, but some basic steps we as developers can take to ensure our apps are a safe place for our users (not to mention keeping the app safe from those same users). From avoiding XSS, understanding the whitelist and CSP, to ensuring that what data we do collect is kept safe. This workshop will give you a better understanding of how to ensure privacy and security are a part of your app from day one."
+	      }, {
+	        title: "PhoneGap Push Notifications",
+	        speakerSlug: "simonmacdonald",
+	        description: "In this workshop we'll walk through adding push notification capabilities to your application. You'll learn how to set up a Firebase Cloud Messaging project for Android notifications and adding push capabilities to your iOS certificate and provisioning profiles. You'll gain an understanding of how to register with your remote push service and handle incoming notifications. Advanced topics will include how to add action buttons, responding to silent push notifications and testing using node.js."
+	      }, {
+	        title: "Cross Platform Progressive Web Apps",
+	        speakerSlug: "hollyschinsky",
+	        description: "In this workshop you'll learn how to build an app that leverages the best of what Progressive Web Apps and PhoneGap have to offer. PWA's are all the rage as of late, but they're currently not supported on iOS, and mobile browsers still don't support every API for accessing certain sensors and hardware features. In this workshop you'll learn how you can build an app that can run as both a PWA and a hybrid app with PhoneGap."
+	      }]
+	    }]
 	  },
 	  routes: (function (_routes) {
 	    function routes() {
