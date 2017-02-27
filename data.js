@@ -2,7 +2,6 @@
 module.exports = {
   speakers: [
     {
-      id: 21,
       avatar: "/img/bio/shazron.jpg",
       twitter: "shazron",
       slug: "shazron",
@@ -11,7 +10,6 @@ module.exports = {
       bio: "Based in San Francisco, by way of Vancouver, Canada and Singapore, Shaz has nearly two decades of software development experience getting with the nitty gritty of Windows, OS X and iOS and probably helped code something you know. Currently he helps maintain the iOS platform of Apache Cordova and Adobe PhoneGap and has been part of the project for quite some time.",
       conferences: ["us2016","eu2016"]
     },{
-      id: 1,
       avatar: "/img/bio/ericalli.jpg",
       twitter: "two2twelve",
       slug: "ericalli",
@@ -20,7 +18,6 @@ module.exports = {
       bio: "Eric is a San Francico based designer & engineer who enjoys building useful products for niche spaces and sharing his affinity for music and art.",
       conferences: ["us2016"]
     },{
-      id: 2,
       avatar: "/img/bio/alexblom.jpg",
       twitter: "AlexBlom",
       slug: "alexblom",
@@ -29,7 +26,6 @@ module.exports = {
       bio: "Alex Blom is the lead maintainer of ember-cordova. He is also Managing Partner at Isle of Code, an Ember/Hybrid focused shop in Toronto.",
       conferences: ["us2016", "eu2017"]
     },{
-      id: 22,
       avatar: "/img/bio/garthdb.jpg",
       twitter: "GarthDB",
       slug: "GarthDB",
@@ -38,7 +34,6 @@ module.exports = {
       bio: "Garth is a person.",
       conferences: ["us2016"]
     },{
-      id: 3,
       avatar: "/img/bio/michaelbrooks.jpg",
       twitter: "mwbrooks",
       slug: "michaelbrooks",
@@ -47,7 +42,6 @@ module.exports = {
       bio: "Orphaned as a child, Michael Brooks was raised by his elderly Uncle Ben and Aunt May. Academically gifted, he displayed an uncanny affinity for Computer Science with speciality in signal processing and computer vision. While attending a developer meetup at the age of 26, Michael was bitten on the hand by a radioactive Nitobi employee, empowering him with the company’s proportional open source belief, community, and ability to ship products. Now disguised as mwbrooks and teamed with Adobe, Michael slings between vim, GitHub, Twitter, and IRC to protect the innocent, confront evil, and make PhoneGap & Apache Cordova a safer framework for the future of application development.",
       conferences: ["us2016"]
     },{
-      id: 4,
       avatar: "/img/bio/raymondcamden.jpg",
       twitter: "raymondcamden",
       slug: "raymondcamden",
@@ -56,7 +50,6 @@ module.exports = {
       bio: "Raymon is a 42 year old married father of six living in beautiful Lafayette, Louisiana. His primary technical focus is on the MobileFirst platform, web standards and client-side development. Most of his time is spent writing, researching, or presenting. When he's not behind a computer, he's an avid XBox/PS4 player, he enjoys movies, and he reads like crazy.",
       conferences: ["us2016"]
     },{
-      id: 32,
       avatar: "/img/bio/cianclarke.jpg",
       twitter: "cianclarke",
       slug: "cianclarke",
@@ -65,7 +58,6 @@ module.exports = {
       bio: 'Cian is a Software Engineer on the Red Hat Mobile Team. An early technologist, he founded his own web consultancy business at 16. Cian was a member of the original FeedHenry mobile team, since acquired by Red Hat. At Red Hat, Cian builds functionality for the Mobile Application Platform, and also helps with solutions architecture and evangelism. In addition to his day job, he also regularly blogs about the intersection of all things mobile, microservices and Node.js. Cian is originally from Waterford, Ireland, and currently resides in Boston, Massachusetts.',
       conferences: ["us2016"]
     },{
-      id: 23,
       avatar: "/img/bio/doncoleman.jpg",
       twitter: "doncoleman",
       slug: "doncoleman",
@@ -74,7 +66,6 @@ module.exports = {
       bio: 'Don enjoys hacking with phones, Arduino and other hardware. He has written PhoneGap plugins for Bluetooth and NFC. Don is the co-author of "Make:Bluetooth" and "Beginning NFC".',
       conferences: ["us2016"]
     },{
-      id: 5,
       avatar: "/img/bio/davidfrahm.jpg",
       twitter: "davidfrahm",
       slug: "davidfrahm",
@@ -83,7 +74,6 @@ module.exports = {
       bio: "Mobile and frontend developer focused on Ionic SDK and AngularJS apps, with a strong background in UX, Agile, eXtreme Programming, and startup growth. Living in the Midwest and contributing to the world.",
       conferences: ["us2016"]
     },{
-      id: 31,
       avatar: "/img/bio/chrisgosselin.jpg",
       slug: "chrisgosselin",
       name: "Chris Gosselin",
@@ -91,7 +81,6 @@ module.exports = {
       bio: "Chris is a full-stack developer at Rangle.io, a Toronto-based development firm, where he works on creating high-end enterprise mobile apps. Chris' interest in coding started as a teen when he created a variant of a popular board game for his programming class. Since then he has contributed to various open source projects, growth-hacked a startup, and worked extensively on both server-side and client-side projects. When he’s not programming he enjoys rock climbing.",
       conferences: ["us2016"]
     },{
-      id: 6,
       avatar: "/img/bio/deanhaddock.jpg",
       twitter: "systemconscious",
       slug: "deanhaddock",
@@ -100,7 +89,6 @@ module.exports = {
       bio: "Dean Haddock is the Managing Director of Digital & Technical Innovation for StoryCorps, the national oral history project--one of the largest collections of human voices ever assembled--and popular NPR/PBS broadcast. He and his team design and build apps, websites and other platforms to further StoryCorps' mission of recording and preserving the stories of everyday people across the US and around the world. Most recently Dean led StoryCorps' 2015 $1m TED Prize initiative to build a mobile app and platform that anyone can use to record and archive oral history interviews permanently at the Library of Congress. He is a Nieman Foundation Visiting Fellow, a Knight Foundation Prototype Fund awardee, a two-time Google Fellow to the Personal Democracy Forum and a civic hacktivist.",
       conferences: ["us2016", "eu2016"]
     },{
-      id: 7,
       avatar: "/img/bio/ryanhanna.jpg",
       twitter: "heryandotus",
       slug: "ryanhanna",
@@ -109,7 +97,6 @@ module.exports = {
       bio: "Ryan began learning to code online in 2012 and grew his side project into a top Health and Fitness app with over 10 million downloads. He is also a co-organizer of codebar.io in Brighton, England.",
       conferences: ["us2016","eu2017"]
     },{
-      id: 8,
       avatar: "/img/bio/mikehartington.jpg",
       twitter: "mhartington",
       slug: "mikehartington",
@@ -118,7 +105,6 @@ module.exports = {
       bio: "Mike is a front-end developer who has used Ionic since its alpha. As Ionic’s developer advocate, Mike manages the Ionic Forum, serves as a resource to developers, and writes technical documentation. When he’s not working, you can find him relaxing with a beer and guitar.",
       conferences: ["us2016"]
     },{
-      id: 9,
       avatar: "/img/bio/shawnjansepar.jpg",
       twitter: "shawnjan8",
       slug: "shawnjansepar",
@@ -127,7 +113,6 @@ module.exports = {
       bio: "Shawn loves to hack both on the front-end and back-end, with a heavy focus on the user experience. When he isn't hacking, you likely find him playing hockey/video games, eating, or travelling. Shawn has a BSc in Computer Science from Simon Fraser University in Vancouver.",
       conferences: ["us2016"]
     },{
-      id: 10,
       avatar: "/img/bio/aniskadri.jpg",
       twitter: "aniskadri",
       slug: "aniskadri",
@@ -136,7 +121,6 @@ module.exports = {
       bio: "Anis is a Software Engineer at Adobe. He works on PhoneGap and Cordova full-time and has been contributing to the project since its early inception. Lately, he’s been interested in trying to introduce  PhoneGap solutions to the enterprise world.",
       conferences: ["us2016", "eu2016"]
     },{
-      id: 25,
       avatar: "/img/bio/timkim.jpg",
       twitter: "timkim",
       slug: "timkim",
@@ -145,7 +129,6 @@ module.exports = {
       bio: "Hacking on software by day and drawing digital illustrations by night, Tim enjoys all forms of creativity possible in the digital realm. Currently he works on the PhoneGap Developer App and making stickers for the PhoneGap team. When Tim isn't hard at work, you can can find him trying to memorize movie quotes, playing video games or generally ignoring his ever growing to-do list.",
       conferences: ["us2016"]
     },{
-      id: 19,
       avatar: "/img/bio/reneelance.jpg",
       twitter: "geekystardust",
       slug: "reneelance",
@@ -154,7 +137,6 @@ module.exports = {
       bio: "Renée is a seasoned Web and UX designer and now an Adobe Solutions Consultant evangelizes Creative Cloud, Document Cloud and digital innovation. With more than 10 years experience with digital design, Renée is a passionate professional who is dedicated in developing solutions for business and creative professionals ensuring they remain competitive and deliver engaging customer experiences. Her creative-thinking skills and technical experience assist customers deliver innovative outcomes for creative and non-traditional creative industries.",
       conferences: ["us2016"]
     },{
-      id: 11,
       avatar: "/img/bio/brucelefebvre.jpg",
       twitter: "brucelefebvre",
       slug: "brucelefebvre",
@@ -163,7 +145,6 @@ module.exports = {
       bio: "Bruce is a programmer at Adobe focused on bringing Experience Manager and the open web together. As a member of the mobile R&D team, he’s most recently been focused on the AEM + PhoneGap integration. When not at his desk he can usually be found outside on his bike..",
       conferences: ["us2016", "eu2016"]
     },{
-      id: 12,
       avatar: "/img/bio/simonmacdonald.jpg",
       twitter: "macdonst",
       slug: "simonmacdonald",
@@ -172,7 +153,6 @@ module.exports = {
       bio: "Simon has over fifteen years of development experience and has worked on a variety of projects including object oriented databases, police communication systems, speech recognition and unified messaging. His current focus is contributing to the open source PhoneGap project to enable developers to create cross platform mobile applications using Web technologies. Simon’s been building web applications since the days they were written using shell scripts and he still has nightmares about those dark days.",
       conferences: ["us2016","eu2016","eu2017"]
     },{
-      id: 24,
       avatar: "/img/bio/purplecabbage.jpg",
       twitter: "purplecabbage",
       slug: "purplecabbage",
@@ -181,7 +161,6 @@ module.exports = {
       bio: "Jesse is a primordial PhoneGap contributor that has been around long enough to see many phonegap-killers come and go. He has written plugins for everything from the device accelerometer to bluetooth connected wearables like the ms-band, across windows, windows phone, android and ios. A self-proclaimed prolific procrastinator, Jesse often loses interest before he has a chance to fi",
       conferences: ["us2016","eu2016","eu2017"]
     },{
-      id: 27,
       avatar: "/img/bio/alexismenard.jpg",
       twitter: "darktears",
       slug: "alexismenard",
@@ -190,7 +169,6 @@ module.exports = {
       bio: "Alexis Menard is a software engineer working at Intel in Oregon as part of the Open Source Technology Center. Here his main focus is on the ever evolving Web Platform, which includes work on W3C standards as well as Blink/Chromium. In the latter projects, he serves as both developer and code reviewer. Alexis is also working on Crosswalk, an HTML5 runtime/webview for Android and Windows where he does a bit of everything. Prior to Intel, Alexis worked on QtWebKit and WebKit itself at the Brazilian Nokia research center known as INdT. Before moving to Brazil, Alexis worked out of Norway, mostly on the Qt framework as a part of Nokia (former Trolltech). He is also a former KDE contributor where he contributed mostly to Plasma, the desktop shell of KDE.",
       conferences: ["us2016"]
     },{
-      id: 13,
       avatar: "/img/bio/lokimeyburg.jpg",
       twitter: "lokimeyburg",
       slug: "lokimeyburg",
@@ -199,7 +177,6 @@ module.exports = {
       bio: "Loki is also the creator of Stacker, an open source project to kickstart the development of iOS apps. Previously he was the first employee at Medeo, a medical startup, that was acquired in 2014. Graduated with Honours in Business and Computer Science from the University of British Columbia.",
       conferences: ["us2016"]
     },{
-      id: 14,
       avatar: "/img/bio/martinposchenrieder.jpg",
       twitter: "mposchenrieder",
       slug: "martinposchenrieder",
@@ -208,7 +185,6 @@ module.exports = {
       bio: "Martin has been working in the mobile industry for most of the past decade. He began his career as an intern for one of the few German handset manufacturers, years before Android and iPhone were launched. After involvement with several app projects, he soon realized that one of the biggest pain-points in development was mobile app testing. In order to ease this pain, he started Testmunk. Testmunk is based in Silicon Valley, and provides automated app testing over the cloud.",
       conferences: ["us2016"]
     },{
-      id: 15,
       avatar: "/img/bio/brianrinaldi.jpg",
       twitter: "remotesynth",
       slug: "brianrinaldi",
@@ -217,7 +193,6 @@ module.exports = {
       bio: "Brian is the Developer Content Manager at Telerik where he helps the Developer Relations team create top notch content for the developer community on the Telerik Developer Network. He is also co-editor of Mobile Web Weekly.",
       conferences: ["us2016"]
     },{
-      id: 16,
       avatar: "/img/bio/ryanjsalva.jpg",
       twitter: "ryanjsalva",
       slug: "ryanjsalva",
@@ -226,7 +201,6 @@ module.exports = {
       bio: "JavaScript developer, Apache Cordova committer, Visual Studio program manager, CrossFitter, sci-fi connoisseur and whiskey enthusiast. With over 15 years of experience in software development, it’s hard to find a corner of the web where he hasn’t worked, but the important thing to know is this: Ryan is a passionate storyteller with deep insight into market forces, technology, user experience and design. Today, he owns tooling for cross-platform mobile app development at Microsoft. Tomorrow, the world.",
       conferences: ["us2016", "eu2016"]
     },{
-      id: 17,
       avatar: "/img/bio/hollyschinsky.jpg",
       twitter: "devgirlFL",
       slug: "hollyschinsky",
@@ -235,7 +209,6 @@ module.exports = {
       bio: "Holly works on the PhoneGap team at Adobe with a heavy focus on Developer Advocacy and Education via her blogging, sample apps and workshops. In her free time she’s usually found running, driving a carpool or hanging out with her family.",
       conferences: ["us2016","eu2016","eu2017"]
     },{
-      id: 28,
       avatar: "/img/bio/bobspencer.jpg",
       slug: "bobspencer",
       name: "Bob Spencer",
@@ -243,7 +216,6 @@ module.exports = {
       bio: "Bob Spencer is a software architect in Intel's Open Source Technology Center where for the past decade his work has been centered on open source developer tools and SDKs. He is the community manager on the Crosswalk Project team. In his free time he will be biking, backpacking, or hanging with his family.",
       conferences: ["us2016"]
     },{
-      id: 20,
       avatar: "/img/bio/masahirotanaka.jpg",
       slug: "masahirotanaka",
       name: "Masahiro Tanaka",
@@ -251,7 +223,6 @@ module.exports = {
       bio: "Masa is the CEO of Monaca Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter.",
       conferences: ["us2016","eu2016"]
     },{
-      id: 29,
       avatar: "/img/bio/jedwatson.jpg",
       slug: "jedwatson",
       twitter: "jedwatson",
@@ -260,7 +231,6 @@ module.exports = {
       bio: "Jed is a founder of Thinkmill, a web and mobile app development agency in Sydney, and has been writing JavaScript since IE6 was new and exciting. A prolific open source contributor, Jed is the driving force behind KeystoneJS - the node.js content management platform - and several major React.js libraries including Elemental UI and TouchstoneJS, which is a UI Framework for hybrid mobile apps.",
       conferences: ["us2016"]
     },{
-      id: 30,
       avatar: "/img/bio/nickvanweerdenburg.jpg",
       slug: "nickvanweerdenburg",
       twitter: "n1cholasv",
@@ -269,7 +239,6 @@ module.exports = {
       bio: "Nick is Rangle.io’s founder, first developer, and now leads the company’s business development and strategy activities. Nick first did server-side JavaScript in 1997 and has 15 years of experience in web software in diverse roles and industries. He is a firm believer in the thin-server, full-JavaScript stack and an active speaker, delivering about a dozen talks each year.",
       conferences: ["us2016"]
     },{
-      id: 26,
       avatar: "/img/bio/tommywilliams-1.jpg",
       twitter: "therealdevgeeks",
       slug: "tommywilliams",
@@ -278,7 +247,6 @@ module.exports = {
       bio: "Tommy is a guitarist, aging punk, and app developer finally working on the PhoneGap team at Adobe. He is focussed on helping developers make beautiful, performant, and secure mobile apps with the web technologies that he loves. He is also a strong advocate for privacy particularly where it intersects app development. Tommy enjoys talking in the third person, vegan food, beer, attempts at humour, and trying to sound humble through self-deprecation.",
       conferences: ["us2016", "eu2017"]
     },{
-      id: 18,
       avatar: "/img/bio/tjvantoll.jpg",
       twitter: "tjvantoll",
       slug: "tjvantoll",
@@ -287,7 +255,6 @@ module.exports = {
       bio: "TJ VanToll is a front-end developer, author, and a senior developer advocate for Telerik. TJ has over a decade of web development experience, including a few years working on the jQuery team. Nowadays, he spends his time helping web developers build mobile apps through projects like Cordova and NativeScript. TJ is @tjvantoll on Twitter and tjvantoll on GitHub.",
       conferences: ["us2016"]
     },{
-      id: 13,
       avatar: "/img/bio/saniyusuf.jpg",
       twitter: "saniyusuf",
       slug: "saniyusuf",
@@ -296,7 +263,6 @@ module.exports = {
       bio: "Sani runs a startup called HAIBRID that uses cross-platform mobile development techniques to create innovative ​mobile ​ solutions. Sani also co-manages the Ionic UK community in UK and has had stints with companies like Microsoft, Huddlebuy & Anritsu in the past.",
       conferences: ["eu2016","eu2017"]
     },{
-      id: 14,
       avatar: "/img/bio/remysharp.jpg",
       twitter: "rem",
       slug: "remysharp",
@@ -305,7 +271,6 @@ module.exports = {
       bio: "Remy is the founder and curator of ffconf, the UK based JavaScript conference. He also ran jQuery for Designers, co-authored Introducing HTML5 (adding all the JavaScripty bits) and likes to grumble on Twitter. Whilst he's not writing articles or running and speaking at conferences, he runs his own development and training company in Brighton called Left Logic. And he built these too: Confwall, jsbin.com, html5demos.com, responsivepx.com, nodemon, mit-license.org, snapbird.org, 5 minute fork and jsconsole.com!",
       conferences: ["eu2016"]
     },{
-      id: 15,
       avatar: "/img/bio/kerrishotts.jpg",
       twitter: "kerrishotts",
       slug: "kerrishotts",
@@ -314,7 +279,6 @@ module.exports = {
       bio: "Kerri Shotts is an IT consultant specializing in mobile hybrid application development. She has used PhoneGap/Cordova for several years while developing enterprise apps for her clients. She is the author of five books about PhoneGap and serves a moderator on the Adobe PhoneGap forum and the PhoneGap Google Group. She started programming on a lowly Commodore 64, and has a fondness for retro technology.",
       conferences: ["eu2016","eu2017"]
     },{
-      id: 16,
       avatar: "/img/bio/nielsleenheer.jpg",
       twitter: "rakaz",
       slug: "nielsleenheer",
@@ -323,7 +287,6 @@ module.exports = {
       bio: "Niels is a founder of Salonhub and creates web applications for a living. He has been using PhoneGap professionally for the last five years. In his free time he runs one of the largest Open Device Labs in the world, created the HTML5test.com website and has recently given a number of talks about Smart TV and game console browsers. He loves to research obscure browsers and submit bug reports.",
       conferences: ["eu2016"]
     },{
-      id: 17,
       avatar: "/img/bio/wildabeast.jpg",
       slug: "wildabeast",
       name: "Ryan Willoughby",
@@ -331,7 +294,6 @@ module.exports = {
       bio: "Ryan works on PhoneGap Build and Cordova. He recently watched The Mist and threw a can of Old Milwaukee at the television in frustration. Not the bourbon sour though.",
       conferences: ["eu2016"]
     },{
-      id: 18,
       avatar: "/img/bio/stevesgill-1.jpg",
       twitter: "stevesgill",
       slug: "stevesgill",
@@ -430,6 +392,14 @@ module.exports = {
       name: "Edouard Lafargue",
       title: "Solution Architect, Adobe",
       bio: "Ed has been with Adobe for 6 years working first in Europe and now in the US as a Solution Architect for the Adobe Marketing Cloud. As a life long technology enthusiast, Ed likes to apply his skills to bring creative solutions to technical challenges, whether he does this for Adobe's customers, or as part of his volunteer engagement with non-profits like Safecast.org",
+      conferences: ["eu2017"]
+    },{
+      avatar: "/img/bio/timoernst.jpg",
+      twitter: "timo_ernst",
+      slug: "timoernst",
+      name: "Timo Ernst",
+      title: "Software Engineer, Freelance",
+      bio: "Timo is a Freelance Software Engineer, Youtuber and Blogger with focus on UI design, working with latest frontend technologies. Living the dream of creating mind-blowing mobile apps using the power of HTML5, CSS3 and JavaScript",
       conferences: ["eu2017"]
     }
   ],
@@ -709,6 +679,11 @@ module.exports = {
         title: "Sworkit: From Side Project to Full Time Venture",
         speakerSlug: "ryanhanna",
         description: "<p>Sworkit had very modest beginnings in 2012 with a humble goal: Build something fun to help Ryan learn to code, and maybe get 100 downloads.</p><p>Now with millions of users and over 45 million workouts completed, Sworkit has gone from a solo side project to a global fitness platform.</p><p>We'll take a transparent look at the key events and build decisions that helped Sworkit get to where it is today. Find out about the various technologies employed at each phase of Sworkit's growth, how to market an app with no budget, and how to successfully generate revenue.</p>"
+      },
+      {
+        title: "Building PhoneGap apps with Vue.js and Framework7",
+        speakerSlug: "timoernst",
+        description: "Vue.js has gained a lot of popularity in the past few years. Since January this year it is finally possible to create native-looking apps with the power of Vue.js, PhoneGap and Framework7. This talk will give a brief introduction to these new libraries as well as demonstrate how developers can get most out of them, including live demos and code examples."
       },
     ],
   },
@@ -1020,7 +995,7 @@ module.exports = {
     var newSpeakerSet = this.speakers.filter(function(speaker){
       if (speaker.conferences.indexOf(conferenceSlug) >= 0){
         id++;
-        speaker.id = id;
+        speaker.id = `${conferenceSlug}-${id}`;
         return true;
       } else {
         return false;
