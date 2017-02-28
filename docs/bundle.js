@@ -25916,13 +25916,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    _react2.default.createElement(
 	                      'span',
 	                      null,
-	                      'Earlybird Conference'
+	                      'Conference'
 	                    ),
 	                    _react2.default.createElement('span', { className: 'leader' }),
 	                    _react2.default.createElement(
 	                      'span',
 	                      null,
-	                      '€120 + VAT'
+	                      '€150 + VAT'
 	                    )
 	                  ),
 	                  _react2.default.createElement(
@@ -25931,13 +25931,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    _react2.default.createElement(
 	                      'span',
 	                      null,
-	                      'EB Conference + Workshops'
+	                      'Conference + Workshops'
 	                    ),
 	                    _react2.default.createElement('span', { className: 'leader' }),
 	                    _react2.default.createElement(
 	                      'span',
 	                      null,
-	                      '€245 + VAT'
+	                      '€275 + VAT'
 	                    )
 	                  )
 	                )

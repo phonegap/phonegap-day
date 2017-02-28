@@ -32,8 +32,8 @@ export default class Eu2017 extends React.Component {
                 <div className="pricing">
                   <h2>Ticket Pricing</h2>
                   <ul>
-                    <li><span>Earlybird Conference</span><span className="leader" /><span>€120 + VAT</span></li>
-                    <li><span>EB Conference + Workshops</span><span className="leader" /><span>€245 + VAT</span></li>
+                    <li><span>Conference</span><span className="leader" /><span>€150 + VAT</span></li>
+                    <li><span>Conference + Workshops</span><span className="leader" /><span>€275 + VAT</span></li>
                   </ul>
                 </div>
                 <a href="https://webconferences.paydro.com/phonegap-day-eu-2017" className="button--cta">Get Tickets</a>
