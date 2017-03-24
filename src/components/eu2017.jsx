@@ -60,6 +60,7 @@ export default class Eu2017 extends React.Component {
             </div>
           </section>
           <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"eu2017"}/>
+          <SessionsSection sessions={sessions} heading={"Schedule"} pageSlug={"eu2017"}/>
           <section className="columns">
             <div className="text-bounds">
               <section className="workshops-section">
@@ -72,6 +73,7 @@ export default class Eu2017 extends React.Component {
               <img src="/img/spaces-herengracht.jpg" alt="Spaces Herengracht" style={imageStyle}/>
             </div>
           </section>
+          <WorkshopsSection workshops={workshops} heading={"Workshop Schedule"} pageSlug={"eu2017"}/>
           <section>
             <div className="text-bounds">
               <h1>Venue</h1>

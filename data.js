@@ -8,7 +8,7 @@ module.exports = {
       name: "Shazron Abdullah",
       title: "Senior Computer Scientist, Adobe",
       bio: "Based in San Francisco, by way of Vancouver, Canada and Singapore, Shaz has nearly two decades of software development experience getting with the nitty gritty of Windows, OS X and iOS and probably helped code something you know. Currently he helps maintain the iOS platform of Apache Cordova and Adobe PhoneGap and has been part of the project for quite some time.",
-      conferences: ["us2016","eu2016"]
+      conferences: ["us2016","eu2016","eu2017"]
     },{
       avatar: "/img/bio/ericalli.jpg",
       twitter: "two2twelve",
@@ -401,6 +401,22 @@ module.exports = {
       title: "Software Engineer, Freelance",
       bio: "Timo is a Freelance Software Engineer, Youtuber and Blogger with focus on UI design, working with latest frontend technologies. Living the dream of creating mind-blowing mobile apps using the power of HTML5, CSS3 and JavaScript",
       conferences: ["eu2017"]
+    },{
+      avatar: "/img/bio/filmaj.jpg",
+      twitter: "filmaj",
+      slug: "filmaj",
+      name: "Fil Maj",
+      title: "Computer Scientist, Adobe",
+      bio: "code, web, mobile, AI, hockey, drumming, beer.",
+      conferences: ["eu2017"]
+    },{
+      avatar: "/img/bio/maxlynch.jpg",
+      twitter: "maxlynch",
+      slug: "maxlynch",
+      name: "Max Lynch",
+      title: "Co-Founder, Ionic",
+      bio: " Max is co-founder of Ionic, focusing on making it easy for web developers to build top quality apps across the app store, mobile web, and desktop. Max lives in Madison, WI with his wife and son, is a soccer (football) fan, and an avid gamer.",
+      conferences: ["eu2017"]
     }
   ],
   sessions: {
@@ -656,34 +672,104 @@ module.exports = {
     us2017: [],
     eu2017: [
       {
-        title: "WebVR: Getting Started with A-Frame and VR View",
-        speakerSlug: "joebowser",
-        description: "Any developer with a modern Android or iOS device and a cardboard viewer can get started making unique experiences relatively quickly. This introductory talk will go over the basics of AFrame will discuss how to to use standard web development practices to bring these experiences quickly across devices, whether they be Cardboard or Daydream-based devices, or Desktop-based VR devices such as the Oculus Rift or HTC Vive. Due to cost and accessibility, this talk will primarily focus on Daydream and Cardboard."
+        time: "8:30am-9:00am",
+        title: "Registration and Breakfast"
       },
       {
-        title: "Cordova and Citizen Science",
-        speakerSlug: "edouardlafargue",
-        description: "Ed will be presenting Safecast:Drive, an Android app that interfaces with the bGeigie Nano Geiger counter, and enables volunteers to submit their nuclear radiation surveys to Safecast.org. The talk will cover the challenges of building a complex app that includes mapping, USB and BLE with good performance, reliability and low power usage , as well as the strong requirements to make it easy to use for non technical volunteers.<br/>Safecast is an international, volunteer-centered organization devoted to open citizen science for the environment. You can find more information at <a href='http://www.safecast.org'>www.safecast.org</a>"
+        time: "9:00am-9:20am",
+        title: "State of Cordova/PG",
+        speakerSlug: "stevesgill"
       },
       {
+        time: "9:20am-10:00am",
         title: "Modern JavaScript and PhoneGap",
         speakerSlug: "kerrishotts",
         description: "JavaScript is changing with new versions of the standard now releasing every year, and lots of proposals being considered for inclusion. Most mobile devices can only support this new world with the help of automation, module loaders and bundlers, and transpilers… but if all of those words sound a little scary, don’t worry — it’s easy to build a workflow that integrates modern JavaScript and PhoneGap together, and in this session we’ll show you how!"
       },
       {
+        time: "10:00am-10:20am",
+        title: "TBD"
+      },
+      {
+        time: "10:20am-10:50am",
+        title: "Break"
+      },
+      {
+        time: "10:50am-11:30am",
+        title: "Building Phonegap apps with ember-cordova",
+        speakerSlug: 'alexblom',
+        description: "This talk will provide new users with a brief introduction to Ember and why it is well suited for a hybrid context. We'll take a brief tour of the core parts, and how to achieve fast rendering speeds. Then, we'll introduce the ember-cordova library and its ecosystem of adapted plugins and tools (such as Icon/Splash generation and Livereload)",
+      },
+      {
+        time: "11:30am-11:50am",
+        title: "TBD"
+      },
+      {
+        time: "11:50am-12:10pm",
         title: "4 Way Databinding For An Offline Mobile Experience",
         speakerSlug: "saniyusuf",
         description: "In today's world, mobile is the primary way we access the internet for our very many important activities. The problem is a lot of apps work great online but become unusable offline. Image if you could not search the previous emails on you mail app when you had no Internet? Creating an offline experience can be challenging with soo many things to worry about like, how best to Sync when the internet comes back or how best to handle conflicts when multiple users change the same data offline? This talk will showcase how we can use PouchDB to achieve 4-way data binding by keeping the Model, View, Serve & Offline Data all in sync while providing the user with a mature offline experience."
       },
       {
+        time: "12:10pm-1:10pm",
+        title: "Lunch"
+      },
+      {
+        time: "1:10pm-1:30pm",
+        title: "TBD",
+        speakerSlug: "shazron",
+      },
+      {
+        time: "1:30pm-2:10pm",
+        title: "Building PhoneGap apps with Vue.js and Framework7",
+        speakerSlug: "timoernst",
+        description: "Vue.js has gained a lot of popularity in the past few years. Since January this year it is finally possible to create native-looking apps with the power of Vue.js, PhoneGap and Framework7. This talk will give a brief introduction to these new libraries as well as demonstrate how developers can get most out of them, including live demos and code examples."
+      },
+      {
+        time: "2:10pm-2:30pm",
+        title: "TBD"
+      },
+      {
+        time: "2:30pm-2:50pm",
+        title: "WebVR: Getting Started with A-Frame and VR View",
+        speakerSlug: "joebowser",
+        description: "Any developer with a modern Android or iOS device and a cardboard viewer can get started making unique experiences relatively quickly. This introductory talk will go over the basics of AFrame will discuss how to to use standard web development practices to bring these experiences quickly across devices, whether they be Cardboard or Daydream-based devices, or Desktop-based VR devices such as the Oculus Rift or HTC Vive. Due to cost and accessibility, this talk will primarily focus on Daydream and Cardboard."
+      },
+      {
+        time: "2:50pm-3:10pm",
+        title: "Cordova and Citizen Science",
+        speakerSlug: "edouardlafargue",
+        description: "Ed will be presenting Safecast:Drive, an Android app that interfaces with the bGeigie Nano Geiger counter, and enables volunteers to submit their nuclear radiation surveys to Safecast.org. The talk will cover the challenges of building a complex app that includes mapping, USB and BLE with good performance, reliability and low power usage , as well as the strong requirements to make it easy to use for non technical volunteers.<br/>Safecast is an international, volunteer-centered organization devoted to open citizen science for the environment. You can find more information at <a href='http://www.safecast.org'>www.safecast.org</a>"
+      },
+      {
+        time: "3:10pm-3:40pm",
+        title: "Break"
+      },
+      {
+        time: "3:40pm-4:20pm",
         title: "Sworkit: From Side Project to Full Time Venture",
         speakerSlug: "ryanhanna",
         description: "<p>Sworkit had very modest beginnings in 2012 with a humble goal: Build something fun to help Ryan learn to code, and maybe get 100 downloads.</p><p>Now with millions of users and over 45 million workouts completed, Sworkit has gone from a solo side project to a global fitness platform.</p><p>We'll take a transparent look at the key events and build decisions that helped Sworkit get to where it is today. Find out about the various technologies employed at each phase of Sworkit's growth, how to market an app with no budget, and how to successfully generate revenue.</p>"
       },
       {
-        title: "Building PhoneGap apps with Vue.js and Framework7",
-        speakerSlug: "timoernst",
-        description: "Vue.js has gained a lot of popularity in the past few years. Since January this year it is finally possible to create native-looking apps with the power of Vue.js, PhoneGap and Framework7. This talk will give a brief introduction to these new libraries as well as demonstrate how developers can get most out of them, including live demos and code examples."
+        time: "4:20pm-4:40pm",
+        title: "Performance Hacks from the Ionic team",
+        speakerSlug: "maxlynch",
+        description: "Building a fast HTML5 mobile app UI framework is no small task. In this talk I'll share what we've learned optimizing everything from scroll performance, to animation, keyboard interactivity, repaints/reflows, and more."
+      },
+      {
+        time: "4:40pm-5:00pm",
+        title: "Music Exploration in PhoneGap",
+        speakerSlug: "purplecabbage",
+        description: "What can you do with sound in phonegap? In this talk I'll explore what you can accomplish with sound in apps from music to noise. How to build a metronome, where timing is crucial. How to build an instrument, where pitch is critical. How to combine the 2 to make a sequencer. Then we'll look at what it takes to make a phonegap synthesizer."
+      },
+      {
+        time: "5:00pm-5:20pm",
+        title: "TBD"
+      },
+      {
+        time: "5:30pm",
+        title: "Networking mixer (light appetizers and drinks)"
       },
     ],
   },
@@ -937,6 +1023,11 @@ module.exports = {
     us2017: [],
     eu2017: [
       {
+        time: "9:30am-10:00am",
+        title: "Registration"
+      },
+      {
+        time: "10:00am-11:30am",
         sessions: [
           {
             title: "App Privacy and Security for PhoneGap Developers",
@@ -944,14 +1035,47 @@ module.exports = {
             description: "Our mobile devices are rich targets packed full of sensors, and ripe for the harvesting of personal information. All too often, developers on deadlines leave security and privacy concerns until the last minute, or don't get around to them at all. This workshop will show not only the importance of security and privacy, but some basic steps we as developers can take to ensure our apps are a safe place for our users (not to mention keeping the app safe from those same users). From avoiding XSS, understanding the whitelist and CSP, to ensuring that what data we do collect is kept safe. This workshop will give you a better understanding of how to ensure privacy and security are a part of your app from day one."
           },
           {
+            title: "WebVR",
+            speakerSlug: ["joebowser","shazron"],
+            description: "WebVR Workshop description here."
+          },
+        ],
+      },
+      {
+        time: "11:30am-12:30pm",
+        title: "Lunch"
+      },
+      {
+        time: "12:30pm-2:00pm",
+        sessions: [
+          {
+            title: "Cross Platform Progressive Web Apps",
+            speakerSlug: "hollyschinsky",
+            description: "In this workshop you'll learn how to build an app that leverages the best of what Progressive Web Apps and PhoneGap have to offer. PWA's are all the rage as of late, but they're currently not supported on iOS, and mobile browsers still don't support every API for accessing certain sensors and hardware features. In this workshop you'll learn how you can build an app that can run as both a PWA and a hybrid app with PhoneGap."
+          },
+          {
+            title: "Creating a Modern PhoneGap Plugin",
+            speakerSlug: ["kerrishotts","purplecabbage"],
+            description: "Creating a PhoneGap plugin doesn’t have to be scary, and it isn’t all that difficult! In this workshop you’ll learn how to create a simple plugin, how to structure your plugin for multi-platform support, how to add it to your projects, and how to test it thoroughly using Cordova’s plugin testing framework."
+          },
+        ],
+      },
+      {
+        time: "2:00pm-2:30pm",
+        title: "Break"
+      },
+      {
+        time: "2:00pm-2:30pm",
+        sessions: [
+          {
             title: "PhoneGap Push Notifications",
             speakerSlug: "simonmacdonald",
             description: "In this workshop we'll walk through adding push notification capabilities to your application. You'll learn how to set up a Firebase Cloud Messaging project for Android notifications and adding push capabilities to your iOS certificate and provisioning profiles. You'll gain an understanding of how to register with your remote push service and handle incoming notifications. Advanced topics will include how to add action buttons, responding to silent push notifications and testing using node.js."
           },
           {
-            title: "Cross Platform Progressive Web Apps",
-            speakerSlug: "hollyschinsky",
-            description: "In this workshop you'll learn how to build an app that leverages the best of what Progressive Web Apps and PhoneGap have to offer. PWA's are all the rage as of late, but they're currently not supported on iOS, and mobile browsers still don't support every API for accessing certain sensors and hardware features. In this workshop you'll learn how you can build an app that can run as both a PWA and a hybrid app with PhoneGap."
+            title: "Testing PhoneGap Apps",
+            speakerSlug: "filmaj",
+            description: ""
           },
         ]
       }
