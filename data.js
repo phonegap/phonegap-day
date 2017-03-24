@@ -1065,7 +1065,7 @@ module.exports = {
         title: "Break"
       },
       {
-        time: "2:00pm-2:30pm",
+        time: "2:30pm-4:00pm",
         sessions: [
           {
             title: "PhoneGap Push Notifications",

@@ -27084,7 +27084,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      time: "2:00pm-2:30pm",
 	      title: "Break"
 	    }, {
-	      time: "2:00pm-2:30pm",
+	      time: "2:30pm-4:00pm",
 	      sessions: [{
 	        title: "PhoneGap Push Notifications",
 	        speakerSlug: "simonmacdonald",
