@@ -406,8 +406,8 @@ module.exports = {
       twitter: "filmaj",
       slug: "filmaj",
       name: "Fil Maj",
-      title: "Computer Scientist, Adobe",
-      bio: "code, web, mobile, AI, hockey, drumming, beer.",
+      title: "Master Exploder, Adobe",
+      bio: "Fil works for Adobe on the PhoneGap team, and was part of Nitobi, the company responsible for the birth of PhoneGap. Fil took a slight career detour and worked for Sauce Labs, where he picked up a focus on reliability, testing and enabling sustainable software engineering. Fil is now back with Adobe and the PhoneGap team, where he strives to apply these learnings.",
       conferences: ["eu2017"]
     },{
       avatar: "/img/bio/maxlynch.jpg",
