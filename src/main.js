@@ -40,7 +40,7 @@ export default (locals, callback) => {
         content:'@garthdb'
       },{
         name:'twitter:title',
-        content:'PhoneGap Day Early Bird Pricing'
+        content:'PhoneGap Day - agenda and workshops announced'
       },{
         name:'twitter:description',
         content:"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017. PhoneGap Day US is scheduled for Fall 2017."

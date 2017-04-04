@@ -135,7 +135,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      content: '@garthdb'
 	    }, {
 	      name: 'twitter:title',
-	      content: 'PhoneGap Day Early Bird Pricing'
+	      content: 'PhoneGap Day - agenda and workshops announced'
 	    }, {
 	      name: 'twitter:description',
 	      content: "PhoneGap Day EU will be in Amsterdam on May 18-19, 2017. PhoneGap Day US is scheduled for Fall 2017."
@@ -25318,7 +25318,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 	else
 	{
-	buf.push("<meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:site\" content=\"@phonegap\"><meta name=\"twitter:creator\" content=\"@garthdb\"><meta name=\"twitter:title\" content=\"PhoneGap Day Early Bird Pricing\"><meta name=\"twitter:description\" content=\"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017.\"><meta name=\"twitter:image\" content=\"http://pgday.phonegap.com/img/twitter-card.png\"><meta name=\"twitter:image:width\" content=\"375\"><meta name=\"twitter:image:height\" content=\"280\"><meta name=\"description\" content=\"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017.\"><meta name=\"keywords\" content=\"HTML,CSS,PhoneGap Day,JavaScript,conference,event\"><meta property=\"og:image\" content=\"http://pgday.phonegap.com/img/ogimage.png\">");
+	buf.push("<meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:site\" content=\"@phonegap\"><meta name=\"twitter:creator\" content=\"@garthdb\"><meta name=\"twitter:title\" content=\"PhoneGap Day - agenda and workshops announced\"><meta name=\"twitter:description\" content=\"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017.\"><meta name=\"twitter:image\" content=\"http://pgday.phonegap.com/img/twitter-card.png\"><meta name=\"twitter:image:width\" content=\"375\"><meta name=\"twitter:image:height\" content=\"280\"><meta name=\"description\" content=\"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017.\"><meta name=\"keywords\" content=\"HTML,CSS,PhoneGap Day,JavaScript,conference,event\"><meta property=\"og:image\" content=\"http://pgday.phonegap.com/img/ogimage.png\">");
 	}
 	buf.push("<title>PhoneGap Day 2017</title><script src=\"//use.typekit.net/exp7awb.js\"></script><script type=\"text/javascript\">try{Typekit.load();}catch(e){}</script><style>" + (null == (jade_interp = locals.css) ? "" : jade_interp) + "</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--><!-- Twitter universal website tag code--><script src=\"//platform.twitter.com/oct.js\" type=\"text/javascript\"></script><script type=\"text/javascript\">twttr.conversion.trackPid('nusbi', { tw_sale_amount: 0, tw_order_quantity: 0 });</script></head><body>" + (null == (jade_interp = locals.pageContent) ? "" : jade_interp) + "</body></html>");;return buf.join("");
 	}
@@ -27062,9 +27062,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        speakerSlug: "tommywilliams",
 	        description: "Our mobile devices are rich targets packed full of sensors, and ripe for the harvesting of personal information. All too often, developers on deadlines leave security and privacy concerns until the last minute, or don't get around to them at all. This workshop will show not only the importance of security and privacy, but some basic steps we as developers can take to ensure our apps are a safe place for our users (not to mention keeping the app safe from those same users). From avoiding XSS, understanding the whitelist and CSP, to ensuring that what data we do collect is kept safe. This workshop will give you a better understanding of how to ensure privacy and security are a part of your app from day one."
 	      }, {
-	        title: "WebVR",
+	        title: "Hacking the A-Frame: An Introduction to WebVR",
 	        speakerSlug: ["joebowser", "shazron"],
-	        description: "WebVR Workshop description here."
+	        description: "This workshop will cover the basics of working with A-Frame, a WebVR framework developed by Mozilla, and will have attendees create and extend an existing WebVR example to support additional 360 images. It will also cover packaging an project developed in AFrame inside a Cordova application, and the various things to consider when developing WebVR for Mobile."
 	      }]
 	    }, {
 	      time: "11:30am-12:30pm",
@@ -27092,7 +27092,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }, {
 	        title: "Testing PhoneGap Apps",
 	        speakerSlug: "filmaj",
-	        description: ""
+	        description: "<p>Building and maintaining high quality PhoneGap apps, like all software, involves testing. In this lab we will cover the following topics, as we work through instrumenting a real app with a test suite to improve it's quality, help avoid regressions and speed up development:</p><ul><li>What is testing, and why do it?</li><li>Unit testing</li><li>Integration testing</li><li>Continuous integration</li></ul>"
 	      }]
 	    }]
 	  },

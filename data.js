@@ -1035,9 +1035,9 @@ module.exports = {
             description: "Our mobile devices are rich targets packed full of sensors, and ripe for the harvesting of personal information. All too often, developers on deadlines leave security and privacy concerns until the last minute, or don't get around to them at all. This workshop will show not only the importance of security and privacy, but some basic steps we as developers can take to ensure our apps are a safe place for our users (not to mention keeping the app safe from those same users). From avoiding XSS, understanding the whitelist and CSP, to ensuring that what data we do collect is kept safe. This workshop will give you a better understanding of how to ensure privacy and security are a part of your app from day one."
           },
           {
-            title: "WebVR",
+            title: "Hacking the A-Frame: An Introduction to WebVR",
             speakerSlug: ["joebowser","shazron"],
-            description: "WebVR Workshop description here."
+            description: "This workshop will cover the basics of working with A-Frame, a WebVR framework developed by Mozilla, and will have attendees create and extend an existing WebVR example to support additional 360 images. It will also cover packaging an project developed in AFrame inside a Cordova application, and the various things to consider when developing WebVR for Mobile."
           },
         ],
       },
@@ -1075,7 +1075,7 @@ module.exports = {
           {
             title: "Testing PhoneGap Apps",
             speakerSlug: "filmaj",
-            description: ""
+            description: "<p>Building and maintaining high quality PhoneGap apps, like all software, involves testing. In this lab we will cover the following topics, as we work through instrumenting a real app with a test suite to improve it's quality, help avoid regressions and speed up development:</p><ul><li>What is testing, and why do it?</li><li>Unit testing</li><li>Integration testing</li><li>Continuous integration</li></ul>"
           },
         ]
       }
