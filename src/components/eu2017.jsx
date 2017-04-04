@@ -86,10 +86,12 @@ export default class Eu2017 extends React.Component {
               <section>
                 <h1>Sponsors</h1>
                 <p>Interested in sponsoring? Email Jen Gray at <a href="mailto:jgray@adobe.com">jgray@adobe.com</a>.</p>
+                <div><a href="http://onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} alt="OnsenUI logo"/></a></div>
+                <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} alt="Monaca logo"/></a></div>
               </section>
               <section>
-                  <h1>Code of Conduct</h1>
-                  <p>Attendees are required to adhere to our <a href="/code-of-conduct.html">code of conduct</a>.</p>
+                <h1>Code of Conduct</h1>
+                <p>Attendees are required to adhere to our <a href="/code-of-conduct.html">code of conduct</a>.</p>
               </section>
             </div>
           </section>

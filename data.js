@@ -221,7 +221,7 @@ module.exports = {
       name: "Masahiro Tanaka",
       title: "CEO, Monaca Corporation",
       bio: "Masa is the CEO of Monaca Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter.",
-      conferences: ["us2016","eu2016"]
+      conferences: ["us2016","eu2016","eu2017"]
     },{
       avatar: "/img/bio/jedwatson.jpg",
       slug: "jedwatson",

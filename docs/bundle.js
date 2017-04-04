@@ -26122,6 +26122,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    'jgray@adobe.com'
 	                  ),
 	                  '.'
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://onsen.io/' },
+	                    _react2.default.createElement('img', { src: '/img/OnsenUI_Logo.svg', width: 300, alt: 'OnsenUI logo' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'div',
+	                  null,
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://monaca.io/' },
+	                    _react2.default.createElement('img', { src: '/img/Monaca_Logo.svg', width: 300, alt: 'Monaca logo' })
+	                  )
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -26385,7 +26403,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    name: "Masahiro Tanaka",
 	    title: "CEO, Monaca Corporation",
 	    bio: "Masa is the CEO of Monaca Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter.",
-	    conferences: ["us2016", "eu2016"]
+	    conferences: ["us2016", "eu2016", "eu2017"]
 	  }, {
 	    avatar: "/img/bio/jedwatson.jpg",
 	    slug: "jedwatson",
