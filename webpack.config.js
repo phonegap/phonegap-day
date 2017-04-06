@@ -1,10 +1,11 @@
-var path = require('path')
-var webpack = require('webpack')
-var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
-var data = require('./data')
-var autoprefixer = require('autoprefixer')
+import path from 'path';
+import webpack from 'webpack';
+import StaticSiteGeneratorPlugin from 'static-site-generator-webpack-plugin';
+import autoprefixer from 'autoprefixer';
+import data from './data';
 
-module.exports = {
+
+export default {
   entry: {
     'main': './src/main.js'
   },

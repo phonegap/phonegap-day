@@ -4,8 +4,8 @@
   "description": "Website for PhoneGap Day",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack --progress --colors",
-    "dev": "webpack-dev-server --progress --colors",
+    "webpack": "node -r babel-register node_modules/.bin/webpack -p --config=webpack.config.js --progress --colors",
+    "dev": "node -r babel-register node_modules/.bin/webpack-dev-server -p --config=webpack.config.js --progress --colors",
     "build:images": "imagemin ./img ./docs/img",
     "build:production": "npm run webpack && npm run build:images",
     "start": "npm run dev"
@@ -25,11 +25,12 @@
   "homepage": "https://github.com/phonegap/phonegap-day",
   "devDependencies": {
     "autoprefixer": "^6.1.2",
-    "babel": "^6.1.18",
-    "babel-core": "^6.2.1",
-    "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.1.18",
-    "babel-preset-react": "^6.1.18",
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-register": "^6.24.0",
     "circular-json": "^0.3.0",
     "css-loader": "^0.23.0",
     "history": "1.17.0",
@@ -43,7 +44,8 @@
     "react-router": "^1.0.1",
     "scroll-behavior": "^0.3.0",
     "static-site-generator-webpack-plugin": "^1.3.0",
-    "stylus-loader": "^1.4.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   }
