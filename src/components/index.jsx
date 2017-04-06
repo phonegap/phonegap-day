@@ -5,6 +5,9 @@ export default class Index extends React.Component {
   render(){
     return(
       <div className="splash--contents">
+        <div className="splash--eu2017">
+          <Link to="/eu2017/" />
+        </div>
         <div className="splash--us2016">
           <div className="splash--images">
             <div className="splash--image" />
@@ -19,9 +22,6 @@ export default class Index extends React.Component {
               </form>
             </section>
           </div>
-        </div>
-        <div className="splash--eu2017">
-          <Link to="/eu2017/" />
         </div>
       </div>
     )
