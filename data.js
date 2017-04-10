@@ -122,8 +122,8 @@ export default {
       twitter: "heryandotus",
       slug: "ryanhanna",
       name: "Ryan Hanna",
-      title: "Director of Engineering, Sworkit",
-      bio: "Ryan began learning to code online in 2012 and grew his side project into a top Health and Fitness app with over 10 million downloads. He is also a co-organizer of codebar.io in Brighton, England.",
+      title: "VP of Engineering, Sworkit",
+      bio: "Ryan began learning to code online in 2012 and grew his side project into a top Health and Fitness app with over 20 million users. He is also a co-organizer of codebar.io in Brighton, England.",
       conferences: ["us2016","eu2017"],
       twitterCard: {
         eu2017: '/img/speaker-cards/eu2017/ryanhanna.png'
