@@ -785,7 +785,7 @@ export default {
       },
       new Session({
         time: "1:10pm-1:30pm",
-        title: "TBD",
+        title: "Grow the Community",
         speakerSlug: "shazron",
         description: ''
       }),
@@ -795,51 +795,49 @@ export default {
         speakerSlug: "timoernst",
         description: "Vue.js has gained a lot of popularity in the past few years. Since January this year it is finally possible to create native-looking apps with the power of Vue.js, PhoneGap and Framework7. This talk will give a brief introduction to these new libraries as well as demonstrate how developers can get most out of them, including live demos and code examples."
       }),
-      {
-        time: "2:10pm-2:30pm",
-        title: "TBD"
-      },
       new Session({
-        time: "2:30pm-2:50pm",
+        time: "2:10pm-2:40pm",
+        title: "Web Components: creating reusable user interface",
+        speakerSlug: "masahirotanaka",
+        description: "",
+      }),
+      new Session({
+        time: "2:40pm-3:00pm",
         title: "WebVR: Getting Started with A-Frame and VR View",
         speakerSlug: "joebowser",
         description: "Any developer with a modern Android or iOS device and a cardboard viewer can get started making unique experiences relatively quickly. This introductory talk will go over the basics of AFrame will discuss how to to use standard web development practices to bring these experiences quickly across devices, whether they be Cardboard or Daydream-based devices, or Desktop-based VR devices such as the Oculus Rift or HTC Vive. Due to cost and accessibility, this talk will primarily focus on Daydream and Cardboard."
       }),
       new Session({
-        time: "2:50pm-3:10pm",
+        time: "3:00pm-3:20pm",
         title: "Cordova and Citizen Science",
         speakerSlug: "edouardlafargue",
         description: "Ed will be presenting Safecast:Drive, an Android app that interfaces with the bGeigie Nano Geiger counter, and enables volunteers to submit their nuclear radiation surveys to Safecast.org. The talk will cover the challenges of building a complex app that includes mapping, USB and BLE with good performance, reliability and low power usage , as well as the strong requirements to make it easy to use for non technical volunteers.<br/>Safecast is an international, volunteer-centered organization devoted to open citizen science for the environment. You can find more information at <a href='http://www.safecast.org'>www.safecast.org</a>"
       }),
       {
-        time: "3:10pm-3:40pm",
+        time: "3:20pm-3:50pm",
         title: "Break"
       },
       new Session({
-        time: "3:40pm-4:20pm",
+        time: "3:50pm-4:30pm",
         title: "Sworkit: From Side Project to Full Time Venture",
         speakerSlug: "ryanhanna",
         description: "<p>Sworkit had very modest beginnings in 2012 with a humble goal: Build something fun to help Ryan learn to code, and maybe get 100 downloads.</p><p>Now with millions of users and over 45 million workouts completed, Sworkit has gone from a solo side project to a global fitness platform.</p><p>We'll take a transparent look at the key events and build decisions that helped Sworkit get to where it is today. Find out about the various technologies employed at each phase of Sworkit's growth, how to market an app with no budget, and how to successfully generate revenue.</p>"
       }),
       new Session({
-        time: "4:20pm-4:40pm",
+        time: "4:30pm-4:50pm",
         title: "Performance Hacks from the Ionic team",
         speakerSlug: "maxlynch",
         description: "Building a fast HTML5 mobile app UI framework is no small task. In this talk I'll share what we've learned optimizing everything from scroll performance, to animation, keyboard interactivity, repaints/reflows, and more."
       }),
       new Session({
-        time: "4:40pm-5:00pm",
+        time: "4:50pm-5:10pm",
         title: "Music Exploration in PhoneGap",
         speakerSlug: "purplecabbage",
         description: "What can you do with sound in phonegap? In this talk I'll explore what you can accomplish with sound in apps from music to noise. How to build a metronome, where timing is crucial. How to build an instrument, where pitch is critical. How to combine the 2 to make a sequencer. Then we'll look at what it takes to make a phonegap synthesizer."
       }),
       {
-        time: "5:00pm-5:20pm",
-        title: "TBD"
-      },
-      {
         time: "5:30pm",
-        title: "Networking mixer (light appetizers and drinks)"
+        title: "PUB MIXER"
       },
     ],
   },
