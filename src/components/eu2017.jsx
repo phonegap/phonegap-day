@@ -89,6 +89,7 @@ export default class Eu2017 extends React.Component {
                 <div><a href="http://onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} alt="OnsenUI logo"/></a></div>
                 <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} alt="Monaca logo"/></a></div>
                 <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} alt="Ionic logo"/></a></div>
+                <div><a href="https://www.wikitude.com/"><img src="/img/Wikitude_Logo.png" width={310} alt="Wikitude logo"/></a></div>
               </section>
               <section>
                 <h1>Code of Conduct</h1>
