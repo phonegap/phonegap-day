@@ -1098,9 +1098,9 @@ export default {
         time: "10:00am-11:30am",
         sessions: [
           new Workshop({
-            title: "App Privacy and Security for PhoneGap Developers",
-            speakerSlug: "tommywilliams",
-            description: "Our mobile devices are rich targets packed full of sensors, and ripe for the harvesting of personal information. All too often, developers on deadlines leave security and privacy concerns until the last minute, or don't get around to them at all. This workshop will show not only the importance of security and privacy, but some basic steps we as developers can take to ensure our apps are a safe place for our users (not to mention keeping the app safe from those same users). From avoiding XSS, understanding the whitelist and CSP, to ensuring that what data we do collect is kept safe. This workshop will give you a better understanding of how to ensure privacy and security are a part of your app from day one."
+            title: "Testing PhoneGap Apps",
+            speakerSlug: "filmaj",
+            description: "<p>Building and maintaining high quality PhoneGap apps, like all software, involves testing. In this lab we will cover the following topics, as we work through instrumenting a real app with a test suite to improve it's quality, help avoid regressions and speed up development:</p><ul><li>What is testing, and why do it?</li><li>Unit testing</li><li>Integration testing</li><li>Continuous integration</li></ul>"
           }),
           new Workshop({
             title: "Hacking the A-Frame: An Introduction to WebVR",
@@ -1141,9 +1141,9 @@ export default {
             description: "In this workshop we'll walk through adding push notification capabilities to your application. You'll learn how to set up a Firebase Cloud Messaging project for Android notifications and adding push capabilities to your iOS certificate and provisioning profiles. You'll gain an understanding of how to register with your remote push service and handle incoming notifications. Advanced topics will include how to add action buttons, responding to silent push notifications and testing using node.js."
           }),
           new Workshop({
-            title: "Testing PhoneGap Apps",
-            speakerSlug: "filmaj",
-            description: "<p>Building and maintaining high quality PhoneGap apps, like all software, involves testing. In this lab we will cover the following topics, as we work through instrumenting a real app with a test suite to improve it's quality, help avoid regressions and speed up development:</p><ul><li>What is testing, and why do it?</li><li>Unit testing</li><li>Integration testing</li><li>Continuous integration</li></ul>"
+            title: "App Privacy and Security for PhoneGap Developers",
+            speakerSlug: "tommywilliams",
+            description: "Our mobile devices are rich targets packed full of sensors, and ripe for the harvesting of personal information. All too often, developers on deadlines leave security and privacy concerns until the last minute, or don't get around to them at all. This workshop will show not only the importance of security and privacy, but some basic steps we as developers can take to ensure our apps are a safe place for our users (not to mention keeping the app safe from those same users). From avoiding XSS, understanding the whitelist and CSP, to ensuring that what data we do collect is kept safe. This workshop will give you a better understanding of how to ensure privacy and security are a part of your app from day one."
           }),
         ]
       }
