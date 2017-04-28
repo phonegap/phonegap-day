@@ -482,6 +482,16 @@ export default {
       twitterCard: {
         eu2017: '/img/speaker-cards/eu2017/maxlynch.png'
       },
+    },{
+      avatar: "/img/bio/andreasfotschl.jpg",
+      slug: "andreasfotschl",
+      name: "Andreas Fötschl",
+      title: "Director Solution Architecture, Wikitude",
+      bio: "Andreas already played around with Augmented Reality on Android Simulators prior to the release of the first Android device. He is meanwhile assisting customers in software architecture and integration of Wikitude’s product suite.",
+      conferences: ["eu2017"],
+      twitterCard: {
+        eu2017: '/img/speaker-cards/eu2017/andreasfotschl.png'
+      },
     }
   ],
   sessions: {
@@ -755,10 +765,12 @@ export default {
         speakerSlug: "kerrishotts",
         description: "JavaScript is changing with new versions of the standard now releasing every year, and lots of proposals being considered for inclusion. Most mobile devices can only support this new world with the help of automation, module loaders and bundlers, and transpilers… but if all of those words sound a little scary, don’t worry — it’s easy to build a workflow that integrates modern JavaScript and PhoneGap together, and in this session we’ll show you how!"
       }),
-      {
+      new Session({
         time: "10:00am-10:20am",
-        title: "TBD"
-      },
+        title: "Augmented Reality - flavours and challenges",
+        speakerSlug: "andreasfotschl",
+        description: "Thanks to Niantic the world now knows what augmented reality is. But did you know that the AR technology behind Pokemon Go is already more than 8 years old? In this session, Andreas will give you an overview of the three main categories of AR technology, what they are capable of and how they will empower your Cordova-based app."
+      }),
       {
         time: "10:20am-10:50am",
         title: "Break"
