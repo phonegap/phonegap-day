@@ -159,11 +159,14 @@ select {
   height: 100%;
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
 }
@@ -185,15 +188,19 @@ select {
   width: 100%;
   height: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
   overflow: hidden;
@@ -202,18 +209,20 @@ select {
   background: url("/img/pgday-us.svg") no-repeat center;
   background-size: contain;
   -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
 }
 .splash--image:last-child {
   background: url("/img/pgd_logo.svg") no-repeat center;
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   box-sizing: border-box;
   margin: 60px;
 }
-.splash--us2016 {
+.splash--us2017 {
   background: #27a1c5;
 }
 .splash--eu2016 {
@@ -230,6 +239,7 @@ select {
   .splash--contents {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -239,7 +249,7 @@ select {
   .splash--image:first-child {
     display: none;
   }
-  .splash--us2016 {
+  .splash--us2017 {
     background: url("/img/buildbot-line.svg") no-repeat center #27a1c5;
     background-size: cover;
   }
@@ -333,16 +343,19 @@ a:hover {
 }
 .header-title .pricing li {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-size: 1rem;
 }
 .header-title .pricing li span {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 .header-title .pricing .leader {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   border-bottom: 2px dotted;
@@ -1024,16 +1037,20 @@ a:hover {
 .subscribe-form--splash {
   min-height: 40vh;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1046,18 +1063,22 @@ a:hover {
 }
 .subscribe-form--splash form {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   box-sizing: border-box;
   padding: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
@@ -1078,6 +1099,7 @@ a:hover {
   .subscribe-form--splash form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
   }
@@ -1113,12 +1135,15 @@ a:hover {
 }
 .subscribe-form--eu form {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1401,10 +1426,12 @@ a:hover {
 .workshop--list {
   list-style: none;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid rgba(3,51,81,0.2);
@@ -1535,6 +1562,7 @@ workshop--title {
   .workshop--list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
   }
@@ -1612,4 +1640,4 @@ workshop--title {
             column-count: 2;
   }
 }
-</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--><!-- Twitter universal website tag code--><script src="//platform.twitter.com/oct.js" type="text/javascript"></script><script type="text/javascript">twttr.conversion.trackPid('nusbi', { tw_sale_amount: 0, tw_order_quantity: 0 });</script></head><body><div id="react-output" data-reactid=".174o8rb8tqy" data-react-checksum="-1826009351"><div id="content" class="speaker-page-content" data-reactid=".174o8rb8tqy.0"><header class="speaker-page--header" data-reactid=".174o8rb8tqy.0.0"><a class="" href="/eu2017/" data-reactid=".174o8rb8tqy.0.0.0"><img src="/img/pgd_logo_eu-2017.svg" alt="PhoneGap Day EU logo" data-reactid=".174o8rb8tqy.0.0.0.0"/></a></header><div class="text-bounds speaker" data-reactid=".174o8rb8tqy.0.1"><a class="" href="/eu2017/" data-reactid=".174o8rb8tqy.0.1.0"><span data-reactid=".174o8rb8tqy.0.1.0.0">&lt; </span><span data-reactid=".174o8rb8tqy.0.1.0.1">Home</span></a><div data-reactid=".174o8rb8tqy.0.1.1"><img class="speaker--photo" src="/img/bio/filmaj.jpg" alt="Fil Maj" data-reactid=".174o8rb8tqy.0.1.1.0"/></div><h1 class="speaker--name" data-reactid=".174o8rb8tqy.0.1.2">Fil Maj</h1><h2 class="speaker--title" data-reactid=".174o8rb8tqy.0.1.3">Master Exploder, Adobe</h2><div class="speaker--bio" data-reactid=".174o8rb8tqy.0.1.4">Fil works for Adobe on the PhoneGap team, and was part of Nitobi, the company responsible for the birth of PhoneGap. Fil took a slight career detour and worked for Sauce Labs, where he picked up a focus on reliability, testing and enabling sustainable software engineering. Fil is now back with Adobe and the PhoneGap team, where he strives to apply these learnings.</div><div data-reactid=".174o8rb8tqy.0.1.5"><a href="https://twitter.com/filmaj" data-reactid=".174o8rb8tqy.0.1.5.0"><span data-reactid=".174o8rb8tqy.0.1.5.0.0">@</span><span data-reactid=".174o8rb8tqy.0.1.5.0.1">filmaj</span></a></div><div class="workshops" data-reactid=".174o8rb8tqy.0.1.7"><h2 class="sessions--heading" data-reactid=".174o8rb8tqy.0.1.7.0">Workshop</h2><div class="session" data-reactid=".174o8rb8tqy.0.1.7.1:$10=200am-11=230am"><h3 class="session--title" data-reactid=".174o8rb8tqy.0.1.7.1:$10=200am-11=230am.0">Testing PhoneGap Apps</h3><div class="session--time" data-reactid=".174o8rb8tqy.0.1.7.1:$10=200am-11=230am.1">10:00am-11:30am</div><div class="session--description" data-reactid=".174o8rb8tqy.0.1.7.1:$10=200am-11=230am.2"><div><p>Building and maintaining high quality PhoneGap apps, like all software, involves testing. In this lab we will cover the following topics, as we work through instrumenting a real app with a test suite to improve it's quality, help avoid regressions and speed up development:</p><ul><li>What is testing, and why do it?</li><li>Unit testing</li><li>Integration testing</li><li>Continuous integration</li></ul></div></div></div></div></div></div><script id="initial-props" type="application/json" data-reactid=".174o8rb8tqy.1">{"history":{},"location":{"pathname":"/eu2017/speaker/filmaj","search":"","hash":"","state":null,"action":"POP","key":"0vz9vy"},"params":{"slug":"filmaj"},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/eu2017/"},{"path":"/eu2017/speaker/:slug"}]},"routeParams":{},"routes":["~route","~route~childRoutes~1"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~childRoutes~1","routeParams":{"slug":"filmaj"},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".174o8rb8tqy","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".174o8rb8tqy","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":240,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":239,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".174o8rb8tqy.2"></script></div></body></html>
+</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--><!-- Twitter universal website tag code--><script src="//platform.twitter.com/oct.js" type="text/javascript"></script><script type="text/javascript">twttr.conversion.trackPid('nusbi', { tw_sale_amount: 0, tw_order_quantity: 0 });</script></head><body><div id="react-output" data-reactid=".1784waf2bso" data-react-checksum="915163831"><div id="content" class="speaker-page-content" data-reactid=".1784waf2bso.0"><header class="speaker-page--header" data-reactid=".1784waf2bso.0.0"><a class="" href="/eu2017/" data-reactid=".1784waf2bso.0.0.0"><img src="/img/pgd_logo_eu-2017.svg" alt="PhoneGap Day EU logo" data-reactid=".1784waf2bso.0.0.0.0"/></a></header><div class="text-bounds speaker" data-reactid=".1784waf2bso.0.1"><a class="" href="/eu2017/" data-reactid=".1784waf2bso.0.1.0"><span data-reactid=".1784waf2bso.0.1.0.0">&lt; </span><span data-reactid=".1784waf2bso.0.1.0.1">Home</span></a><div data-reactid=".1784waf2bso.0.1.1"><img class="speaker--photo" src="/img/bio/filmaj.jpg" alt="Fil Maj" data-reactid=".1784waf2bso.0.1.1.0"/></div><h1 class="speaker--name" data-reactid=".1784waf2bso.0.1.2">Fil Maj</h1><h2 class="speaker--title" data-reactid=".1784waf2bso.0.1.3">Master Exploder, Adobe</h2><div class="speaker--bio" data-reactid=".1784waf2bso.0.1.4">Fil works for Adobe on the PhoneGap team, and was part of Nitobi, the company responsible for the birth of PhoneGap. Fil took a slight career detour and worked for Sauce Labs, where he picked up a focus on reliability, testing and enabling sustainable software engineering. Fil is now back with Adobe and the PhoneGap team, where he strives to apply these learnings.</div><div data-reactid=".1784waf2bso.0.1.5"><a href="https://twitter.com/filmaj" data-reactid=".1784waf2bso.0.1.5.0"><span data-reactid=".1784waf2bso.0.1.5.0.0">@</span><span data-reactid=".1784waf2bso.0.1.5.0.1">filmaj</span></a></div><div class="workshops" data-reactid=".1784waf2bso.0.1.7"><h2 class="sessions--heading" data-reactid=".1784waf2bso.0.1.7.0">Workshop</h2><div class="session" data-reactid=".1784waf2bso.0.1.7.1:$10=200am-11=230am"><h3 class="session--title" data-reactid=".1784waf2bso.0.1.7.1:$10=200am-11=230am.0">Testing PhoneGap Apps</h3><div class="session--time" data-reactid=".1784waf2bso.0.1.7.1:$10=200am-11=230am.1">10:00am-11:30am</div><div class="session--description" data-reactid=".1784waf2bso.0.1.7.1:$10=200am-11=230am.2"><div><p>Building and maintaining high quality PhoneGap apps, like all software, involves testing. In this lab we will cover the following topics, as we work through instrumenting a real app with a test suite to improve it's quality, help avoid regressions and speed up development:</p><ul><li>What is testing, and why do it?</li><li>Unit testing</li><li>Integration testing</li><li>Continuous integration</li></ul></div></div></div></div></div></div><script id="initial-props" type="application/json" data-reactid=".1784waf2bso.1">{"history":{},"location":{"pathname":"/eu2017/speaker/filmaj","search":"","hash":"","state":null,"action":"POP","key":"bhxg79"},"params":{"slug":"filmaj"},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/eu2017/"},{"path":"/eu2017/speaker/:slug"}]},"routeParams":{},"routes":["~route","~route~childRoutes~1"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~childRoutes~1","routeParams":{"slug":"filmaj"},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".1784waf2bso","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".1784waf2bso","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":241,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":240,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".1784waf2bso.2"></script></div></body></html>

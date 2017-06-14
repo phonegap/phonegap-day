@@ -159,11 +159,14 @@ select {
   height: 100%;
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
 }
@@ -185,15 +188,19 @@ select {
   width: 100%;
   height: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
   overflow: hidden;
@@ -202,18 +209,20 @@ select {
   background: url("/img/pgday-us.svg") no-repeat center;
   background-size: contain;
   -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
 }
 .splash--image:last-child {
   background: url("/img/pgd_logo.svg") no-repeat center;
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   box-sizing: border-box;
   margin: 60px;
 }
-.splash--us2016 {
+.splash--us2017 {
   background: #27a1c5;
 }
 .splash--eu2016 {
@@ -230,6 +239,7 @@ select {
   .splash--contents {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -239,7 +249,7 @@ select {
   .splash--image:first-child {
     display: none;
   }
-  .splash--us2016 {
+  .splash--us2017 {
     background: url("/img/buildbot-line.svg") no-repeat center #27a1c5;
     background-size: cover;
   }
@@ -333,16 +343,19 @@ a:hover {
 }
 .header-title .pricing li {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-size: 1rem;
 }
 .header-title .pricing li span {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 .header-title .pricing .leader {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   border-bottom: 2px dotted;
@@ -1024,16 +1037,20 @@ a:hover {
 .subscribe-form--splash {
   min-height: 40vh;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1046,18 +1063,22 @@ a:hover {
 }
 .subscribe-form--splash form {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   box-sizing: border-box;
   padding: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
@@ -1078,6 +1099,7 @@ a:hover {
   .subscribe-form--splash form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
   }
@@ -1113,12 +1135,15 @@ a:hover {
 }
 .subscribe-form--eu form {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1401,10 +1426,12 @@ a:hover {
 .workshop--list {
   list-style: none;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid rgba(3,51,81,0.2);
@@ -1535,6 +1562,7 @@ workshop--title {
   .workshop--list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
   }
@@ -1612,4 +1640,4 @@ workshop--title {
             column-count: 2;
   }
 }
-</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--><!-- Twitter universal website tag code--><script src="//platform.twitter.com/oct.js" type="text/javascript"></script><script type="text/javascript">twttr.conversion.trackPid('nusbi', { tw_sale_amount: 0, tw_order_quantity: 0 });</script></head><body><div id="react-output" data-reactid=".165ta3cqdbo" data-react-checksum="-219102349"><div id="content" class="speaker-page-content" data-reactid=".165ta3cqdbo.0"><header class="speaker-page--header" data-reactid=".165ta3cqdbo.0.0"><a class="" href="/eu2017/" data-reactid=".165ta3cqdbo.0.0.0"><img src="/img/pgd_logo_eu-2017.svg" alt="PhoneGap Day EU logo" data-reactid=".165ta3cqdbo.0.0.0.0"/></a></header><div class="text-bounds speaker" data-reactid=".165ta3cqdbo.0.1"><a class="" href="/eu2017/" data-reactid=".165ta3cqdbo.0.1.0"><span data-reactid=".165ta3cqdbo.0.1.0.0">&lt; </span><span data-reactid=".165ta3cqdbo.0.1.0.1">Home</span></a><div data-reactid=".165ta3cqdbo.0.1.1"><img class="speaker--photo" src="/img/bio/kerrishotts.jpg" alt="Kerri Shotts" data-reactid=".165ta3cqdbo.0.1.1.0"/></div><h1 class="speaker--name" data-reactid=".165ta3cqdbo.0.1.2">Kerri Shotts</h1><h2 class="speaker--title" data-reactid=".165ta3cqdbo.0.1.3">Developer, Author, Photographer</h2><div class="speaker--bio" data-reactid=".165ta3cqdbo.0.1.4">Kerri Shotts is an IT consultant specializing in mobile hybrid application development. She has used PhoneGap/Cordova for several years while developing enterprise apps for her clients. She is the author of five books about PhoneGap and serves a moderator on the Adobe PhoneGap forum and the PhoneGap Google Group. She started programming on a lowly Commodore 64, and has a fondness for retro technology.</div><div data-reactid=".165ta3cqdbo.0.1.5"><a href="https://twitter.com/kerrishotts" data-reactid=".165ta3cqdbo.0.1.5.0"><span data-reactid=".165ta3cqdbo.0.1.5.0.0">@</span><span data-reactid=".165ta3cqdbo.0.1.5.0.1">kerrishotts</span></a></div><div class="sessions" data-reactid=".165ta3cqdbo.0.1.6"><h2 class="sessions--heading" data-reactid=".165ta3cqdbo.0.1.6.0">Session</h2><div class="session" data-reactid=".165ta3cqdbo.0.1.6.1:$9=220am-10=200am"><h3 class="session--title" data-reactid=".165ta3cqdbo.0.1.6.1:$9=220am-10=200am.0">Modern JavaScript and PhoneGap</h3><div class="session--time" data-reactid=".165ta3cqdbo.0.1.6.1:$9=220am-10=200am.1">9:20am-10:00am</div><div class="session--description" data-reactid=".165ta3cqdbo.0.1.6.1:$9=220am-10=200am.2"><div>JavaScript is changing with new versions of the standard now releasing every year, and lots of proposals being considered for inclusion. Most mobile devices can only support this new world with the help of automation, module loaders and bundlers, and transpilers… but if all of those words sound a little scary, don’t worry — it’s easy to build a workflow that integrates modern JavaScript and PhoneGap together, and in this session we’ll show you how!</div></div></div></div><div class="workshops" data-reactid=".165ta3cqdbo.0.1.7"><h2 class="sessions--heading" data-reactid=".165ta3cqdbo.0.1.7.0">Workshop</h2><div class="session" data-reactid=".165ta3cqdbo.0.1.7.1:$12=230pm-2=200pm"><h3 class="session--title" data-reactid=".165ta3cqdbo.0.1.7.1:$12=230pm-2=200pm.0">Creating a Modern PhoneGap Plugin</h3><div class="session--time" data-reactid=".165ta3cqdbo.0.1.7.1:$12=230pm-2=200pm.1">12:30pm-2:00pm</div><div class="session--description" data-reactid=".165ta3cqdbo.0.1.7.1:$12=230pm-2=200pm.2"><div>Creating a PhoneGap plugin doesn’t have to be scary, and it isn’t all that difficult! In this workshop you’ll learn how to create a simple plugin, how to structure your plugin for multi-platform support, how to add it to your projects, and how to test it thoroughly using Cordova’s plugin testing framework.</div></div></div></div></div></div><script id="initial-props" type="application/json" data-reactid=".165ta3cqdbo.1">{"history":{},"location":{"pathname":"/eu2017/speaker/kerrishotts","search":"","hash":"","state":null,"action":"POP","key":"tpnkeo"},"params":{"slug":"kerrishotts"},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/eu2017/"},{"path":"/eu2017/speaker/:slug"}]},"routeParams":{},"routes":["~route","~route~childRoutes~1"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~childRoutes~1","routeParams":{"slug":"kerrishotts"},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".165ta3cqdbo","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".165ta3cqdbo","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":206,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":205,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".165ta3cqdbo.2"></script></div></body></html>
+</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--><!-- Twitter universal website tag code--><script src="//platform.twitter.com/oct.js" type="text/javascript"></script><script type="text/javascript">twttr.conversion.trackPid('nusbi', { tw_sale_amount: 0, tw_order_quantity: 0 });</script></head><body><div id="react-output" data-reactid=".11ar390lu1k" data-react-checksum="-1617840477"><div id="content" class="speaker-page-content" data-reactid=".11ar390lu1k.0"><header class="speaker-page--header" data-reactid=".11ar390lu1k.0.0"><a class="" href="/eu2017/" data-reactid=".11ar390lu1k.0.0.0"><img src="/img/pgd_logo_eu-2017.svg" alt="PhoneGap Day EU logo" data-reactid=".11ar390lu1k.0.0.0.0"/></a></header><div class="text-bounds speaker" data-reactid=".11ar390lu1k.0.1"><a class="" href="/eu2017/" data-reactid=".11ar390lu1k.0.1.0"><span data-reactid=".11ar390lu1k.0.1.0.0">&lt; </span><span data-reactid=".11ar390lu1k.0.1.0.1">Home</span></a><div data-reactid=".11ar390lu1k.0.1.1"><img class="speaker--photo" src="/img/bio/kerrishotts.jpg" alt="Kerri Shotts" data-reactid=".11ar390lu1k.0.1.1.0"/></div><h1 class="speaker--name" data-reactid=".11ar390lu1k.0.1.2">Kerri Shotts</h1><h2 class="speaker--title" data-reactid=".11ar390lu1k.0.1.3">Developer, Author, Photographer</h2><div class="speaker--bio" data-reactid=".11ar390lu1k.0.1.4">Kerri Shotts is an IT consultant specializing in mobile hybrid application development. She has used PhoneGap/Cordova for several years while developing enterprise apps for her clients. She is the author of five books about PhoneGap and serves a moderator on the Adobe PhoneGap forum and the PhoneGap Google Group. She started programming on a lowly Commodore 64, and has a fondness for retro technology.</div><div data-reactid=".11ar390lu1k.0.1.5"><a href="https://twitter.com/kerrishotts" data-reactid=".11ar390lu1k.0.1.5.0"><span data-reactid=".11ar390lu1k.0.1.5.0.0">@</span><span data-reactid=".11ar390lu1k.0.1.5.0.1">kerrishotts</span></a></div><div class="sessions" data-reactid=".11ar390lu1k.0.1.6"><h2 class="sessions--heading" data-reactid=".11ar390lu1k.0.1.6.0">Session</h2><div class="session" data-reactid=".11ar390lu1k.0.1.6.1:$9=220am-10=200am"><h3 class="session--title" data-reactid=".11ar390lu1k.0.1.6.1:$9=220am-10=200am.0">Modern JavaScript and PhoneGap</h3><div class="session--time" data-reactid=".11ar390lu1k.0.1.6.1:$9=220am-10=200am.1">9:20am-10:00am</div><div class="session--description" data-reactid=".11ar390lu1k.0.1.6.1:$9=220am-10=200am.2"><div>JavaScript is changing with new versions of the standard now releasing every year, and lots of proposals being considered for inclusion. Most mobile devices can only support this new world with the help of automation, module loaders and bundlers, and transpilers… but if all of those words sound a little scary, don’t worry — it’s easy to build a workflow that integrates modern JavaScript and PhoneGap together, and in this session we’ll show you how!</div></div></div></div><div class="workshops" data-reactid=".11ar390lu1k.0.1.7"><h2 class="sessions--heading" data-reactid=".11ar390lu1k.0.1.7.0">Workshop</h2><div class="session" data-reactid=".11ar390lu1k.0.1.7.1:$12=230pm-2=200pm"><h3 class="session--title" data-reactid=".11ar390lu1k.0.1.7.1:$12=230pm-2=200pm.0">Creating a Modern PhoneGap Plugin</h3><div class="session--time" data-reactid=".11ar390lu1k.0.1.7.1:$12=230pm-2=200pm.1">12:30pm-2:00pm</div><div class="session--description" data-reactid=".11ar390lu1k.0.1.7.1:$12=230pm-2=200pm.2"><div>Creating a PhoneGap plugin doesn’t have to be scary, and it isn’t all that difficult! In this workshop you’ll learn how to create a simple plugin, how to structure your plugin for multi-platform support, how to add it to your projects, and how to test it thoroughly using Cordova’s plugin testing framework.</div></div></div></div></div></div><script id="initial-props" type="application/json" data-reactid=".11ar390lu1k.1">{"history":{},"location":{"pathname":"/eu2017/speaker/kerrishotts","search":"","hash":"","state":null,"action":"POP","key":"pyj5cr"},"params":{"slug":"kerrishotts"},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/eu2017/"},{"path":"/eu2017/speaker/:slug"}]},"routeParams":{},"routes":["~route","~route~childRoutes~1"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~childRoutes~1","routeParams":{"slug":"kerrishotts"},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".11ar390lu1k","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".11ar390lu1k","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":207,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":206,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".11ar390lu1k.2"></script></div></body></html>

@@ -8,7 +8,7 @@ export default class Index extends React.Component {
         <div className="splash--eu2017">
           <Link to="/eu2017/" />
         </div>
-        <div className="splash--us2016">
+        <div className="splash--us2017">
           <div className="splash--images">
             <div className="splash--image" />
             <section className="subscribe-form--splash">

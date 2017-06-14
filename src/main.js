@@ -11,7 +11,7 @@ import data, { Session, Workshop } from '../data';
 import template from './page.jade'
 import routes from './routes.jsx'
 import Root from './components/root.jsx'
-import Index from './components/us2016.jsx'
+import Index from './components/us2017.jsx'
 import css from '!raw!postcss-loader!stylus!./css/main.styl'
 
 // Client render
@@ -80,7 +80,7 @@ export default (locals, callback) => {
         content:'http://pgday.phonegap.com/img/ogimage.png'
       }
     ]
-  } else if(locationArray.length > 0 && locationArray[0] == 'us2016'){
+  } else if(locationArray.length > 0 && locationArray[0] == 'us2017'){
     meta = [
       {
         name: 'twitter:card',
@@ -99,7 +99,7 @@ export default (locals, callback) => {
         content:"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees."
       },{
         name:'twitter:image',
-        content:'http://pgday.phonegap.com/img/twitter-card-us2016sm.png'
+        content:'http://pgday.phonegap.com/img/twitter-card-us2017sm.png'
       },{
         name:'description',
         content:"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees."

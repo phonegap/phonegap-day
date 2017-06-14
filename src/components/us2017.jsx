@@ -2,15 +2,15 @@ import React from 'react'
 import { Link } from 'react-router'
 import Data from '../../data'
 
-let speakers = Data.findSpeakersByConference('us2016')
-let workshops = Data.workshops.us2016
-let sessions = Data.sessions.us2016
+let speakers = Data.findSpeakersByConference('us2017')
+let workshops = Data.workshops.us2017
+let sessions = Data.sessions.us2017
 
 import WorkshopsSection from './workshops-section.jsx'
 import SpeakersSection from './speakers-section.jsx'
 import SessionsSection from './sessions-section.jsx'
 
-export default class Us2016 extends React.Component {
+export default class us2017 extends React.Component {
   render() {
     return (
       <div>
@@ -66,7 +66,7 @@ export default class Us2016 extends React.Component {
               <p>Need help justifying your trip? Download our “<a href="/justify-your-trip-to-phonegapday.docx">Letter to your Boss</a>” document.</p>
             </div>
           </section>
-          <SessionsSection sessions={sessions} heading={"Schedule"} pageSlug={"us2016"}/>
+          <SessionsSection sessions={sessions} heading={"Schedule"} pageSlug={"us2017"}/>
           <section className="about-details">
             <div className="text-bounds">
               <div className="about--sessions"><img src="/img/sessions.jpg" alt="sessions"/>
@@ -83,7 +83,7 @@ export default class Us2016 extends React.Component {
               </div>
             </div>
           </section>
-          <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"us2016"}/>
+          <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"us2017"}/>
           <section className="columns">
             <div className="text-bounds">
               <section>
@@ -126,7 +126,7 @@ export default class Us2016 extends React.Component {
               <p>Attendees are required to adhere to our <a href="/code-of-conduct.html">code of conduct</a>.</p>
             </div>
           </section>
-          <WorkshopsSection workshops={workshops} heading={"Workshops"} pageSlug={"us2016"}/>
+          <WorkshopsSection workshops={workshops} heading={"Workshops"} pageSlug={"us2017"}/>
         </div>
         <footer />
       </div>

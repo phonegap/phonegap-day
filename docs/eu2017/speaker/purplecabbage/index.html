@@ -159,11 +159,14 @@ select {
   height: 100%;
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
 }
@@ -185,15 +188,19 @@ select {
   width: 100%;
   height: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
   -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
   overflow: hidden;
@@ -202,18 +209,20 @@ select {
   background: url("/img/pgday-us.svg") no-repeat center;
   background-size: contain;
   -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
 }
 .splash--image:last-child {
   background: url("/img/pgd_logo.svg") no-repeat center;
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   box-sizing: border-box;
   margin: 60px;
 }
-.splash--us2016 {
+.splash--us2017 {
   background: #27a1c5;
 }
 .splash--eu2016 {
@@ -230,6 +239,7 @@ select {
   .splash--contents {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
   }
@@ -239,7 +249,7 @@ select {
   .splash--image:first-child {
     display: none;
   }
-  .splash--us2016 {
+  .splash--us2017 {
     background: url("/img/buildbot-line.svg") no-repeat center #27a1c5;
     background-size: cover;
   }
@@ -333,16 +343,19 @@ a:hover {
 }
 .header-title .pricing li {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   font-size: 1rem;
 }
 .header-title .pricing li span {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 .header-title .pricing .leader {
   -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   border-bottom: 2px dotted;
@@ -1024,16 +1037,20 @@ a:hover {
 .subscribe-form--splash {
   min-height: 40vh;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1046,18 +1063,22 @@ a:hover {
 }
 .subscribe-form--splash form {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
+  -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   box-sizing: border-box;
   padding: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
@@ -1078,6 +1099,7 @@ a:hover {
   .subscribe-form--splash form {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
   }
@@ -1113,12 +1135,15 @@ a:hover {
 }
 .subscribe-form--eu form {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -1401,10 +1426,12 @@ a:hover {
 .workshop--list {
   list-style: none;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid rgba(3,51,81,0.2);
@@ -1535,6 +1562,7 @@ workshop--title {
   .workshop--list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
   }
@@ -1612,4 +1640,4 @@ workshop--title {
             column-count: 2;
   }
 }
-</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--><!-- Twitter universal website tag code--><script src="//platform.twitter.com/oct.js" type="text/javascript"></script><script type="text/javascript">twttr.conversion.trackPid('nusbi', { tw_sale_amount: 0, tw_order_quantity: 0 });</script></head><body><div id="react-output" data-reactid=".10jgv2093o2" data-react-checksum="-960110496"><div id="content" class="speaker-page-content" data-reactid=".10jgv2093o2.0"><header class="speaker-page--header" data-reactid=".10jgv2093o2.0.0"><a class="" href="/eu2017/" data-reactid=".10jgv2093o2.0.0.0"><img src="/img/pgd_logo_eu-2017.svg" alt="PhoneGap Day EU logo" data-reactid=".10jgv2093o2.0.0.0.0"/></a></header><div class="text-bounds speaker" data-reactid=".10jgv2093o2.0.1"><a class="" href="/eu2017/" data-reactid=".10jgv2093o2.0.1.0"><span data-reactid=".10jgv2093o2.0.1.0.0">&lt; </span><span data-reactid=".10jgv2093o2.0.1.0.1">Home</span></a><div data-reactid=".10jgv2093o2.0.1.1"><img class="speaker--photo" src="/img/bio/purplecabbage.jpg" alt="Jesse MacFadyen" data-reactid=".10jgv2093o2.0.1.1.0"/></div><h1 class="speaker--name" data-reactid=".10jgv2093o2.0.1.2">Jesse MacFadyen</h1><h2 class="speaker--title" data-reactid=".10jgv2093o2.0.1.3">Sr. Computer Scientist, Adobe</h2><div class="speaker--bio" data-reactid=".10jgv2093o2.0.1.4">Jesse is a primordial PhoneGap contributor that has been around long enough to see many phonegap-killers come and go. He has written plugins for everything from the device accelerometer to bluetooth connected wearables like the ms-band, across windows, windows phone, android and ios. A self-proclaimed prolific procrastinator, Jesse often loses interest before he has a chance to fi</div><div data-reactid=".10jgv2093o2.0.1.5"><a href="https://twitter.com/purplecabbage" data-reactid=".10jgv2093o2.0.1.5.0"><span data-reactid=".10jgv2093o2.0.1.5.0.0">@</span><span data-reactid=".10jgv2093o2.0.1.5.0.1">purplecabbage</span></a></div><div class="sessions" data-reactid=".10jgv2093o2.0.1.6"><h2 class="sessions--heading" data-reactid=".10jgv2093o2.0.1.6.0">Session</h2><div class="session" data-reactid=".10jgv2093o2.0.1.6.1:$4=250pm-5=210pm"><h3 class="session--title" data-reactid=".10jgv2093o2.0.1.6.1:$4=250pm-5=210pm.0">Music Exploration in PhoneGap</h3><div class="session--time" data-reactid=".10jgv2093o2.0.1.6.1:$4=250pm-5=210pm.1">4:50pm-5:10pm</div><div class="session--description" data-reactid=".10jgv2093o2.0.1.6.1:$4=250pm-5=210pm.2"><div>What can you do with sound in phonegap? In this talk I'll explore what you can accomplish with sound in apps from music to noise. How to build a metronome, where timing is crucial. How to build an instrument, where pitch is critical. How to combine the 2 to make a sequencer. Then we'll look at what it takes to make a phonegap synthesizer.</div></div></div></div><div class="workshops" data-reactid=".10jgv2093o2.0.1.7"><h2 class="sessions--heading" data-reactid=".10jgv2093o2.0.1.7.0">Workshop</h2><div class="session" data-reactid=".10jgv2093o2.0.1.7.1:$12=230pm-2=200pm"><h3 class="session--title" data-reactid=".10jgv2093o2.0.1.7.1:$12=230pm-2=200pm.0">Creating a Modern PhoneGap Plugin</h3><div class="session--time" data-reactid=".10jgv2093o2.0.1.7.1:$12=230pm-2=200pm.1">12:30pm-2:00pm</div><div class="session--description" data-reactid=".10jgv2093o2.0.1.7.1:$12=230pm-2=200pm.2"><div>Creating a PhoneGap plugin doesn’t have to be scary, and it isn’t all that difficult! In this workshop you’ll learn how to create a simple plugin, how to structure your plugin for multi-platform support, how to add it to your projects, and how to test it thoroughly using Cordova’s plugin testing framework.</div></div></div></div></div></div><script id="initial-props" type="application/json" data-reactid=".10jgv2093o2.1">{"history":{},"location":{"pathname":"/eu2017/speaker/purplecabbage","search":"","hash":"","state":null,"action":"POP","key":"ao82c7"},"params":{"slug":"purplecabbage"},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/eu2017/"},{"path":"/eu2017/speaker/:slug"}]},"routeParams":{},"routes":["~route","~route~childRoutes~1"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~childRoutes~1","routeParams":{"slug":"purplecabbage"},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".10jgv2093o2","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".10jgv2093o2","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":172,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":171,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".10jgv2093o2.2"></script></div></body></html>
+</style><!--if lt IE 9script(src = '//html5shiv.googlecode.com/svn/trunk/html5.js')--><!-- Twitter universal website tag code--><script src="//platform.twitter.com/oct.js" type="text/javascript"></script><script type="text/javascript">twttr.conversion.trackPid('nusbi', { tw_sale_amount: 0, tw_order_quantity: 0 });</script></head><body><div id="react-output" data-reactid=".2dnz94dz5ru" data-react-checksum="-1666712532"><div id="content" class="speaker-page-content" data-reactid=".2dnz94dz5ru.0"><header class="speaker-page--header" data-reactid=".2dnz94dz5ru.0.0"><a class="" href="/eu2017/" data-reactid=".2dnz94dz5ru.0.0.0"><img src="/img/pgd_logo_eu-2017.svg" alt="PhoneGap Day EU logo" data-reactid=".2dnz94dz5ru.0.0.0.0"/></a></header><div class="text-bounds speaker" data-reactid=".2dnz94dz5ru.0.1"><a class="" href="/eu2017/" data-reactid=".2dnz94dz5ru.0.1.0"><span data-reactid=".2dnz94dz5ru.0.1.0.0">&lt; </span><span data-reactid=".2dnz94dz5ru.0.1.0.1">Home</span></a><div data-reactid=".2dnz94dz5ru.0.1.1"><img class="speaker--photo" src="/img/bio/purplecabbage.jpg" alt="Jesse MacFadyen" data-reactid=".2dnz94dz5ru.0.1.1.0"/></div><h1 class="speaker--name" data-reactid=".2dnz94dz5ru.0.1.2">Jesse MacFadyen</h1><h2 class="speaker--title" data-reactid=".2dnz94dz5ru.0.1.3">Sr. Computer Scientist, Adobe</h2><div class="speaker--bio" data-reactid=".2dnz94dz5ru.0.1.4">Jesse is a primordial PhoneGap contributor that has been around long enough to see many phonegap-killers come and go. He has written plugins for everything from the device accelerometer to bluetooth connected wearables like the ms-band, across windows, windows phone, android and ios. A self-proclaimed prolific procrastinator, Jesse often loses interest before he has a chance to fi</div><div data-reactid=".2dnz94dz5ru.0.1.5"><a href="https://twitter.com/purplecabbage" data-reactid=".2dnz94dz5ru.0.1.5.0"><span data-reactid=".2dnz94dz5ru.0.1.5.0.0">@</span><span data-reactid=".2dnz94dz5ru.0.1.5.0.1">purplecabbage</span></a></div><div class="sessions" data-reactid=".2dnz94dz5ru.0.1.6"><h2 class="sessions--heading" data-reactid=".2dnz94dz5ru.0.1.6.0">Session</h2><div class="session" data-reactid=".2dnz94dz5ru.0.1.6.1:$4=250pm-5=210pm"><h3 class="session--title" data-reactid=".2dnz94dz5ru.0.1.6.1:$4=250pm-5=210pm.0">Music Exploration in PhoneGap</h3><div class="session--time" data-reactid=".2dnz94dz5ru.0.1.6.1:$4=250pm-5=210pm.1">4:50pm-5:10pm</div><div class="session--description" data-reactid=".2dnz94dz5ru.0.1.6.1:$4=250pm-5=210pm.2"><div>What can you do with sound in phonegap? In this talk I'll explore what you can accomplish with sound in apps from music to noise. How to build a metronome, where timing is crucial. How to build an instrument, where pitch is critical. How to combine the 2 to make a sequencer. Then we'll look at what it takes to make a phonegap synthesizer.</div></div></div></div><div class="workshops" data-reactid=".2dnz94dz5ru.0.1.7"><h2 class="sessions--heading" data-reactid=".2dnz94dz5ru.0.1.7.0">Workshop</h2><div class="session" data-reactid=".2dnz94dz5ru.0.1.7.1:$12=230pm-2=200pm"><h3 class="session--title" data-reactid=".2dnz94dz5ru.0.1.7.1:$12=230pm-2=200pm.0">Creating a Modern PhoneGap Plugin</h3><div class="session--time" data-reactid=".2dnz94dz5ru.0.1.7.1:$12=230pm-2=200pm.1">12:30pm-2:00pm</div><div class="session--description" data-reactid=".2dnz94dz5ru.0.1.7.1:$12=230pm-2=200pm.2"><div>Creating a PhoneGap plugin doesn’t have to be scary, and it isn’t all that difficult! In this workshop you’ll learn how to create a simple plugin, how to structure your plugin for multi-platform support, how to add it to your projects, and how to test it thoroughly using Cordova’s plugin testing framework.</div></div></div></div></div></div><script id="initial-props" type="application/json" data-reactid=".2dnz94dz5ru.1">{"history":{},"location":{"pathname":"/eu2017/speaker/purplecabbage","search":"","hash":"","state":null,"action":"POP","key":"o3cqak"},"params":{"slug":"purplecabbage"},"route":{"path":"/","indexRoute":{},"childRoutes":[{"path":"/eu2017/"},{"path":"/eu2017/speaker/:slug"}]},"routeParams":{},"routes":["~route","~route~childRoutes~1"],"children":{"key":null,"ref":null,"props":{"history":"~history","location":"~location","params":"~params","route":"~route~childRoutes~1","routeParams":{"slug":"purplecabbage"},"routes":"~routes","children":null},"_owner":{"_currentElement":{"key":null,"ref":null,"props":{"routes":"~routes","params":"~params","location":"~location","components":[null,null],"history":"~history"},"_owner":null,"_store":{}},"_rootNodeID":".2dnz94dz5ru","_instance":{"props":"~children~_owner~_currentElement~props","context":{},"refs":"~children~_owner~_instance~context","updater":{},"_reactInternalInstance":"~children~_owner","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":{"_currentElement":{"key":null,"ref":null,"props":"~","_owner":"~children~_owner","_store":{}},"_rootNodeID":".2dnz94dz5ru","_instance":{"props":"~","context":"~children~_owner~_instance~context","refs":"~children~_owner~_instance~context","updater":"~children~_owner~_instance~updater","_reactInternalInstance":"~children~_owner~_renderedComponent","state":null},"_pendingElement":null,"_pendingStateQueue":null,"_pendingReplaceState":false,"_pendingForceUpdate":false,"_renderedComponent":null,"_context":{"history":"~history","location":"~location"},"_mountOrder":173,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_context":"~children~_owner~_instance~context","_mountOrder":172,"_topLevelWrapper":null,"_pendingCallbacks":null,"_mountIndex":0,"_mountImage":null,"_isOwnerNecessary":false,"_warnedAboutRefsInRender":false},"_store":{}}}</script><script src="/bundle.js" data-reactid=".2dnz94dz5ru.2"></script></div></body></html>
