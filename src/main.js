@@ -62,16 +62,16 @@ export default (locals, callback) => {
         content:'@garthdb'
       },{
         name:'twitter:title',
-        content:'PhoneGap Day - agenda and workshops announced'
+        content:'PhoneGap Day US Announced'
       },{
         name:'twitter:description',
-        content:"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017. PhoneGap Day US is scheduled for Fall 2017."
+        content:"PhoneGap Day will be in NYC on Oct 11-12, 2017."
       },{
         name:'twitter:image',
-        content:'http://pgday.phonegap.com/img/twitter-card2017sm.png'
+        content:'http://pgday.phonegap.com/img/twitter-card-us2017sm.png'
       },{
         name:'description',
-        content:"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017. PhoneGap Day US is scheduled for Fall 2017."
+        content:"PhoneGap Day will be in NYC on Oct 11-12, 2017."
       },{
         name:'keywords',
         content:'HTML,CSS,PhoneGap Day,JavaScript,conference,event'
@@ -96,13 +96,13 @@ export default (locals, callback) => {
         content:'PhoneGap Day US'
       },{
         name:'twitter:description',
-        content:"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees."
+        content:"PhoneGap Day will be in NYC on Oct 11-12, 2017."
       },{
         name:'twitter:image',
         content:'http://pgday.phonegap.com/img/twitter-card-us2017sm.png'
       },{
         name:'description',
-        content:"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees."
+        content:"PhoneGap Day will be in NYC on Oct 11-12, 2017."
       },{
         name:'keywords',
         content:'HTML,CSS,PhoneGap Day,JavaScript,conference,event'
