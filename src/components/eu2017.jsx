@@ -38,7 +38,7 @@ export default class Eu2017 extends React.Component {
                 </div>
                 <a href="https://webconferences.paydro.com/phonegap-day-eu-2017" className="button--cta">Get Tickets</a>
             </div>
-            <section className="subscribe-form--eu">
+            <section className="subscribe-form">
               <div className="text-bounds">
                 <h1>Stay in the Know</h1>
                 <div className="description">Sign up for all the latest PhoneGap Day news.</div>
