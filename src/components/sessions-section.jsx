@@ -10,7 +10,7 @@ class SessionListItem extends React.Component {
     if (this.props.hasOwnProperty('pageSlug')) {
       pageURL = "/"+this.props.pageSlug+"/speaker/"
     } else {
-      pageURL = "/us2016/speaker/"
+      pageURL = "/us2017/speaker/"
     }
     if (typeof this.props.session.speakerSlug !== 'undefined') {
       if(Array.isArray(speakerSlug)){

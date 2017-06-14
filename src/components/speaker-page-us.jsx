@@ -51,7 +51,7 @@ export default class SpeakerPage extends React.Component {
   }
   render() {
     let speaker = data.findSpeakerBySlug(this.props.params.slug)
-    let sessions = data.findSessionBySpeakerSlug(this.props.params.slug, 'us2016')
+    let sessions = data.findSessionBySpeakerSlug(this.props.params.slug, 'us2017')
     let sessionSection
     if (sessions.length > 0) {
       sessionSection = (<div className="sessions">
@@ -65,7 +65,7 @@ export default class SpeakerPage extends React.Component {
     if (speaker.twitter) {
       twitter = <div><a href={"https://twitter.com/"+speaker.twitter}>@{speaker.twitter}</a></div>
     }
-    let workshops = (data.findWorkshopBySpeakerSlug(this.props.params.slug, 'us2016'))
+    let workshops = (data.findWorkshopBySpeakerSlug(this.props.params.slug, 'us2017'))
     let workshopSection
     if (workshops.length > 0) {
       workshopSection = <WorkshopDetails workshops={workshops}/>
@@ -73,12 +73,12 @@ export default class SpeakerPage extends React.Component {
     return (
       <div id="content" className="speaker-page-content">
         <header className="speaker-page--header">
-          <Link to="/us2016/" onClick={this.handleClick.bind(this)}>
+          <Link to="/us2017/" onClick={this.handleClick.bind(this)}>
             <img src="/img/pgd_logo.svg" alt="PhoneGap Day logo"/>
           </Link>
         </header>
         <div className="text-bounds speaker">
-          <Link to="/us2016/" onClick={this.handleClick.bind(this)}>&lt; {this.fromHome ? "Back" : "Home"}</Link>
+          <Link to="/us2017/" onClick={this.handleClick.bind(this)}>&lt; {this.fromHome ? "Back" : "Home"}</Link>
           <div><img className="speaker--photo" src={speaker.avatar} alt={speaker.name}/></div>
           <h1 className="speaker--name">{speaker.name}</h1>
           <h2 className="speaker--title">{speaker.title}</h2>

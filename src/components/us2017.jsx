@@ -2,15 +2,15 @@ import React from 'react'
 import { Link } from 'react-router'
 import Data from '../../data'
 
-let speakers = Data.findSpeakersByConference('us2016')
-let workshops = Data.workshops.us2016
-let sessions = Data.sessions.us2016
+let speakers = Data.findSpeakersByConference('us2017')
+let workshops = Data.workshops.us2017
+let sessions = Data.sessions.us2017
 
 import WorkshopsSection from './workshops-section.jsx'
 import SpeakersSection from './speakers-section.jsx'
 import SessionsSection from './sessions-section.jsx'
 
-export default class Us2016 extends React.Component {
+export default class us2017 extends React.Component {
   render() {
     return (
       <div>
@@ -37,36 +37,46 @@ export default class Us2016 extends React.Component {
             <div className="one-m9"><img src="/img/one-m9.svg" alt="One m9"/>
               <div className="content-mask" />
             </div>
-            <div className="logo"><img src="/img/pgd_logo.svg" alt="PhoneGap Day logo"/></div>
+            <div className="logo"><img src="/img/pgd_logo_us-2017.svg" alt="PhoneGap Day logo"/></div>
             <div className="adobe-logo"><a href="http://adobe.com"><img src="/img/adobe-logo.svg" alt="Adobe logo"/></a></div>
           </div>
           <div className="header-title">
             <div className="bounds">
               <h1>PhoneGap Day</h1>
               <h2 className="subhead">
-                <time dateTime="2016-01-29">Jan 28 & 29, 2016</time> • <span className="city">Lehi, UT</span>
+                <time dateTime="2017-10-11">Oct 11 & 12 2017</time> • <span className="city">NYC</span>
               </h2>
               <div className="description">A one day conference and one day of workshops for PhoneGap, web, and mobile developers.</div>
               <div className="pricing">
                 <h2>Conference Ticket Pricing</h2>
                 <ul>
-                  <li><span>Conference</span><span className="leader" /><span>Soldout</span></li>
-                  <li><span>Conf + Workshops</span><span className="leader" /><span>Soldout</span></li>
+                  <li><span>Conference</span><span className="leader" /><span>$125</span></li>
+                  <li><span>Conf + Workshops</span><span className="leader" /><span>$175</span></li>
                 </ul>
-              </div><a href="http://www.eventbrite.com/e/phonegap-day-us-2016-tickets-18659846102" className="button--cta">Get Tickets</a>
+              </div><a href="https://www.eventbrite.com/e/phonegap-day-us-2017-tickets-34983605907" className="button--cta">Get Tickets</a>
             </div>
+            <section className="subscribe-form">
+              <div className="text-bounds">
+                <h1>Stay in the Know</h1>
+                <div className="description">Sign up for all the latest PhoneGap Day news.</div>
+                <form action="http://nitobi.createsend.com/t/y/s/ehtkkh/" method="post" id="subForm">
+                  <input id="fieldEmail" className="text-email" name="cm-ehtkkh-ehtkkh" placeholder="Email" type="email" required />
+                  <button type="submit" className="button--cta">Subscribe</button>
+                </form>
+              </div>
+            </section>
           </div>
         </header>
         <div id="content" className="main-content">
           <section className="about">
             <div className="text-bounds">
               <h1>The Lowdown</h1>
-              <p><span className="sub">One part conference, one part celebration.</span><br />Join us for an incredible day to hear how the brightest minds in mobile are using PhoneGap to accelerate and optimize their mobile development strategy. You’ll hear from industry experts all ready to share tips and best practices, experiences with coding and performance, and the latest mobile trends. Meet members from the PhoneGap team, hear the latest PhoneGap news, and find out what’s coming next!</p>
-              <p>Already have native apps at your organization? Come to PhoneGap Day to learn how to still use native controls for your app while leveraging webviews for the main content to make editing and updates easier and to enable your marketing team and other non technical users to update your app.</p>
+              <p>PhoneGap is all about pushing mobile web technology forward so that the web becomes a first-class platform for mobile apps. This movement is already happening and made possible thanks to projects all over the web. Apache Cordova extends the browser's functionality and allows apps built with web technology to be distributed into app stores. Progressive Web Apps are leading the charge to bring richer functionality into the browser. App frameworks are raising the bar for creating quality and high performant apps. Testing frameworks add deep integration testing that touch both logic and interface. And don't forget about WebVR, which is pushing the boundaries of what it means to be mobile web.</p>
+              <p>PhoneGap Day is an event to bring together everything that is moving the web mobile forward and allowing you to create amazing mobile apps. Join us for one day of workshops and a one-day conference covering everything from mobile frameworks to testing your apps. Meet members from the PhoneGap team, hear the latest PhoneGap news, and find out what’s coming next for mobile web!</p>
               <p>Need help justifying your trip? Download our “<a href="/justify-your-trip-to-phonegapday.docx">Letter to your Boss</a>” document.</p>
             </div>
           </section>
-          <SessionsSection sessions={sessions} heading={"Schedule"} pageSlug={"us2016"}/>
+          {/*<SessionsSection sessions={sessions} heading={"Schedule"} pageSlug={"us2017"}/>
           <section className="about-details">
             <div className="text-bounds">
               <div className="about--sessions"><img src="/img/sessions.jpg" alt="sessions"/>
@@ -83,21 +93,18 @@ export default class Us2016 extends React.Component {
               </div>
             </div>
           </section>
-          <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"us2016"}/>
+          <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"us2017"}/>
+          <WorkshopsSection workshops={workshops} heading={"Workshops"} pageSlug={"us2017"}/>*/}
           <section className="columns">
             <div className="text-bounds">
               <section>
-                <h1>Ski Day</h1>
-                <p>After the conference, join us on Saturday, January 30th for a PhoneGap ski day on Utah’s famous mountains. We'll be headed to <a href="http://www.sundanceresort.com/" target="_blank">Sundance Mountain Resort</a>. It's a boutique resort tucked away on 5,000 picturesque acres of wilderness in the shadow of Utah's 12,000-foot Mt. Timpanogos. Join us for skiing, snowshoeing, cross-country skiing, or relax at one of Sundance's many excellent restaurants.</p>
-              </section>
-              <section>
                 <h1>Venue</h1>
-                <p>We’re hosting PhoneGap Day at the beautiful Adobe Lehi Office.</p>
-                <p><a href="https://goo.gl/maps/4f5admiUNPn">3900 Adobe Way<br />Lehi, UT 84043</a></p>
+                <p>We’re hosting PhoneGap Day at the beautiful Microsoft New York Office.</p>
+                <p><a href="https://goo.gl/maps/utRwZHdoKxR2">11 Times Square<br />New York, NY 10036</a></p>
               </section>
             </div>
           </section>
-          <section><img src="/img/lehi-office.jpg" className="full" alt="Adobe Lehi Office"/><a href="https://goo.gl/maps/4f5admiUNPn" className="map" /></section>
+          {/*<section><img src="/img/ms-ny-office.jpg" className="full" alt="Microsoft New York Office"/><a href="https://goo.gl/maps/utRwZHdoKxR2" className="map" /></section>
           <section className="columns">
             <div className="text-bounds">
               <section>
@@ -119,14 +126,13 @@ export default class Us2016 extends React.Component {
                 <div><a href="http://redhat.com/"><img src="/img/Redhat_Logo.svg" width={300} alt="Redhat logo"/></a></div>
               </section>
             </div>
-          </section>
+          </section>*/}
           <section>
             <div className="text-bounds">
               <h1>Code of Conduct</h1>
               <p>Attendees are required to adhere to our <a href="/code-of-conduct.html">code of conduct</a>.</p>
             </div>
           </section>
-          <WorkshopsSection workshops={workshops} heading={"Workshops"} pageSlug={"us2016"}/>
         </div>
         <footer />
       </div>

@@ -11,7 +11,7 @@ import data, { Session, Workshop } from '../data';
 import template from './page.jade'
 import routes from './routes.jsx'
 import Root from './components/root.jsx'
-import Index from './components/us2016.jsx'
+import Index from './components/us2017.jsx'
 import css from '!raw!postcss-loader!stylus!./css/main.styl'
 
 // Client render
@@ -62,16 +62,16 @@ export default (locals, callback) => {
         content:'@garthdb'
       },{
         name:'twitter:title',
-        content:'PhoneGap Day - agenda and workshops announced'
+        content:'PhoneGap Day US Announced'
       },{
         name:'twitter:description',
-        content:"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017. PhoneGap Day US is scheduled for Fall 2017."
+        content:"PhoneGap Day will be in NYC on Oct 11-12, 2017."
       },{
         name:'twitter:image',
-        content:'http://pgday.phonegap.com/img/twitter-card2017sm.png'
+        content:'http://pgday.phonegap.com/img/twitter-card-us2017sm.png'
       },{
         name:'description',
-        content:"PhoneGap Day EU will be in Amsterdam on May 18-19, 2017. PhoneGap Day US is scheduled for Fall 2017."
+        content:"PhoneGap Day will be in NYC on Oct 11-12, 2017."
       },{
         name:'keywords',
         content:'HTML,CSS,PhoneGap Day,JavaScript,conference,event'
@@ -80,7 +80,7 @@ export default (locals, callback) => {
         content:'http://pgday.phonegap.com/img/ogimage.png'
       }
     ]
-  } else if(locationArray.length > 0 && locationArray[0] == 'us2016'){
+  } else if(locationArray.length > 0 && locationArray[0] == 'us2017'){
     meta = [
       {
         name: 'twitter:card',
@@ -96,13 +96,13 @@ export default (locals, callback) => {
         content:'PhoneGap Day US'
       },{
         name:'twitter:description',
-        content:"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees."
+        content:"PhoneGap Day will be in NYC on Oct 11-12, 2017."
       },{
         name:'twitter:image',
-        content:'http://pgday.phonegap.com/img/twitter-card-us2016sm.png'
+        content:'http://pgday.phonegap.com/img/twitter-card-us2017sm.png'
       },{
         name:'description',
-        content:"PhoneGap Day will be held at Adobe's Lehi office on January 29, 2016. It will include 10+ keynotes, 15+ workshops, and a ski day for all attendees."
+        content:"PhoneGap Day will be in NYC on Oct 11-12, 2017."
       },{
         name:'keywords',
         content:'HTML,CSS,PhoneGap Day,JavaScript,conference,event'

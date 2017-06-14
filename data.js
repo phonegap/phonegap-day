@@ -1167,7 +1167,7 @@ export default {
         previousValue.push("/eu2017/speaker/"+currentValue.slug);
       }
       return previousValue;
-    }, ["/","/eu2017/"]); //["/","/us2016/","/eu2017/"]
+    }, ["/","/us2017/","/eu2017/"]);
     return routes;
   },
   findSessionBySpeakerSlug: function(slug, conferenceSlug) {

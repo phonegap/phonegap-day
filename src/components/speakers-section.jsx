@@ -7,7 +7,7 @@ class SpeakerItem extends React.Component {
     if (this.props.hasOwnProperty('pageSlug')) {
       pageURL = "/"+this.props.pageSlug+"/speaker/"
     } else {
-      pageURL = "/us2016/speaker/"
+      pageURL = "/us2017/speaker/"
     }
     return (
       <li className="speaker">
