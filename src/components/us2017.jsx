@@ -104,29 +104,27 @@ export default class us2017 extends React.Component {
               </section>
             </div>
           </section>
-          {/*<section><img src="/img/ms-ny-office.jpg" className="full" alt="Microsoft New York Office"/><a href="https://goo.gl/maps/utRwZHdoKxR2" className="map" /></section>
+          {/*<section><img src="/img/ms-ny-office.jpg" className="full" alt="Microsoft New York Office"/><a href="https://goo.gl/maps/utRwZHdoKxR2" className="map" /></section>*/}
+          {/*
+            <section>
+              <h1>Hotel</h1>
+              <p>Need a place to stay in Utah? Here are some recommended hotels in the area:</p>
+              <p>The <a href="http://www.marriott.com/hotels/travel/slcli-courtyard-lehi-at-thanksgiving-point/">Courtyard Marriott in Lehi</a> conveniently located right across I-15 from the Adobe Lehi office.</p>
+              <p>The <a href="http://www.monaco-saltlakecity.com/">Hotel Monaco</a> in Salt Lake City located 30 minutes north of the Adobe Lehi office.</p>
+            </section>
+            */}
           <section className="columns">
             <div className="text-bounds">
               <section>
-                <h1>Hotel</h1>
-                <p>Need a place to stay in Utah? Here are some recommended hotels in the area:</p>
-                <p>The <a href="http://www.marriott.com/hotels/travel/slcli-courtyard-lehi-at-thanksgiving-point/">Courtyard Marriott in Lehi</a> conveniently located right across I-15 from the Adobe Lehi office.</p>
-                <p>The <a href="http://www.monaco-saltlakecity.com/">Hotel Monaco</a> in Salt Lake City located 30 minutes north of the Adobe Lehi office.</p>
+                <h1>Sponsors</h1>
+                <div>Looking to sponsor PhoneGap Day US 2017? Please email <a href="mailto:jgray@adobe.com">jgray@adobe.com</a></div>
               </section>
               <section>
-                <h1>Sponsors</h1>
-                <div><a href="http://www.telerik.com/"><img src="/img/Telerik_Logo.svg" width={300} alt="Telerik logo"/></a></div>
-                <div><a href="http://www.mobify.com/"><img src="/img/Mobify_Logo.svg" width={280} alt="Mobify logo"/></a></div>
-                <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} alt="Ionic logo"/></a></div>
-                <div><a href="http://www.rangle.io/"><img src="/img/Rangle.io_Logo.svg" width={300} alt="Rangle.io logo"/></a></div>
-                <div><a href="http://onsen.io/"><img src="/img/OnsenUI_Logo.svg" width={300} alt="OnsenUI logo"/></a></div>
-                <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} alt="Monaca logo"/></a></div>
-                <div><a href="http://www.visualstudio.com/"><img src="/img/VisualStudio_Logo.svg" width={300} alt="VisualStudio logo"/></a></div>
-                <div><a href="https://crosswalk-project.org/"><img src="/img/Crosswalk_Project_Logo.svg" width={300} alt="Crosswalk_Project logo"/></a></div>
-                <div><a href="http://redhat.com/"><img src="/img/Redhat_Logo.svg" width={300} alt="Redhat logo"/></a></div>
+                <h1>Agenda</h1>
+                <div>This year we're looking for any talks on anything that moves the mobile web forward - <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlvZZDig6MC85qsmVyrnHk6wINSvf9tFQGLo-ujV7gz0wEkw/viewform?usp=sf_link">CFP here</a>.</div>
               </section>
             </div>
-          </section>*/}
+          </section>
           <section>
             <div className="text-bounds">
               <h1>Code of Conduct</h1>
