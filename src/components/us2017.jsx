@@ -50,8 +50,8 @@ export default class us2017 extends React.Component {
               <div className="pricing">
                 <h2>Conference Ticket Pricing</h2>
                 <ul>
-                  <li><span>Conference</span><span className="leader" /><span>$125</span></li>
-                  <li><span>Conf + Workshops</span><span className="leader" /><span>$175</span></li>
+                  <li><span>Early Bird Conference</span><span className="leader" /><span>$125</span></li>
+                  <li><span>Early Bird Conf + Workshops</span><span className="leader" /><span>$175</span></li>
                 </ul>
               </div><a href="https://www.eventbrite.com/e/phonegap-day-us-2017-tickets-34983605907" className="button--cta">Get Tickets</a>
             </div>
@@ -73,7 +73,7 @@ export default class us2017 extends React.Component {
               <h1>The Lowdown</h1>
               <p>PhoneGap is all about pushing mobile web technology forward so that the web becomes a first-class platform for mobile apps. This movement is already happening and made possible thanks to projects all over the web. Apache Cordova extends the browser's functionality and allows apps built with web technology to be distributed into app stores. Progressive Web Apps are leading the charge to bring richer functionality into the browser. App frameworks are raising the bar for creating quality and high performant apps. Testing frameworks add deep integration testing that touch both logic and interface. And don't forget about WebVR, which is pushing the boundaries of what it means to be mobile web.</p>
               <p>PhoneGap Day is an event to bring together everything that is moving the web mobile forward and allowing you to create amazing mobile apps. Join us for one day of workshops and a one-day conference covering everything from mobile frameworks to testing your apps. Meet members from the PhoneGap team, hear the latest PhoneGap news, and find out what’s coming next for mobile web!</p>
-              <p>Need help justifying your trip? Download our “<a href="/justify-your-trip-to-phonegapday.docx">Letter to your Boss</a>” document.</p>
+              <p>Need help justifying your trip? Download our “<a href="/justify-your-trip-to-phonegapdayus2017.docx">Letter to your Boss</a>” document.</p>
             </div>
           </section>
           {/*<SessionsSection sessions={sessions} heading={"Schedule"} pageSlug={"us2017"}/>
