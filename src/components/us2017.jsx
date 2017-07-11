@@ -46,7 +46,7 @@ export default class us2017 extends React.Component {
               <h2 className="subhead">
                 <time dateTime="2017-10-11">Oct 11 & 12 2017</time> • <span className="city">NYC</span>
               </h2>
-              <div className="description">A one day conference and one day of workshops for PhoneGap, web, and mobile developers.</div>
+              <div className="description">A full day of PhoneGap, web, and mobile dev talks on Oct. 12th, plus an optional full day of workshops on Oct. 11th.</div>
               <div className="pricing">
                 <h2>Conference Ticket Pricing</h2>
                 <ul>
