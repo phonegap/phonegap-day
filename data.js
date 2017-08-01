@@ -1175,6 +1175,9 @@ export default {
       if (currentValue.conferences.indexOf("eu2017") >= 0) {
         previousValue.push("/eu2017/speaker/"+currentValue.slug);
       }
+      if (currentValue.conferences.indexOf("us2017") >= 0) {
+        previousValue.push("/us2017/speaker/"+currentValue.slug);
+      }
       return previousValue;
     }, ["/","/us2017/","/eu2017/"]);
     return routes;
