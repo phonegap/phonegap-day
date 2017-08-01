@@ -92,9 +92,9 @@ export default class us2017 extends React.Component {
                 <p>What's a trip to Utah without some skiing? After a jam-packed day of learning and coding, wind down on Utah's famous mountains and experience "the greatest snow on Earth".</p><img src="/img/audience.jpg" className="audience-image" alt="audience"/>
               </div>
             </div>
-          </section>
+          </section>*/}
           <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"us2017"}/>
-          <WorkshopsSection workshops={workshops} heading={"Workshops"} pageSlug={"us2017"}/>*/}
+          {/*<WorkshopsSection workshops={workshops} heading={"Workshops"} pageSlug={"us2017"}/>*/}
           <section className="columns">
             <div className="text-bounds">
               <section>

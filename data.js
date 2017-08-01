@@ -25,6 +25,15 @@ export class Session extends Talk {
 export default {
   speakers: [
     {
+      avatar: "/img/bio/gregavola.jpg",
+      twitter: "gregavola",
+      slug: "gregavola",
+      name: "Greg Avola",
+      title: "CTO and Co-Founder for Untappd",
+      bio: "Living in the craft beer haven of New York City, Greg is the CTO and Co-Founder for Untappd. After experiencing Rare Vos for the first time, he instantly fell in love with craft beer. While some people enjoy reading books or watching movies, Greg's passion is to code. With that being said, after Tim and Greg came up with the idea of Untappd, Greg had a working prototype the next day. Being able to combine his passion for development and craft beer allowed Untappd to be born. In January of 2016, Untappd merged with Next Glass which allowed Greg to work on Untappd in a full-time role as CTO of both companies. Prior to Untappd, Greg was a Senior Software Engineer at ABC News in New York City responsible for mobile and web products.",
+      conferences: ["us2017"]
+    },
+    {
       avatar: "/img/bio/shazron.jpg",
       twitter: "shazron",
       slug: "shazron",
@@ -237,7 +246,7 @@ export default {
       name: "Ryan J Salva",
       title: "JavaScript Developer",
       bio: "JavaScript developer, Apache Cordova committer, Visual Studio program manager, CrossFitter, sci-fi connoisseur and whiskey enthusiast. With over 15 years of experience in software development, it’s hard to find a corner of the web where he hasn’t worked, but the important thing to know is this: Ryan is a passionate storyteller with deep insight into market forces, technology, user experience and design. Today, he owns tooling for cross-platform mobile app development at Microsoft. Tomorrow, the world.",
-      conferences: ["us2016", "eu2016"]
+      conferences: ["us2016", "eu2016", "us2017"]
     },{
       avatar: "/img/bio/hollyschinsky.jpg",
       twitter: "devgirlFL",
@@ -323,8 +332,8 @@ export default {
       slug: "kerrishotts",
       name: "Kerri Shotts",
       title: "Developer, Author, Photographer",
-      bio: "Kerri Shotts is an IT consultant specializing in mobile hybrid application development. She has used PhoneGap/Cordova for several years while developing enterprise apps for her clients. She is the author of five books about PhoneGap and serves a moderator on the Adobe PhoneGap forum and the PhoneGap Google Group. She started programming on a lowly Commodore 64, and has a fondness for retro technology.",
-      conferences: ["eu2016","eu2017"],
+      bio: "Kerri Shotts is a Developer Advocate at Adobe. As an IT Consultant, she used PhoneGap/Cordova to develop enterprise apps for her clients. She is the author of five books about PhoneGap and serves as a moderator on the Adobe PhoneGap forums and the PhoneGap Google Group. She started programming on a lowly Commodore 64, and has a fondness for retro technology.",
+      conferences: ["eu2016","eu2017", "us2017"],
       twitterCard: {
         eu2017: '/img/speaker-cards/eu2017/kerrishotts.png'
       },
