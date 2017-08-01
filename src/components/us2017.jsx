@@ -44,9 +44,9 @@ export default class us2017 extends React.Component {
             <div className="bounds">
               <h1>PhoneGap Day</h1>
               <h2 className="subhead">
-                <time dateTime="2017-10-11">Oct 11 & 12 2017</time> • <span className="city">NYC</span>
+                <time dateTime="2017-10-11">Oct 11</time> (conference) & <time dateTime="2017-10-12">Oct 12</time> (workshops) 
               </h2>
-              <div className="description">A full day of PhoneGap, web, and mobile dev talks on Oct. 12th, plus an optional full day of workshops on Oct. 11th.</div>
+              <div className="description">A full day of PhoneGap, web, and mobile dev talks on Oct. 11th, plus an optional full day of workshops on Oct. 12th</div>
               <div className="pricing">
                 <h2>Conference Ticket Pricing</h2>
                 <ul>
@@ -92,9 +92,9 @@ export default class us2017 extends React.Component {
                 <p>What's a trip to Utah without some skiing? After a jam-packed day of learning and coding, wind down on Utah's famous mountains and experience "the greatest snow on Earth".</p><img src="/img/audience.jpg" className="audience-image" alt="audience"/>
               </div>
             </div>
-          </section>
+          </section>*/}
           <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"us2017"}/>
-          <WorkshopsSection workshops={workshops} heading={"Workshops"} pageSlug={"us2017"}/>*/}
+          {/*<WorkshopsSection workshops={workshops} heading={"Workshops"} pageSlug={"us2017"}/>*/}
           <section className="columns">
             <div className="text-bounds">
               <section>

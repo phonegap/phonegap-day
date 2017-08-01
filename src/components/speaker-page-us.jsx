@@ -74,7 +74,7 @@ export default class SpeakerPage extends React.Component {
       <div id="content" className="speaker-page-content">
         <header className="speaker-page--header">
           <Link to="/us2017/" onClick={this.handleClick.bind(this)}>
-            <img src="/img/pgd_logo.svg" alt="PhoneGap Day logo"/>
+            <img src="/img/pgd_logo_us-2017.svg" alt="PhoneGap Day logo"/>
           </Link>
         </header>
         <div className="text-bounds speaker">
