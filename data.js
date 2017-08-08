@@ -25,6 +25,15 @@ export class Session extends Talk {
 export default {
   speakers: [
     {
+      avatar: "/img/bio/audrey.jpg",
+      twitter: "aud_rey_so",
+      slug: "audrey",
+      name: "Audrey So",
+      title: "Software developer on the PhoneGap team",
+      bio: "Audrey is a software developer on the PhoneGap team at Adobe and currently works on Cordova tooling. In her spare time, she loves reading, learning, listening to podcasts, binge watching crime TV shows, and spending time with her family.",
+      conferences: ["us2017"]
+    },    
+    {
       avatar: "/img/bio/gregavola.jpg",
       twitter: "gregavola",
       slug: "gregavola",
@@ -144,7 +153,7 @@ export default {
       name: "Mike Hartington",
       title: "Front End Developer, Ionic",
       bio: "Mike is a front-end developer who has used Ionic since its alpha. As Ionic’s developer advocate, Mike manages the Ionic Forum, serves as a resource to developers, and writes technical documentation. When he’s not working, you can find him relaxing with a beer and guitar.",
-      conferences: ["us2016"]
+      conferences: ["us2016", "us2017"]
     },{
       avatar: "/img/bio/shawnjansepar.jpg",
       twitter: "shawnjan8",
@@ -254,7 +263,7 @@ export default {
       name: "Holly Schinsky",
       title: "Senior Software Engineer, Adobe",
       bio: "Holly works on the PhoneGap team at Adobe with a heavy focus on Developer Advocacy and Education via her blogging, sample apps and workshops. In her free time she’s usually found running, driving a carpool or hanging out with her family.",
-      conferences: ["us2016","eu2016","eu2017"],
+      conferences: ["us2016","eu2016","eu2017", "us2017"],
       twitterCard: {
         eu2017: '/img/speaker-cards/eu2017/hollyschinsky.png'
       },
