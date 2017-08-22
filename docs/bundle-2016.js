@@ -28217,7 +28217,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                null,
 	                _react2.default.createElement(
 	                  'a',
-	                  { href: 'http://www.compagnietheater.nl/compagnietheater.html' },
+	                  { href: 'http://www.compagnietheater.nl/' },
 	                  'Het Compagnietheater'
 	                ),
 	                ', more details coming soon.'
