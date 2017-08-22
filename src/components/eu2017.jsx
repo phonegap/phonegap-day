@@ -77,7 +77,7 @@ export default class Eu2017 extends React.Component {
           <section>
             <div className="text-bounds">
               <h1>Venue</h1>
-              <p><a href="http://www.compagnietheater.nl/compagnietheater.html">Het Compagnietheater</a>, more details coming soon.</p>
+              <p><a href="http://www.compagnietheater.nl/">Het Compagnietheater</a>, more details coming soon.</p>
             </div>
           </section>
           <section><img src="/img/compagnie-theater.jpg" className="full" alt="Compagnie Theater"/></section>
