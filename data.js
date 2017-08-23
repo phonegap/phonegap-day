@@ -32,7 +32,25 @@ export default {
       title: "Software developer on the PhoneGap team",
       bio: "Audrey is a software developer on the PhoneGap team at Adobe and currently works on Cordova tooling. In her spare time, she loves reading, learning, listening to podcasts, binge watching crime TV shows, and spending time with her family.",
       conferences: ["us2017"]
-    },    
+    },
+    {
+      avatar: "/img/bio/greg_bulmash.png",
+      twitter: "YiddishNinja",
+      slug: "bulmash",
+      name: "Greg Bulmash",
+      title: "Tech Evangelist at Amazon",
+      bio: "Greg Bulmash started in tech by publishing jokes and humorous essays to his own web site, eventually rising to become Senior Editor of the Internet Movie Database (IMDb.com). In 2005, he dusted off his BASIC programming skills from the 80s, taught himself some of the programming languages that power the web, and pivoted into a career writing code and communicating with developer audiences. He currently works as a Technical Evangelist for Login with Amazon, and in his spare time he runs Seattle CoderDojo, a volunteer group where local tech professionals help kids learn computer programming. He's spoken at OSCON, CascadiaJS, DevNexus, Developer Week, CodeMotion Amsterdam, and other meetups and conferences about web development, programming, and teaching kids how to code.",
+      conferences: ["us2017"]
+    },
+    {
+      avatar: "/img/bio/nicole_alexander.jpg",
+      twitter: "Nikimari",
+      slug: "nicole",
+      name: "Nicole Alexander",
+      title: "Professor of Marketing at NY University",
+      bio: "Nicole M. Alexander is a Professor of Marketing at New York University and most recently lead Nielsen's Innovation Practice across Greater China helping brands on their end-to-end innovation processes. She teaches and talks globally on AI, data privacy, and the legal and cultural implications of technology. When not at work Nicole is an avid globe-trotter and sports enthusiast.",
+      conferences: ["us2017"]
+    },
     {
       avatar: "/img/bio/gregavola.jpg",
       twitter: "gregavola",
@@ -68,7 +86,7 @@ export default {
       name: "Alex Blom",
       title: "Partner, Isle of Code",
       bio: "Alex Blom is the lead maintainer of ember-cordova. He is also Managing Partner at Isle of Code, an Ember/Hybrid focused shop in Toronto.",
-      conferences: ["us2016", "eu2017"],
+      conferences: ["us2016", "eu2017", "us2017"],
       twitterCard: {
         eu2017: '/img/speaker-cards/eu2017/alexblom.png'
       },
@@ -111,7 +129,7 @@ export default {
       name: "Don Coleman",
       title: "Director, Chariot Solutions",
       bio: 'Don enjoys hacking with phones, Arduino and other hardware. He has written PhoneGap plugins for Bluetooth and NFC. Don is the co-author of "Make:Bluetooth" and "Beginning NFC".',
-      conferences: ["us2016"]
+      conferences: ["us2016", "us2017"]
     },{
       avatar: "/img/bio/davidfrahm.jpg",
       twitter: "davidfrahm",
@@ -176,8 +194,8 @@ export default {
       slug: "timkim",
       name: "Tim Kim",
       title: "Expert Keyboard Masher, Adobe",
-      bio: "Hacking on software by day and drawing digital illustrations by night, Tim enjoys all forms of creativity possible in the digital realm. Currently he works on the PhoneGap Developer App and making stickers for the PhoneGap team. When Tim isn't hard at work, you can can find him trying to memorize movie quotes, playing video games or generally ignoring his ever growing to-do list.",
-      conferences: ["us2016"]
+      bio: "During the day, Tim works on the PhoneGap project mostly focusing on the PhoneGap Developer App. By night, Tim dons his special terry cloth bath robe and makes cool 3D art usually about something from the 80's. In between, he's probably eating a sandwich.",
+      conferences: ["us2016", "us2017"]
     },{
       avatar: "/img/bio/reneelance.jpg",
       twitter: "geekystardust",
@@ -212,7 +230,7 @@ export default {
       name: "Jesse MacFadyen",
       title: "Sr. Computer Scientist, Adobe",
       bio: "Jesse is a primordial PhoneGap contributor that has been around long enough to see many phonegap-killers come and go. He has written plugins for everything from the device accelerometer to bluetooth connected wearables like the ms-band, across windows, windows phone, android and ios. A self-proclaimed prolific procrastinator, Jesse often loses interest before he has a chance to fi",
-      conferences: ["us2016","eu2016","eu2017"],
+      conferences: ["us2016","eu2016","eu2017", "us2017"],
       twitterCard: {
         eu2017: '/img/speaker-cards/eu2017/purplecabbage.png'
       },
@@ -280,7 +298,7 @@ export default {
       name: "Masahiro Tanaka",
       title: "CEO, Monaca Corporation",
       bio: "Masa is the CEO of Monaca Corporation, the company behind Japan's #1 hybrid app development tools, Monaca and Onsen UI. He started his company as a pioneer in web and mobile communities in Japan, writing numerous PHP books and initiating Cordova meetups. Masa still maintains a leadership role within mobile and IoT communities in Japan and overseas as a hybrid app development vanguard and framework trendsetter.",
-      conferences: ["us2016","eu2016","eu2017"]
+      conferences: ["us2016","eu2016","eu2017", "us2017"]
     },{
       avatar: "/img/bio/jedwatson.jpg",
       slug: "jedwatson",
