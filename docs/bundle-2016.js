@@ -26193,7 +26193,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              ),
 	              _react2.default.createElement(
 	                'a',
-	                { href: 'http://www.eventbrite.com/e/phonegap-day-us-2016-tickets-18659846102', className: 'button--cta' },
+	                { href: 'https://www.eventbrite.com/e/phonegap-day-us-2016-tickets-18659846102', className: 'button--cta' },
 	                'Get Tickets'
 	              )
 	            )
