@@ -34,6 +34,15 @@ export default {
       conferences: ["us2017"]
     },
     {
+      avatar: "/img/bio/johnwargo.jpg",
+      twitter: "johnwargo",
+      slug: "johnwargo",
+      name: "John Wargo",
+      title: "Principal Program Manager for Mobile Center at Microsoft",
+      bio: "John is a professional software developer, writer, presenter, father, husband, and Geek. For the last 12 years or so, he’s focused on enterprise mobility and building mobile apps. He’s an author of 6 books on mobile development, including 4 on PhoneGap/Apache Cordova, and was a contributor to the Apache Cordova project. He also loves tinkering with IoT, building and writing about projects for Arduino, Particle Photon, Raspberry Pi, and more. He’s currently a Principal Program Manager for Mobile Center at Microsoft",
+      conferences: ["us2017"]
+    },
+    {
       avatar: "/img/bio/greg_bulmash.png",
       twitter: "YiddishNinja",
       slug: "bulmash",
@@ -273,7 +282,7 @@ export default {
       name: "Ryan J Salva",
       title: "JavaScript Developer",
       bio: "JavaScript developer, Apache Cordova committer, Visual Studio program manager, CrossFitter, sci-fi connoisseur and whiskey enthusiast. With over 15 years of experience in software development, it’s hard to find a corner of the web where he hasn’t worked, but the important thing to know is this: Ryan is a passionate storyteller with deep insight into market forces, technology, user experience and design. Today, he owns tooling for cross-platform mobile app development at Microsoft. Tomorrow, the world.",
-      conferences: ["us2016", "eu2016", "us2017"]
+      conferences: ["us2016", "eu2016"]
     },{
       avatar: "/img/bio/hollyschinsky.jpg",
       twitter: "devgirlFL",
