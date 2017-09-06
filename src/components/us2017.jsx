@@ -117,7 +117,7 @@ export default class us2017 extends React.Component {
             <div className="text-bounds">
               <section>
                 <h1>Sponsors</h1>
-                <div><a href="http://www.adobe.io/"><img src="/img/logos/adobeIO.svg" width={280} alt="AdobeIO logo"/></a></div>
+                <div><a href="https://www.adobe.io/"><img src="/img/logos/adobeIO.svg" width={280} alt="AdobeIO logo"/></a></div>
                 <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} alt="Monaca logo"/></a></div>
                 <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} alt="Ionic logo"/></a></div>                
                 <div><a href="http://microsoft.com/"><img src="/img/logos/microsoft.png" width={300} alt="Microsoft logo"/></a></div>

@@ -12,7 +12,7 @@ task :test do
       'https://phonegapdayeu.paydro.net/',
       'http://phonegapdayeu.paydro.net'
     ],
-    :http_status_ignore => [0],
+    :http_status_ignore => [0, 301],
     :cache => {
       :timeframe => '1d'
     },
