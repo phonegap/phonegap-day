@@ -819,13 +819,13 @@ export default {
       },
       new Session({
         time: "11:10am-11:30am",
-        title: "TBD",
+        title: "Privacy: Sharing more not less",
         speakerSlug: "nicole",
         description: ""
       }),
       new Session({
         time: "11:30am-12:10pm",
-        title: "TBD",
+        title: "Untappd + ionic + Cordova: A love story",
         speakerSlug: "gregavola",
         description: ""
       }),
@@ -847,9 +847,9 @@ export default {
       }),
       new Session({
         time: "2:10pm-2:30pm",
-        title: "TBD",
+        title: "Music Exploration in PhoneGap",
         speakerSlug: "purplecabbage",
-        description: ""
+        description: "What can you do with sound in phonegap? In this talk I'll explore what you can accomplish with sound in apps from music to noise. How to build a metronome, where timing is crucial. How to build an instrument, where pitch is critical. How to combine the 2 to make a sequencer. Then we'll look at what it takes to make a phonegap synthesizer."
       }),
       new Session({
         time: "2:30pm-2:50pm",
