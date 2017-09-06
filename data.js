@@ -792,7 +792,94 @@ export default {
         title: "Networking Pub Mixer"
       }
     ],
-    us2017: [],
+    us2017: [
+      {
+        time: "9:00am-9:30am",
+        title: "Registration and Breakfast"
+      },
+      {
+        time: "9:30am-9:45am",
+        title: "PhoneGap kick off",
+      },
+      new Session({
+        time: "9:45am-10:30am",
+        title: "Modern JavaScript and PhoneGap",
+        speakerSlug: "kerrishotts",
+        description: 'JavaScript is changing with new versions of the standard now releasing every year, and lots of proposals being considered for inclusion. Most mobile devices can only support this new world with the help of automation, module loaders and bundlers, and transpilers… but if all of those words sound a little scary, don’t worry — it’s easy to build a workflow that integrates modern JavaScript and PhoneGap together, and in this session we’ll show you how!',
+      }),
+      new Session({
+        time: "10:30am-10:50am",
+        title: "Stencil.js and the future of components",
+        speakerSlug: "mikehartington",
+        description: "Have you ever found an awesome component online, but couldn't use it because it's written for a different framework? For too long now, frameworks have gotten in the way of developers sharing code that they've written. With different APIs to work with, developers would have to rewrite a component multiple times to be able to work with React, Angular, Vue, or even Ember. Enter Web Components. Built on open web standards, Web Components provide a way for creating reusable components that can work within every framework, and even outside of them. Find out what Ionic’s been experimenting with and see why Web Components are the way of the future.",
+      }),
+      {
+        time: "10:50am-11:10am",
+        title: "BREAK"
+      },
+      new Session({
+        time: "11:10am-11:30am",
+        title: "TBD",
+        speakerSlug: "nicole",
+        description: ""
+      }),
+      new Session({
+        time: "11:30am-12:10pm",
+        title: "TBD",
+        speakerSlug: "gregavola",
+        description: ""
+      }),
+      {
+        time: "12:10pm-1:10pm",
+        title: "LUNCH"
+      },
+      new Session({
+        time: "1:10pm-1:50pm",
+        title: "Performant Animations for Hybrid Apps",
+        speakerSlug: "alexblom",
+        description: "<p>Adding animations to web and hybrid apps can be challenging. Aside from choosing technique, you are often left with jank and less than desirable performance - sometimes even after following best practices for animations.</p><p>This talk will cover:</p><ol><li>What are my choices when animating?;</li><li>What are the tradeoffs / how do I decide?;</li><li>What are the common pitfalls?;</li><li>How do I debug performance problems?;</li><li>Getting a smooth animation.</li>",
+      }),
+      new Session({
+        time: "1:50pm-2:10pm",
+        title: "TBD",
+        speakerSlug: "masahirotanaka",
+        description: ""
+      }),
+      new Session({
+        time: "2:10pm-2:30pm",
+        title: "TBD",
+        speakerSlug: "purplecabbage",
+        description: ""
+      }),
+      new Session({
+        time: "2:30pm-2:50pm",
+        title: "Rolling Your Own Multi-Platform Voice Assistant",
+        speakerSlug: "bulmash",
+        description: "Voice is the new IU of choice, and while most mobile platforms have some voice functionality built in, cloud-based voice APIs are making it possible to create a unified voice-powered experience that follows you from mobile to desktop to… Walk through building a voice-powered PhoneGap app on desktop and mobile, using Amazon’s Lex and Polly services from AWS to voice-enable your apps",
+      }),
+      {
+        time: "2:50pm-3:10pm",
+        title: "BREAK"
+      },
+      {
+        time: "3:10pm-3:30pm",
+        title: "TBD"
+      },
+      new Session({
+        time: "3:30pm-4:10pm",
+        title: "TBD",
+        speakerSlug: "johnwargo",
+        description: ""
+      }),
+      {
+        time: "4:10pm-4:50pm",
+        title: "Henry Zhu"
+      },
+      {
+        time: "4:50pm-5:10pm",
+        title: "Closing remarks"
+      },
+    ],
     eu2017: [
       {
         time: "8:30am-9:00am",
