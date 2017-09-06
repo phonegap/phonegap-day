@@ -44,7 +44,7 @@ export default class us2017 extends React.Component {
             <div className="bounds">
               <h1>PhoneGap Day</h1>
               <h2 className="subhead">
-                <time dateTime="2017-10-11">Oct 11</time> (conference) & <time dateTime="2017-10-12">Oct 12</time> (workshops) 
+                <time dateTime="2017-10-11">Oct 11</time> (conference) & <time dateTime="2017-10-12">Oct 12</time> (workshops)
               </h2>
               <div className="description">A full day of PhoneGap, web, and mobile dev talks on Oct. 11th, plus an optional full day of workshops on Oct. 12th</div>
               <div className="pricing">
@@ -94,7 +94,7 @@ export default class us2017 extends React.Component {
             </div>
           </section>*/}
           <SpeakersSection speakers={speakers} heading={"Speakers"} pageSlug={"us2017"}/>
-          {/*<WorkshopsSection workshops={workshops} heading={"Workshops"} pageSlug={"us2017"}/>*/}
+          <WorkshopsSection workshops={workshops} heading={"Workshops"} pageSlug={"us2017"}/>
           <section className="columns">
             <div className="text-bounds">
               <section>
@@ -119,10 +119,10 @@ export default class us2017 extends React.Component {
                 <h1>Sponsors</h1>
                 <div><a href="https://www.adobe.io/"><img src="/img/logos/adobeIO.svg" width={280} alt="AdobeIO logo"/></a></div>
                 <div><a href="http://monaca.io/"><img src="/img/Monaca_Logo.svg" width={300} alt="Monaca logo"/></a></div>
-                <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} alt="Ionic logo"/></a></div>                
+                <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} alt="Ionic logo"/></a></div>
                 <div><a href="http://microsoft.com/"><img src="/img/logos/microsoft.png" width={300} alt="Microsoft logo"/></a></div>
                 <div>Looking to sponsor PhoneGap Day US 2017? Please email <a href="mailto:jgray@adobe.com">jgray@adobe.com</a></div>
-                
+
               </section>
               <section>
                 <h1>Agenda</h1>
