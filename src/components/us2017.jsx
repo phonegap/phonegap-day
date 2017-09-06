@@ -76,8 +76,8 @@ export default class us2017 extends React.Component {
               <p>Need help justifying your trip? Download our “<a href="/justify-your-trip-to-phonegapdayus2017.docx">Letter to your Boss</a>” document.</p>
             </div>
           </section>
-          {/*<SessionsSection sessions={sessions} heading={"Schedule"} pageSlug={"us2017"}/>
-          <section className="about-details">
+          <SessionsSection sessions={sessions} heading={"Schedule"} pageSlug={"us2017"}/>
+          {/*<section className="about-details">
             <div className="text-bounds">
               <div className="about--sessions"><img src="/img/sessions.jpg" alt="sessions"/>
                 <h2 className="about-heading">10+ Sessions,<br />15+ workshops.</h2>
