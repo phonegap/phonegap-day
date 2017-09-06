@@ -1145,7 +1145,64 @@ export default {
         ]
       }
     ],
-    us2017: [],
+    us2017: [
+      {
+        time: "9:30am-10:00am",
+        title: "Registration and breakfast"
+      },
+      {
+        time: "10:00am-11:30am",
+        sessions: [
+          new Workshop({
+            title: "Testing PhoneGap Apps",
+            speakerSlug: "audrey",
+            description: "<p>Building and maintaining high quality PhoneGap apps, like all software, involves testing. In this lab we will cover the following topics, as we work through instrumenting a real app with a test suite to improve it's quality, help avoid regressions and speed up development:</p><ul><li>What is testing, and why do it?</li><li>Unit testing</li><li>Integration testing</li><li>Continuous integration</li></ul>"
+          }),
+          new Workshop({
+            title: "Hands-on Bluetooth Low Energy",
+            speakerSlug: "doncoleman",
+            description: "You’ve heard a lot about Bluetooth low energy, but do you understand how it works? This workshop will give you a chance to get hands-on experience building PhoneGap applications that interact with Bluetooth Smart devices. We will cover Bluetooth LE concepts like services and characteristics while we are building the software. The mobile application will be written with PhoneGap so it will run on iOS or Android. The phone will control hardware via Bluetooth LE, and automatically receive notifications when something changes on the peripheral. Participants will be required to bring a laptop and are encouraged to bring a Bluetooth LE-capable iOS or Android phone. There will be a limited number of phones that people can borrow for the workshop. Familiarity with at least one programming language is helpful but not required. A list of required free software will be sent to attendees before the workshop."
+          }),
+        ]
+      },
+      {
+        time: "11:30am-12:30pm",
+        title: "Lunch"
+      },
+      {
+        time: "12:30pm-2:00pm",
+        sessions: [
+          new Workshop({
+            title: "Creating Voxel Art for WebVR!",
+            speakerSlug: "timkim",
+            description: ""
+          }),
+          new Workshop({
+            title: "Plugins",
+            speakerSlug: ["kerrishotts","purplecabbage"],
+            description: "In this deep dive workshop we will cover all the requirements of making great plugins, from conception to testing to publishing. We will also share some secrets from his bag'o'tricks and demonstrate some interesting uses for plugins you may not have thought of. Come ready to build!"
+          }),
+        ]
+      },
+      {
+        time: "2:00pm-2:30pm",
+        title: "Break"
+      },
+      {
+        time: "2:30pm-4:00pm",
+        sessions: [
+          new Workshop({
+            title: "PWAs",
+            speakerSlug: "hollyschinsky",
+            description: "In this workshop you'll learn how to build an app that leverages the best of what Progressive Web Apps and PhoneGap have to offer. PWA's are all the rage as of late, but they're currently not supported on iOS, and mobile browsers still don't support every API for accessing certain sensors and hardware features. In this workshop you'll learn how you can build an app that can run as both a PWA and a hybrid app with PhoneGap."
+          }),
+          {
+            title: "TBD",
+            speakerSlug: "",
+          },
+        ]
+      },
+    ],
     eu2017: [
       {
         time: "9:30am-10:00am",
