@@ -797,12 +797,10 @@ export default {
         time: "9:00am-9:30am",
         title: "Registration and Breakfast"
       },
-      new Session({
+      {
         time: "9:30am-9:45am",
         title: "PhoneGap kick off",
-        speakerSlug: "stevesgill",
-        description: '',
-      }),
+      },
       new Session({
         time: "9:45am-10:30am",
         title: "Modern JavaScript and PhoneGap",
