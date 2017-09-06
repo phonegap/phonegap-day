@@ -867,9 +867,9 @@ export default {
       },
       new Session({
         time: "3:30pm-4:10pm",
-        title: "TBD",
+        title: "Streamline Manual Testing With Cordova Simulate",
         speakerSlug: "johnwargo",
-        description: ""
+        description: "Developers use physical devices, emulators and simulators for manual and automated testing, but sometimes you need something else. These ‘devices’ are awesome, and there are live reload options available for these testing targets, but what if you want a quick test in the browser (with live debugging) or need to exercise your plugin API? In this session, you’ll meet Cordova Simulate and learn how to use it to streamline aspects of your manual testing. You’ll even learn how to extend Cordova Simulate to support simulating your custom plugins."
       }),
       {
         time: "4:10pm-4:50pm",
