@@ -123,12 +123,10 @@ export default class us2017 extends React.Component {
                 <div><a href="http://microsoft.com/"><img src="/img/logos/microsoft.png" width={300} alt="Microsoft logo"/></a></div>
                 <div>Looking to sponsor PhoneGap Day US 2017? Please email <a href="mailto:jgray@adobe.com">jgray@adobe.com</a></div>
               </section>
-            </div>
-          </section>
-          <section>
-            <div className="text-bounds">
-              <h1>Code of Conduct</h1>
-              <p>Attendees are required to adhere to our <a href="/code-of-conduct.html">code of conduct</a>.</p>
+              <section>
+                <h1>Code of Conduct</h1>
+                <p>Attendees are required to adhere to our <a href="/code-of-conduct.html">code of conduct</a>.</p>
+              </section>
             </div>
           </section>
         </div>
