@@ -122,11 +122,6 @@ export default class us2017 extends React.Component {
                 <div><a href="http://www.ionicframework.com/"><img src="/img/Ionic_Logo.svg" width={280} alt="Ionic logo"/></a></div>
                 <div><a href="http://microsoft.com/"><img src="/img/logos/microsoft.png" width={300} alt="Microsoft logo"/></a></div>
                 <div>Looking to sponsor PhoneGap Day US 2017? Please email <a href="mailto:jgray@adobe.com">jgray@adobe.com</a></div>
-
-              </section>
-              <section>
-                <h1>Agenda</h1>
-                <div>This year we're looking for any talks on anything that moves the mobile web forward - <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlvZZDig6MC85qsmVyrnHk6wINSvf9tFQGLo-ujV7gz0wEkw/viewform?usp=sf_link">CFP here</a>.</div>
               </section>
             </div>
           </section>
