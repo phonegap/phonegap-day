@@ -821,7 +821,7 @@ export default {
         time: "11:10am-11:30am",
         title: "Privacy: Sharing more not less",
         speakerSlug: "nicole",
-        description: ""
+        description: "Consumers are generating massive amounts of data through their mobile devices; data that can help businesses’ better aggregate consumer offerings, increase interaction and engagement while allowing businesses to tap into a trillion dollar mobile economy. However, trust and lack of transparency has proven to be key barriers. In this discussion we will look at how these opportunities can be leveraged by understanding consumers motivations."
       }),
       new Session({
         time: "11:30am-12:10pm",
