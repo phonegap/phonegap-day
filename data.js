@@ -114,7 +114,7 @@ export default {
       name: "Michael Brooks",
       title: "Senior Software Barista, Adobe",
       bio: "Orphaned as a child, Michael Brooks was raised by his elderly Uncle Ben and Aunt May. Academically gifted, he displayed an uncanny affinity for Computer Science with speciality in signal processing and computer vision. While attending a developer meetup at the age of 26, Michael was bitten on the hand by a radioactive Nitobi employee, empowering him with the company’s proportional open source belief, community, and ability to ship products. Now disguised as mwbrooks and teamed with Adobe, Michael slings between vim, GitHub, Twitter, and IRC to protect the innocent, confront evil, and make PhoneGap & Apache Cordova a safer framework for the future of application development.",
-      conferences: ["us2016"]
+      conferences: ["us2016","us2017"]
     },{
       avatar: "/img/bio/raymondcamden.jpg",
       twitter: "raymondcamden",
@@ -196,7 +196,7 @@ export default {
       name: "Anis Kadri",
       title: "Software Engineer, Adobe",
       bio: "Anis is a Software Engineer at Adobe. He works on PhoneGap and Cordova full-time and has been contributing to the project since its early inception. Lately, he’s been interested in trying to introduce  PhoneGap solutions to the enterprise world.",
-      conferences: ["us2016", "eu2016"]
+      conferences: ["us2016", "eu2016", "us2017"]
     },{
       avatar: "/img/bio/timkim.jpg",
       twitter: "timkim",
@@ -228,7 +228,7 @@ export default {
       name: "Simon MacDonald",
       title: "Senior Software Engineer, Adobe",
       bio: "Simon has over fifteen years of development experience and has worked on a variety of projects including object oriented databases, police communication systems, speech recognition and unified messaging. His current focus is contributing to the open source PhoneGap project to enable developers to create cross platform mobile applications using Web technologies. Simon’s been building web applications since the days they were written using shell scripts and he still has nightmares about those dark days.",
-      conferences: ["us2016","eu2016","eu2017"],
+      conferences: ["us2016","eu2016","eu2017","us2017"],
       twitterCard: {
         eu2017: '/img/speaker-cards/eu2017/simonmacdonald.png'
       },
@@ -537,6 +537,22 @@ export default {
       twitterCard: {
         eu2017: '/img/speaker-cards/eu2017/andreasfotschl.png'
       },
+    },{
+      avatar: "/img/bio/surajpindoria.jpg",
+      twitter: "surajpindoria",
+      slug: "surajpindoria",
+      name: "Suraj Pindoria",
+      title: "Professional Googler, Adobe",
+      bio: "Software Developer working on Adobe PhoneGap and ApacheCordova. I enjoy basketball, soccer, hiking, and traveling.",
+      conferences: ["us2017"],
+    },{
+      avatar: "/img/bio/larstrieloff.jpg",
+      twitter: "trieloff",
+      slug: "larstrieloff",
+      name: "Lars Trieloff",
+      title: "Director Platform Marketing, Adobe",
+      bio: "",
+      conferences: ["us2017"],
     }
   ],
   sessions: {
@@ -800,6 +816,7 @@ export default {
       {
         time: "9:30am-9:45am",
         title: "PhoneGap kick off",
+        speakerSlug: "surajpindoria"
       },
       new Session({
         time: "9:45am-10:30am",
@@ -861,10 +878,12 @@ export default {
         time: "2:50pm-3:10pm",
         title: "BREAK"
       },
-      {
+      new Session({
         time: "3:10pm-3:30pm",
-        title: "TBD"
-      },
+        title: "That’s how we roll: Combining Adobe I/O APIs and PhoneGap",
+        speakerSlug: "larstrieloff",
+        description: "Aside from PhoneGap, Adobe offers a range of APIs to developers through Adobe I/O. In this talk, we will show you how to fold in Adobe I/O APIs on- and off-device with PhoneGap, the serverless Adobe I/O Runtime, and Adobe I/O Events. In the talk, we will be showing a simple demo application that serves as a living demonstration of Adobe I/O in action, and a template to get rolling.",
+      }),
       new Session({
         time: "3:30pm-4:10pm",
         title: "Streamline Manual Testing With Cordova Simulate",
@@ -872,12 +891,18 @@ export default {
         description: "Developers use physical devices, emulators and simulators for manual and automated testing, but sometimes you need something else. These ‘devices’ are awesome, and there are live reload options available for these testing targets, but what if you want a quick test in the browser (with live debugging) or need to exercise your plugin API? In this session, you’ll meet Cordova Simulate and learn how to use it to streamline aspects of your manual testing. You’ll even learn how to extend Cordova Simulate to support simulating your custom plugins."
       }),
       {
-        time: "4:10pm-4:50pm",
+        time: "4:10pm-4:30pm",
         title: "Henry Zhu"
       },
       {
+        time: "4:30pm-4:50pm",
+        title: "TBD",
+        speakerSlug: "aniskadri"
+      },
+      {
         time: "4:50pm-5:10pm",
-        title: "Closing remarks"
+        title: "Closing remarks",
+        speakerSlug: "michaelbrooks"
       },
     ],
     eu2017: [
@@ -1234,7 +1259,7 @@ export default {
     ],
     us2017: [
       {
-        time: "9:30am-10:00am",
+        time: "9:00am - 10:00am",
         title: "Registration and breakfast"
       },
       {
@@ -1265,9 +1290,9 @@ export default {
             description: ""
           }),
           new Workshop({
-            title: "Plugins",
+            title: "Creating a Modern PhoneGap Plugin",
             speakerSlug: ["kerrishotts","purplecabbage"],
-            description: "In this deep dive workshop we will cover all the requirements of making great plugins, from conception to testing to publishing. We will also share some secrets from his bag'o'tricks and demonstrate some interesting uses for plugins you may not have thought of. Come ready to build!"
+            description: "Creating a PhoneGap plugin doesn’t have to be scary, and it isn’t all that difficult! In this workshop you’ll learn how to create a simple plugin, how to structure your plugin for multi-platform support, how to add it to your projects, and how to test it thoroughly using Cordova’s plugin testing framework."
           }),
         ]
       },
@@ -1283,10 +1308,11 @@ export default {
             speakerSlug: "hollyschinsky",
             description: "In this workshop you'll learn how to build an app that leverages the best of what Progressive Web Apps and PhoneGap have to offer. PWA's are all the rage as of late, but they're currently not supported on iOS, and mobile browsers still don't support every API for accessing certain sensors and hardware features. In this workshop you'll learn how you can build an app that can run as both a PWA and a hybrid app with PhoneGap."
           }),
-          {
-            title: "TBD",
-            speakerSlug: "",
-          },
+          new Workshop({
+            title: "PhoneGap Push Notifications",
+            speakerSlug: "simonmacdonald",
+            description: "In this workshop we'll walk through adding push notification capabilities to your application. You'll learn how to set up a Firebase Cloud Messaging project for Android notifications and adding push capabilities to your iOS certificate and provisioning profiles. You'll gain an understanding of how to register with your remote push service and handle incoming notifications. Advanced topics will include how to add action buttons, responding to silent push notifications and testing using node.js."
+          }),
         ]
       },
     ],
