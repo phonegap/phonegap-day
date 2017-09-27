@@ -7,6 +7,9 @@ class SessionItem extends React.Component {
   createMarkup() {
     return {__html: "<div>"+this.props.session.description+"</div>"}
   }
+  createTitleMarkup() {
+    return {__html: "<div>"+this.props.session.title+"</div>"}
+  }
   render() {
     let sessionDescription
     if(this.props.session.description) {
@@ -14,7 +17,7 @@ class SessionItem extends React.Component {
     }
     return (
       <div className="session">
-        <h3 className="session--title">{this.props.session.title}</h3>
+        <h3 className="session--title" dangerouslySetInnerHTML={this.createTitleMarkup()} />
         <div className="session--time">{this.props.session.time}</div>
         {sessionDescription}
       </div>

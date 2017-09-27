@@ -3,6 +3,9 @@ import { Link } from 'react-router'
 import data from '../../data'
 
 class SessionListItem extends React.Component {
+  createTitleMarkup() {
+    return {__html: "<div>"+this.props.session.title+"</div>"}
+  }
   render() {
     let sessionListItem
     let speakerSlug = this.props.session.speakerSlug
@@ -18,7 +21,7 @@ class SessionListItem extends React.Component {
       }
       sessionListItem = (
         <div>{this.props.session.time}:
-          <Link to={pageURL+speakerSlug} className="session__speaker-name"> {data.findSpeakerBySlug(speakerSlug).name}</Link> - <Link to={pageURL+speakerSlug} className="session__name">{this.props.session.title}</Link>
+          <Link to={pageURL+speakerSlug} className="session__speaker-name"> {data.findSpeakerBySlug(speakerSlug).name}</Link> - <Link to={pageURL+speakerSlug} className="session__name" dangerouslySetInnerHTML={this.createTitleMarkup()}/>
         </div>)
     } else {
       sessionListItem = (<div>{this.props.session.time}: {this.props.session.title}</div>)

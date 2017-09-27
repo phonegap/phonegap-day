@@ -551,7 +551,23 @@ export default {
       slug: "larstrieloff",
       name: "Lars Trieloff",
       title: "Director Platform Marketing, Adobe",
-      bio: "",
+      bio: "As a principal at Adobe, Lars’ work spans engineering, product management and marketing. His focus is on combining AI, Serverless computing, and open APIs to enable the next generation of digital experiences. Originally from Berlin, Germany, you find Lars these days mostly in airport security lines, sushi bars, and on Slack.",
+      conferences: ["us2017"],
+    },{
+      avatar: "/img/bio/henryzhu.jpg",
+      twitter: "left_pad",
+      slug: "henryzhu",
+      name: "Henry Zhu",
+      title: "Babel Maintainer",
+      bio: "Henry is a maintainer on Babel and works at Adobe on the Behance team in NYC",
+      conferences: ["us2017"],
+    },{
+      avatar: "/img/bio/brianleroux.jpg",
+      twitter: "brianleroux",
+      slug: "brianleroux",
+      name: "Brian LeRoux",
+      title: "Starting something new @begin",
+      bio: "Brian declined to write a bio because talking in the third person weirds me out man.",
       conferences: ["us2017"],
     }
   ],
@@ -858,9 +874,9 @@ export default {
       }),
       new Session({
         time: "1:50pm-2:10pm",
-        title: "TBD",
         speakerSlug: "masahirotanaka",
-        description: ""
+        title: 'Flawless development with Vue, Monaca and Onsen UI <g-emoji alias="hotsprings" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/2668.png" ios-version="6.0">♨️</g-emoji>',
+        description: 'While Cordova can be used with all major frameworks like Angular and React, using with Vue has a great advantage especially for building handy apps. This session will describe how to develop an app with Vue and Onsen UI, fully made by Web Components, using toolchain provided by Monaca development platform.'
       }),
       new Session({
         time: "2:10pm-2:30pm",
@@ -890,10 +906,12 @@ export default {
         speakerSlug: "johnwargo",
         description: "Developers use physical devices, emulators and simulators for manual and automated testing, but sometimes you need something else. These ‘devices’ are awesome, and there are live reload options available for these testing targets, but what if you want a quick test in the browser (with live debugging) or need to exercise your plugin API? In this session, you’ll meet Cordova Simulate and learn how to use it to streamline aspects of your manual testing. You’ll even learn how to extend Cordova Simulate to support simulating your custom plugins."
       }),
-      {
+      new Session({
         time: "4:10pm-4:30pm",
-        title: "Henry Zhu"
-      },
+        title: "The Future of Babel with babel-preset-env",
+        speakerSlug: "henryzhu",
+        description: ""
+      }),
       {
         time: "4:30pm-4:50pm",
         title: "TBD",
