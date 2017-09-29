@@ -558,7 +558,7 @@ export default {
       twitter: "left_pad",
       slug: "henryzhu",
       name: "Henry Zhu",
-      title: "Babel Maintainer",
+      title: "Babel Maintainer, Adobe",
       bio: "Henry is a maintainer on Babel and works at Adobe on the Behance team in NYC",
       conferences: ["us2017"],
     },{
