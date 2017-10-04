@@ -826,7 +826,7 @@ export default {
     ],
     us2017: [
       {
-        time: "9:00am-9:30am",
+        time: "8:30am-9:30am",
         title: "Registration and Breakfast"
       },
       {
