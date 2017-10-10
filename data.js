@@ -62,7 +62,7 @@ export default {
       title: 'Professor of Marketing at NY University',
       bio:
         "Nicole M. Alexander is a Professor of Marketing at New York University and most recently lead Nielsen's Innovation Practice across Greater China helping brands on their end-to-end innovation processes. She teaches and talks globally on AI, data privacy, and the legal and cultural implications of technology. When not at work Nicole is an avid globe-trotter and sports enthusiast.",
-      conferences: ['us2017']
+      conferences: []
     },
     {
       avatar: '/img/bio/gregavola.jpg',
